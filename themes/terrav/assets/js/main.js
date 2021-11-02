@@ -241,6 +241,30 @@ google.maps.event.addDomListener(window, 'load', initialize);
   }, false);
 })();
 
+
+/*start of Rannojit*/
+
+
+
+/*start of kashob*/
+
+
+
+/*start of noyon*/
+
+
+
+/*start of shariful*/
+
+
+
+/*start of momin*/
+
+
+
+/*start of johir*/
+
+
 new WOW().init();
 
 })(jQuery);
