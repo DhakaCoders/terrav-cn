@@ -278,6 +278,51 @@ img{
 	color: #fff;
 	background: #904A10;
 }
+.fl-info-btn{
+	padding-right: 21px;
+    position: relative;
+    display: inline-block;
+    vertical-align: baseline;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Libre Franklin', sans-serif;
+    line-height: 1.1;
+    color: #4F7F35;
+}
+.fl-info-btn span{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.fl-info-btn i {
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    background-size: contain;
+    margin-top: -4px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transition: all .5s;
+    -ms-transition: all .5s;
+    -webkit-transition: all .5s;
+}
+.fl-info-btn:hover{
+	color: #E83747;
+}
+.fl-info-btn:hover i svg.info-arow{
+	fill: #E83747;
+}
+.fl-info-btn:hover i{
+	right: -3px;
+}
+
+
 
 ul.reset-list,
 ol.reset-list,
