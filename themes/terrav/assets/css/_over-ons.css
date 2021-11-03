@@ -1,5 +1,10 @@
 /*over one intro sec*/
-/*over one intro sec*/
+.over-ons-intro-sec{
+	background: linear-gradient(360deg, #FAFAFA 0.94%, #FFFFFF 98.23%);
+	padding-top:120px;
+	padding-bottom:120px;
+}
+
 .over-ons-intro-sec-right {
     width: 34%;
 }
@@ -27,10 +32,39 @@
 .over-ons-des-cntlr h6 {
 	color: #4F7F35;
 	padding-left: 23px;
+	margin-bottom: 18px;
 }
 .over-ons-intro-button a {
     margin-right: 24px;
 }
 .over-ons-intro-button {
     padding-top: 25px;
+}
+.over-ons-des-cntlr h2{
+	margin-bottom:35px;
+}
+
+
+/*professional sec*/
+
+.strong-professional-sec-cntlr{
+	display:flex;
+	height:269px;
+	align-items: center;
+}
+.professional-team-logo {
+    margin-left: auto;
+}
+.professional-team-logo ul li {
+    padding: 0 25px;
+}
+
+.professional-team-logo ul {
+    display: flex;
+    margin:0 -25px;
+    align-items: center;
+}
+.prfnl-tm-logo i img {
+    max-width: 120px;
+    width:100%;
 }

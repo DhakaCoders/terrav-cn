@@ -226,7 +226,7 @@ img{
 	letter-spacing: 0.04em;
 	font-weight: 700;
 	border: 2px solid #F4A301;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	border-radius: 8px;
 	text-decoration: none;
 }
@@ -236,6 +236,7 @@ img{
 }
 .btn-bg-green{
 	background: #4F7F35;
+	border: 2px solid #4F7F35;
 }
 .btn-bg-green:hover{
 	background: transparent;
