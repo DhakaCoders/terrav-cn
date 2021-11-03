@@ -220,10 +220,29 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 /*start of kashob*/
 
+if( $('.contact-form-wrp').length ){
+  $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click', function(){
+    $('.wpforms-field input[required],.wpforms-field select[required]').parents('.wpforms-field').addClass('wpforms-has-error');
+    $('.wpforms-field input[required],.wpforms-field select[required]').addClass('wpforms-error');
+  });
+}
 
+
+if( $('.wpforms-error').length ){
+  $('.wpforms-error').on('click', function(){
+    $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
+  });
+}
 
 /*start of noyon*/
-
+ $(window).scroll(function() { 
+    var scroll = $(window).scrollTop();   
+    if (scroll >= 100) {
+        $('.header-sticky').addClass('fixed-hdr');
+    } else {
+        $('.header-sticky').removeClass('fixed-hdr');
+    }  
+});
 
 
 /*start of shariful*/

@@ -1,0 +1,123 @@
+.trv-Service-intro-cntlr{
+	max-width: 820px;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 45px;
+}
+.trv-Service-intro-sec{
+	padding-top: 120px;
+	padding-bottom: 220px;
+	background: linear-gradient(360deg, #FAFAFA 0.94%, #FFFFFF 98.23%);
+}
+.trv-Service-grids-cntlr ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.trv-Service-grids-cntlr ul{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -12px;
+}
+.trv-Service-grids-cntlr ul li{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	margin: 0;
+}
+.trv-Service-grids-cntlr ul li{
+	width: 20%;
+	padding: 0 12px;
+	padding-bottom: 30px;
+	position: relative;
+}
+.trv-Service-grids-cntlr ul li:before{
+	content: "";
+	position: absolute;
+	left: -6px;
+	top: -4.5px;
+	background: url('../images/trv-Service-grids-arow.svg');
+	background-repeat: no-repeat!important;
+	width: 12px;
+	height: 20px;
+	margin-top: 0;
+    background-size: 100% auto;
+}
+.trv-Service-grids-cntlr ul li:first-child:before{
+	display: none;
+	content: none;
+}
+.trv-Service-grid-sec {
+    margin-top: -220px;
+}
+.trv-Service-grid-item {
+    padding: 27px 15px 36px 15px;
+    background: #FFFFFF;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+	position: relative;
+}
+.trv-Service-grid-img-cntlr{
+	position: relative;
+	overflow: hidden;
+}
+.trv-Service-grid-des{
+	text-align: center;
+	padding-top: 45px;
+	position: relative;
+}
+.trv-Service-grid-title{
+	font-weight: 600;
+	color: #4F4B34;
+}
+.trv-Service-grid-title a{
+	text-decoration: none;
+	color: #4F4B34;
+}
+.trv-Service-grid-title a:hover{
+	color: #F4A301;
+}
+.trv-Service-grid-des p{
+	font-size: 16px;
+	margin-bottom: 35px;
+}
+.trv-Svic-grid-des-btm-cunt-nmbr{
+	position: absolute;
+	bottom: 0;
+	right: 8px;
+}
+.Svic-grid-cunt-nmbr{
+	margin-bottom: 0;
+	color: rgba(79, 75, 52, 0.08);
+}
+.trv-Service-grid-item-cntlr{
+	position: relative;
+	padding-top: 20px;
+}
+.top-lft-bdr {
+    position: absolute;
+    height: 20px;
+    width: 125px;
+    top: 0;
+    left: -6px;
+    border-top: 4px solid #f5a302;
+    border-right: 4px solid #f5a302;
+    border-top-right-radius: 7px;
+    z-index: 1;
+}
+.top-rgt-bdr {
+    position: absolute;
+    height: 20px;
+    width: 125px;
+    top: 0;
+    right: -8px;
+    border-top: 4px solid #f5a302;
+    border-left: 4px solid #f5a302;
+    border-top-left-radius: 7px;
+    z-index: 1;
+}
+.trv-Service-grids-cntlr ul li:first-child .trv-Service-grid-item-cntlr .top-lft-bdr{
+	display: none;
+}
+.trv-Service-grids-cntlr ul li:last-child .trv-Service-grid-item-cntlr .top-rgt-bdr{
+	display: none;
+}

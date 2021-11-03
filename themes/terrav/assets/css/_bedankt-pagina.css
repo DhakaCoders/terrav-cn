@@ -9,6 +9,12 @@
 .page-bedankt-cntent-img{
 	padding-bottom: 10px;
 }
+.page-bedankt-cntent-heading{
+	padding-bottom: 15px;
+}
+.page-bedankt-cntent-heading h4{
+	margin-bottom: 0;
+}
 .page-bedankt-cntent-desc{
 	padding-bottom: 45px;
 }
@@ -17,6 +23,7 @@
 }
 .page-bedankt-cntent-title{
 	color: #4F7F35;
+	margin-bottom: 18px;
 }
 .page-bedankt-cntent-img i{
 	display: inline-block;
@@ -25,11 +32,11 @@
 .page-bedankt-cntent-menu-cntlr ul{
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 -85px;
+	margin: 0 -90px;
 	justify-content: center;
 }
 .page-bedankt-cntent-menu-cntlr ul li{
-	padding: 0 85px;
+	padding: 0 90px;
 	position: relative;
 }
 .page-bedankt-cntent-menu-cntlr ul li:not(:last-child):after{
@@ -49,4 +56,74 @@
 	font-size: 18px;
 	display: inline-block;
 	vertical-align: baseline;
+}
+
+@media(max-width: 991px){
+	.page-bedankt-cntent-img i{
+		width: 105px;
+		height: auto;
+	}
+	.page-bedankt-cntent-menu-cntlr ul{
+		margin: 0 48px;
+	}
+	.page-bedankt-cntent-menu-cntlr ul li{
+		padding: 0 48px;
+	}
+	.page-bedankt-cntent-desc{
+		padding-bottom: 35px;
+	}
+}
+@media(max-width: 767px){
+	.page-bedankt-cntent-cntlr{
+		padding: 100px 0;
+	}
+	.page-bedankt-cntent-menu-cntlr ul{
+		margin: 0 -22px;
+	}
+	.page-bedankt-cntent-menu-cntlr ul li{
+		padding: 0 22px;
+	}
+}
+@media(max-width: 575px){
+	.page-bedankt-cntent-cntlr{
+		padding-top: 56px;
+		padding-bottom: 63px;
+	}
+	.page-bedankt-cntent-img{
+		padding-bottom: 20px;
+	}
+	.page-bedankt-cntent-img i{
+		width: 90px;
+	}
+	.page-bedankt-cntent-title{
+		margin-bottom: 5px;
+	}
+	.page-bedankt-cntent-img{
+		padding-bottom: 30px;
+	}
+	.page-bedankt-cntent-heading{
+		padding-bottom: 20px;
+	}
+	.page-bedankt-cntent-desc{
+		padding-bottom: 40px;
+	}
+	.page-bedankt-cntent-menu-cntlr ul{
+		margin: 0px;
+	}
+	.page-bedankt-cntent-menu-cntlr ul li{
+		width: 100%;
+		padding: 0 0 36px;
+		margin-bottom: 35px;
+	}
+	.page-bedankt-cntent-menu-cntlr ul li:last-child{
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	.page-bedankt-cntent-menu-cntlr ul li:not(:last-child):after{
+	    transform: translate(50%, 50%);
+	    right: 50%;
+	    bottom: 0;
+	    top: initial;
+	}
+
 }

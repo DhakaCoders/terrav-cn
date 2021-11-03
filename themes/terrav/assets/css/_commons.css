@@ -222,7 +222,7 @@ img{
 	font-family: 'Libre Franklin', sans-serif;
 	line-height: 1.1;
 	text-align: center;
-	padding: 15.5px 16px;
+	padding: 15px 16px 16px;
 	letter-spacing: 0.04em;
 	font-weight: 700;
 	border: 2px solid #F4A301;
@@ -230,18 +230,99 @@ img{
 	border-radius: 8px;
 	text-decoration: none;
 }
-.fl-btn:hover{
+.fl-btn:hover,
+.fl-transparent-btn{
 	background: transparent;
 	color: #F4A301;
+}
+.fl-transparent-btn:hover{
+	color: #fff;
+	background: #F4A301;
 }
 .btn-bg-green{
 	background: #4F7F35;
 	border: 2px solid #4F7F35;
 }
-.btn-bg-green:hover{
+.btn-bg-green:hover,
+.green-btn-transparent-bg{
 	background: transparent;
 	color: #4F7F35;
 }
+.green-btn-transparent-bg:hover{
+	background: #4F7F35;
+	color: #fff;
+}
+.btn-bg-pink{
+	background: #E83747;
+	border: 2px solid #E83747;
+}
+.btn-bg-pink:hover,
+.pink-btn-transparent-bg{
+	background: transparent;
+	color: #E83747;
+}
+.pink-btn-transparent-bg:hover{
+	color: #fff;
+	background: #E83747;
+}
+.btn-bg-brown{
+	background: #904A10;
+	border: 2px solid #904A10;
+}
+.btn-bg-brown:hover,
+.brown-btn-transparent-bg{
+	background: transparent;
+	color: #904A10;
+}
+.brown-btn-transparent-bg:hover{
+	color: #fff;
+	background: #904A10;
+}
+.fl-info-btn{
+	padding-right: 21px;
+    position: relative;
+    display: inline-block;
+    vertical-align: baseline;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Libre Franklin', sans-serif;
+    line-height: 1.1;
+    color: #4F7F35;
+}
+.fl-info-btn span{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.fl-info-btn i {
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    background-size: contain;
+    margin-top: -4px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transition: all .5s;
+    -ms-transition: all .5s;
+    -webkit-transition: all .5s;
+}
+.fl-info-btn:hover{
+	color: #E83747;
+}
+.fl-info-btn:hover i svg.info-arow{
+	fill: #E83747;
+}
+.fl-info-btn:hover i{
+	right: -3px;
+}
+
+
 
 ul.reset-list,
 ol.reset-list,
