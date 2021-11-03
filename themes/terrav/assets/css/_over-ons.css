@@ -186,3 +186,18 @@
 .over-ons-history-des-cntlr ul li:last-child:before{
     display: none;
 }
+
+
+
+
+/*over-ons-lftimg-rgtdes-sec*/
+.over-ons-lftimg-rgtdes-sec{
+    padding-top:120px;
+    padding-bottom:120px;
+}
+.over-ons-lftimg-rgtdes-sec-lft{
+    width:42%;
+}
+.over-ons-lftimg-rgtdes-sec-rgt{
+    width:58%;
+}
