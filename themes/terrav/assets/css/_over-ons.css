@@ -95,9 +95,9 @@
     align-items: center;
 }
 .certificates-guarantee-log {
-    max-width: 170px;
+    max-width: 150px;
     width:100%;
-    height: 170px;
+    height: 150px;
     border: 2px solid #F2EEEE;
     display: flex;
     align-items: center;
