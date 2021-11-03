@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nieuws Details</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#EE3E15">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!--   <?php $favicon = get_theme_mod('favicon'); if(!empty($favicon)) { ?> 
+  <link rel="shortcut icon" href="<?php echo $favicon; ?>" />
+  <?php } ?> -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/font-awesome.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="assets/fancybox3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">
+  <link rel="stylesheet" type="text/css" href="assets/select2/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/flatpickr/flatpickr.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <svg style="display: none;">
+    <!-- <svg class="id-name" width="16" height="16" viewBox="0 0 16 16" fill="#FF5C26">
+      <use xlink:href="#id-name"></use> </svg> -->
+
+      <!-- start of Rannojit -->
+
+      
+
+      <!-- start of Noyon -->
+
+
+      <!-- start of Kashob -->
+        
+
+      <!-- start of Shariful -->
+
+      <symbol id="play-icon-svg" width="85" height="85" viewBox="0 0 85 85" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_1098:35386)">
+        <path d="M84.9782 41.1138C84.2651 18.785 66.2159 0.736343 43.8876 0.0232758C31.738 -0.362198 20.3713 4.2623 11.9708 12.9355C3.89497 21.2733 -0.348223 32.2653 0.0229295 43.888C0.7354 66.2162 18.7847 84.2655 41.1129 84.9779C41.5777 84.9929 42.0384 85 42.5002 85C54.1086 85 64.9508 80.4065 73.0297 72.0657C81.1055 63.7285 85.3493 52.736 84.9782 41.1138ZM66.6007 65.8391C60.2231 72.4238 51.6639 76.05 42.5002 76.05C42.1339 76.05 41.7675 76.044 41.3981 76.0327C23.7761 75.47 9.53149 61.2253 8.96819 43.6027C8.67521 34.4241 12.0245 25.7444 18.3998 19.1627C24.7774 12.578 33.3366 8.95183 42.5002 8.95183C42.8666 8.95183 43.233 8.9578 43.6024 8.96914C61.2244 9.53183 75.469 23.7765 76.0323 41.3991C76.3253 50.5777 72.9754 59.2574 66.6007 65.8391Z" fill="white"/>
+        <path d="M56.44 40.031L37.5935 26.518C35.5832 25.0763 32.7847 26.5132 32.7847 28.9871V56.0139C32.7847 58.4878 35.5832 59.9247 37.5935 58.4831L56.4394 44.9694C58.1305 43.7575 58.1305 41.2435 56.44 40.031Z" fill="white"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_1098:35386">
+        <rect width="85" height="85" fill="white"/>
+        </clipPath>
+        </defs>
+      </symbol>
+
+
+      <!-- start of Momin -->
+
+
+      <!-- start of Jahir -->
+
+    
+
+
+  </svg>	
+
+</head>
+<body>
+  <div class="page-body-cntlr">
+    <div class="bdoverlay"></div>
+    <header class="header">
+      <div class="container-lg">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="header-inr clearfix">
+                <div class="hdr-lft">
+                  <div class="logo">
+                    <a href="#"><img src="assets/images/logo.png"></a>
+                  </div>
+                </div>
+                <div class="hdr-menu">
+                  <nav class="main-nav">
+                    <ul class="clearfix reset-list">
+                      <li class="current-menu-item"><a href="#">Producten</a></li>
+                      <li class="menu-item-has-children">
+                        <a href="#">Verpakkingen</a>
+                        <ul class="sub-menu">
+                          <li><a href="#">submenu 1</a></li>
+                          <li><a href="#">submenu 2</a></li>
+                          <li><a href="#">submenu 3</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Over ons</a></li>
+                      <li><a href="#">Nieuws</a></li>
+                      <li><a href="#">Vacatures</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="hdr-right-cntlr">
+                  <div class="hdr-right">
+                    <div class="hdr-lang-cntlr">
+                      <div class="hdr-language">
+                        <div class="fl-lang reset-slect">
+                          <div class="fl-lang-cntlr">
+                            <ul class="reset-list hide-sm">
+                              <li class="lang-active"><a href="#">Nl</a></li>
+                              <li><a href="#">EN</a></li>
+                              <li><a href="#">CN</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hdr-contact-btn">
+                      <a href="#">
+                        <span>Contact</span>
+                        <i>
+                          <svg class="msg-tel-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                            <use xlink:href="#msg-tel-icon"></use> 
+                          </svg>
+                        </i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="hamburgar-cntlr hide-sm">
+                  <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </header>
+
+    <div class="xs-mobile-menu">
+      <div class="xs-pop-up-menu-inr">
+        <div class="xs-pop-up-menu-top">
+          <div class="logo-close-btn-cntlr">
+            <div class="xs-logo">
+              <a href="front-page.html">
+                <img src="assets/images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="hamburgar-cntlr show-sm">
+              <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="xs-pop-menu-con">
+          <div class="xs-menu">
+            <nav class="main-nav">
+              <ul class="clearfix reset-list">
+                <li class="current-menu-item"><a href="#">Producten</a></li>
+                <li class="menu-item-has-children">
+                  <a href="#">Verpakkingen</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">submenu 1</a></li>
+                    <li><a href="#">submenu 2</a></li>
+                    <li><a href="#">submenu 3</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Over ons</a></li>
+                <li><a href="#">Nieuws</a></li>
+                <li><a href="#">Vacatures</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="xs-pop-menu-btm">
+          <div class="hdr-lang-cntlr">
+            <div class="hdr-language">
+              <div class="fl-lang reset-slect">
+                <div class="fl-lang-cntlr">
+                  <ul class="reset-list hide-sm">
+                    <li class="lang-active"><a href="#">Nl</a></li>
+                    <li><a href="#">EN</a></li>
+                    <li><a href="#">CN</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hdr-contact-btn">
+            <a href="#">
+              <span>Contact</span>
+              <i>
+                <svg class="msg-tel-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                  <use xlink:href="#msg-tel-icon"></use> 
+                </svg>
+              </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="page-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-banner-cntlr">
+              <h1 class="fl-h1 page-banner-title">Nieuws</h1>
+              <div class="breadcrumb-cntlr">
+                <ul class="reset-list clearfix">
+                  <li class="home">
+                    <a href="#">
+                      <span class="item">Home</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"><span>Binnenpagina</span></a>
+                  </li>
+                  <li class="active">
+                    <span>Binnenpagina</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="innerpage-con-wrap">
+      <article class="default-page-con"> 
+        <div class="block">
+          <div class="dfp-promo-module">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="block-850">
+                    <div class="dfp-promo-module-des-ctlr">
+                      <div class="dfp-date-module">
+                        <span>02/09/2021</span>
+                      </div>
+                      <div class="dfp-promo-module-des">
+                        <strong class="dfp-promo-module-title fl-h2">Quam eleifend iaculis aliquet bibendum dolor varius diam tellus.</strong>
+                      </div>
+                      <div class="dfp-social-media-module">
+                        <span>Delen op:</span>
+                        <ul class="reset-list">
+                          <li>
+                            <a href="#">
+                              <i class="fab fa-facebook-f"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fab fa-twitter"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fab fa-linkedin-in"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dfp-plate-one-img-bx">
+                    <img src="assets/images/dfp-img-01.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="dfp-text-module">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="block-850">
+                    <p>Posuere amet vel enim nascetur mus ultricies lacinia. Egestas morbi ut faucibus aenean. Faucibus erat sed volutpat in accumsan. Ac faucibus semper etiam dui dignissim accumsan. Amet, augue risus facilisis suscipit est. Dignissim aliquam elementum et vitae vel augue. Habitasse id urna, massa rutrum egestas ac. </p>
+                    <ul>
+                      <li>Posuere amet vel enim nascetur mus ultricies lacinia</li>
+                      <li>Egestas morbi ut faucibus aenean.</li>
+                      <li>Faucibus erat sed volutpat in accumsan.</li>
+                      <li>Ac faucibus semper etiam dui dignissim accumsan.</li>
+                    </ul>
+                    <p>Consectetur feugiat arcu quisque amet vulputate cursus arcu sed. In risus quis elementum nunc vestibulum. Viverra tellus varius porta leo non nulla ultrices.</p>
+                    <div class="gap-60 hide-sm"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="dfp-top-gallery">
+            <div class="dfp-gallery-module">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="block-850">
+                      <div class="gallery-wrap has-inline-bg clearfix">
+                        <h3>Aliquet tempor congue elit.</h3>
+                        <p>Consectetur feugiat arcu quisque amet vulputate cursus arcu sed. In risus quis elementum nunc vestibulum. Viverra tellus varius porta leo non nulla ultrices.</p>
+                        <div class="gallery gallery-columns-2">
+                          <figure class="gallery-item">
+                            <div class="gallery-icon portrait">
+                              <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-02.jpg');"></div>
+                              <img src="assets/images/dfp-img-02.jpg">
+                            </div>
+                          </figure>
+
+                          <figure class="gallery-item">
+                            <div class="gallery-icon portrait">
+                              <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-03.jpg');"></div>
+                              <img src="assets/images/dfp-img-03.jpg">
+                            </div>
+                          </figure>
+                        </div>
+                      </div>
+
+                      <div class="gallery-wrap clearfix">
+                        <h3>Aliquet tempor congue elit.</h3>
+                        <p>Consectetur feugiat arcu quisque amet vulputate cursus arcu sed. In risus quis elementum nunc vestibulum. Viverra tellus varius porta leo non nulla ultrices.</p>
+                        <div class="gallery gallery-columns-2 gallerySlider">
+                          <figure class="gallery-item">
+                            <div class="gallery-icon portrait">
+                              <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-02.jpg');"></div>
+                              <img src="assets/images/dfp-img-02.jpg">
+                            </div>
+                          </figure>
+
+                          <figure class="gallery-item">
+                            <div class="gallery-icon portrait">
+                              <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-03.jpg');"></div>
+                              <img src="assets/images/dfp-img-03.jpg">
+                            </div>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="block">
+          <div class="dfp-text-module">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="block-850">
+                    <p>Malesuada vel, velit ut nunc, viverra tempus. Senectus orci ut nunc amet, eu praesent in erat a. Elit sit nunc, integer tortor feugiat. Nunc quis ornare sit in auctor maecenas scelerisque. Turpis curabitur massa amet cras pharetra. Posuere fermentum imperdiet fusce mattis sed tellus. Tincidunt duis id sit sed integer. Faucibus leo quam id sollicitudin enim. </p>
+                    <ol>
+                      <li>Posuere amet vel enim nascetur mus ultricies lacinia.</li>
+                      <li>Egestas morbi ut faucibus aenean.</li>
+                      <li>Faucibus erat sed volutpat in accumsan.</li>
+                      <li>Ac faucibus semper etiam dui dignissim accumsan.</li>
+                    </ol>
+                    <p>Nunc quis ornare sit in auctor maecenas scelerisque. Turpis curabitur massa amet cras pharetra. Posuere fermentum imperdiet fusce mattis sed tellus. Tincidunt duis id sit sed integer. Faucibus leo quam id sollicitudin enim. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="dfp-cta-module-cntlr">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="cta-module-ctlr">
+                    <div class="cta-module">
+                      <div class="cta-module-inr">
+                        <div class="cta-module-lft">
+                          <span>
+                            Contact
+                            <i><img src="assets/images/cta-icon.png"></i>
+                          </span>
+                          <h2 class="cta-module-title fl-h1">Facilisi duis aliquet.</h2>
+                          <p>Blandit volutpat enim rutrum maecenas nunc, consectetur nec a commodo. Pulvinar erat sed a tempus. Sed et purus, eget viverra a. </p>
+                        </div>
+                        <div class="cta-module-rgt">
+                          <div class="cta-module-btn">
+                            <a href="#">contacteer ons</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="dfp-text-module">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="block-850">
+                    <div class="gap-80 hide-sm"></div>
+                    <h3>Neque cursus odio nec arcu sit.</h3>
+                    <p>Pulvinar ullamcorper nunc facilisis proin cursus donec. Nunc pellentesque nec, leo orci, semper nullam pharetra. Purus volutpat lectus diam nunc, potenti convallis et rhoncus. Ullamcorper urna commodo duis aliquet turpis. Tincidunt elementum aliquam vitae, tortor, mattis in.</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="dfp-full-img-module">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="block-850">
+                    <img src="assets/images/dfp-img-04.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="block">
+          <div class="dfp-text-module">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="block-850">
+                    <p>Diam fames fames pellentesque lorem pellentesque. Arcu purus facilisis ut risus id. Egestas cursus id et orci. Purus netus ipsum amet leo libero risus platea sed ac. Pellentesque dictum sed vitae egestas magna non vitae eget fermentum. </p>
+                    <p>Commodo leo in sed lectus lobortis fusce non tortor fusce. Vel facilisi nunc tristique non diam sed tincidunt. Commodo augue neque risus est dictum. Et vulputate risus blandit purus urna faucibus amet at turpis. Eget lorem id.</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="dfp-text-module">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="block-850">
+                    <p>Commodo augue eleifend feugiat facilisis. Mi quam nunc, nulla sit. Viverra platea fermentum eu eget vestibulum ultrices ipsum mauris quam. Adipiscing placerat interdum id arcu eu. Cursus facilisis amet eget morbi quam nibh habitasse tincidunt duis. Proin et condimentum a, faucibus. Ipsum ultrices morbi viverra magna dignissim maecenas euismod. Arcu accumsan malesuada ipsum gravida id donec.</p>
+                    <p>Nunc purus nunc fusce faucibus. In adipiscing pharetra placerat enim urna nunc, tincidunt malesuada. Vestibulum integer tellus tortor, donec risus et malesuada malesuada. Risus.</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="dfp-gallery-module">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="block-850">
+                    <div class="gallery-wrap has-inline-bg clearfix">
+                      <div class="gallery gallery-columns-3">
+                        <figure class="gallery-item">
+                          <div class="gallery-icon portrait">
+                            <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-05.jpg');"></div>
+                            <img src="assets/images/dfp-img-05.jpg">
+                          </div>
+                        </figure>
+
+                        <figure class="gallery-item">
+                          <div class="gallery-icon portrait">
+                            <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-06.jpg');"></div>
+                            <img src="assets/images/dfp-img-06.jpg">
+                          </div>
+                        </figure>
+                        <figure class="gallery-item">
+                          <div class="gallery-icon portrait">
+                            <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-07.jpg');"></div>
+                            <img src="assets/images/dfp-img-07.jpg">
+                          </div>
+                        </figure>
+
+                        <figure class="gallery-item">
+                          <div class="gallery-icon portrait">
+                            <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-08.jpg');"></div>
+                            <img src="assets/images/dfp-img-08.jpg">
+                          </div>
+                        </figure>
+                        <figure class="gallery-item">
+                          <div class="gallery-icon portrait">
+                            <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-09.jpg');"></div>
+                            <img src="assets/images/dfp-img-09.jpg">
+                          </div>
+                        </figure>
+
+                        <figure class="gallery-item">
+                          <div class="gallery-icon portrait">
+                            <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-10.jpg');"></div>
+                            <img src="assets/images/dfp-img-10.jpg">
+                          </div>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="dfp-text-module">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="block-850">
+                    <p>Commodo augue eleifend feugiat facilisis. Mi quam nunc, nulla sit. Viverra platea fermentum eu eget vestibulum ultrices ipsum mauris quam. Adipiscing placerat interdum id arcu eu. Cursus facilisis amet eget morbi quam nibh habitasse tincidunt duis. Proin et condimentum a, faucibus. Ipsum ultrices morbi viverra magna dignissim maecenas euismod. Arcu accumsan malesuada ipsum gravida id donec.</p>
+                    <p>Nunc purus nunc fusce faucibus. In adipiscing pharetra placerat enim urna nunc, tincidunt malesuada. Vestibulum integer tellus tortor, donec risus et malesuada malesuada. Risus.</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="fl-dft-overflow-module">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="fl-dft-lftimg-rgtdes fl-dft-rgtimg-lftdes clearfix">
+                    <div class="fl-dft-lftimg-rgtdes-lft">
+                      <div class="inline-bg" style="background-image: url(assets/images/dfp-img-11.jpg);"></div>
+                      <img src="assets/images/dfp-img-11.jpg">
+                    </div>
+                    <div class="fl-dft-lftimg-rgtdes-rgt">
+                      <h5>Ac laoreet sollicitudin.</h5>
+                      <p>Blandit volutpat enim rutrum maecenas nunc, consectetur nec a commodo. Pulvinar erat sed a tempus. Sed et purus, eget viverra a. Posuere amet vel enim nascetur mus ultricies lacinia. Egestas morbi ut faucibus aenean. Faucibus erat sed volutpat in accumsan. </p>
+                      <p>Ac faucibus semper etiam dui dignissim accumsan. Amet, augue risus facilisis suscipit est. Dignissim aliquam elementum et vitae vel augue. Habitasse id urna, massa rutrum egestas ac. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="fl-dft-overflow-module">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="fl-dft-lftimg-rgtdes clearfix">
+                    <div class="fl-dft-lftimg-rgtdes-lft">
+                      <div class="inline-bg" style="background-image: url(assets/images/dfp-img-12.jpg);"></div>
+                      <img src="assets/images/dfp-img-12.jpg">
+                    </div>
+                    <div class="fl-dft-lftimg-rgtdes-rgt">
+                      <h5>Tortor lectus lobortis.</h5>
+                      <p>Blandit volutpat enim rutrum maecenas nunc, consectetur nec a commodo. Pulvinar erat sed a tempus. Sed et purus, eget viverra a. Posuere amet vel enim nascetur mus ultricies lacinia. Egestas morbi ut faucibus aenean. Faucibus erat sed volutpat in accumsan.</p>
+                      <p>Ac faucibus semper etiam dui dignissim accumsan. Amet, augue risus facilisis suscipit est. Dignissim aliquam elementum et vitae vel augue. Habitasse id urna, massa rutrum egestas ac. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="dfp-btm-lftimg-rgtdes">
+            <div class="fl-dft-overflow-module">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="fl-dft-lftimg-rgtdes fl-dft-rgtimg-lftdes clearfix">
+                      <div class="fl-dft-lftimg-rgtdes-lft">
+                        <div class="inline-bg" style="background-image: url(assets/images/dfp-img-13.jpg);"></div>
+                        <img src="assets/images/dfp-img-13.jpg">
+                      </div>
+                      <div class="fl-dft-lftimg-rgtdes-rgt">
+                        <h5>Ac laoreet sollicitudin.</h5>
+                        <p>Blandit volutpat enim rutrum maecenas nunc, consectetur nec a commodo. Pulvinar erat sed a tempus. Sed et purus, eget viverra a. Posuere amet vel enim nascetur mus ultricies lacinia. Egestas morbi ut faucibus aenean. Faucibus erat sed volutpat in accumsan. </p>
+                        <p>Ac faucibus semper etiam dui dignissim accumsan. Amet, augue risus facilisis suscipit est. Dignissim aliquam elementum et vitae vel augue. Habitasse id urna, massa rutrum egestas ac. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="dfp-text-module">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="block-850">
+                    <h3>Proin tellus odio quis orci ac felis. </h3>
+                    <p>Pulvinar ullamcorper nunc facilisis proin cursus donec. Nunc pellentesque nec, leo orci, semper nullam pharetra. Purus volutpat lectus diam nunc, potenti convallis et rhoncus. Ullamcorper urna commodo duis aliquet turpis. Tincidunt elementum aliquam vitae, tortor, mattis in.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="dfp-text-module">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="block-850">
+                    <p>Pulvinar ullamcorper nunc facilisis proin cursus donec. Nunc pellentesque nec, leo orci, semper nullam pharetra. Purus volutpat lectus diam nunc, potenti convallis et rhoncus. Ullamcorper urna commodo duis aliquet turpis. Tincidunt elementum aliquam vitae, tortor, mattis in.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="block">
+          <div class="dfp-fancy-module">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="fl-fancy-module" >
+                    <div class="fl-fancy-img inline-bg" style="background-image: url(assets/images/dfp-img-14.jpg);"></div>
+                    <a class="overlay-link" data-fancybox href="https://www.youtube.com/watch?v=ScMzIvxBSi4&t=3s"></a>
+                    <span class="fl-video-play-cntlr">
+                      <i>
+                        <svg class="play-icon-svg" width="85" height="85" viewBox="0 0 85 85" fill="#fff">
+                          <use xlink:href="#play-icon-svg"></use> 
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="dfp-social-media-module">
+          <span>Delen op:</span>
+          <ul class="reset-list">
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+
+      </article>
+    </section>
+
+
+
+    <section class="footer-top-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="ftr-top-cntlr">
+              <div class="ftr-top-desc-cntlr">
+                <div class="desc-entry-sun-hdr">
+                  <h6 class="fl-h6 ftr-top-desc-sub-title entry-sub-title">
+                    <span>Contact</span>
+                    <i><img src="assets/images/white-2lines.svg" alt=""></i>
+                  </h6>
+                </div>
+                <h2 class="fl-h1 ftr-top-title">Facilisi duis aliquet.</h2>
+                <div class="ftr-top-desc">
+                  <p>Blandit volutpat enim rutrum maecenas nunc, consectetur nec a commodo. Pulvinar erat sed a tempus. Sed et purus, eget viverra a.</p>
+                </div>
+              </div>
+              <div class="ftr-top-btn">
+                <a class="fl-btn" href="#">contacteer ons</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-wrp">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-inr">
+              <div class="ftr-lft">
+                <div class="ftr-logo">
+                  <a href="#"><img src="assets/images/logo.png" alt=""></a>
+                </div>
+                <div class="ftr-details">
+                  <div class="ftr-addr ftr-details-col">
+                    <span>Magazijn 50-52 <br><a target="_blank" href="#">Werkhuizenkaai 112-154 <br>1000 Brussel</a></span>
+                  </div>
+                  <div class="ftr-tel ftr-details-col">
+                    <span>Tel. : <a href="tel:+3222449266">+32 2 244 92 66</a></span>
+                  </div>
+                  <div class="ftr-fax ftr-details-col">
+                    <span>Fax : <a href="fax:+322449269">+32 244 92 69</a></span>
+                  </div>
+                  <div class="ftr-mail ftr-details-col">
+                    <span>E-mail : <a href="mailto:info@terraverde.be">info@terraverde.be</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="ftr-rgt">
+                <div class="ftr-Slogan">
+                  <h5 class="ftr-Slogan-title fl-h5">Jouw partner in groenten en fruit<br> van de hoogste kwaliteit </h5>
+                </div>
+                <div class="ftr-rgt-mdl">
+                  <div class="ftr-menu">
+                    <ul class="reset-list">
+                      <li class="active"><a href="#">Producten</a></li>
+                      <li><a href="#">Over ons</a></li>
+                      <li><a href="#">Vacatures</a></li>
+                      <li><a href="#">Verpakkingen</a></li>
+                      <li><a href="#">Nieuws</a></li>
+                    </ul>
+                  </div>
+                  <div class="ftr-btn">
+                    <a href="#"><span>Contact</span>
+                      <i>
+                        <svg class="msg-tel-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                          <use xlink:href="#msg-tel-icon"></use> 
+                        </svg>
+                      </i>
+                    </a>
+                  </div>
+                </div>
+                <div class="ftr-btmbar">
+                  <div class="copyright-btm-menu-cntlr">
+                    <div class="ftr-copyright">
+                      <p>&copy; 2021 Terra Verde </p>
+                    </div>
+                    <div class="ftr-btm-menu">
+                      <ul class="reset-list">
+                        <li><a href="#"> Sitemap </a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="develop-by">
+                    <p>WordPress webdesign <a target="_blank" href="#">door Conversal</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </footer>
+  </div>
+    
+
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="assets/fancybox3/dist/jquery.fancybox.min.js"></script>
+<script src="assets/slick.slider/slick.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaRQsAJCZyyD6MbCg0jB_0sdLGEOxt97Y"></script>
+<script src="assets/js/jquery.matchHeight-min.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/select2/select2.min.js"></script>
+<script src="assets/flatpickr/flatpickr.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
