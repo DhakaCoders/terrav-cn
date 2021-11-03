@@ -24,6 +24,7 @@
 
 /*start of shariful*/
 
+@import url('_binnenpagina.css');
 
 
 /*start of momin*/
@@ -31,6 +32,8 @@
 
 
 /*start of johir*/
+@import url('_nieuws-overzicht.css');
+@import url('_vacature-overzicht.css');
 
 
 
