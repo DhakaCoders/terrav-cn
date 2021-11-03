@@ -5,6 +5,7 @@
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+	padding: 54px 0;
 }
 .hdr-lft{
 
@@ -21,6 +22,10 @@
 }
 .hdr-menu{
 	margin-left: auto;
+	transform: translateX(-25px);
+	-ms-transform: translateX(-25px);
+	-webkit-transform: translateX(-25px);
+	-o-transform: translateX(-25px);
 }
 
 nav.main-nav ul li a{
@@ -46,8 +51,48 @@ nav.main-nav > ul > li{
 	padding: 0 18px;
 	position: relative;
 }
+nav.main-nav > ul > li:after{
+	content: "";
+	position: absolute;
+	top: -21px;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	background-image: url('../images/square-icon.svg');
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	opacity: 0;
+	z-index: -2;
+}
+nav.main-nav > ul > li:hover:after{
+	opacity: 1;
+	z-index: 12;
+}
 nav.main-nav > ul > li.menu-item-has-children a{
 	padding-right: 20px;
+}
+nav.main-nav > ul > li.menu-item-has-children > a:before{
+	position: absolute;
+	top: 2px;
+	right: 0;
+	content: "";
+	background-image: url('../images/black-btm-arrow.svg');
+	width: 12px;
+	height: 8px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 nav.main-nav > ul > li.menu-item-has-children:hover > a:before {
     transform: rotate(-180deg);
@@ -59,26 +104,10 @@ nav.main-nav > ul > li.menu-item-has-children:hover > a:before {
 nav.main-nav > ul > li > a{
 	padding-bottom: 15px;
 }
-nav.main-nav > ul > li:after{
-	content: "";
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-	bottom: 0;
-	transform-origin: left;
-	width: 0;
-	height: 10px;
-	background-image: url('../images/hover-line.png');
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center center;
-	transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
+nav.main-nav > ul > li.current-menu-item a{
+	color: #4F7F35;
 }
+
 
 
 nav.main-nav > ul > li.menu-item-has-children ul.sub-menu {
@@ -86,7 +115,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu {
     top: 100%;
     left: 0;
     background: #fff;
-    z-index: 10;
+    z-index: -9999;
     width: 200px;
     padding: 0;
     transition: all 0.5s;
@@ -109,6 +138,38 @@ nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu {
     -o-transform: scale3d(1,1,1);
     opacity: 1;
     visibility: visible;
+    z-index: 9999;
+}
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li {
+    border-bottom: 1px solid #4F7F35;
+    position: relative;
+}
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:last-child{
+	border-bottom: 0;
+}
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a {
+    font-size: 14px;
+    display: block;
+    padding: 7px 19px;
+}
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a:hover{
+	color: #4F7F35;
+}
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:after {
+    position: absolute;
+    content: '';
+    background: #4F7F35;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 0;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu > li:hover:after {
+    height: 100%;
 }
 .hdr-right-cntlr{
 	margin-left: auto;
@@ -126,7 +187,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu {
 	height: 50px;
 	width: 64px;
 	position: relative;
-	padding: 0 8px;
+	margin: 0 8px;
 }
 /*hdr-language*/
 .hdr-language{
@@ -262,6 +323,9 @@ nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu {
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
+}
+.hdr-contact-btn a:hover{
+	background: #F4A301;
 }
 
 /*hdr-language*/
