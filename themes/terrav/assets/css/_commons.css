@@ -242,11 +242,11 @@ img{
 	background: transparent;
 	color: #4F7F35;
 }
-.btn-bg-red{
+.btn-bg-pink{
 	background: #E83747;
 	border: 2px solid #E83747;
 }
-.btn-bg-red:hover{
+.btn-bg-pink:hover{
 	background: transparent;
 	color: #E83747;
 }
