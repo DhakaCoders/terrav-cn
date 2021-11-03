@@ -1,0 +1,119 @@
+/*over one intro sec*/
+.over-ons-intro-sec{
+	background: linear-gradient(360deg, #FAFAFA 0.94%, #FFFFFF 98.23%);
+	padding-top:120px;
+	padding-bottom:120px;
+}
+
+.over-ons-intro-sec-right {
+    width: 34%;
+}
+.over-ons-intro-sec-left {
+    width: 66%;
+}
+.over-ons-intro-sec-img {
+    height: 600px;
+    width: 100%;
+}
+
+.over-ons-img {
+    height: 100%;
+    width: 100%;
+}
+
+.over-ons-intro-sec-cntlr {
+    display: flex;
+    align-items: center;
+}
+
+.over-ons-intro-des {
+    padding-right: 45px;
+}
+.over-ons-des-cntlr h6 {
+	color: #4F7F35;
+	padding-left: 23px;
+	margin-bottom: 18px;
+}
+.over-ons-intro-button a {
+    margin-right: 24px;
+}
+.over-ons-intro-button {
+    padding-top: 25px;
+}
+.over-ons-des-cntlr h2{
+	margin-bottom:35px;
+}
+
+
+/*professional sec*/
+.professional-title h4 {
+    margin-bottom: 0;
+}
+.strong-professional-sec-cntlr{
+	display:flex;
+	height:269px;
+	align-items: center;
+}
+.professional-team-logo {
+    margin-left: auto;
+}
+.professional-team-logo ul li {
+    padding: 0 25px;
+}
+
+.professional-team-logo ul {
+    display: flex;
+    margin:0 -25px;
+    align-items: center;
+}
+.prfnl-tm-logo i img {
+    max-width: 120px;
+    width:100%;
+}
+.prfnl-tm-logo i a:hover img {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+/*certificates-guarantee*/
+.certificates-guarantee-sec{
+	padding-top:84px;
+	padding-bottom:106px;
+}
+.certificates-guarantee-grd ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.certificates-guarantee-grd ul li {
+    width: 50%;
+    margin-bottom:44px;
+}
+.certificates-guarantee-grd-item {
+    display: flex;
+    align-items: center;
+}
+.certificates-guarantee-log {
+    max-width: 150px;
+    width:100%;
+    height: 150px;
+    border: 2px solid #F2EEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.certificates-guarantee-log img{
+	max-width:100px;
+	width:100%;
+}
+.certificates-guarantee-title h2 {
+    margin-bottom: 50px;
+}
+.certificates-guarantee-des{
+	padding-left:23px;
+}
+.certificates-guarantee-des h6{
+	color: #4F7F35;
+	text-transform: uppercase;
+}

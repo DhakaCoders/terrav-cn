@@ -1,0 +1,52 @@
+.page-bedankt-cntent-cntlr{
+	padding: 120px 0;
+}
+.page-bedankt-cntent-cntlr-innr{
+	max-width: 750px;
+	margin: 0 auto;
+	text-align: center;
+}
+.page-bedankt-cntent-img{
+	padding-bottom: 10px;
+}
+.page-bedankt-cntent-desc{
+	padding-bottom: 45px;
+}
+.page-bedankt-cntent-desc p:last-child{
+	margin-bottom: 0;
+}
+.page-bedankt-cntent-title{
+	color: #4F7F35;
+}
+.page-bedankt-cntent-img i{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.page-bedankt-cntent-menu-cntlr ul{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -85px;
+	justify-content: center;
+}
+.page-bedankt-cntent-menu-cntlr ul li{
+	padding: 0 85px;
+	position: relative;
+}
+.page-bedankt-cntent-menu-cntlr ul li:not(:last-child):after{
+	content: '';
+	position: absolute;
+	background-image: url('../images/Rectangle 91.svg');
+	height: 16px;
+	width: 16px;
+	right: 0;
+	top: 50%;
+	transform: translate(50%,-50%);
+	-ms-transform: translate(50%,-50%);
+	-webkit-transform: translate(50%,-50%);
+}
+.page-bedankt-cntent-menu-cntlr ul li a{
+	color: #4F7F35;
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: baseline;
+}
