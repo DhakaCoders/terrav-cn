@@ -530,22 +530,24 @@ Gallery design
 	height: 185px;
 }
 
+
+
 .dfp-btn-module{
-	padding-top: 60px;
+	padding-top: 120px;
 }
-.dfp-btn-module .dfp-btn-module-ctlr ul{
-	padding-left: 0;
+.dfp-btn-module-inr ul{
 	display: flex;
-	align-items: center;
+	flex-wrap: wrap;
 	margin-left: -12px;
 	margin-right: -12px;
 }
-
-.dfp-btn-module-ctlr ul li{
+.dfp-btn-module-inr ul li{
 	padding-left: 12px;
 	padding-right: 12px;
-	width: 21%;
+	padding-bottom: 25px;
 }
+
+
 
 
 
