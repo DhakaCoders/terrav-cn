@@ -2,7 +2,7 @@
 	padding: 120px 0;
 }
 .page-bedankt-cntent-cntlr-innr{
-	max-width: 820px;
+	max-width: 750px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -16,23 +16,20 @@
 	margin-bottom: 0;
 }
 .page-bedankt-cntent-title{
-	/*margin-bottom: 30px;*/
 	color: #4F7F35;
 }
 .page-bedankt-cntent-img i{
 	display: inline-block;
 	vertical-align: baseline;
 }
-/*.page-bedankt-cntent-heading h4{
-	margin-bottom: 25px;
-}*/
 .page-bedankt-cntent-menu-cntlr ul{
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 -100px;
+	margin: 0 -85px;
+	justify-content: center;
 }
 .page-bedankt-cntent-menu-cntlr ul li{
-	padding: 0 100px;
+	padding: 0 85px;
 	position: relative;
 }
 .page-bedankt-cntent-menu-cntlr ul li:not(:last-child):after{
