@@ -19,7 +19,6 @@
   <link rel="stylesheet" type="text/css" href="assets/fancybox3/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">
-  <link rel="stylesheet" type="text/css" href="assets/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="assets/select2/select2.min.css">
   <link rel="stylesheet" type="text/css" href="assets/flatpickr/flatpickr.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -57,6 +56,11 @@
 
       <!-- start of Jahir -->
 
+      <!--start of niaz -->
+      <symbol id="equal-icon" width="28" height="31" viewBox="0 0 28 31" xmlns="http://www.w3.org/2000/svg">
+      <rect y="9.21118" width="7.08561" height="24.0911" transform="rotate(-30 0 9.21118)" fill="#4F7F35"/>
+      <rect x="9.81836" y="3.54272" width="7.08561" height="24.0911" transform="rotate(-30 9.81836 3.54272)" fill="#4F7F35"/>
+      </symbol>
     
 
 
@@ -102,8 +106,9 @@
                 <div class="over-ons-intro-sec-left">
                   <div class="over-ons-intro-des">
                     <div class="over-ons-des-cntlr">
-                      <h6 class="fl-h6 color-green">LOREM IPSUM</h6>
-                      <h2 class="fl-h2">Terra Verde</h2>
+                      <h6 class="fl-h6 color-green over-ons-des-title"><svg class="over-ons-title-icon" width="28" height="31" viewBox="0 0 28 31" fill="#4F7F35">
+      <use xlink:href="#equal-icon"></use> </svg>LOREM IPSUM</h6>
+                      <h2 class="fl-h1 over-ons-des-heading">Terra Verde</h2>
                       <p>Blandit volutpat enim rutrum maecenas nunc, consectetur nec a commodo. Pulvinar erat sed a tempus. Sed et purus, eget viverra a. Posuere amet vel enim nascetur mus ultricies lacinia. Egestas morbi ut faucibus aenean. Faucibus erat sed volutpat in accumsan.</p>
                       <p>pAc faucibus semper etiam dui dignissim accumsan. Amet, augue risus facilisis suscipit est. Dignissim aliquam elementum et vitae vel augue. Habitasse id urna, massa rutrum egestas ac. </p>
                       <div class="over-ons-intro-button">
@@ -114,7 +119,8 @@
                 </div>
                 <div class="over-ons-intro-sec-right">
                   <div class="over-ons-intro-sec-img">
-                    <div class="over-ons-img" style="background-image: url(assets/images/over-ons-intro-img.jpg);"></div>
+                    <div class="over-ons-img inline-bg" style="background-image: url(assets/images/over-ons-intro-img.jpg);">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -122,13 +128,14 @@
           </div>
       </div>    
     </section>
+
     <section class="strong-professional-sec">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="strong-professional-sec-cntlr">
               <div class="professional-title">
-                <h4 class="fl-h4">Een groep sterke professionals</h4>
+                <h4 class="fl-h4 professional-heading">Een groep sterke professionals</h4>
               </div>
               <div class="professional-team-logo">
                 <ul class="ulc reset-list">
@@ -167,13 +174,40 @@
       </div>
     </section>
 
+    <section class="over-ons-lftimg-rgtdes-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="over-ons-lftimg-rgtdes-sec-cntlr">
+
+            <div class="fl-dft-lftimg-rgtdes clearfix">
+              <div class="fl-dft-lftimg-rgtdes-lft over-ons-lftimg-rgtdes-sec-lft">
+                <div class="inline-bg" style="background-image: url(assets/images/dfp-img-12.jpg);"></div>
+                <img src="assets/images/dfp-img-12.jpg">
+              </div>
+              <div class="fl-dft-lftimg-rgtdes-rgt over-ons-lftimg-rgtdes-sec-rgt">
+                <h5 class="fl-h1">Ut lacus amet tellus morbi varius in blandit. </h5>
+                <p>Blandit volutpat enim rutrum maecenas nunc, consectetur nec a commodo. Pulvinar erat sed a tempus. Sed et purus, eget viverra a. Posuere amet vel enim nascetur mus ultricies lacinia. Egestas morbi ut faucibus aenean. Faucibus erat sed volutpat in accumsan.</p>
+                <p>Ac faucibus semper etiam dui dignissim accumsan. Amet, augue risus facilisis suscipit est. Dignissim aliquam elementum et vitae vel augue. Habitasse id urna, massa rutrum egestas ac. </p>
+              </div>
+            </div>
+
+            </div>  
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
     <section class="certificates-guarantee-sec">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="certificates-guarantee-cntlr">
               <div class="certificates-guarantee-title">
-                <h2 class="fl-h2">Deze certificaten garanderen onze kwaliteit:</h2>
+                <h2 class="fl-h2 certificates-guarantee-heading">Deze certificaten garanderen onze kwaliteit:</h2>
               </div>
               <div class="certificates-guarantee-grd">
                 <ul class="ulc reset-list">
@@ -183,7 +217,7 @@
                         <img src="assets/images/certificates-guarantee-logo.png" alt="">
                       </div>
                       <div class="certificates-guarantee-des">
-                        <h6 class="fl-h6">Certificaten</h6>
+                        <h6 class="fl-h6 certificates-guarantee-des-title">Certificaten</h6>
                         <p>Consectetur feugiat arcu quisque amet vulputate cursus arcu sed. </p>
                       </div>
                     </div>
@@ -195,7 +229,7 @@
                         <img src="assets/images/certificates-guarantee-logo.png" alt="">
                       </div>
                       <div class="certificates-guarantee-des">
-                        <h6 class="fl-h6">Certificaten</h6>
+                        <h6 class="fl-h6 certificates-guarantee-des-title">Certificaten</h6>
                         <p>Consectetur feugiat arcu quisque amet vulputate cursus arcu sed. </p>
                       </div>
                     </div>
@@ -207,7 +241,7 @@
                         <img src="assets/images/certificates-guarantee-logo.png" alt="">
                       </div>
                       <div class="certificates-guarantee-des">
-                        <h6 class="fl-h6">Certificaten</h6>
+                        <h6 class="fl-h6 certificates-guarantee-des-title">Certificaten</h6>
                         <p>Consectetur feugiat arcu quisque amet vulputate cursus arcu sed. </p>
                       </div>
                     </div>
@@ -219,7 +253,7 @@
                         <img src="assets/images/certificates-guarantee-logo.png" alt="">
                       </div>
                       <div class="certificates-guarantee-des">
-                        <h6 class="fl-h6">Certificaten</h6>
+                        <h6 class="fl-h6 certificates-guarantee-des-title">Certificaten</h6>
                         <p>Consectetur feugiat arcu quisque amet vulputate cursus arcu sed. </p>
                       </div>
                     </div>
@@ -231,6 +265,53 @@
         </div>
       </div>
     </section>
+
+    <section class="over-ons-history-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="over-ons-history-sec-cntlr">
+
+
+
+              <div class="over-ons-intro-sec-left over-ons-history-sec-left">
+                  <div class="over-ons-intro-des over-ons-history-sec-des">
+                    <div class="over-ons-des-cntlr over-ons-history-des-cntlr">
+                      <h6 class="fl-h6 color-green over-ons-history-des-title over-ons-des-title"><svg class="over-ons-title-icon" width="28" height="31" viewBox="0 0 28 31" fill="#4F7F35">
+      <use xlink:href="#equal-icon"></use> </svg>Historiek</h6>
+                      <h2 class="fl-h2 over-ons-history-des-heading">Nunc ac duis ut nulla.</h2>
+                      <p>Amet, augue risus facilisis suscipit est. Dignissim aliquam elementum et vitae vel augue. Habitasse id urna, massa rutrum egestas ac. </p>
+                      <ul class="ulc">
+                        <li><span>1950:</span>De Roeck</li>
+                        <li><span>1974:</span>Jacques Remy</li>
+                        <li><span>1975:</span>De Boelpaep</li>
+                        <li><span>2005:</span>De Boelpaep wordt DBS</li>
+                        <li><span>2012:</span>Compra</li>
+                        <li><span>2013:</span> Fruitpackers</li>
+                        <li><span>2016:</span>Terra Verde </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="over-ons-intro-sec-right over-ons-history-sec-righ">
+                  <div class="over-ons-intro-sec-img">
+                    <div class="over-ons-img inline-bg" style="background-image: url(assets/images/history-sec-img.jpg);">
+                    </div>
+                  </div>
+                </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
     <footer class="footer-wrp">
       <div class="container">
         <div class="row">
@@ -252,8 +333,6 @@
 <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 <script src="assets/fancybox3/dist/jquery.fancybox.min.js"></script>
 <script src="assets/slick.slider/slick.js"></script>
-<script src="assets/swiper/swiper-bundle.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaRQsAJCZyyD6MbCg0jB_0sdLGEOxt97Y"></script>
 <script src="assets/js/jquery.matchHeight-min.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/wow.min.js"></script>
