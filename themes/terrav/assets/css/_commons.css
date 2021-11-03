@@ -31,7 +31,7 @@ p{
 	margin-bottom: 15px;
 }
 a{
-	text-decoration: none;
+	text-decoration: underline;
 	color: #F4A301;
 }
 a:hover{
@@ -122,8 +122,7 @@ Containers
 	
 }
 .container-lg{
-	max-width: 1726px;
-	width: 100%;
+	max-width: 1600px;
 }
 .container{
 	max-width: 1200px;
@@ -213,7 +212,35 @@ img{
 	right: 0;
 	bottom: 0;
 }
-
+.fl-btn{
+	display: inline-block;
+	vertical-align: baseline;
+	min-width: 210px;
+	color: #FFFFFF;
+	background: #F4A301;
+	font-size: 14px;
+	font-family: 'Libre Franklin', sans-serif;
+	line-height: 1.1;
+	text-align: center;
+	padding: 15.5px 16px;
+	letter-spacing: 0.04em;
+	font-weight: 700;
+	border: 2px solid #F4A301;
+	text-transform: capitalize;
+	border-radius: 8px;
+	text-decoration: none;
+}
+.fl-btn:hover{
+	background: transparent;
+	color: #F4A301;
+}
+.btn-bg-green{
+	background: #4F7F35;
+}
+.btn-bg-green:hover{
+	background: transparent;
+	color: #4F7F35;
+}
 
 ul.reset-list,
 ol.reset-list,
