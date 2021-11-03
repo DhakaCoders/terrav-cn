@@ -242,6 +242,22 @@ img{
 	background: transparent;
 	color: #4F7F35;
 }
+.btn-bg-red{
+	background: #E83747;
+	border: 2px solid #E83747;
+}
+.btn-bg-red:hover{
+	background: transparent;
+	color: #E83747;
+}
+.btn-bg-brown{
+	background: #904A10;
+	border: 2px solid #904A10;
+}
+.btn-bg-brown:hover{
+	background: transparent;
+	color: #904A10;
+}
 
 ul.reset-list,
 ol.reset-list,
