@@ -31,7 +31,7 @@ p{
 	margin-bottom: 15px;
 }
 a{
-	text-decoration: none;
+	text-decoration: underline;
 	color: #F4A301;
 }
 a:hover{
