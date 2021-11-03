@@ -111,6 +111,9 @@
 	display: inline-block;
 	text-decoration: none;
 }
+.ftr-menu ul li a:hover{
+	color: #4F7F35;
+}
 .ftr-btn{
 	margin-left: auto;
 }
