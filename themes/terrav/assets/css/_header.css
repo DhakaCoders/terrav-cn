@@ -32,6 +32,7 @@ nav.main-nav ul li a{
 	text-transform: uppercase;
 	color: #4F4B34;
 	position: relative;
+	text-decoration: none;
 	display: inline-block;
 }
 nav.main-nav > ul{
@@ -176,6 +177,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu {
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	color: #FFFFFF;
+	text-decoration: none;
 }
 .fl-lang-cntlr:after{
 	background-image: url('../images/white-btm-arrow.svg');
