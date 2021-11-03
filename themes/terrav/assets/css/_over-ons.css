@@ -1,0 +1,26 @@
+/*over one intro sec*/
+/*over one intro sec*/
+.over-ons-intro-sec-right {
+    width: 34%;
+}
+.over-ons-intro-sec-left {
+    width: 66%;
+}
+.over-ons-intro-sec-img {
+    height: 600px;
+    width: 100%;
+}
+
+.over-ons-img {
+    height: 100%;
+    width: 100%;
+}
+
+.over-ons-intro-sec-cntlr {
+    display: flex;
+    align-items: center;
+}
+
+.over-ons-intro-des {
+    padding-right: 45px;
+}
