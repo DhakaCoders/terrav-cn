@@ -249,7 +249,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu > li:hover:after {
 	background-size: contain;
     padding-right: 0;
     position: absolute;
-    top: 20px;
+    top: 21px;
     right: 11px;
     z-index: 21;
     transition: all 0.5s;
