@@ -121,3 +121,31 @@
 .trv-Service-grids-cntlr ul li:last-child .trv-Service-grid-item-cntlr .top-rgt-bdr{
 	display: none;
 }
+.has-inline-bg img{
+	display: none;
+}
+.has-inline-bg div{
+	height: 197px;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.trv-Service-grid-item:hover .trv-Service-grid-img-cntlr div,
+.trv-Service-grid-item:hover .trv-Service-grid-img-cntlr img {
+    transform: scale(1.1);
+}
+.trv-Svic-grid-des-top-2line{
+	position: absolute;
+	left: 22px;
+	top: -22px;
+	display: none;
+}
+.trv-Svic-grid-des-top-2line i{
+	display: inline-block;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.trv-Service-grid-item:hover .trv-Svic-grid-des-top-2line{
+	display: block;
+}
