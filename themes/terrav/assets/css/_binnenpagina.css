@@ -459,64 +459,42 @@ Gallery design
 }
 
 
-.dfp-blockqoute-module{
+/*.dfp-blockqoute-module{
 	padding-top: 40px;
 }
 .dfp-blockqoute-ctlr{
 	padding-left: 30px;
 	position: relative;
-}
+}*/
 
-.dfp-blockqoute-border{
-	position: absolute;
-    top: -30px;
-    left: 0;
-    right: 30px;
-    height: 100%;
-    border: 1px solid #BBDDC3;
-    z-index: 1;
-}
 
 .dfp-blockqoute blockquote{
-	padding: 100px 50px 100px 200px;
-	background: #F5F9F6;
+	padding: 75px 70px 70px 120px;
+	background: #4F7F35;
 	position: relative;
 	margin-bottom: 0;
 }
-.dfp-blockqoute-des{
-	position: relative;
-	z-index: 2;
-}
+
 .dfp-blockqoute blockquote i{
 	position: absolute;
-	top: 65px;
-    left: 55px;
-    max-width: 70px;
-	width: 100%;
+	top: 55px;
+    left: 40px;
 }
 .dfp-blockqoute blockquote p{
-	font-size: 30px;
+	font-size: 28px;
 	line-height: 1.1;
-	color: #4C5D5B;
-	font-weight: 300;
+	color: #fff;
 	margin-bottom: 25px;
 }
 .dfp-blockqoute blockquote strong{
-	padding-left: 16px;
-	position: relative;
+	font-size: 22px;
+	letter-spacing: -0.02em;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: 'Libre Franklin', sans-serif;
 }
-.dfp-blockqoute blockquote strong:after{
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 0;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-	height: 2px;
-	width: 5px;
-	background: #4C5D5B;
-}
+
 
 .dfp-partners-module .wf-client-grds ul{
 	padding-left: 0;
