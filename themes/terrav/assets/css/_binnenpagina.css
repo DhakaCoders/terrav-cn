@@ -509,6 +509,80 @@ Gallery design
 
 
 
+/*nieuws details*/
+
+.dfp-date-module span{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-left: 40px;
+	font-size: 16px;
+	color: #F4A301;
+	font-weight: 600;
+	letter-spacing: -0.02em;
+	line-height: 1;
+	font-family: 'Libre Franklin', sans-serif;
+	padding-bottom: 25px;
+	position: relative;
+}
+.dfp-date-module span i{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: -8px;
+}
+
+.dfp-promo-module-title{
+	display: block;
+	color: #4F4B34;
+	letter-spacing: -0.02em;
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+
+.dfp-social-media-module{
+	display: flex;
+	align-items: center;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	border-top: 2px solid #F8F8F8;
+}
+.dfp-social-media-module span{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.dfp-social-media{
+	margin-left: auto;
+}
+.dfp-social-media ul{
+	display: flex;
+	align-items: center;
+}
+.dfp-social-media ul li{
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 0;
+}
+.dfp-social-media ul li a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+	background: #4F7F35;
+	border-radius: 100%;
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+}
+.dfp-social-media ul li a:hover{
+	background: #F4A301;
+}
+#nieuws-details .dfp-plate-one-img-bx{
+	padding-top: 0;
+}
+
 
 
 
