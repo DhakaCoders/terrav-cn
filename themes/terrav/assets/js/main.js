@@ -235,7 +235,14 @@ if( $('.wpforms-error').length ){
 }
 
 /*start of noyon*/
-
+ $(window).scroll(function() { 
+    var scroll = $(window).scrollTop();   
+    if (scroll >= 100) {
+        $('.header-sticky').addClass('fixed-hdr');
+    } else {
+        $('.header-sticky').removeClass('fixed-hdr');
+    }  
+});
 
 
 /*start of shariful*/
