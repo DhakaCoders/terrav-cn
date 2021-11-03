@@ -45,3 +45,65 @@
 .sitemap ol li a:focus{
 	text-decoration: underline;
 }
+
+
+
+.default-page-con ul,
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+	padding-left: 35px;
+}
+.default-page-con ul li,
+ul li {
+	padding: 5px 0 18px 35px;
+	position: relative;
+	line-height: 28px;
+}
+.default-page-con ul li::before,
+ul li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url('../images/list-icon.svg');
+	background-repeat: no-repeat!important;
+	width: 20px;
+	height: 22px;
+	margin-top: 8px;
+    background-size: 100% auto;
+}
+.default-page-con ol,
+ol{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+	padding-left: 35px;
+	counter-reset: my-awesome-counter;
+	-ms-counter-reset: my-awesome-counter;
+	-webkit-counter-reset: my-awesome-counter;
+}
+.default-page-con ol li,
+ol li {
+	padding: 5px 0 18px 35px;
+	position: relative;
+	line-height: 28px;
+	counter-increment: my-awesome-counter;
+	-ms-counter-increment: my-awesome-counter;
+	-webkit-counter-increment: my-awesome-counter;
+}
+.default-page-con ol li::before,
+ol li::before {
+	content: counter(my-awesome-counter) ".";
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #4F7F35;
+	font-weight: 700;
+	line-height: 16px;
+	text-align: center;
+	margin-top: 8px;
+}
