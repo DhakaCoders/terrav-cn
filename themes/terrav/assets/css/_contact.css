@@ -3,13 +3,13 @@
     flex-wrap: wrap;
 }
 .contact-form-lft {
-    width: 70%;
+    width: 33%;
 }
 .contact-form-lft {
-    padding-right: 20px;
+    padding-right: 90px;
 }
 .contact-form-rgt {
-    width: 30%;
+    width: 67%;
 }
 .contact-form-sec-wrp {
     position: relative;
@@ -466,26 +466,10 @@ textarea {
     margin-bottom: 0;
 }
 
-/* custom sidebar  */
-#customSidebarWrap {
-    width: 100%;
-    min-height: 1px;
-}
-@media (min-width: 768px){
-    #customSidebar {
-        margin-top: 0;
-        width: 100%;
-        max-width: 351px;
-        position: absolute;
-        top: 0;
-        padding-top: 0;
-        z-index: 5;
-        right: 15px;
-    }
-}
 
 
-@media (max-width: 1699px){
+
+/*@media (max-width: 1699px){
     .cnt-sec-entry-hdr-title {
         margin-bottom: 20px;
     }
@@ -744,4 +728,4 @@ textarea {
     .wpforms-field-checkbox ul li label{
         font-size: 13px!important;
     }
-}
+}*/
