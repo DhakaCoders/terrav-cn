@@ -147,19 +147,19 @@ textarea {
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     padding-left: 2px;
     position: absolute;
     top: 95px;
     right: 12px;
-    color: #D9534F;
+    color: #E83747;
     margin-bottom: 0;
     text-transform: inherit;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-has-error input[type="email"].wpforms-error, 
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-has-error input[type="text"].wpforms-error, 
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-has-error input[type="number"].wpforms-error {
-    border-bottom: 1px solid #D9534F!important;
+    border: 1px solid #F22F04!important;
 }
 
 
