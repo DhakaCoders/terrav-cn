@@ -190,8 +190,33 @@ ol li::before {
     background-repeat: no-repeat!important;
 }
 
+/*sec entry hdr*/
+.sec-entry-hdr-sub-title{
+	padding-left: 42px;
+	position: relative;
+	color: #4F7F35;
+	margin-bottom: 18px;
+	display: inline-block;
+	text-transform: uppercase;
+}
+.sec-entry-hdr-sub-title i{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+.sec-entry-hdr-des-cntlr{
+	text-align: center;
+}
+.sec-entry-hdr-des-cntlr.text-align-left{
+	text-align: left;
+}
 
 /*entry sub title*/
+
 .desc-entry-sun-hdr{
 	margin-bottom: 30px;
 }
@@ -200,6 +225,7 @@ ol li::before {
 	position: relative;
 	color: #fff;
 	margin-bottom: 0;
+	text-transform: uppercase;
 }
 .entry-sub-title i{
 	position: absolute;
