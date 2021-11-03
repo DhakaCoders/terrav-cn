@@ -212,7 +212,7 @@ img{
 	right: 0;
 	bottom: 0;
 }
-.fl-yellow-btn{
+.fl-btn{
 	display: inline-block;
 	vertical-align: baseline;
 	min-width: 210px;
@@ -230,29 +230,14 @@ img{
 	border-radius: 8px;
 	text-decoration: none;
 }
-.fl-yellow-btn:hover{
+.fl-btn:hover{
 	background: transparent;
 	color: #F4A301;
 }
-.fl-green-btn{
-	display: inline-block;
-	vertical-align: baseline;
-	min-width: 210px;
-	color: #FFFFFF;
+.btn-bg-green{
 	background: #4F7F35;
-	font-size: 14px;
-	font-family: 'Libre Franklin', sans-serif;
-	line-height: 1.1;
-	text-align: center;
-	padding: 15.5px 16px;
-	letter-spacing: 0.04em;
-	font-weight: 700;
-	border: 2px solid #4F7F35;
-	text-transform: capitalize;
-	border-radius: 8px;
-	text-decoration: none;
 }
-.fl-green-btn:hover{
+.btn-bg-green:hover{
 	background: transparent;
 	color: #4F7F35;
 }
