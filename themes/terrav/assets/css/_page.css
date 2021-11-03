@@ -107,3 +107,85 @@ ol li::before {
 	text-align: center;
 	margin-top: 8px;
 }
+
+
+/*page-banner*/
+.page-banner{
+	background: #fafafa;
+	padding: 20px 0;
+}
+.fl-h1.page-banner-title{
+	line-height: 1;
+}
+/*breadcrumb*/
+.breadcrumb-cntlr {
+    overflow: hidden;
+    border-radius: 3px;
+}
+.breadcrumb-cntlr ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -30px;
+}
+.breadcrumb-cntlr ul li {
+    padding: 0 30px;
+    position: relative;
+}
+.breadcrumb-cntlr ul li a:hover, .breadcrumb-cntlr ul li span:hover, .breadcrumb-cntlr ul li a span:hover {
+    color: #F4A301;
+}
+.breadcrumb-cntlr ul li.active span{
+	color: #F4A301!important;
+	font-weight: 700;
+}
+.breadcrumb-cntlr ul li.home a, .breadcrumb-cntlr ul li:first-child a {
+    padding-left: 34px;
+}
+.breadcrumb-cntlr ul li a, 
+.breadcrumb-cntlr ul li span, 
+.breadcrumb-cntlr ul li a span {
+	display: inline-block;
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #4F7F35;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    position: relative;
+}
+.breadcrumb-cntlr ul li.home a:after, .breadcrumb-cntlr ul li:first-child a:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    height: 24px;
+    width: 24px;
+    margin-top: -1px;
+    background-size: contain;
+    background-image: url(../images/home-icon.svg);
+    background-repeat: no-repeat!important;
+}
+.breadcrumb-cntlr ul li:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    height: 8px;
+    width: 6px;
+    background-size: contain;
+    background-image: url(../images/green-right-arrow.svg);
+    background-repeat: no-repeat!important;
+}
