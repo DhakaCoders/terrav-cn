@@ -213,7 +213,23 @@ img{
 	right: 0;
 	bottom: 0;
 }
-
+.fl-green-btn{
+	display: inline-block;
+	vertical-align: baseline;
+	min-width: 210px;
+	width: 100%;
+	position: relative;
+	color: #fff;
+	font-size: 20px;
+	line-height: 1;
+	text-align: center;
+	padding: 14px 20px;
+	letter-spacing: -0.02em;
+	font-weight: 500;
+	border: 1px solid #239C4B;
+	text-transform: capitalize;
+	text-decoration: none;
+}
 
 ul.reset-list,
 ol.reset-list,
