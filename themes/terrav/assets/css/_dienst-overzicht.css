@@ -10,14 +10,42 @@
 	background: linear-gradient(360deg, #FAFAFA 0.94%, #FFFFFF 98.23%);
 }
 .trv-Service-grids-cntlr ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.trv-Service-grids-cntlr ul{
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 -12px;
 }
 .trv-Service-grids-cntlr ul li{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	margin: 0;
+}
+.trv-Service-grids-cntlr ul li{
 	width: 20%;
 	padding: 0 12px;
 	padding-bottom: 30px;
+	position: relative;
+}
+.trv-Service-grids-cntlr ul li:before{
+	content: "";
+	position: absolute;
+	left: -6px;
+	top: -4.5px;
+	background: url('../images/trv-Service-grids-arow.svg');
+	background-repeat: no-repeat!important;
+	width: 12px;
+	height: 20px;
+	margin-top: 0;
+    background-size: 100% auto;
+}
+.trv-Service-grids-cntlr ul li:first-child:before{
+	display: none;
+	content: none;
 }
 .trv-Service-grid-sec {
     margin-top: -220px;
@@ -68,9 +96,9 @@
 .top-lft-bdr {
     position: absolute;
     height: 20px;
-    width: 130px;
+    width: 125px;
     top: 0;
-    left: -10px;
+    left: -6px;
     border-top: 4px solid #f5a302;
     border-right: 4px solid #f5a302;
     border-top-right-radius: 7px;
@@ -79,11 +107,17 @@
 .top-rgt-bdr {
     position: absolute;
     height: 20px;
-    width: 130px;
+    width: 125px;
     top: 0;
-    right: -10px;
+    right: -8px;
     border-top: 4px solid #f5a302;
     border-left: 4px solid #f5a302;
     border-top-left-radius: 7px;
     z-index: 1;
+}
+.trv-Service-grids-cntlr ul li:first-child .trv-Service-grid-item-cntlr .top-lft-bdr{
+	display: none;
+}
+.trv-Service-grids-cntlr ul li:last-child .trv-Service-grid-item-cntlr .top-rgt-bdr{
+	display: none;
 }
