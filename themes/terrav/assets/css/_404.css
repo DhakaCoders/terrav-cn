@@ -59,7 +59,11 @@
 		padding-top: 56px;
    		padding-bottom: 63px;
 	}
+	.page-bedankt-cntent-img{
+		padding-bottom: 18px;
+	}
 	.page-404-cntent-cntlr .page-bedankt-cntent-img i{
 		width: 100px;
 	}
+
 }
