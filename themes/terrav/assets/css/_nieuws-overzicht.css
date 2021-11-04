@@ -157,6 +157,7 @@
 	left: 22px;
 	z-index: 99;
 	padding-top: 176px;
+	display: block;
 }
 /*pagination_____________________________*/
 .fl-pagination-cntlr{
