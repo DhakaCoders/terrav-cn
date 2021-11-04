@@ -135,22 +135,53 @@
 .trv-Service-grid-item:hover .trv-Service-grid-img-cntlr div,
 .trv-Service-grid-item:hover .trv-Service-grid-img-cntlr img {
     transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
 }
 .trv-Svic-grid-des-top-2line{
 	position: absolute;
 	left: 22px;
 	top: -22px;
-	display: none;
+	opacity: 0;
+	transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	-webkit-transition: all 0.6s;
 }
 .trv-Svic-grid-des-top-2line i{
 	display: inline-block;
-	transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
 }
 .trv-Service-grid-item:hover .trv-Svic-grid-des-top-2line{
-	display: block;
+	opacity: 1;
+}
+.trv-Service-grid-item:hover .trv-Service-grid-btn a i svg.info-arow{
+	fill: #E83747;
+} 
+.trv-Service-grid-item:hover .trv-Service-grid-btn a{
+	color: #E83747;
 }
 .trv-Service-fancy-video-sec{
 	padding-bottom: 40px;
 }
+
+
+
+
+
+/*responsive-start*/
+
+@media (max-width: 1699px){
+	.trv-Service-grids-cntlr ul{
+		margin: 0 -8px;
+	}
+	.trv-Service-grids-cntlr ul li{
+		padding: 0 8px;
+	}
+	.trv-Service-grid-item {
+	    padding: 23px 12px 31px 12px;
+	}
+	.trv-Service-grid-des{
+		padding-top: 35px;
+	}
+}
+
+
