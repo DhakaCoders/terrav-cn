@@ -152,9 +152,10 @@
 	text-decoration: none;
 	color: #4F4B34;
 }
-.trv-no-btm-2line{
+.two-line{
 	position: absolute;
-	left: 22px;
+	left: 50%;
+	bottom: 0;
 	z-index: 99;
 	padding-top: 176px;
 	display: block;
