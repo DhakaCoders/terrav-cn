@@ -11,12 +11,17 @@
 .prdct-pgni-dtls-sec-cntlr  .over-ons-lftimg-rgtdes-sec-rgt{
 	padding-top:65px
 }
-.pdct-pgni-trv-Service-grid-sec .trv-Service-grids-cntlr ul li{
+.pdct-pgni-trv-Service-grids{
+	display: flex;
+	margin-left:-12px;
+	margin-right:-12px
+}
+.pdct-pgni-trv-Service-grids .pdct-pgni-trv-Service-grids-item{
 	width:33.33%;
+	padding-left:12px;
+	padding-right:12px;
 }
-.pdct-pgni-trv-Service-grid-sec .trv-Service-grids-cntlr ul li:before{
-	display: none;
-}
+
 .pdct-pgni-trv-Service-grid-sec .trv-Service-grid-item{
 	padding: 18px 18px 37px 18px;
 }
@@ -32,6 +37,29 @@
 .prdct-pgni-dtls-sec{
 	padding-bottom:0;
 }
+.fl-products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
 
-
+.fl-products-grid .fl-products-grid-item {
+    width: 33.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 40px;
+}
+.related-products-sec .fl-products-cntlr{
+	margin-top:0px;
+}
+.related-products-sec{
+	padding-top:91px;
+	padding-bottom: 60px;
+}
+.related-products-heading {
+    max-width: 810px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
 
