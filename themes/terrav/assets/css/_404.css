@@ -4,14 +4,23 @@
 .page-404-cntent-cntlr .page-bedankt-cntent-cntlr-innr{
 	max-width: 900px;
 }
+.page-404-cntent-cntlr .page-bedankt-cntent-heading{
+	padding-bottom: 40px;
+}
 .page-404-cntent-cntlr .page-bedankt-cntent-menu-cntlr ul{
 	margin: 0 -40px;
 }
 .page-404-cntent-cntlr .page-bedankt-cntent-menu-cntlr ul li{
 	padding: 0 40px;
 }
+
 .page-404-cntent-cntlr .page-bedankt-cntent-desc{
-	padding-bottom: 40px;
+	padding-bottom: 20px;
+}
+@media(max-width: 1699px){
+	.page-bedankt-cntent-img i{
+		width: 200px;
+	}
 }
 @media(max-width: 1199px){
 	.page-404-cntent-cntlr .page-bedankt-cntent-img i{
