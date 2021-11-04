@@ -29,13 +29,13 @@
     width: auto;
     overflow: hidden;
 }
-.product-category .fl-products-cntlr ul{
+.product-category .fl-products-cntlr > ul{
 	display:flex;
 	flex-wrap: wrap;
 	margin-left:-12px;
 	margin-right:-12px;
 }
-.product-category .fl-products-cntlr ul li{
+.product-category .fl-products-cntlr > ul > li{
 	max-width:33.33%;
 	padding-left:12px;
 	padding-right:12px;
