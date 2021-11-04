@@ -65,3 +65,8 @@
     margin-bottom: 30px;
 }
 
+@media(max-width:767px){
+	.pdct-pgni-trv-Service-grids{
+		display: block;
+	}
+}
