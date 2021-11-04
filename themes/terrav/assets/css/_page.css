@@ -4,17 +4,18 @@
 	padding: 0 20px!important;
 }
 .slick-slider .slick-dots li{
-	width: 16px!important;
-	height: 16px!important;
-	position: static;
-	background: #E1E1E1!important;
-	border-radius: 100% 100%!important;
-	margin: 0 8px;
-	padding: 0!important;
+	width: 11px!important;
+    height: 11px!important;
+    position: static;
+    background: #E1E1E1!important;
+    border-radius: 2px!important;
+    margin: 0 12px;
+    padding: 0!important;
+    transform: rotate(45deg);
 }
 .slick-slider .slick-dots li.slick-active,
 .slick-slider .slick-dots li:hover{
-	background: #F3BA4B!important;
+	background: #F4A301!important;
 }
 .slick-slider .slick-dots li:before,
 .slick-slider .slick-dots li button:before{
@@ -22,8 +23,8 @@
 }
 .slick-slider .slick-dots li button{
 	padding: 0;
-	width: 16px;
-	height: 16px;
+	width: 11px;
+	height: 11px;
 }
 
 .slick-dots li:only-child{ 
