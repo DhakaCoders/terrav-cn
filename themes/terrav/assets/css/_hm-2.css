@@ -58,10 +58,10 @@ span.hm-bnr-down-scroll-icon {
 }
 
 span.hm-bnr-down-scroll-icon img {
-	transform: rotate(-180deg);
+	/*transform: rotate(-180deg);
 	position: absolute;
 	bottom: 5px;
-	right: 50%;
+	right: 50%;*/
 }
 .UpdownAnimate{
 	animation-name: clfloating;
