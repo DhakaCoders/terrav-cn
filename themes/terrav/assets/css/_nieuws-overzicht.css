@@ -159,7 +159,8 @@
 	padding-top: 176px;
 	display: block;
 }
-/*pagination_____________________________*/
+
+/*___________________________pagination_____________________________*/
 .fl-pagination-cntlr{
     display: flex;
     justify-content: center;
