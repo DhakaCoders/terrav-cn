@@ -271,7 +271,7 @@
 	    padding-left: 35px;
 	}
 	.sec-modl-cont-tt {
-	    font-size: 20px;
+	    font-size: 19px!important;
 	}
 	.tv-date{
 		font-size: 15px;
@@ -279,7 +279,25 @@
 	.des {
 	    margin-bottom: 15px;
 	}
+	.des p {
+	    line-height: 1.4;
+	    font-size: 17px;
+	}
+	.no-fl-info-btn{
+		font-size: 14px;
+	}
+	.no-fl-info-btn i svg.info-arow {
+	    width: 6px;
+	    height: 10px;
+	}
+	.no-fl-info-btn i{
+		margin-top: -2px;
+	}
 
+
+	.gmi-cntnt-tt{
+		font-size: 20px!important;
+	}
 
 }
 @media(max-width: 1199px){
@@ -300,6 +318,19 @@
 	.cont-rgt {
 	    padding-left: 30px;
 	}
+
+	.gmi-cntnt-tt {
+    font-size: 18px!important;
+}
+.gmicnt-cntlr {
+    padding-left: 25px;
+}
+.tv-grids-modl-sec-cntlr ul li {
+    padding: 0 15px 40px 15px;
+}
+.tv-grids-modl-sec-cntlr ul{
+	margin: 0 -15px;
+}
 
 
 
@@ -325,7 +356,18 @@
 	.tv-date {
 	    font-size: 13.5px;
 	}
-
+	.gmi-cntnt-tt {
+	    font-size: 17px!important;
+	}
+	.gmicnt-cntlr {
+	    padding-left: 20px;
+	}
+	.no-fl-info-btn {
+	    font-size: 12px;
+	}
+	.no-fl-info-btn i {
+	    margin-top: -1px;
+	}
 
 }
 @media(max-width: 767px){
