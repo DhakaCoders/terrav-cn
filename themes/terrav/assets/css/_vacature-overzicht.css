@@ -11,10 +11,27 @@
 .tv-vo-intro-modl-sec-cntlr{
 	background-color: initial;
 	box-shadow: none;
-}
-.tv-vo-grids-modl-sec-cntlr:after{
-	content: none;
+	padding-bottom: initial;
 }
 .tv-vo-grids-modl-sec-cntlr:before{
 	content: none;
+}
+.full-time{
+	font-family: 'Libre Franklin', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.1;
+	letter-spacing: -0.02em;
+	color: #904A10;
+	text-decoration: capitalize;
+}
+.tv-vo-grids-modl-sec-cntlr{
+	padding-top: 0;
+}
+.tv-vo-grids-modl-sec-cntlr ul li{
+	padding: 0 20px 70px 0;
+}
+.tv-vo-grids-modl-sec{
+	padding-top: 70px;
 }

@@ -279,7 +279,7 @@ img{
 	background: #904A10;
 }
 .fl-info-btn{
-	padding-right: 21px;
+	padding-right: 17px;
     position: relative;
     display: inline-block;
     vertical-align: baseline;
@@ -301,7 +301,7 @@ img{
     width: 8px;
     height: 12px;
     background-size: contain;
-    margin-top: -4px;
+    margin-top: -3px;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
