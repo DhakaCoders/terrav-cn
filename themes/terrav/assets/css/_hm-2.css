@@ -40,8 +40,7 @@ span.hm-bnr-down-scroll-icon {
     position: relative;
     display: inline-block;
     vertical-align: baseline;
-    transform: rotate( 
--90deg);
+    transform: rotate( -90deg);
     text-align: center;
 }
 
@@ -51,6 +50,9 @@ span.hm-bnr-down-scroll-icon {
     color: #508036;
     font-weight: 900;
     padding-left: 24px;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 span.hm-bnr-down-scroll-icon img {transform: rotate(-90deg);/* position: absolute; *//* left: 50%; */}
@@ -91,6 +93,8 @@ span.hm-bnr-down-scroll-icon img {transform: rotate(-90deg);/* position: absolut
 	height: 658px;
 	display: flex;
 	align-items: center;
+	position: relative;
+	z-index: 5;
 }
 .hm-bnr-title-1{
 	margin-bottom: 0;
