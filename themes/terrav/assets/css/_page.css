@@ -12,6 +12,8 @@
     margin: 0 12px;
     padding: 0!important;
     transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 .slick-slider .slick-dots li.slick-active,
 .slick-slider .slick-dots li:hover{
