@@ -453,6 +453,9 @@
 	.gmi-inline-bg {
 	    height: 110px;
 	}
+	.tv-grids-modl-sec-cntlr {
+    padding: 50px 0;
+}
 
 
 }
@@ -478,6 +481,9 @@
 	.gmi-cntnt-tt {
 	    font-size: 18px!important;
 	}
+	.tv-grids-modl-sec-cntlr {
+    padding: 40px 0;
+}
 
 
 }
