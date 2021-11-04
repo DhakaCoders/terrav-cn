@@ -198,3 +198,15 @@ span.hm-bnr-down-scroll-icon {
 	height: 580px;
 	margin-top: -100px;
 }
+
+.hm-vacatures-nieuws-sec .entry-sub-title{
+	color: #4f7f35;
+}
+
+.hm-vacatures-nieuws-sec-cntlr{
+	display: flex;
+}
+.hm-vacatures-innr,
+ .hm-nieuws-innr{
+ 	width: 50%;
+ }
