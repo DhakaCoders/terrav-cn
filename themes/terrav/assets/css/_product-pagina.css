@@ -5,10 +5,12 @@
     max-width: 825px;
     margin: 0 auto;
 }
-
+.product-category .fl-pro-grd-title{
+    font-size:32px;
+}
 .product-pagina-page-heading {
-    padding-top: 115px;
-    padding-bottom: 155px;
+    padding-top: 110px;
+    padding-bottom: 145px;
     background: #fdfdfd;
 }
 .fl-pro-grd-title,
@@ -36,7 +38,7 @@
 	margin-right:-12px;
 }
 .product-category .fl-products-cntlr > ul > li{
-	max-width:33.33%;
+	width:33.33%;
 	padding-left:12px;
 	padding-right:12px;
 	margin-bottom:64px;
@@ -51,3 +53,74 @@
 .fl-pro-grd-title a:hover {
     color: #ea7a04;
 }
+.product-category{
+    padding-bottom:100px;
+}
+
+@media(max-width:991px){
+    .product-pagina-page-heading {
+        padding-top: 80px;
+        padding-bottom: 125px;
+    }
+    .fl-pro-grd-img-cntlr img{
+            max-height:450px;
+    }
+    .product-category .fl-products-cntlr > ul > li{
+        margin-bottom:50px;
+    }
+    .product-category .fl-pro-grd-title{
+            font-size:30px;
+    }
+
+}
+@media(max-width:767px){
+    .product-category .fl-products-cntlr > ul > li{
+        width: 50%;
+    }
+    .product-pagina-page-heading {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    .fl-pro-grd-img-cntlr{
+        max-height: 400px;
+    }
+    .fl-pro-grd-img-cntlr img{
+        max-height:initial;
+    }
+    .product-category .fl-pro-grd-title{
+        font-family: 'Work Sans', sans-serif;
+    }
+}
+@media(max-width:575px){
+
+    .product-category .fl-products-cntlr > ul > li{
+        width: 100%;
+    }
+    .fl-products-cntlr{
+        max-width:344px;
+        width:100%;
+        margin:0 auto;
+    }
+    .product-category{
+        padding-top:32px;
+        padding-bottom:0;
+    }
+    .product-pagina-page-heading{
+        padding-bottom:35px;
+    }
+    .fl-pro-grd-img-cntlr{
+        margin-bottom:22px;
+    }
+    .fl-pro-grd-des{
+        margin-bottom: 7px;
+    }
+    .product-category .fl-products-cntlr > ul{
+        padding-bottom: 10px;
+        border-bottom: 1px solid #E8E8E8;
+    }
+
+
+
+
+}
+@media(max-width:479px){}
