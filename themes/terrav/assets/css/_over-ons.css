@@ -107,8 +107,7 @@
     align-items: center;
 }
 .certificates-guarantee-log {
-    max-width: 150px;
-    width:100%;
+    min-width: 150px;
     height: 150px;
     border: 2px solid #F2EEEE;
     display: flex;
@@ -157,6 +156,7 @@
     padding-left: 34px;
     padding-top:0;
     padding-bottom:0;
+    font-size:20px;
 }
 .over-ons-history-des-cntlr ul li:last-child{
     margin-bottom:0;
@@ -214,6 +214,10 @@
     .strong-professional-sec-cntlr{
         height:240px;
     }
+    .over-ons-history-sec{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
 }
 
@@ -261,6 +265,35 @@
     .over-ons-lftimg-rgtdes-sec-rgt{
         width:50%;
     }
+    .certificates-guarantee-sec{
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    .certificates-guarantee-title .certificates-guarantee-heading{
+        font-size:32px;
+
+    }
+    .certificates-guarantee-log{
+        min-width:114px;
+        height: 114px;
+    }
+    .certificates-guarantee-des p{
+        margin-bottom:0px;
+    }
+    .certificates-guarantee-log img {
+        max-width: 70px;
+    }
+    .certificates-guarantee-des-title{
+        margin-bottom:10px;
+    }
+    .over-ons-intro-des {
+        padding-right: 10px;
+    }
+    .over-ons-history-des-cntlr ul li {
+        margin-bottom:38px;
+    }
+    
+
 }
 @media(max-width:767px){
     .over-ons-intro-sec-right {
@@ -304,6 +337,45 @@
         top: -5px;
         width: 17px;
     }
+    .over-ons-lftimg-rgtdes-sec-lft{
+        width:100%;
+        max-height:450px;
+    }
+    .over-ons-lftimg-rgtdes-sec-rgt{
+        width:100%;
+    }
+    .over-ons-lftimg-rgtdes-sec .fl-dft-lftimg-rgtdes{
+        max-width:500px;
+        margin:0 auto;
+    }
+    .over-ons-lftimg-rgtdes-sec{
+        padding-top: 60px;
+        padding-bottom:30px;
+    }
+    .certificates-guarantee-grd ul li{
+        width: 100%;
+        margin-bottom:35px;
+    }
+    .certificates-guarantee-cntlr{
+        max-width:500px;
+        margin:0 auto;
+    }
+    .certificates-guarantee-title .certificates-guarantee-heading{
+        margin-bottom:40px;
+    }
+    .over-ons-history-sec-cntlr {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .over-ons-history-sec{
+        padding-top: 80px;
+        padding-bottom: 70px;
+    }
+    .over-ons-history-des-cntlr ul{
+        padding-left:0px;
+    }
+
+
 }
 @media(max-width:575px){
     .over-ons-intro-sec-img {
@@ -313,8 +385,22 @@
         padding-top: 50px;
         padding-bottom: 57px;
     }
-
-
+    .over-ons-lftimg-rgtdes-sec .fl-dft-lftimg-rgtdes-lft{
+        max-height:411px;
+    }
+    .over-ons-lftimg-rgtdes-sec{
+        padding-top: 44px;
+        padding-bottom:30px;
+    }
+    .over-ons-lftimg-rgtdes-sec .fl-dft-lftimg-rgtdes-rgt{
+        margin-bottom:15px;
+    }
+    .over-ons-lftimg-rgtdes-sec-rgt h5{
+        font-size:34px;
+    }
+    .over-ons-lftimg-rgtdes-sec .fl-dft-lftimg-rgtdes-lft{
+        margin-bottom:33px;
+    }
 
 
 
@@ -336,7 +422,35 @@
     .professional-team-logo ul{
         margin:0 -12px;
     }
+    .certificates-guarantee-title .certificates-guarantee-heading{
+        font-size:30px;
+    }
+    .certificates-guarantee-des .certificates-guarantee-des-title{
+        font-size:25px;
+    }
+    .certificates-guarantee-title .certificates-guarantee-heading{
+        margin-bottom:36px;
+    }
+    .certificates-guarantee-des {
+        padding-left:13px;
+        padding-right:0px;
+    }
+    .certificates-guarantee-grd ul li{
+        margin-bottom:24px;
+    }
+    .certificates-guarantee-sec{
+        padding-top: 38px;
+    }
+    .over-ons-history-sec-righ .over-ons-intro-sec-img {
+        margin-bottom: 53px;
+    }
+    .over-ons-history-sec{
+        padding-top: 56px;
+        padding-bottom: 50px;
+    }
 }
+
+
 
 @media(max-width:479px){
     .over-ons-intro-sec-img {
@@ -357,6 +471,9 @@
     .over-ons-intro-button {
         padding-top: 6px;
     }
+    .certificates-guarantee-des .certificates-guarantee-des-title{
+        font-size: 20px;
+    }
 }
 @media(max-width:359px){
     .over-ons-intro-button a{
@@ -368,5 +485,8 @@
     }
     .over-ons-intro-button{
         flex-wrap: wrap;
+    }
+    .over-ons-history-des-cntlr ul li{
+        font-size:18px;
     }
 }
