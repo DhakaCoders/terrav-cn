@@ -53,6 +53,8 @@
     padding: 27px 15px 36px 15px;
     background: #FFFFFF;
 	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+	-ms-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+	-webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
 	position: relative;
 }
 .trv-Service-grid-img-cntlr{
@@ -291,9 +293,90 @@
 		padding-bottom: 40px;
 	}
 	.trv-Service-grid-item-cntlr{
-		max-width: 525px;
+		max-width: 500px;
 		width: 100%;
 		margin: 0 auto;
+		padding-top: 0;
+	}
+	.trv-Service-grids-cntlr > ul > li:nth-child(3) .trv-Service-grid-item-cntlr .top-rgt-bdr{
+		display: initial;
+	}
+	.trv-Service-grids-cntlr > ul > li:nth-child(4) .trv-Service-grid-item-cntlr .top-lft-bdr{
+		display: initial;
+	}
+	.trv-Service-grids-cntlr > ul > li:nth-child(4):before{
+		display: initial;
+	}
+	.trv-Service-grid-item{
+		padding: 27px 18px;
+	}
+	.trv-Service-grid-sec{
+		margin-top: 0;
+	}
+	.trv-Service-intro-sec{
+		padding-top: 50px;
+		padding-bottom: 0;
+	}
+	.trv-Service-intro-cntlr{
+		padding-bottom: 35px;
+	}
+	.top-rgt-bdr{
+		width: 10px;
+		height: 150px;
+		left: -10px;
+		top: 73%;
+	}
+	.top-lft-bdr{
+		width: 10px;
+		height: 142px;
+		left: -10px;
+		bottom: 73%;
+		border-bottom: 4px solid #f5a302;
+		border-left: 4px solid #f5a302;
+		border-top-right-radius: 0;
+		border-bottom-left-radius: 7px;
+		border-top: none;
+    	border-right: none;
+	}
+	.trv-Service-grids-cntlr > ul > li:before{
+		content: none;
+		display: none;
+	}
+	.trv-Service-grid-item-cntlr:before{
+		transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		top: -14px;
+		left: -3.9px;
+	}
+	.has-inline-bg div{
+		height: 197px;
+	}
+	.trv-Service-grid-item-cntlr:before{
+		content: "";
+		position: absolute;
+		left: -17.5px;
+		top: -16px;
+		background: url('../images/trv-Service-grids-arow.svg');
+		background-repeat: no-repeat!important;
+		width: 12px;
+		height: 20px;
+		margin-top: 0;
+	    background-size: 100% auto;
+	    z-index: 5;
+	}
+	.trv-Service-grid-des{
+		padding-top: 45px;
+	}
+	.trv-Service-grid-title{
+		margin-bottom: 20px;
+		font-size: 25px;
+	}
+	.trv-Service-grid-des p{
+		font-size: 14px;
+	}
+	.Svic-grid-cunt-nmbr{
+		font-size: 46px!important;
 	}
 }
 
