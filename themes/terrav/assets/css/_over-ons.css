@@ -252,6 +252,15 @@
     .professional-title .professional-heading{
         margin-bottom: 31px;
     }
+    .over-ons-lftimg-rgtdes-sec{
+        padding-top:80px;
+    }
+    .over-ons-lftimg-rgtdes-sec-lft{
+        width:50%;
+    }
+    .over-ons-lftimg-rgtdes-sec-rgt{
+        width:50%;
+    }
 }
 @media(max-width:767px){
     .over-ons-intro-sec-right {
