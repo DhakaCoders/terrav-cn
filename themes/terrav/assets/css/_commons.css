@@ -327,7 +327,6 @@ img{
 ul.reset-list,
 ol.reset-list,
 ul.sub-menu,
-.fl-pagi-ctlr ul,
 .reset-slect ul,
 ul.ab-top-menu,
 .fl-pagination-cntlr ul{
@@ -337,7 +336,6 @@ ul.ab-top-menu,
 }
 .reset-list > li,
 ul.sub-menu li,
-.fl-pagi-ctlr ul li,
 .reset-slect ul li,
 ul.ab-top-menu li,
 .fl-pagination-cntlr ul li{
@@ -348,7 +346,6 @@ ul.ab-top-menu li,
 }
 .reset-list li:before,
 ul.sub-menu li:before,
-.fl-pagi-ctlr ul li:before,
 .reset-slect ul li:before,
 ul.ab-top-menu li:before,
 .fl-pagination-cntlr ul li:before{
