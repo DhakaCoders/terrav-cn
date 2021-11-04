@@ -34,7 +34,7 @@
 .over-ons-intro-des {
     padding-right: 45px;
 }
-.over-ons-des-cntlr .over-ons-des-title{
+.over-ons-des-title{
 	color: #4F7F35;
 	padding-left: 45px;
 	margin-bottom: 18px;
@@ -193,7 +193,7 @@
 /*over-ons-lftimg-rgtdes-sec*/
 .over-ons-lftimg-rgtdes-sec{
     padding-top:120px;
-    padding-bottom:120px;
+    padding-bottom:60px;
 }
 .over-ons-lftimg-rgtdes-sec-lft{
     width:42%;
@@ -201,3 +201,7 @@
 .over-ons-lftimg-rgtdes-sec-rgt{
     width:58%;
 }
+.fl-dft-lftimg-rgtdes{
+    padding-bottom:0
+}
+

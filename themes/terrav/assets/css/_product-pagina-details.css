@@ -1,0 +1,37 @@
+.pdct-pgni-trv-Service-grid-sec{
+	margin-top:0;
+	background: #FAFAFA;
+	padding-top:175px;
+	margin-top: -100px;
+	padding-bottom:80px
+}
+.prdct-pgni-dtls-sec-cntlr .fl-dft-lftimg-rgtdes{
+	align-items: flex-start;
+}
+.prdct-pgni-dtls-sec-cntlr  .over-ons-lftimg-rgtdes-sec-rgt{
+	padding-top:65px
+}
+.pdct-pgni-trv-Service-grid-sec .trv-Service-grids-cntlr ul li{
+	width:33.33%;
+}
+.pdct-pgni-trv-Service-grid-sec .trv-Service-grids-cntlr ul li:before{
+	display: none;
+}
+.pdct-pgni-trv-Service-grid-sec .trv-Service-grid-item{
+	padding: 18px 18px 37px 18px;
+}
+.pdct-pgni-trv-Service-grid-sec .trv-Svic-grid-des-top-2line{
+	display: block;
+}
+.pdct-pgni-trv-Service-grid-sec .trv-Svic-grid-des-top-2line i svg {
+    fill: #F4A301;
+}
+.pdct-pgni-trv-Service-grid-sec .trv-Service-grid-item:hover .trv-Svic-grid-des-top-2line i svg{
+	fill:#E83747;
+}
+.prdct-pgni-dtls-sec{
+	padding-bottom:0;
+}
+
+
+
