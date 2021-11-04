@@ -6,6 +6,27 @@
 	.block-1440{
 		max-width: 1240px;
 	}
+	.fl-h1-72{
+		font-size: 65px;
+	}
+	h1,.fl-h1{
+		font-size: 40px;
+	}
+	h2,.fl-h2{
+		font-size: 34px;
+	}
+	h3,.fl-h3{
+		font-size: 32px;
+	}
+	h4,.fl-h4{
+		font-size: 28px;
+	}
+	h5,.fl-h5{
+		font-size: 25px;
+	}
+	h6,.fl-h6{
+		font-size: 21px;
+	}
 }
 @media (max-width: 1499px) {
 
@@ -41,6 +62,31 @@
 	.show-md{
 		display: block!important;
 	}
+	.fl-h1-72{
+		font-size: 45px;
+	}
+	h1,.fl-h1{
+		font-size: 41px;
+	}
+	h2,.fl-h2{
+		font-size: 34px;
+	}
+	h3,.fl-h3{
+		font-size: 32px;
+	}
+	h4,.fl-h4{
+		font-size: 28px;
+	}
+	h5,.fl-h5{
+		font-size: 20px;
+	}
+	h6,.fl-h6{
+		font-size: 18px;
+	}
+
+	body{
+		font-size: 18px;
+	}
 	
 }
 
@@ -68,6 +114,31 @@
 		padding-right: 20px;
 		padding-left: 20px;
 	}
+	.fl-h1-72{
+		font-size: 40px;
+	}
+	h1,.fl-h1{
+		font-size: 39px;
+	}
+	h2,.fl-h2{
+		font-size: 34px;
+	}
+	h3,.fl-h3{
+		font-size: 31px;
+	}
+	h4,.fl-h4{
+		font-size: 25px;
+	}
+	h5,.fl-h5{
+		font-size: 18px;
+	}
+	h6,.fl-h6{
+		font-size: 16px;
+	}
+	body{
+		font-size: 17px;
+	}
+	
 }
 
 @media(max-width: 575px){
@@ -76,6 +147,9 @@
 	}
 	.show-xs{
 		display: block!important;
+	}
+	body{
+		font-size: 14px;
 	}
 
 }
