@@ -39,7 +39,7 @@
 		margin-bottom: 0;
 	}
 	.page-404-cntent-cntlr ul li:not(:last-child):after {
-	    transform: translate(50%, 50%);
+	    transform: translate(50%, 50%) matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
 	    right: 50%;
 	    bottom: 0;
 	    top: initial;

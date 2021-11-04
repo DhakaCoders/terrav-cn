@@ -42,14 +42,16 @@
 .page-bedankt-cntent-menu-cntlr ul li:not(:last-child):after{
 	content: '';
 	position: absolute;
-	background-image: url('../images/Rectangle 91.svg');
-	height: 16px;
-	width: 16px;
+	height: 11.23px;
+	width: 11.23px;
 	right: 0;
 	top: 50%;
-	transform: translate(50%,-50%);
+	background: #F4A301;
+	border-radius: 2px;
+	transform:  translate(50%,-50%) matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+	/*transform: translate(50%,-50%);
 	-ms-transform: translate(50%,-50%);
-	-webkit-transform: translate(50%,-50%);
+	-webkit-transform: translate(50%,-50%);*/
 }
 .page-bedankt-cntent-menu-cntlr ul li a{
 	color: #4F7F35;
@@ -120,7 +122,7 @@
 		margin-bottom: 0;
 	}
 	.page-bedankt-cntent-menu-cntlr ul li:not(:last-child):after{
-	    transform: translate(50%, 50%);
+	    transform: translate(50%, 50%) matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
 	    right: 50%;
 	    bottom: 0;
 	    top: initial;
