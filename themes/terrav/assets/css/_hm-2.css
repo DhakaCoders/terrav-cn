@@ -15,13 +15,12 @@
 	left: 32px;
 	bottom: 85px;
 	cursor: pointer;
-	transform: rotate(-90deg);
-	cursor: pointer;
 	z-index: 9;
-	margin-left: -44px;
+	margin-left: -18px;
 }
 .hm-bnr-down-scroll-icon-brder{
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 }
 .hm-banner-bg-black{
@@ -33,35 +32,26 @@
 	background: #e3e3e3;
 	display: none;
 }
+.hm-bnr-down-scroll-text {
+    display: inline-block;
+    vertical-align: baseline;
+    color: #508036;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    font-family: 'Libre Franklin', sans-serif;
+    transform: rotate(271deg);
+}
 span.hm-bnr-down-scroll-icon {
     width: 27px;
     height: 37px;
     border-radius: 13px;
     background: transparent;
     border: 2px solid #f6a812;
-    position: relative;
     display: inline-block;
     vertical-align: baseline;
-    transform: rotate( -90deg);
     text-align: center;
-}
-
-.hm-bnr-down-scroll-text {
-    display: inline-block;
-    vertical-align: baseline;
-    color: #508036;
-    font-weight: 900;
-    padding-left: 24px;
-    font-size: 14px;
-    letter-spacing: 0.04em;
-    font-family: 'Libre Franklin', sans-serif;
-}
-
-span.hm-bnr-down-scroll-icon img {
-	/*transform: rotate(-180deg);
-	position: absolute;
-	bottom: 5px;
-	right: 50%;*/
+    margin-top: 40px;
 }
 .UpdownAnimate{
 	animation-name: clfloating;
@@ -71,12 +61,12 @@ span.hm-bnr-down-scroll-icon img {
 }
 @keyframes floating {
     from { transform: translate(0,  0px); }
-    65%  { transform: translate(0, 15px); }
+    65%  { transform: translate(0, 10px); }
     to   { transform: translate(0, -0px); }    
 }
 @keyframes clfloating {
     from { transform: translate(0,  0px); }
-    65%  { transform: translate(0, 15px); }
+    65%  { transform: translate(0, 10px); }
     to   { transform: translate(0, 0px); }    
 }
 
@@ -131,4 +121,39 @@ span.hm-bnr-down-scroll-icon img {
 }
 .hm-bnr-btn{
 	padding-top: 8px;
+}
+
+
+.hm-Service-grids-cntlr{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -12px;
+}
+.hm-Service-grids-cntlr .hm-Service-grid-item:first-child .trv-Service-grid-item-cntlr .top-lft-bdr{
+	display: none;
+}
+.hm-Service-grids-cntlr .hm-Service-grid-item:last-child .trv-Service-grid-item-cntlr .top-rgt-bdr{
+	display: none;
+}
+.hm-Service-grid-item{
+	width: 20%;
+	padding: 0 12px;
+	padding-bottom: 30px;
+	position: relative;
+}
+.hm-Service-grid-item:before{
+	content: "";
+    position: absolute;
+    left: -6px;
+    top: -4.5px;
+    background: url(../images/trv-Service-grids-arow.svg);
+    background-repeat: no-repeat!important;
+    width: 12px;
+    height: 20px;
+    margin-top: 0;
+    background-size: 100% auto;
+}
+.hm-Service-grid-item:first-child:before{
+	content: none;
+	display: none;
 }
