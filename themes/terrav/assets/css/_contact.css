@@ -432,7 +432,48 @@ textarea {
     top: -300px;
 }
 
-
+/*vacatures-details-start*/
+.vatur-details-con-cntlr{
+    background: #4F7F35;
+    padding: 75px 70px;
+}
+.vatur-details-form-cntlr .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-textarea textarea, 
+.vatur-details-form-cntlr .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input{
+    border-radius: 0!important;
+    padding: 21px 20px 22px!important;
+}
+.vatur-details-form-cntlr .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field label{
+    margin-bottom: 9px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+.vatur-details-form-cntlr .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.bdr-dash input{
+    border: 2px dashed #FFFFFF!important;
+    background: transparent;
+}
+.vatur-details-form-cntlr .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error{
+    display: none;
+}
+.vatur-details-form-cntlr .wpforms-field-description label{
+    text-transform: initial!important;
+    color: #fff!important;
+}
+.vatur-details-form-cntlr .wpforms-field-description label a{
+    color: #fff!important;
+}
+.vatur-details-form-cntlr .wpforms-field-description{
+    padding-top: 32px;
+}
+.vatur-details-form-cntlr .wpforms-field-description input[type="checkbox"]{
+  top: 35px;
+}
+.vatur-details-form-cntlr .wpforms-field-description span.checkmark{
+  top: 35px;
+}
 
 
 /*@media (max-width: 1699px){

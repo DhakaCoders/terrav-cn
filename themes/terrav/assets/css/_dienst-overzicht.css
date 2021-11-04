@@ -49,6 +49,7 @@
 }
 .trv-Service-grid-sec {
     margin-top: -220px;
+    padding-bottom: 85px;
 }
 .trv-Service-grid-item {
     padding: 27px 15px 36px 15px;
@@ -68,6 +69,7 @@
 .trv-Service-grid-title{
 	font-weight: 600;
 	color: #4F4B34;
+	text-transform: uppercase;
 }
 .trv-Service-grid-title a{
 	text-decoration: none;
@@ -148,4 +150,7 @@
 }
 .trv-Service-grid-item:hover .trv-Svic-grid-des-top-2line{
 	display: block;
+}
+.trv-Service-fancy-video-sec{
+	padding-bottom: 40px;
 }

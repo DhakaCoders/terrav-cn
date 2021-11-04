@@ -244,6 +244,20 @@ if( $('.wpforms-error').length ){
     }  
 });
 
+ if( $('.hamburgar-cntlr').length ){
+  $('.hamburgar-cntlr').click(function(){
+    $('body').toggleClass('allWork');
+  });
+}
+if(windowWidth <=767){
+  if( $('li.menu-item-has-children > a').length ){
+    $('li.menu-item-has-children > a').click(function(e){
+     event.preventDefault();
+     $(this).next().slideToggle(300);
+     $(this).parent().toggleClass('sub-menu-arrow');
+   });
+  }
+}
 
 /*start of shariful*/
 
