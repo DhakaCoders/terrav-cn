@@ -74,5 +74,11 @@
 	.page-404-cntent-cntlr .page-bedankt-cntent-img i{
 		width: 100px;
 	}
+	.page-404-cntent-cntlr .page-bedankt-cntent-heading{
+		padding-bottom: 20px;
+	}
+	.page-404-cntent-cntlr .page-bedankt-cntent-desc{
+		padding-bottom: 45px;
+	}
 
 }

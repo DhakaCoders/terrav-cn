@@ -74,6 +74,12 @@
 	.page-bedankt-cntent-desc{
 		padding-bottom: 35px;
 	}
+	.page-bedankt-cntent-heading{
+		padding-bottom: 20px;
+	}
+	.page-bedankt-cntent-title{
+		margin-bottom: 10px;
+	}
 }
 @media(max-width: 767px){
 	.page-bedankt-cntent-cntlr{
@@ -84,6 +90,9 @@
 	}
 	.page-bedankt-cntent-menu-cntlr ul li{
 		padding: 0 22px;
+	}
+	.page-404-cntent-cntlr .page-bedankt-cntent-heading{
+		padding-bottom: 30px;
 	}
 }
 @media(max-width: 575px){
