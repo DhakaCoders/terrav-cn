@@ -208,6 +208,46 @@
 	.trv-Service-fancy-video-sec{
 		padding-bottom: 30px;
 	}
+	.trv-Service-grid-title{
+		font-size: 21px;
+	}
+	.Svic-grid-cunt-nmbr{
+		font-size: 40px;
+	}
+	.trv-Svic-grid-des-btm-cunt-nmbr{
+		right: 5px;
+	}
+}
+@media (max-width: 1299px){
+	.trv-Service-grids-cntlr > ul{
+		margin: 0 -12px;
+		justify-content: center;
+	}
+	.trv-Service-grids-cntlr > ul > li{
+		width: 33.333%;
+		padding: 0 12px;
+		padding-bottom: 40px;
+	}
+	.trv-Service-grids-cntlr > ul > li:nth-child(3) .trv-Service-grid-item-cntlr .top-rgt-bdr{
+		display: none;
+	}
+	.trv-Service-grids-cntlr > ul > li:nth-child(4) .trv-Service-grid-item-cntlr .top-lft-bdr{
+		display: none;
+	}
+	.trv-Service-grids-cntlr > ul > li:nth-child(4):before{
+		display: none;
+	}
+	.top-lft-bdr{
+		left: -8px;
+		width: 135px;
+	}
+	.top-rgt-bdr{
+		right: -10px;
+		width: 135px;
+	}
+	.trv-Service-grids-cntlr > ul > li:before{
+		top: -4.6px;
+	}
 }
 
 
