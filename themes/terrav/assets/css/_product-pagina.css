@@ -54,9 +54,11 @@
     color: #ea7a04;
 }
 .product-category{
-    padding-bottom:100px;
+    padding-bottom:60px;
 }
-
+.product-category .fl-pagination-cntlr{
+    padding-top:30px;
+}
 @media(max-width:991px){
     .product-pagina-page-heading {
         padding-top: 80px;
@@ -103,7 +105,7 @@
     }
     .product-category{
         padding-top:32px;
-        padding-bottom:0;
+        padding-bottom:40px;
     }
     .product-pagina-page-heading{
         padding-bottom:35px;
