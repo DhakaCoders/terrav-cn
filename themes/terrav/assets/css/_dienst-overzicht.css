@@ -180,15 +180,13 @@
 	.trv-Service-grid-des{
 		padding-top: 35px;
 	}
-	.top-lft-bdr,
-	.top-rgt-bd{
-		width: 100px;
-	}
 	.top-lft-bdr{
 		left: -5px;
+		width: 100px;
 	}
 	.top-rgt-bdr{
 		right: -7px;
+		width: 100px;
 	}
 	.trv-Service-grid-title{
 		margin-bottom: 17px;
@@ -247,6 +245,55 @@
 	}
 	.trv-Service-grids-cntlr > ul > li:before{
 		top: -4.6px;
+	}
+}
+@media (max-width: 1199px){
+	.trv-Service-grid-sec{
+		padding-bottom: 60px;
+	}
+}
+@media (max-width: 991px){
+	.trv-Service-grids-cntlr > ul{
+		margin: 0 -8px;
+	}
+	.trv-Service-grids-cntlr > ul > li{
+		padding: 0 8px;
+		padding-bottom: 30px;
+	}
+	.trv-Service-grid-des{
+		padding-top: 27px;
+	}
+	.top-lft-bdr{
+		left: -5px;
+		width: 100px;
+	}
+	.top-rgt-bdr{
+		right: -7px;
+		width: 100px;
+	}
+	.trv-Service-grid-des p{
+		margin-bottom: 22px;
+	}
+	.has-inline-bg div{
+		height: 180px;
+	}
+	.trv-Service-grid-sec{
+		padding-bottom: 50px;
+	}
+}
+@media (max-width: 767px){
+	.trv-Service-grids-cntlr > ul{
+		margin: 0;
+	}
+	.trv-Service-grids-cntlr > ul > li{
+		width: 100%;
+		padding: 0;
+		padding-bottom: 40px;
+	}
+	.trv-Service-grid-item-cntlr{
+		max-width: 525px;
+		width: 100%;
+		margin: 0 auto;
 	}
 }
 
