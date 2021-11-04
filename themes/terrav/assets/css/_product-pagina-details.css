@@ -71,6 +71,9 @@
 	.pdct-pgni-trv-Service-grid-sec {
 		margin-top:-65px;
 	}
+	.pdct-pgni-trv-Service-grid-sec{
+		padding-top:140px;
+	}
 
 }
 
@@ -83,6 +86,9 @@
 	}
 	.over-ons-lftimg-rgtdes-sec{
 		padding-top:80px;
+	}
+	.pdct-pgni-trv-Service-grid-sec{
+		padding-top:100px;
 	}
 }
 @media(max-width:767px){
@@ -111,6 +117,15 @@
 	}
 	.prdct-pgni-dtls-sec{
 		padding-top:60px;
+	}
+	.pdct-pgni-trv-Service-grid-sec{
+		padding-top:75px;
+	}
+	.pdct-pgni-trv-Service-grid-sec .sec-entry-hdr-des-cntlr{
+		text-align: center;
+	}
+	.pdct-pgni-trv-Service-grid-sec .sec-entry-hdr-title{
+		margin-bottom:30px;
 	}
 }
 @media(max-width:575px){
