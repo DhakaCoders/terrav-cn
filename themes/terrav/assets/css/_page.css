@@ -214,7 +214,10 @@ ol li::before {
 .sec-entry-hdr-des-cntlr.text-align-left{
 	text-align: left;
 }
-
+.sec-entry-hdr-des-cntlr.text-white .sec-entry-hdr .sec-entry-hdr-sub-title,
+.sec-entry-hdr-des-cntlr.text-white .sec-entry-hdr .sec-entry-hdr-title{
+	color: #ffffff;
+}
 /*entry sub title*/
 
 .desc-entry-sun-hdr{
