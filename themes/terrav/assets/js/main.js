@@ -317,8 +317,8 @@ if(windowWidth <=767){
 }
 
  if (windowWidth <= 767) {
-  if( $('.FlProductSlider').length ){
-      $('.FlProductSlider').slick({
+  if( $('.PdctPgniSlider').length ){
+      $('.PdctPgniSlider').slick({
         dots: false,
         arrows:false,
         infinite: true,
