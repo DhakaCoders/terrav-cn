@@ -334,7 +334,7 @@ ul.sub-menu,
 .reset-slect ul,
 ul.ab-top-menu,
 .fl-pagination-cntlr ul,
-.fl-products-cntlr .products,
+.tv-products-cntlr .products,
 .products{
 	margin: 0;
 	padding: 0;
@@ -345,7 +345,7 @@ ul.sub-menu li,
 .reset-slect ul li,
 ul.ab-top-menu li,
 .fl-pagination-cntlr ul li,
-.fl-products-cntlr .products li,
+.tv-products-cntlr .products li,
 .products li{
 	padding: 0;
 	margin: 0;
@@ -357,7 +357,7 @@ ul.sub-menu li:before,
 .reset-slect ul li:before,
 ul.ab-top-menu li:before,
 .fl-pagination-cntlr ul li:before,
-.fl-products-cntlr .products li:before{
+.tv-products-cntlr .products li:before{
 	content: none!important;
 }
 
