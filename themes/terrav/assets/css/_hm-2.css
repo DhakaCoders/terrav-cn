@@ -199,14 +199,59 @@ span.hm-bnr-down-scroll-icon {
 	margin-top: -100px;
 }
 
+
+.hm-vacatures-nieuws-sec{
+	position: relative;
+}
 .hm-vacatures-nieuws-sec .entry-sub-title{
 	color: #4f7f35;
 }
 
+
+/*.hm-vacatures-nieuws-sec{
+	padding: 120px 0;
+}*/
 .hm-vacatures-nieuws-sec-cntlr{
 	display: flex;
 }
+.hm-vacatures-nieuws-sec-cntlr .entry-sub-title{
+	margin-bottom: 20px;
+}
+.hm-vacatures-title,
+.hm-nieuws-title{
+	margin-bottom: 50px;
+}
 .hm-vacatures-innr,
  .hm-nieuws-innr{
- 	width: 50%;
+ 	/*width: 50%;*/
+ 	padding: 120px 0;
+ }
+ .hm-vacatures-innr{
+ 	background: #fafafa;
+ 	position: relative;
+ 	width: 45%;
+ }
+ .hm-vacatures-nieuws-sec-cntlr .gmicnt-cntlr{
+ 	padding-left: 50px;
+ }
+ .lft-grey-bg{
+ 	position: absolute;
+ 	left: 0;
+ 	top: 0;
+ 	bottom: 0;
+ 	background: #fafafa;
+ }
+.hm-nieuws-innr{
+	padding-left: 100px;
+	width: 55%;
+}
+
+/* .hm-vacatures-innr{
+ 	padding-right: 20px;
+ }*/
+ .hm-vac-nie-grids-cntlr ul li{
+ 	padding-bottom: 43px;
+ }
+ .hm-vac-nie-btn{
+ 	padding-top: 7px;
  }

@@ -284,7 +284,21 @@ function goToByScroll(id, offset){
   }
 }
 
-
+ // if (windowWidth >= 767) {
+function leftWidth(){
+    var windowWidth = $(window).width();
+    var containerwidth = $(".container").width();
+    var lefttoconWidth = ((windowWidth-containerwidth)/2);
+    var mradd = lefttoconWidth+1;
+    $(".lft-grey-bg").css({
+      "width":mradd,
+    });
+  }
+  leftWidth();
+  $(window).resize(function(){
+    leftWidth();
+  });
+// }
 /*start of johir*/
 
 // start of niaz
