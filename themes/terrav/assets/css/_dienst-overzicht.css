@@ -128,7 +128,7 @@
 .has-inline-bg img{
 	display: none;
 }
-.has-inline-bg div{
+.has-inline-bg .service-grid-img{
 	height: 197px;
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -287,7 +287,7 @@
 	.trv-service-grid-des p{
 		margin-bottom: 22px;
 	}
-	.has-inline-bg div{
+	.has-inline-bg .service-grid-img{
 		height: 180px;
 	}
 	.trv-service-grid-sec{
@@ -319,7 +319,10 @@
 		max-width: 400px;
 		width: 100%;
 		margin: 0 auto;
-		padding-top: 28px;
+		padding-top: 0;
+	}
+	.trv-service-intro-sec{
+		margin-bottom: 28px;
 	}
 	.trv-service-grids-cntlr > ul > li:nth-child(3) .trv-service-grid-item-cntlr .top-rgt-bdr{
 		display: initial;
@@ -372,7 +375,7 @@
 		top: -14px;
 		left: -3.9px;
 	}
-	.has-inline-bg div{
+	.has-inline-bg .service-grid-img{
 		height: 197px;
 	}
 	.trv-service-grid-item-cntlr:before{
