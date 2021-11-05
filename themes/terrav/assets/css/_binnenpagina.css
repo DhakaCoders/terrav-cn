@@ -451,6 +451,10 @@ Gallery design
 	text-transform: uppercase;
 	text-decoration: none;
 }
+.cta-module-btn a:hover{
+	background: transparent;
+	border-color: #fff;
+}
 
 
 
