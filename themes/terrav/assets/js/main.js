@@ -329,6 +329,21 @@ function goToByScroll(id, offset){
   }
 }
 
+if( $('.hm-banner-desc-cntlr').length ){
+      var windowHeight = $(window).height();
+      var headerHight = $('.header').height();
+      var bnrHeight = (windowHeight - headerHight);
+      $('.hm-banner-desc-cntlr').css('height', bnrHeight);
+}
+$(window).resize(function(){
+  if( $('.hm-banner-desc-cntlr').length ){
+      var windowHeight = $(window).height();
+      var headerHight = $('.header').height();
+      var bnrHeight = (windowHeight - headerHight);
+      $('.hm-banner-desc-cntlr').css('height', bnrHeight);
+  }
+});
+
  // if (windowWidth >= 767) {
 function leftWidth(){
     var windowWidth = $(window).width();

@@ -13,7 +13,7 @@
 .hm-bnr-down-scroll{
 	position: absolute;
 	left: 32px;
-	bottom: 85px;
+	bottom: 35px;
 	cursor: pointer;
 	z-index: 9;
 	margin-left: -18px;
@@ -263,5 +263,5 @@ span.hm-bnr-down-scroll-icon {
 /*start-responsive*/
 
 @media(max-width: 1199px){
-	
+
 }

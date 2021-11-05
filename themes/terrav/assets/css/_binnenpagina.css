@@ -599,9 +599,28 @@ Gallery design
 .dfp-grid-module-cntlr .trv-service-grid-item-cntlr{
 	padding-top: 0!important;
 }
-
-
-
+.dfp-grid-module-cntlr .pdct-pgni-trv-service-grids{
+	padding-top: 10px!important;
+	padding-bottom: 10px!important;
+}
+.dfp-professional-module-cntlr .strong-professional-sec-cntlr{
+	height: initial;
+	border-bottom: none;
+}
+.dfp-professional-module-cntlr .professional-team-logo ul{
+	padding: 0!important;
+}
+.dfp-professional-module-cntlr{
+	padding-bottom: 80px;
+	padding-top: 40px;
+}
+hr{
+	margin-top: 0;
+    padding-top: 60px;
+    margin-bottom: 40px;
+    border-top: none;
+    border-bottom: 1px solid #FAFAFA;
+}
 
 /*responsive*/
 
