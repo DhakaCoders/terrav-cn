@@ -113,12 +113,11 @@
 	.vo-cont-rgt {
 	    padding-right: 0;
 	}
+	.gmi-img-cntlr {
+	    max-width: 120px;
+	}
 	.gmi-inline-bg{
 		height: 120px;
-	}
-	.gmi-img-cntlr {
-	    width: 30%;
-	    max-width: 120px;
 	}
 
 
@@ -144,6 +143,12 @@
 	.vo-gmi-inline-bg{
 		height: 100px;
 	}*/
+	.gmi-img-cntlr {
+	    max-width: 100px;
+	}
+	.gmi-inline-bg{
+		height: 100px;
+	}
 
 }
 @media(max-width: 767px){
@@ -183,6 +188,12 @@
 	    width: 45%;
 	    max-width: 95px;
 	}*/
+	.gmi-img-cntlr {
+	    max-width: 83px;
+	}
+	.gmi-inline-bg {
+	    height: 83px;
+	}
 
 }
 @media(max-width: 639px){
@@ -207,6 +218,12 @@
 /*		.vo-module-img {
 	    height: 160px;
 	}*/
+	.gmi-img-cntlr {
+	    max-width: 73px;
+	}
+	.gmi-inline-bg {
+	    height: 73px;
+	}
 }
 @media(max-width: 359px){}
 @media(max-width: 320px){}

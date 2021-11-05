@@ -313,9 +313,7 @@
 	    width: 37px;
 	    height: 26px;
 	}
-	.no-gmi-inline-bg{
-		/*height: 131px;*/
-	}
+
 
 }
 @media(max-width: 1199px){
@@ -349,13 +347,12 @@
 	.tv-grids-modl-sec-cntlr ul{
 		margin: 0 -15px;
 	}
+	.nov-gmi-img-cntlr{
+		max-width: 117px!important;
+	}
 	.no-gmi-inline-bg{
-		/*height: 132px;*/
+		height: 117px!important;
 	}
-	.gmi-img-cntlr {
-	    width: 30%;
-	}
-
 
 
 
@@ -412,6 +409,9 @@
 	}
 	.gmi-img-cntlr{
 		width: 35%;
+	}
+	.nov-gmi-img-cntlr{
+		width: 63%!important;
 	}
 
 
@@ -488,9 +488,6 @@
 	.gmi-cntnt-tt {
 	    font-size: 16px!important;
 	}
-	.no-gmi-inline-bg {
-	    /*height: 100px;*/
-	}
 	.tv-grids-modl-sec-cntlr {
 	    padding: 50px 0 0;
 	}
@@ -539,9 +536,6 @@
 	.gmi-img-cntlr {
 	    width: 35%;
 	}
-	.no-gmi-inline-bg{
-		/*height: 140px;*/
-	}
 
 
 }
@@ -557,9 +551,6 @@
 	.tv-date {
 	    font-size: 12px;
 	    margin-bottom: 0!important;
-	}
-	.no-gmi-inline-bg {
-	    /*height: 115px;*/
 	}
 	.gmi-cntnt-tt {
 	    font-size: 17px!important;
@@ -577,15 +568,9 @@
 	.tv-date {
 	    font-size: 12px;
 	}
-	.no-gmi-inline-bg {
-	    /*height: 110px;*/
-	}
 
 }
 @media(max-width: 320px){
-	.no-gmi-inline-bg {
-	    /*height: 100px;*/
-	}
 	.gmi-cntnt-tt {
 	    font-size: 14px!important;
 	}
