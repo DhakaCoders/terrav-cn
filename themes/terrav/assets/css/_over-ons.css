@@ -348,7 +348,7 @@
     }
    
     .over-ons-intro-sec-img{
-        margin-bottom:30px;
+        margin-bottom:55px;
     }
     .over-ons-intro-button a{
         margin-bottom:0px!important;
@@ -402,10 +402,14 @@
     .over-ons-des-cntlr .over-ons-des-heading{
         margin-bottom:21px;
     }
+   
 }
 @media(max-width:639px){
     .certificates-guarantee-grd ul li{
         width:100%;
+    }
+    .certificates-guarantee-des .certificates-guarantee-des-title{
+        font-size:25px;
     }
 }
 @media(max-width:575px){
@@ -444,7 +448,7 @@
 
      .strong-professional-sec-cntlr {
         padding-top: 44px;
-        padding-bottom: 40px;
+        padding-bottom: 10px;
     }
     .professional-team-logo ul li {
         padding: 5px 12px;
@@ -455,9 +459,7 @@
     .certificates-guarantee-title .certificates-guarantee-heading{
         font-size:30px;
     }
-    .certificates-guarantee-des .certificates-guarantee-des-title{
-        font-size:25px;
-    }
+ 
     .certificates-guarantee-title .certificates-guarantee-heading{
         margin-bottom:36px;
     }
