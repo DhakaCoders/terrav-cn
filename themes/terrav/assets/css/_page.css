@@ -117,6 +117,17 @@ ol li::before {
 .page-banner{
 	background: #fafafa;
 	padding: 20px 0;
+	position: relative;
+}
+.pg-bnr-rgt-img{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	transform: translateY(22px);
+	-ms-transform: translateY(22px);
+	-webkit-transform: translateY(22px);
+	-o-transform: translateY(22px);
 }
 .fl-h1.page-banner-title{
 	line-height: 1;
@@ -303,6 +314,11 @@ ol li::before {
 	
 }
 @media (max-width: 767px){
+	.page-banner{
+		background: #fff;
+		padding: 0;
+		border-bottom: 8px solid #FAFAFA;
+	}
 	.sec-entry-hdr-sub-title{
 		margin-bottom: 20px;
 		padding-left: 28px;
