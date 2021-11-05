@@ -88,6 +88,7 @@
     }
     .fl-pro-grd-img-cntlr img{
         max-height:initial;
+        width:100%;
     }
     .product-category .fl-pro-grd-title{
         font-family: 'Work Sans', sans-serif;
