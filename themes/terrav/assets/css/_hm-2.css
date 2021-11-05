@@ -129,27 +129,29 @@ span.hm-bnr-down-scroll-icon {
 	padding-top: 8px;
 }
 
-.hm-service-grid-sec{
+.hm-process-sec{
 	background: linear-gradient(360deg, #FAFAFA 0.94%, #FFFFFF 98.23%);
+	padding-bottom: 70px;
+	padding-top: 120px;
 }
-.hm-service-grids-cntlr{
+.hm-process-grids-cntlr{
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 -12px;
 }
-.hm-service-grids-cntlr .hm-service-grid-item:first-child .trv-service-grid-item-cntlr .top-lft-bdr{
+.hm-process-grids-cntlr .hm-process-grid-item:first-child .trv-service-grid-item-cntlr .top-lft-bdr{
 	display: none;
 }
-.hm-service-grids-cntlr .hm-service-grid-item:last-child .trv-service-grid-item-cntlr .top-rgt-bdr{
+.hm-process-grids-cntlr .hm-process-grid-item:last-child .trv-service-grid-item-cntlr .top-rgt-bdr{
 	display: none;
 }
-.hm-service-grid-item{
+.hm-process-grid-item{
 	width: 20%;
 	padding: 0 12px;
 	padding-bottom: 30px;
 	position: relative;
 }
-.hm-service-grid-item:before{
+.hm-process-grid-item:before{
 	content: "";
     position: absolute;
     left: -6px;
@@ -161,7 +163,7 @@ span.hm-bnr-down-scroll-icon {
     margin-top: 0;
     background-size: 100% auto;
 }
-.hm-service-grid-item:first-child:before{
+.hm-process-grid-item:first-child:before{
 	content: none;
 	display: none;
 }
