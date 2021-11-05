@@ -82,6 +82,10 @@
     max-width: 120px;
     width:100%;
 }
+.prfnl-tm-logo i{
+    display: inline-block;
+    vertical-align: baseline;
+}
 .prfnl-tm-logo i a:hover img {
     transform: scale(1.1);
     -ms-transform: scale(1.1);
