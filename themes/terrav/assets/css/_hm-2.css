@@ -144,6 +144,12 @@ span.hm-bnr-down-scroll-icon {
 	flex-wrap: wrap;
 	margin: 0 -12px;
 }
+.hm-Service-grids-cntlr .trv-Service-grid-item-cntlr{
+	padding-top: 35px;
+}
+.hm-Service-grids-cntlr .trv-Service-grid-item{
+	box-shadow: none;
+}
 .hm-Service-grids-cntlr .hm-Service-grid-item:first-child .trv-Service-grid-item-cntlr .top-lft-bdr{
 	display: none;
 }
@@ -231,7 +237,7 @@ span.hm-bnr-down-scroll-icon {
  	position: relative;
  	width: 45%;
  }
- .hm-vacatures-nieuws-sec-cntlr .gmicnt-cntlr{
+ .hm-vac-nie-grids-cntlr .gmicnt-cntlr{
  	padding-left: 50px;
  }
  .lft-grey-bg{
