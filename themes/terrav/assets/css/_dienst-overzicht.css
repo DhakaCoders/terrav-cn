@@ -84,12 +84,12 @@
 	font-size: 16px;
 	margin-bottom: 35px;
 }
-.trv-Svic-grid-des-btm-cunt-nmbr{
+.trv-svic-grid-des-btm-cunt-nmbr{
 	position: absolute;
 	bottom: 0;
 	right: 8px;
 }
-.Svic-grid-cunt-nmbr{
+.svic-grid-cunt-nmbr{
 	margin-bottom: 0;
 	color: rgba(79, 75, 52, 0.08);
 }
@@ -140,7 +140,7 @@
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
 }
-.trv-Svic-grid-des-top-2line{
+.trv-svic-grid-des-top-2line{
 	position: absolute;
 	left: 22px;
 	top: -22px;
@@ -149,10 +149,10 @@
 	-ms-transition: all 0.6s;
 	-webkit-transition: all 0.6s;
 }
-.trv-Svic-grid-des-top-2line i{
+.trv-svic-grid-des-top-2line i{
 	display: inline-block;
 }
-.trv-service-grid-item:hover .trv-Svic-grid-des-top-2line{
+.trv-service-grid-item:hover .trv-svic-grid-des-top-2line{
 	opacity: 1;
 }
 .trv-service-grid-item:hover .trv-service-grid-btn a i svg.info-arow{
@@ -213,10 +213,10 @@
 	.trv-service-grid-title{
 		font-size: 21px;
 	}
-	.Svic-grid-cunt-nmbr{
+	.svic-grid-cunt-nmbr{
 		font-size: 34px;
 	}
-	.trv-Svic-grid-des-btm-cunt-nmbr{
+	.trv-svic-grid-des-btm-cunt-nmbr{
 		right: 5px;
 	}
 }
@@ -302,7 +302,7 @@
 	.trv-service-fancy-video-sec{
 		padding-bottom: 5px;
 	}
-	.Svic-grid-cunt-nmbr{
+	.svic-grid-cunt-nmbr{
 		font-size: 34px!important;
 	}
 }
@@ -402,7 +402,7 @@
 	.trv-service-grid-des p{
 		font-size: 14px;
 	}
-	.Svic-grid-cunt-nmbr{
+	.svic-grid-cunt-nmbr{
 		font-size: 46px!important;
 	}
 	.trv-service-grid-sec{
@@ -430,7 +430,7 @@
 		padding-top: 40px;
 		border-top: 1px solid #E8E8E8;
 	}
-	.Svic-grid-cunt-nmbr{
+	.svic-grid-cunt-nmbr{
 		font-size: 37px!important;
 	}
 	.sec-entry-hdr-sub-title{

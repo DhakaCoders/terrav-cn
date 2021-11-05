@@ -1,8 +1,8 @@
 .order-1{
-	order: 1;
+	order: 1!important;
 }
 .order-2{
-	order: 2;
+	order: 2!important;
 }
 .vo-cont-rgt{
 	padding-left: 0;
@@ -131,7 +131,23 @@
 }
 
 }
-@media(max-width: 767px){}
+@media(max-width: 767px){
+	.vo-page-banner-cntlr .breadcrumb-cntlr{
+		display: none;
+	}
+	.order-2{
+		order: 1!important;
+	}
+	.order-1{
+		order: 2!important;
+	}
+	.sec-modl-cont-tt {
+	    font-size: 24px!important;
+	}
+	.vo-cont-rgt{
+		padding-top: 20px;
+	}
+}
 @media(max-width: 639px){}
 @media(max-width: 575px){}
 @media(max-width: 479px){}
