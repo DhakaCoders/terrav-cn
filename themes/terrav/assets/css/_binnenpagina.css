@@ -492,11 +492,17 @@ Gallery design
 .dfp-btn-module{
 	padding-top: 120px;
 }
+.dfp-btn-module-inr {
+    max-width: 915px;
+    width: 100%;
+    margin: 0 auto;
+}
 .dfp-btn-module-inr ul{
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: -12px;
 	margin-right: -12px;
+	padding: 0;
 }
 .dfp-btn-module-inr ul li{
 	padding-left: 12px;
