@@ -359,6 +359,9 @@ function leftWidth(){
   });
 // }
 /*start of johir*/
+$(document).ready(function() {
+    $('.tv-select').select2();
+});
 
 // start of niaz
 

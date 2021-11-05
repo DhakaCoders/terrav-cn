@@ -251,7 +251,7 @@
     width: 9.5px;
     height: 6.5px;
     background-size: 100% auto;
-    right: -5px;
+    right: 0;
 }
 .fl-pagination-cntlr .prev:hover,
 .fl-pagination-cntlr .next:hover{
@@ -261,7 +261,13 @@
 	    opacity: .5;
 }
 
-/*-----------responsive---------------*/
+
+/*------------------------------bootstrap select--------------------------------------------*/
+
+
+
+
+/*----------------------------------------responsive----------------------------------------*/
 @media(max-width: 1699px){
 	.tv-modl-intro-sec {
     padding-top: 60px;
@@ -567,6 +573,3 @@
 	}
 
 }
-
-
-/*tv transparent select cntlr*/
