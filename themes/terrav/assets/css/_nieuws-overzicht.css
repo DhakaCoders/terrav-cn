@@ -143,7 +143,7 @@
 }
 .gmi-cntnt-tt{
 	font-size: 22px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 .gmi-cntnt-tt:hover a{
 	color: #f5a301;
@@ -290,16 +290,6 @@
 	    line-height: 1.4;
 	    font-size: 17px;
 	}
-	.no-fl-info-btn{
-		font-size: 14px;
-	}
-	.no-fl-info-btn i svg.info-arow {
-	    width: 6px;
-	    height: 10px;
-	}
-/*	.no-fl-info-btn i{
-		margin-top: -2px;
-	}*/
 	.gmi-cntnt-tt{
 		font-size: 20px!important;
 	}
@@ -387,12 +377,6 @@
 	}
 	.gmicnt-cntlr {
 	    padding-left: 20px;
-	}
-	.no-fl-info-btn {
-	    font-size: 12px;
-	}
-	.no-fl-info-btn i {
-	    margin-top: -1px;
 	}
 	.no-gmi-inline-bg{
 		/*height: 123px;*/
