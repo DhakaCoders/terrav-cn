@@ -336,9 +336,9 @@ ul.ab-top-menu,
 .fl-pagination-cntlr ul,
 .fl-products-cntlr .products,
 .products{
-	margin: 0;
-	padding: 0;
-	list-style: none;
+	margin: 0!important;
+	padding: 0!important;
+	list-style: none!important;
 }
 .reset-list > li,
 ul.sub-menu li,
@@ -347,10 +347,10 @@ ul.ab-top-menu li,
 .fl-pagination-cntlr ul li,
 .fl-products-cntlr .products li,
 .products li{
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	margin: 0;
+	padding: 0!important;
+	margin: 0!important;
+	list-style: none!important;
+	margin: 0!important;
 }
 .reset-list li:before,
 ul.sub-menu li:before,
