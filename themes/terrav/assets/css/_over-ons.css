@@ -225,7 +225,7 @@
 .over-ons-lftimg-rgtdes-sec-rgt{
     width:58%;
 }
-.fl-dft-lftimg-rgtdes{
+.over-ons-lftimg-rgtdes-sec .fl-dft-lftimg-rgtdes{
     padding-bottom:0
 }
 
@@ -314,7 +314,7 @@
     .over-ons-history-des-cntlr ul li {
         margin-bottom:38px;
     }
-    .over-ons-intro-button a.fl-btn{
+    .over-ons-intro-button a{
         min-width:187px;
     }
     .professional-title{
@@ -394,6 +394,9 @@
     .certificates-guarantee-des{
         padding-left: 12px;
         padding-right: 15px;
+    }
+    .over-ons-des-cntlr .over-ons-des-heading{
+        margin-bottom:21px;
     }
 }
 @media(max-width:639px){
