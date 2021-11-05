@@ -343,6 +343,7 @@ function goToByScroll(id, offset){
     bannerheight();
   });
 
+
  // if (windowWidth >= 767) {
 function leftWidth(){
     var windowWidth = $(window).width();
@@ -357,7 +358,53 @@ function leftWidth(){
   $(window).resize(function(){
     leftWidth();
   });
-// }
+
+  if (windowWidth <= 767) {
+  if( $('.hmProcessSlider').length ){
+      $('.hmProcessSlider').slick({
+        dots: false,
+        arrows:false,
+        infinite: true,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 700,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+  }
+}
+
 /*start of johir*/
 $(document).ready(function() {
     $('.tv-select').select2();
