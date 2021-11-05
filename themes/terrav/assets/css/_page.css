@@ -285,6 +285,11 @@ ol li::before {
 .ftr-top-btn{
 	margin-left: auto;
 }
+.ftr-top-btn .fl-btn{
+	min-width: 303px;
+	padding: 22px 16px 21px;
+	font-size: 16px;
+}
 
 
 
@@ -309,9 +314,44 @@ ol li::before {
 	.sec-entry-hdr-title{
 		margin-bottom: 17px;
 	}
+	.ftr-top-desc-cntlr{
+		max-width: 550px;
+		
+	}
+	.ftr-top-cntlr{
+		padding: 80px 0;	
+	}
 }
 @media (max-width: 991px){
-	
+	.ftr-top-desc-cntlr{
+		max-width: 100%;
+		margin-bottom: 35px;
+	}
+	.ftr-top-btn{
+		margin-right: auto;
+	}
+	.entry-sub-title{
+		display: inline-block;
+	}
+	.desc-entry-sun-hdr,
+	.ftr-top-desc,
+	.ftr-top-title{
+		text-align: center;
+	}
+	.desc-entry-sun-hdr{
+		margin-bottom: 20px;
+	}
+	.ftr-top-title{
+		margin-bottom: 35px;
+	}
+	.entry-sub-title{
+		padding-left: 30px;
+	}
+	.entry-sub-title i img{
+		display: inline-block;
+		max-width: 20px;
+		height: auto;
+	}
 }
 @media (max-width: 767px){
 	.page-banner{
@@ -330,6 +370,10 @@ ol li::before {
 		height: 18px;
 		width: 17px;
 	}
+	.ftr-top-cntlr{
+		
+	}
+	
 }
 @media (max-width: 575px){
 	.default-page-con ul, ul{
@@ -368,5 +412,12 @@ ol li::before {
 	}
 }
 @media (max-width: 479px){
-	
-}
+	.ftr-top-btn{
+		display: block;
+		width: 100%;
+	}
+	.ftr-top-btn .fl-btn {
+		min-width: initial;
+		max-width: 100%;
+		width: 100%;
+	}
