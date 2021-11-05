@@ -118,6 +118,7 @@
 .tv-grid-modl-item{
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 .tv-grid-modl-item:hover .gmi-img-cntlr .gmi-inline-bg{
 	transform: scale(1.1);
@@ -127,8 +128,8 @@
 .gmi-img-cntlr{
 	position: relative;
 	overflow: hidden;
-	width: 25%;
-	max-height: 140px;
+	width: 28%;
+	max-width: 140px;
 }
 .gmi-inline-bg{
 	height: 140px;
@@ -312,9 +313,7 @@
 	    width: 37px;
 	    height: 26px;
 	}
-	.no-gmi-inline-bg{
-		height: 131px;
-	}
+
 
 }
 @media(max-width: 1199px){
@@ -348,13 +347,12 @@
 	.tv-grids-modl-sec-cntlr ul{
 		margin: 0 -15px;
 	}
+	.nov-gmi-img-cntlr{
+		max-width: 117px!important;
+	}
 	.no-gmi-inline-bg{
-		height: 132px;
+		height: 117px!important;
 	}
-	.gmi-img-cntlr {
-	    width: 30%;
-	}
-
 
 
 
@@ -395,7 +393,7 @@
 	    margin-top: -1px;
 	}
 	.no-gmi-inline-bg{
-		height: 123px;
+		/*height: 123px;*/
 	}
 	.tv-grids-modl-sec-cntlr ul {
 	    margin: 0 -5px;
@@ -411,6 +409,9 @@
 	}
 	.gmi-img-cntlr{
 		width: 35%;
+	}
+	.nov-gmi-img-cntlr{
+		width: 63%!important;
 	}
 
 
@@ -451,7 +452,7 @@
 	    padding-top: 20px;
 	}
 	.vo-module-img {
-	    /*height: 200px;*/
+	    height: 200px;
 	}
 	.sec-modl-cont-tt {
 	    font-size: 24px;
@@ -487,9 +488,6 @@
 	.gmi-cntnt-tt {
 	    font-size: 16px!important;
 	}
-	.no-gmi-inline-bg {
-	    height: 100px;
-	}
 	.tv-grids-modl-sec-cntlr {
 	    padding: 50px 0 0;
 	}
@@ -511,7 +509,7 @@
 }
 @media(max-width: 575px){
 	.vo-module-img {
-	    /*height: 180px;*/
+	    height: 180px;
 	}
 	.sec-modl-cont-tt {
 	    font-size: 21px;
@@ -538,9 +536,6 @@
 	.gmi-img-cntlr {
 	    width: 35%;
 	}
-	.no-gmi-inline-bg{
-		height: 140px;
-	}
 
 
 }
@@ -556,9 +551,6 @@
 	.tv-date {
 	    font-size: 12px;
 	    margin-bottom: 0!important;
-	}
-	.no-gmi-inline-bg {
-	    height: 115px;
 	}
 	.gmi-cntnt-tt {
 	    font-size: 17px!important;
@@ -576,15 +568,9 @@
 	.tv-date {
 	    font-size: 12px;
 	}
-	.no-gmi-inline-bg {
-	    height: 110px;
-	}
 
 }
 @media(max-width: 320px){
-	.no-gmi-inline-bg {
-	    /*height: 100px;*/
-	}
 	.gmi-cntnt-tt {
 	    font-size: 14px!important;
 	}

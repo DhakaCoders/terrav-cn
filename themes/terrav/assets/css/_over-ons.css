@@ -49,6 +49,7 @@
 }
 .over-ons-des-cntlr .over-ons-des-heading{
 	margin-bottom:35px;
+    text-transform: capitalize;
 }
 
 
@@ -64,7 +65,7 @@
 	display: flex;
     height: 269px;
     align-items: center;
-    border-bottom: 1px solid #FAFAFA;
+    border-bottom: 1px solid #f7f1f1;
 }
 .professional-team-logo {
     margin-left: auto;
@@ -81,6 +82,10 @@
 .prfnl-tm-logo i img {
     max-width: 120px;
     width:100%;
+}
+.prfnl-tm-logo i{
+    display: inline-block;
+    vertical-align: baseline;
 }
 .prfnl-tm-logo i a:hover img {
     transform: scale(1.1);
@@ -113,6 +118,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position:relative;
 }
 .certificates-guarantee-log img{
 	max-width:90px;
@@ -125,9 +131,14 @@
 	padding-left:23px;
     padding-right: 20px;
 }
-.certificates-guarantee-des .certificates-guarantee-des-title{
+.certificates-guarantee-des .certificates-guarantee-des-title,
+.certificates-guarantee-des .certificates-guarantee-des-title a{
 	color: #4F7F35;
 	text-transform: uppercase;
+    text-decoration: none;
+}
+.certificates-guarantee-des .certificates-guarantee-des-title a:hover{
+    color: #ea7a04;
 }
 
 /*over-ons-history-sec*/
@@ -287,10 +298,13 @@
         margin-bottom:10px;
     }
     .over-ons-intro-des {
-        padding-right: 10px;
+        padding-right: 20px;
     }
     .over-ons-history-des-cntlr ul li {
         margin-bottom:38px;
+    }
+    .over-ons-intro-button a.fl-btn{
+        min-width:187px;
     }
     
 
@@ -315,10 +329,7 @@
         flex-wrap:wrap;
 
     }
-    .over-ons-intro-sec-cntlr{
-        max-width:500px;
-        margin:0 auto;
-    }
+   
     .over-ons-intro-sec-img{
         margin-bottom:30px;
     }
