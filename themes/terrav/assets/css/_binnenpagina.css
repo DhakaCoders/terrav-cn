@@ -635,6 +635,17 @@ hr{
 .dfp-tv-grids-module-cntlr .tv-grids-modl-sec-cntlr ul{
 	padding: 0!important;
 }
+.dfp-tv-grids-module-cntlr {
+    padding-top: 60px;
+    border-top: 2px solid #F8F8F8;
+    margin-top: 17px;
+}
+.dfp-tv-grids-module-cntlr .tv-vo-grids-modl-sec-cntlr ul li{
+	padding-bottom: 60px;
+}
+.dfp-tv-grids-module-cntlr .tv-grids-modl-sec-cntlr{
+	padding-bottom: 0;
+}
 /*.dfp-tv-grids-module-cntlr{
 	margin-bottom: 47px;
 }*/
