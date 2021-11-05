@@ -163,6 +163,19 @@
 	.related-products-sec .slick-dotted.slick-slider{
 		margin-bottom:0;
 	}
+
+	.PdctPgniSlider .pdct-pgni-trv-service-grids-item,
+	.FlProductSlider .fl-products-grid-item{
+		display: none;
+	}
+	.PdctPgniSlider .pdct-pgni-trv-service-grids-item:first-child,
+	.FlProductSlider .fl-products-grid-item:first-child{
+		display: none;
+	}
+	.PdctPgniSlider.slick-initialized .pdct-pgni-trv-service-grids-item,
+	.FlProductSlider.slick-initialized .fl-products-grid-item{
+		display: block;
+	}
 }
 @media(max-width:575px){
 	.prdct-pgni-dtls-sec{
