@@ -281,14 +281,13 @@ if (windowWidth <= 575){
     $('body').toggleClass('allWork');
   });
 }
-if(windowWidth <=767){
-  if( $('li.menu-item-has-children > a').length ){
-    $('li.menu-item-has-children > a').click(function(e){
-     event.preventDefault();
-     $(this).next().slideToggle(300);
-     $(this).parent().toggleClass('sub-menu-arrow');
-   });
-  }
+if(windowWidth <=1199){
+    if( $('li.menu-item-has-children').length ){
+      $('li.menu-item-has-children').click(function(){
+       $(this).find('.sub-menu').slideToggle(300);
+       $(this).toggleClass('sub-menu-arrow');
+     });
+    }
 }
 
 /*start of shariful*/
