@@ -49,7 +49,6 @@
 }
 
 
-
 /*
 Gallery design
 */
@@ -633,6 +632,12 @@ hr{
 .dfp-certificates-module-cntlr .certificates-guarantee-grd ul li{
 	padding: 0!important;
 }
+.dfp-tv-grids-module-cntlr .tv-grids-modl-sec-cntlr ul{
+	padding: 0!important;
+}
+/*.dfp-tv-grids-module-cntlr{
+	margin-bottom: 47px;
+}*/
 /*responsive*/
 
 @media(max-width: 1699px){
