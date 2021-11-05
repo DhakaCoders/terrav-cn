@@ -979,7 +979,7 @@ hr{
 	}
 	.fl-fancy-module{
 		height: 350px;
-		margin-bottom: 30px;
+		margin-bottom: 40px;
 	}
 	
 	.gallery-wrap{
@@ -1150,9 +1150,32 @@ hr{
 	}
 	.dfp-tv-grids-module-cntlr{
 		margin-top: 10px;
+		padding-top: 37px;
+		margin-bottom: 37px;
 	}
-	
-	
+	.dfp-tv-grids-module-cntlr .tv-grids-modl-sec-cntlr ul{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.dfp-tv-grids-module-cntlr .tv-grids-modl-sec-cntlr ul li{
+		padding-bottom: 37px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.dfp-tv-grids-module-cntlr .tv-grid-modl-item{
+		justify-content: flex-start;
+	}
+	.dfp-tv-grids-module2-cntlr .tv-grids-modl-sec-cntlr{
+		padding-top: 25px!important;
+		padding-bottom: 15px!important;
+	}
+	.dfp-tv-grids-module2-cntlr .tv-grids-modl-sec-cntlr ul li{
+		padding-bottom: 40px!important;
+	}
+	.dfp-tbl-wrap{
+		padding-top: 55px;
+	}
+
 
 }
 
@@ -1201,13 +1224,10 @@ hr{
 		padding-bottom: 50px;
 	}
 	.dfp-blockqoute blockquote {
-	    padding: 100px 40px 55px 25px;
+	    padding: 125px 40px 55px 25px;
 	}
 	.dfp-blockqoute blockquote p {
 	    font-size: 24px;
-	}
-	.dfp-blockqoute-ctlr {
-	    padding-left: 20px;
 	}
 	.dfp-blockqoute blockquote i {
 	    top: 30px;
@@ -1222,6 +1242,7 @@ hr{
 	}
 	.fl-fancy-module{
 		height: 200px;
+		margin-top: 10px;
 	}
 	.fl-video-play-cntlr{
 		width: 50px;
@@ -1231,6 +1252,7 @@ hr{
 		padding-left: 20px!important;
 		padding-right: 20px!important;
 	}
+
 
 }
 
