@@ -651,9 +651,30 @@ hr{
 .dfp-tv-grids-module-cntlr .vo-gmi-cntnt-tt{
 	margin-bottom: 5px!important;
 }
-/*.dfp-tv-grids-module-cntlr{
-	margin-bottom: 47px;
-}*/
+.dfp-tv-grids-module2-cntlr .tv-grids-modl-sec-cntlr ul{
+	margin: 0!important;
+	padding: 0!important;
+	list-style: none!important;
+}
+.dfp-tv-grids-module2-cntlr .tv-grids-modl-sec-cntlr ul li{
+	width: 100%!important;
+	padding: 0!important;
+	padding-bottom: 50px!important;
+}
+.dfp-tv-grids-module2-cntlr .tv-grids-modl-sec-cntlr ul li .tv-grid-modl-item{
+	justify-content: flex-start;
+}
+.dfp-tv-grids-module2-cntlr .gmi-cntnt-tt {
+    font-size: 23px!important;
+}
+.dfp-tv-grids-module2-cntlr .tv-grids-modl-sec-cntlr:before{
+	display: none;
+	content: none;
+}
+.dfp-tv-grids-module2-cntlr .tv-grids-modl-sec-cntlr{
+	padding-top: 15px!important;
+	padding-bottom: 50px!important;
+}
 /*responsive*/
 
 @media(max-width: 1699px){
