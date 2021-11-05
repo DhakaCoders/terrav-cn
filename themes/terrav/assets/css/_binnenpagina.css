@@ -149,6 +149,7 @@ Gallery design
     height: 704px;
     position: relative;
     margin-bottom: 70px;
+    margin-top: 30px;
 }
 .fl-fancy-img{
     width: 100%;
@@ -639,12 +640,16 @@ hr{
     padding-top: 60px;
     border-top: 2px solid #F8F8F8;
     margin-top: 17px;
+    margin-bottom: 47px;
 }
 .dfp-tv-grids-module-cntlr .tv-vo-grids-modl-sec-cntlr ul li{
 	padding-bottom: 60px;
 }
 .dfp-tv-grids-module-cntlr .tv-grids-modl-sec-cntlr{
 	padding-bottom: 0;
+}
+.dfp-tv-grids-module-cntlr .vo-gmi-cntnt-tt{
+	margin-bottom: 5px!important;
 }
 /*.dfp-tv-grids-module-cntlr{
 	margin-bottom: 47px;
