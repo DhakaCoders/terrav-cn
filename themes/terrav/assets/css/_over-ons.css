@@ -71,17 +71,26 @@
     margin-left: auto;
 }
 .professional-team-logo ul li {
-    padding: 0 25px;
+    padding: 10px 25px;
 }
 
 .professional-team-logo ul {
     display: flex;
     margin:0 -25px;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content:center;
 }
 .prfnl-tm-logo i img {
     max-width: 120px;
     width:100%;
+    max-height:81px;
+}
+.prfnl-tm-logo {
+    height: 81px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .prfnl-tm-logo i{
     display: inline-block;
@@ -262,7 +271,9 @@
     }
 
     .professional-team-logo {
-        margin-right: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .professional-title .professional-heading{
         margin-bottom: 31px;
@@ -306,7 +317,9 @@
     .over-ons-intro-button a.fl-btn{
         min-width:187px;
     }
-    
+    .professional-title{
+        padding-right:0;
+    }
 
 }
 @media(max-width:767px){
@@ -355,21 +368,14 @@
     .over-ons-lftimg-rgtdes-sec-rgt{
         width:100%;
     }
-    .over-ons-lftimg-rgtdes-sec .fl-dft-lftimg-rgtdes{
-        max-width:500px;
-        margin:0 auto;
-    }
+
     .over-ons-lftimg-rgtdes-sec{
         padding-top: 60px;
         padding-bottom:30px;
     }
     .certificates-guarantee-grd ul li{
-        width: 100%;
+
         margin-bottom:35px;
-    }
-    .certificates-guarantee-cntlr{
-        max-width:500px;
-        margin:0 auto;
     }
     .certificates-guarantee-title .certificates-guarantee-heading{
         margin-bottom:40px;
@@ -385,8 +391,15 @@
     .over-ons-history-des-cntlr ul{
         padding-left:0px;
     }
-
-
+    .certificates-guarantee-des{
+        padding-left: 12px;
+        padding-right: 15px;
+    }
+}
+@media(max-width:639px){
+    .certificates-guarantee-grd ul li{
+        width:100%;
+    }
 }
 @media(max-width:575px){
     .over-ons-intro-sec-img {
@@ -427,7 +440,7 @@
         padding-bottom: 40px;
     }
     .professional-team-logo ul li {
-        padding: 0 12px;
+        padding: 5px 12px;
     }
     .professional-team-logo ul{
         margin:0 -12px;
