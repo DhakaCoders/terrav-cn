@@ -49,7 +49,7 @@
 }
 .trv-service-grid-sec {
     margin-top: -220px;
-    padding-bottom: 85px;
+    padding-bottom: 55px;
 }
 .trv-service-grid-item {
     padding: 27px 15px 36px 15px;
@@ -203,7 +203,7 @@
 		margin-bottom: 30px;
 	}
 	.trv-service-grid-sec{
-		padding-bottom: 75px;
+		padding-bottom: 45px;
 	}
 	.trv-service-intro-sec{
 		padding-top: 90px;
@@ -257,7 +257,7 @@
 }
 @media (max-width: 1199px){
 	.trv-service-grid-sec{
-		padding-bottom: 60px;
+		padding-bottom: 30px;
 	}
 	.trv-service-intro-sec{
 		padding-top: 80px;
@@ -295,7 +295,7 @@
 		height: 180px;
 	}
 	.trv-service-grid-sec{
-		padding-bottom: 50px;
+		padding-bottom: 30px;
 	}
 	.trv-service-intro-sec{
 		padding-top: 60px;
