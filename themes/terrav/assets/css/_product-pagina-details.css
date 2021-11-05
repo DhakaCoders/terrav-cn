@@ -30,13 +30,13 @@
 .pdct-pgni-trv-service-grid-sec .trv-service-grid-item{
 	padding: 18px 18px 37px 18px;
 }
-.pdct-pgni-trv-service-grid-sec .trv-Svic-grid-des-top-2line{
+.pdct-pgni-trv-service-grid-sec .trv-svic-grid-des-top-2line{
 	display: block;
 }
-.pdct-pgni-trv-service-grid-sec .trv-Svic-grid-des-top-2line i svg {
+.pdct-pgni-trv-service-grid-sec .trv-svic-grid-des-top-2line i svg {
     fill: #F4A301;
 }
-.pdct-pgni-trv-service-grid-sec .trv-service-grid-item:hover .trv-Svic-grid-des-top-2line i svg{
+.pdct-pgni-trv-service-grid-sec .trv-service-grid-item:hover .trv-svic-grid-des-top-2line i svg{
 	fill:#E83747;
 }
 .prdct-pgni-dtls-sec{
@@ -153,6 +153,9 @@
 	.related-products-sec .sec-entry-hdr-title{
 		font-size:30px;
 	}
+	.related-products-sec .fl-products-grid{
+		border: 1px solid #E8E8E8;
+	}
 }
 @media(max-width:575px){
 	.prdct-pgni-dtls-sec{
@@ -163,6 +166,9 @@
 	}
 	.pdct-pgni-trv-service-grid-sec .trv-service-grid-item-cntlr{
 		padding-top:0;
+	}
+	.related-products-sec .fl-products-cntlr{
+		max-width:initial;
 	}
 }
 @media(max-width:479px){
