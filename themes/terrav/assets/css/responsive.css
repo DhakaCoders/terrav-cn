@@ -6,11 +6,18 @@
 	.block-1440{
 		max-width: 1240px;
 	}
+	.fl-h1-72{
+		font-size: 65px;
+	}
 }
 @media (max-width: 1599px) {
 	.container-lg {
 	    max-width: 1370px;
 	}
+	.fl-h1-72{
+		font-size: 60px;
+	}
+
 }
 
 @media(max-width: 1399px){
@@ -22,6 +29,9 @@
 	}
 	.container-lg {
 	    max-width: 1250px;
+	}
+	.fl-h1-72{
+		font-size: 55px;
 	}
 }
 
@@ -35,6 +45,9 @@
 	}
 	.show-lg{
 		display: block!important;
+	}
+	.fl-h1-72{
+		font-size: 50px;
 	}
 
 }
