@@ -120,12 +120,21 @@
 	}
 	.pdct-pgni-trv-Service-grid-sec{
 		padding-top:75px;
+		padding-bottom: 50px;
 	}
 	.pdct-pgni-trv-Service-grid-sec .sec-entry-hdr-des-cntlr{
 		text-align: center;
 	}
 	.pdct-pgni-trv-Service-grid-sec .sec-entry-hdr-title{
 		margin-bottom:30px;
+	}
+	.pdct-pgni-trv-Service-grids .pdct-pgni-trv-Service-grids-item{
+		padding-left:6px;
+		padding-right:6px;
+	}
+	.pdct-pgni-trv-Service-grids{
+		margin-left:-6px;
+		margin-right:-6px;
 	}
 }
 @media(max-width:575px){
