@@ -958,7 +958,7 @@ hr{
 	}
 	.default-page-con{
 		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-bottom: 35px;
 	}
 	.dfp-tbl-wrap{
 		margin-bottom: 0;
@@ -1176,7 +1176,6 @@ hr{
 		padding-top: 55px;
 	}
 	.dfp-btn-module-inr ul li{
-		padding: 0;
 		padding-bottom: 16px;
 	}
 
@@ -1291,6 +1290,22 @@ hr{
 	.dfp-grid-module-cntlr .trv-service-grid-des{
 		padding-left: 10px!important;
 		padding-right: 10px!important;
+	}
+	.dfp-btn-module-inr ul {
+		margin: 0;
+	}
+	.dfp-btn-module-inr ul li{
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.dfp-btn-module-inr ul li a{
+		min-width: inherit;
+		max-width: 100%;
+		width: 100%;
+	}
+	.dfp-btn-module-inr ul li:nth-child(4){
+		padding-bottom: 48px;
 	}
 
 }
