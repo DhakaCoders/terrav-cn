@@ -1175,6 +1175,10 @@ hr{
 	.dfp-tbl-wrap{
 		padding-top: 55px;
 	}
+	.dfp-btn-module-inr ul li{
+		padding: 0;
+		padding-bottom: 16px;
+	}
 
 
 }
