@@ -70,7 +70,7 @@
 
 @media(max-width: 1199px){
 	.vo-gmi-cntnt-tt{
-
+		font-size: 18px!important;
 	}
 	.vo-gmicnt-cntlr {
 	    padding-left: 35px;
