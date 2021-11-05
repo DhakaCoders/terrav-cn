@@ -236,6 +236,36 @@ if( $('.wpforms-error').length ){
   });
 }
 
+if (windowWidth <= 575){
+    if( $('.gallerySlider').length ){
+      $('.gallerySlider').slick({
+        dots: true,
+        arrows: false,
+        infinite: false,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+  }
+
+if (windowWidth <= 575){
+    if( $('.gallerySlider2').length ){
+      $('.gallerySlider2').slick({
+        dots: true,
+        arrows: false,
+        infinite: false,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 2,
+        slidesToScroll: 1
+      });
+    }
+  }
+
 /*start of noyon*/
  $(window).scroll(function() { 
     var scroll = $(window).scrollTop();   
