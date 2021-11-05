@@ -628,6 +628,9 @@ body.allWork .hamburger-icon span:nth-child(3) {
 	.fl-lang ul li a{
 		font-size: 16px;
 	}
+	.fl-lang ul li{
+		top: 2px;
+	}
 }
 @media(max-width: 991px){
 	
@@ -640,5 +643,8 @@ body.allWork .hamburger-icon span:nth-child(3) {
 @media(max-width: 575px){
 	.logo a {
 		max-width: 205px;
+	}
+	.fl-lang-cntlr ul{
+		padding-top: 16px;
 	}
 }

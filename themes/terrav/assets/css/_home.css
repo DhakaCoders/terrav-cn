@@ -1,0 +1,12 @@
+.home-messege {
+    background: #4F7F35;
+    padding: 22px 0;
+}
+.home-messege-inr {
+    text-align: center;
+}
+.home-messege-inr p {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 16px;
+}
