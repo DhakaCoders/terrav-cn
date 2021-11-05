@@ -621,7 +621,17 @@ hr{
     border-top: none;
     border-bottom: 1px solid #FAFAFA;
 }
-
+.dfp-certificates-module-cntlr{
+	padding-top: 60px;
+	padding-bottom: 100px;
+}
+.dfp-certificates-module-cntlr .certificates-guarantee-grd ul{
+	padding-left: 0!important;
+	padding-bottom: 0!important;
+}
+.dfp-certificates-module-cntlr .certificates-guarantee-grd ul li{
+	padding: 0!important;
+}
 /*responsive*/
 
 @media(max-width: 1699px){
