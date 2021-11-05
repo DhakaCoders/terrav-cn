@@ -232,7 +232,7 @@ Gallery design
 
 /*-- left des right img customize---*/
 .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes{
-	padding-top: 0;
+	padding-top: 45px;
 }
 .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-lft{
 	float: right;
