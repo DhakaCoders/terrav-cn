@@ -143,7 +143,7 @@
 }
 .gmi-cntnt-tt{
 	font-size: 22px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 .gmi-cntnt-tt:hover a{
 	color: #f5a301;
@@ -236,19 +236,21 @@
 .fl-pagination-cntlr .prev:after {
     position: absolute;
     content: "";
-    background-image: url('../images/pagi-prev.png');
+    background-image: url('../images/prev-icon.svg');
     background-repeat: no-repeat;
-    width: 16px;
-    height: 7px;
+    width: 9.5px;
+    height: 6.5px;
+    background-size: 100% auto;
     left: 0;
 }
 .fl-pagination-cntlr .next:after{
     position: absolute;
     content: "";
-    background-image: url('../images/pagi-next.png');
+    background-image: url('../images/next-icon.svg');
     background-repeat: no-repeat;
-    width: 16px;
-    height: 7px;
+    width: 9.5px;
+    height: 6.5px;
+    background-size: 100% auto;
     right: -5px;
 }
 .fl-pagination-cntlr .prev:hover,
@@ -287,16 +289,6 @@
 	.nov-des p {
 	    line-height: 1.4;
 	    font-size: 17px;
-	}
-	.no-fl-info-btn{
-		font-size: 14px;
-	}
-	.no-fl-info-btn i svg.info-arow {
-	    width: 6px;
-	    height: 10px;
-	}
-	.no-fl-info-btn i{
-		margin-top: -2px;
 	}
 	.gmi-cntnt-tt{
 		font-size: 20px!important;
@@ -385,12 +377,6 @@
 	}
 	.gmicnt-cntlr {
 	    padding-left: 20px;
-	}
-	.no-fl-info-btn {
-	    font-size: 12px;
-	}
-	.no-fl-info-btn i {
-	    margin-top: -1px;
 	}
 	.no-gmi-inline-bg{
 		/*height: 123px;*/
@@ -497,6 +483,14 @@
 	.no-sec-devider{
 		margin-bottom: 7px!important;
 	}
+	.fl-pagination-cntlr .prev:after{
+		width: 16px;
+		height: 11px;	
+	}
+	.fl-pagination-cntlr .next:after{
+		width: 16px;
+		height: 11px;
+	}
 
 
 }
@@ -543,14 +537,11 @@
 		.gmi-img-cntlr{
 		width: 40%;
 	}
-	.tv-grids-modl-sec-cntlr ul li {
-	    padding: 0 0 30px 0;
-	}
 }
 @media(max-width: 379px){
 	.tv-date {
 	    font-size: 12px;
-	    margin-bottom: 0!important;
+	    margin-bottom: 10px!important;
 	}
 	.gmi-cntnt-tt {
 	    font-size: 17px!important;
@@ -571,11 +562,11 @@
 
 }
 @media(max-width: 320px){
-	.gmi-cntnt-tt {
-	    font-size: 14px!important;
-	}
 	.gmi-img-cntlr {
 	    width: 50%;
 	}
 
 }
+
+
+/*tv transparent select cntlr*/

@@ -279,7 +279,7 @@ img{
 	background: #904A10;
 }
 .fl-info-btn{
-	padding-right: 17px;
+	padding-right: 15px;
     position: relative;
     display: inline-block;
     vertical-align: baseline;
@@ -298,8 +298,8 @@ img{
 }
 .fl-info-btn i {
     position: absolute;
-    width: 8px;
-    height: 12px;
+    width: 7px;
+    height: 10px;
     background-size: contain;
     margin-top: -3.6px;
     right: 0;
@@ -311,6 +311,10 @@ img{
     transition: all .5s;
     -ms-transition: all .5s;
     -webkit-transition: all .5s;
+}
+.fl-info-btn i svg{
+	height: 100%!important;
+	width: auto!important;
 }
 .fl-info-btn:hover{
 	color: #E83747;

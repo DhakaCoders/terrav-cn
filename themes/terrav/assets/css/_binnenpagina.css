@@ -232,7 +232,7 @@ Gallery design
 
 /*-- left des right img customize---*/
 .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes{
-	padding-top: 0;
+	padding-top: 45px;
 }
 .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-lft{
 	float: right;
@@ -621,7 +621,17 @@ hr{
     border-top: none;
     border-bottom: 1px solid #FAFAFA;
 }
-
+.dfp-certificates-module-cntlr{
+	padding-top: 60px;
+	padding-bottom: 100px;
+}
+.dfp-certificates-module-cntlr .certificates-guarantee-grd ul{
+	padding-left: 0!important;
+	padding-bottom: 0!important;
+}
+.dfp-certificates-module-cntlr .certificates-guarantee-grd ul li{
+	padding: 0!important;
+}
 /*responsive*/
 
 @media(max-width: 1699px){
