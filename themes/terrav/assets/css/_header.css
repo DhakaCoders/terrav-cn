@@ -31,7 +31,7 @@
 	padding: 54px 0;
 }
 .hdr-lft{
-
+	margin-right: auto;
 }
 .logo{
 
@@ -44,11 +44,11 @@
 	max-width: 280px;
 }
 .hdr-menu{
-	margin-left: auto;
-	transform: translateX(-25px);
+	margin-left: -25px;
+	/*transform: translateX(-25px);
 	-ms-transform: translateX(-25px);
 	-webkit-transform: translateX(-25px);
-	-o-transform: translateX(-25px);
+	-o-transform: translateX(-25px);*/
 }
 
 nav.main-nav ul li a{
@@ -506,10 +506,11 @@ body.allWork .hamburger-icon span:nth-child(3) {
 		padding-bottom: 14px;
 	}
 	.hdr-menu {
-		transform: translateX(-15px);
+		margin-left: -15px;
+		/*transform: translateX(-15px);
 		-ms-transform: translateX(-15px);
 		-webkit-transform: translateX(-15px);
-		-o-transform: translateX(-15px);
+		-o-transform: translateX(-15px);*/
 	}
 	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a{
 		padding-left: 15px;
@@ -532,10 +533,11 @@ body.allWork .hamburger-icon span:nth-child(3) {
 		padding: 0 12px;
 	}
 	.hdr-menu {
-		transform: initial;
+		margin-left: 0;
+		/*transform: initial;
 		-ms-transform: initial;
 		-webkit-transform: initial;
-		-o-transform: initial;
+		-o-transform: initial;*/
 	}
 	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a{
 		padding-left: 12px;
@@ -545,6 +547,9 @@ body.allWork .hamburger-icon span:nth-child(3) {
 	.hdr-contact-btn a,
 	.fl-lang ul li a{
 		font-size: 13px;
+	}
+	.fl-lang-cntlr ul{
+		padding-top: 8px;
 	}
 }
 @media(max-width: 1199px){
@@ -630,6 +635,9 @@ body.allWork .hamburger-icon span:nth-child(3) {
 	}
 	.fl-lang ul li{
 		top: 2px;
+	}
+	.fl-lang-cntlr ul{
+		padding-top: 10px;
 	}
 }
 @media(max-width: 991px){
