@@ -153,8 +153,15 @@
 	.related-products-sec .sec-entry-hdr-title{
 		font-size:30px;
 	}
-	.related-products-sec .fl-products-grid{
-		border: 1px solid #E8E8E8;
+
+	.related-products-sec .slick-slider ul.slick-dots{
+	    border-top: 1px solid #E8E8E8;
+	    padding-top: 36px!important;
+	    margin-left: 12px;
+	    margin-right: 12px;
+	}
+	.related-products-sec .slick-dotted.slick-slider{
+		margin-bottom:0;
 	}
 }
 @media(max-width:575px){
@@ -170,6 +177,18 @@
 	.related-products-sec .fl-products-cntlr{
 		max-width:initial;
 	}
+	.fl-products-grid .fl-products-grid-item{
+		padding-left:6px;
+		padding-right:6px;
+	}
+	.fl-products-grid{
+		margin-left: -6px;
+		margin-right: -6px;
+	}
+	.product-category .fl-pro-grd-title{
+		font-size:28px;
+	}
+
 }
 @media(max-width:479px){
 	.pdct-pgni-trv-service-grids .pdct-pgni-trv-service-grids-item{
@@ -178,6 +197,21 @@
 	}
 	.pdct-pgni-trv-service-grids{
 		margin-left:0;
+		margin-right:0;
+	}
+	.product-category .fl-pro-grd-title{
+		font-size:30px;
+	}
+	.fl-products-grid .fl-products-grid-item{
+		padding-left:0px;
+		padding-right:0px;
+	}
+	.fl-products-grid{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.related-products-sec .slick-slider ul.slick-dots{
+		margin-left: 0;
 		margin-right:0;
 	}
 }
