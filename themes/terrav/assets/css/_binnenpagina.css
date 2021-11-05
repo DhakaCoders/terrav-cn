@@ -249,6 +249,7 @@ Gallery design
 	padding: 110px 0;
 	background: #FAFAFA;
 	margin-bottom: 90px;
+	margin-top: 30px;
 }
 
 .dfp-btm-lftimg-rgtdes .fl-dft-lftimg-rgtdes{
@@ -652,6 +653,7 @@ hr{
 	.dfp-btm-lftimg-rgtdes{
 		padding: 90px 0;
 		margin-bottom: 80px;
+		margin-top: 20px;
 	}
 	.fl-fancy-module{
 		height: 600px;
