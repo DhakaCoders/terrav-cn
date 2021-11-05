@@ -194,6 +194,12 @@
 	.gmi-inline-bg {
 	    height: 83px;
 	}
+	.fl-pagination-cntlr ul li a.prev{
+		text-indent: -200px;
+	}
+	 .fl-pagination-cntlr ul li a.next{
+		text-indent: -1000px;
+	 }
 
 }
 @media(max-width: 639px){
