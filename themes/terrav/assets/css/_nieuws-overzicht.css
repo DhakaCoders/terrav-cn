@@ -424,7 +424,7 @@
 	}
 	.tv-modl-intro-sec {
 	    background: linear-gradient(179deg, #fafafa 0.94%, #fafafa 98.23%);
-	    padding-top: 10px;
+	    padding-top: 0;
 	    padding-bottom: 70px;
 	}
 	.no-page-banner-tt, .vo-page-banner-tt{
@@ -496,7 +496,9 @@
 	.fl-pagination-cntlr{
 		padding-top: 45px;
 	}
-
+	.no-sec-devider{
+		margin-bottom: 7px!important;
+	}
 
 
 }

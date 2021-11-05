@@ -147,6 +147,11 @@
 	.vo-cont-rgt{
 		padding-top: 20px;
 	}
+	.vo-sec-devider{
+		height: 8px;
+		background-color: #fafafa;
+		margin-bottom: 40px;
+	}
 }
 @media(max-width: 639px){}
 @media(max-width: 575px){}
