@@ -113,6 +113,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position:relative;
 }
 .certificates-guarantee-log img{
 	max-width:90px;
@@ -125,9 +126,14 @@
 	padding-left:23px;
     padding-right: 20px;
 }
-.certificates-guarantee-des .certificates-guarantee-des-title{
+.certificates-guarantee-des .certificates-guarantee-des-title,
+.certificates-guarantee-des .certificates-guarantee-des-title a{
 	color: #4F7F35;
 	text-transform: uppercase;
+    text-decoration: none;
+}
+.certificates-guarantee-des .certificates-guarantee-des-title a:hover{
+    color: #ea7a04;
 }
 
 /*over-ons-history-sec*/

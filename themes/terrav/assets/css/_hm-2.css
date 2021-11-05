@@ -115,6 +115,7 @@ span.hm-bnr-down-scroll-icon {
 	align-items: center;
 	position: relative;
 	z-index: 5;
+	padding: 100px 0;
 }
 .hm-bnr-title-1{
 	margin-bottom: 0;
@@ -173,24 +174,24 @@ span.hm-bnr-down-scroll-icon {
 	display: none;
 }
 
-.hm-intro-sec{
+.hm-over-ons-sec{
 	background: initial;
 	padding-top: 75px;
 	position: relative;
 	z-index: 9;
 	padding-bottom: 0;
 }
-.hm-intro-sec .over-ons-intro-sec-cntlr{
+.hm-over-ons-sec .over-ons-intro-sec-cntlr{
 	align-items: initial;
 }
-.hm-intro-sec .over-ons-intro-des{
+.hm-over-ons-sec .over-ons-intro-des{
 	padding-right: 87px;
 	padding-top: 48px;
 }
-.hm-intro-sec .over-ons-intro-sec-left{
+.hm-over-ons-sec .over-ons-intro-sec-left{
 	padding-bottom: 194px;
 }
-.hm-intro-sec .over-ons-intro-sec-img{
+.hm-over-ons-sec .over-ons-intro-sec-img{
 	height: 650px;
 }
 
@@ -198,7 +199,10 @@ span.hm-bnr-down-scroll-icon {
 	height: 580px;
 	margin-top: -100px;
 }
-
+.hm-fullwidth-bg-banner{
+	height: 100%;
+	width: 100%;
+}
 
 .hm-vacatures-nieuws-sec{
 	position: relative;
@@ -223,7 +227,6 @@ span.hm-bnr-down-scroll-icon {
 }
 .hm-vacatures-innr,
  .hm-nieuws-innr{
- 	/*width: 50%;*/
  	padding: 120px 0;
  }
  .hm-vacatures-innr{
@@ -255,3 +258,10 @@ span.hm-bnr-down-scroll-icon {
  .hm-vac-nie-btn{
  	padding-top: 7px;
  }
+
+
+/*start-responsive*/
+
+@media(max-width: 1199px){
+	
+}

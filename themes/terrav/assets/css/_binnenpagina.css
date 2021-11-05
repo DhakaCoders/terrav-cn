@@ -400,21 +400,20 @@ Gallery design
 	width: 30%;
 }
 
-.cta-module-lft span{
+.cta-module-sub-title{
 	display: inline-block;
 	vertical-align: baseline;
-	font-size: 24px;
 	line-height: 1;
 	text-transform: uppercase;
 	color: #fff;
 	letter-spacing: -0.02em;
 	font-family: 'Libre Franklin', sans-serif;
 	font-weight: 700;
-	padding-bottom: 22px;
+	margin-bottom: 22px!important;
 	padding-left: 42px;
 	position: relative;
 }
-.cta-module-lft span i{
+.cta-module-sub-title i{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -586,7 +585,20 @@ Gallery design
 #nieuws-details .dfp-plate-one-img-bx{
 	padding-top: 0;
 }
-
+.dfp-grid-module-cntlr .pdct-pgni-trv-service-grids-item{
+	width: 50%!important;
+}
+.dfp-grid-module-cntlr .trv-service-grid-des{
+	padding-left: 50px!important;
+	padding-right: 50px!important;
+}
+.dfp-grid-module-cntlr .trv-service-grid-item-cntlr:before{
+	content: none;
+	display: none;
+}
+.dfp-grid-module-cntlr .trv-service-grid-item-cntlr{
+	padding-top: 0!important;
+}
 
 
 
@@ -604,9 +616,6 @@ Gallery design
 	}
 	.cta-module-ctlr {
 	    padding: 70px 70px 60px 80px;
-	}
-	.cta-module-lft span{
-		font-size: 23px;
 	}
 	.dfp-full-img-module{
 		padding-bottom: 80px;
@@ -642,9 +651,6 @@ Gallery design
 	}
 	.cta-module-ctlr {
 	    padding: 60px 60px 50px 70px;
-	}
-	.cta-module-lft span{
-		font-size: 22px;
 	}
 	.dfp-full-img-module{
 		padding-bottom: 60px;
@@ -745,9 +751,6 @@ Gallery design
 	}
 	.cta-module-ctlr {
 	    padding: 50px 40px 40px 40px;
-	}
-	.cta-module-lft span{
-		font-size: 20px;
 	}
 	.cta-module-inr{
 		display: block;
@@ -928,9 +931,6 @@ Gallery design
 	.cta-module-ctlr {
 	    padding: 40px 30px;
 	}
-	.cta-module-lft span{
-		font-size: 18px;
-	}
 	.dfp-full-img-module{
 		padding-bottom: 40px;
 	}
@@ -955,6 +955,20 @@ Gallery design
 		margin-left: -8px;
 		margin-right: -8px;
 	}
+	.dfp-grid-module-cntlr .trv-service-grid-des{
+		padding-left: 30px!important;
+		padding-right: 30px!important;
+	}
+	.dfp-grid-module-cntlr .trv-service-grid-des{
+		padding-top: 30px!important;
+	}
+	.dfp-grid-module-cntlr .trv-service-grid-title{
+		margin-bottom: 18px!important;
+	}
+	.dfp-grid-module-cntlr .trv-service-grid-des p{
+		margin-bottom: 20px!important;
+	}
+	
 
 }
 
@@ -1018,9 +1032,6 @@ Gallery design
 	.cta-module-ctlr {
 	    padding: 40px 20px;
 	}
-	.cta-module-lft span{
-		font-size: 16px;
-	}
 	.dfp-full-img-module{
 		padding-bottom: 30px;
 	}
@@ -1030,6 +1041,10 @@ Gallery design
 	.fl-video-play-cntlr{
 		width: 50px;
 		height: 50px;
+	}
+	.dfp-grid-module-cntlr .trv-service-grid-des{
+		padding-left: 20px!important;
+		padding-right: 20px!important;
 	}
 
 }
@@ -1061,6 +1076,10 @@ Gallery design
 	.cta-module-btn a{
 		min-width: inherit;
 		max-width: 270px;
+	}
+	.dfp-grid-module-cntlr .trv-service-grid-des{
+		padding-left: 10px!important;
+		padding-right: 10px!important;
 	}
 
 }
