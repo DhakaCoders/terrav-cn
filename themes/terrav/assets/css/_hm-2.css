@@ -129,39 +129,39 @@ span.hm-bnr-down-scroll-icon {
 	padding-top: 8px;
 }
 
-.hm-Service-grid-sec{
+.hm-service-grid-sec{
 	background: linear-gradient(360deg, #FAFAFA 0.94%, #FFFFFF 98.23%);
 }
-.hm-Service-grids-cntlr{
+.hm-service-grids-cntlr{
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 -12px;
 }
-.hm-Service-grids-cntlr .hm-Service-grid-item:first-child .trv-Service-grid-item-cntlr .top-lft-bdr{
+.hm-service-grids-cntlr .hm-service-grid-item:first-child .trv-service-grid-item-cntlr .top-lft-bdr{
 	display: none;
 }
-.hm-Service-grids-cntlr .hm-Service-grid-item:last-child .trv-Service-grid-item-cntlr .top-rgt-bdr{
+.hm-service-grids-cntlr .hm-service-grid-item:last-child .trv-service-grid-item-cntlr .top-rgt-bdr{
 	display: none;
 }
-.hm-Service-grid-item{
+.hm-service-grid-item{
 	width: 20%;
 	padding: 0 12px;
 	padding-bottom: 30px;
 	position: relative;
 }
-.hm-Service-grid-item:before{
+.hm-service-grid-item:before{
 	content: "";
     position: absolute;
     left: -6px;
     top: -4.5px;
-    background: url(../images/trv-Service-grids-arow.svg);
+    background: url(../images/trv-service-grids-arow.svg);
     background-repeat: no-repeat!important;
     width: 12px;
     height: 20px;
     margin-top: 0;
     background-size: 100% auto;
 }
-.hm-Service-grid-item:first-child:before{
+.hm-service-grid-item:first-child:before{
 	content: none;
 	display: none;
 }
