@@ -287,7 +287,7 @@ img{
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'Libre Franklin', sans-serif;
     line-height: 1.1;
     color: #4F7F35;
@@ -301,7 +301,7 @@ img{
     width: 8px;
     height: 12px;
     background-size: contain;
-    margin-top: -4px;
+    margin-top: -3.6px;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
