@@ -296,14 +296,13 @@ if (windowWidth <= 767){
     $('body').toggleClass('allWork');
   });
 }
-if(windowWidth <=767){
-  if( $('li.menu-item-has-children > a').length ){
-    $('li.menu-item-has-children > a').click(function(e){
-     event.preventDefault();
-     $(this).next().slideToggle(300);
-     $(this).parent().toggleClass('sub-menu-arrow');
-   });
-  }
+if(windowWidth <=1199){
+    if( $('li.menu-item-has-children').length ){
+      $('li.menu-item-has-children').click(function(){
+       $(this).find('.sub-menu').slideToggle(300);
+       $(this).toggleClass('sub-menu-arrow');
+     });
+    }
 }
 
 /*start of shariful*/
@@ -343,6 +342,7 @@ function goToByScroll(id, offset){
     bannerheight();
   });
 
+
  // if (windowWidth >= 767) {
 function leftWidth(){
     var windowWidth = $(window).width();
@@ -357,11 +357,61 @@ function leftWidth(){
   $(window).resize(function(){
     leftWidth();
   });
-// }
+
+  if (windowWidth <= 767) {
+  if( $('.hmProcessSlider').length ){
+      $('.hmProcessSlider').slick({
+        dots: false,
+        arrows:false,
+        infinite: true,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 700,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+  }
+}
+
 /*start of johir*/
-$(document).ready(function() {
-    $('.tv-select').select2();
-});
+// $(document).ready(function() {
+//     $('.tv-select').select2();
+// });
+
+
+$('.tv-select select').select2();
+$('.select-2-cntlr').select2();
 
 // start of niaz
 

@@ -174,7 +174,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:last-child{
 nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a {
     font-size: 14px;
     display: block;
-    padding: 7px 19px;
+    padding: 10px 19px;
 }
 nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a:hover{
 	color: #4F7F35;
@@ -492,10 +492,13 @@ body.allWork .hamburger-icon span:nth-child(3) {
 
 
 /*responsive*/
-@media(max-width: 1399px){
+@media(max-width: 1499px){
 	.logo a {
-		max-width: 265px;
+		max-width: 240px;
 	}
+}
+@media(max-width: 1399px){
+	
 	nav.main-nav > ul{
 		margin: 0 -15px;
 	}
@@ -584,6 +587,7 @@ body.allWork .hamburger-icon span:nth-child(3) {
 		box-shadow: none;
 		display: block;
 		background: transparent!important;
+		display: none;
 	}
 	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li {
 		border-bottom: 0;
@@ -596,8 +600,20 @@ body.allWork .hamburger-icon span:nth-child(3) {
 		padding-right: 0;
 	}
 	nav.main-nav > ul > li.menu-item-has-children > a:before{
-		content: none;
-		display: none;
+		margin-right: -20px;
+		top: 3px;
+	}
+	nav.main-nav > ul > li.menu-item-has-children:hover > a:before {
+		transform: initial;
+		-ms-transform: initial;
+		-webkit-transform: initial;
+		-o-transform: initial;
+	}
+	nav.main-nav > ul > li.menu-item-has-children.sub-menu-arrow > a:before{
+		transform: rotate(-180deg);
+		-ms-transform: rotate(-180deg);
+		-webkit-transform: rotate(-180deg);
+		-o-transform: rotate(-180deg);
 	}
 	nav.main-nav > ul > li:after{
 		content: none;
