@@ -138,17 +138,13 @@ span.hm-bnr-down-scroll-icon {
 	padding-top: 8px;
 }
 
-
+.hm-Service-grid-sec{
+	background: linear-gradient(360deg, #FAFAFA 0.94%, #FFFFFF 98.23%);
+}
 .hm-Service-grids-cntlr{
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 -12px;
-}
-.hm-Service-grids-cntlr .trv-Service-grid-item-cntlr{
-	padding-top: 35px;
-}
-.hm-Service-grids-cntlr .trv-Service-grid-item{
-	box-shadow: none;
 }
 .hm-Service-grids-cntlr .hm-Service-grid-item:first-child .trv-Service-grid-item-cntlr .top-lft-bdr{
 	display: none;
