@@ -134,6 +134,11 @@ span.hm-bnr-down-scroll-icon {
 	padding-bottom: 70px;
 	padding-top: 120px;
 }
+.hm-process-entry-hdr-sec{
+	padding-bottom: 45px;
+    max-width: 820px;
+    margin: 0 auto;
+}
 .hm-process-grids-cntlr{
 	display: flex;
 	flex-wrap: wrap;
