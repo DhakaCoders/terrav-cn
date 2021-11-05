@@ -42,27 +42,27 @@
 .prdct-pgni-dtls-sec{
 	padding-bottom:0;
 }
-.fl-products-grid {
+.tv-products-grid {
     display: flex;
     flex-wrap: wrap;
     margin-left: -12px;
     margin-right: -12px;
 }
 
-.fl-products-grid .fl-products-grid-item {
+.tv-products-grid .tv-products-grid-item {
     width: 33.33%;
     padding-left: 12px;
     padding-right: 12px;
     margin-bottom: 40px;
 }
-.related-products-sec .fl-products-cntlr{
+.related-products-sec .tv-products-cntlr{
 	margin-top:0px;
 }
 .related-products-sec{
 	padding-top:91px;
 	padding-bottom: 60px;
 }
-.related-products-heading {
+.related-products-sec-entry-hdr {
     max-width: 810px;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -165,15 +165,15 @@
 	}
 
 	.PdctPgniSlider .pdct-pgni-trv-service-grids-item,
-	.FlProductSlider .fl-products-grid-item{
+	.FlProductSlider .tv-products-grid-item{
 		display: none;
 	}
 	.PdctPgniSlider .pdct-pgni-trv-service-grids-item:first-child,
-	.FlProductSlider .fl-products-grid-item:first-child{
+	.FlProductSlider .tv-products-grid-item:first-child{
 		display: none;
 	}
 	.PdctPgniSlider.slick-initialized .pdct-pgni-trv-service-grids-item,
-	.FlProductSlider.slick-initialized .fl-products-grid-item{
+	.FlProductSlider.slick-initialized .tv-products-grid-item{
 		display: block;
 	}
 }
@@ -187,14 +187,14 @@
 	.pdct-pgni-trv-service-grid-sec .trv-service-grid-item-cntlr{
 		padding-top:0;
 	}
-	.related-products-sec .fl-products-cntlr{
+	.related-products-sec .tv-products-cntlr{
 		max-width:initial;
 	}
-	.fl-products-grid .fl-products-grid-item{
+	.tv-products-grid .tv-products-grid-item{
 		padding-left:6px;
 		padding-right:6px;
 	}
-	.fl-products-grid{
+	.tv-products-grid{
 		margin-left: -6px;
 		margin-right: -6px;
 	}
@@ -215,11 +215,11 @@
 	.product-category .fl-pro-grd-title{
 		font-size:30px;
 	}
-	.fl-products-grid .fl-products-grid-item{
+	.tv-products-grid .tv-products-grid-item{
 		padding-left:0px;
 		padding-right:0px;
 	}
-	.fl-products-grid{
+	.tv-products-grid{
 		margin-left: 0px;
 		margin-right: 0px;
 	}
