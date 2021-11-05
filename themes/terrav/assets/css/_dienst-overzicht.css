@@ -1,5 +1,7 @@
 .trv-Service-intro-cntlr{
 	padding-bottom: 45px;
+	max-width: 820px;
+	margin: 0 auto;
 }
 .trv-Service-intro-sec{
 	padding-top: 120px;
@@ -253,6 +255,15 @@
 	.trv-Service-grid-sec{
 		padding-bottom: 60px;
 	}
+	.trv-Service-intro-sec{
+		padding-top: 80px;
+	}
+	.trv-Service-intro-cntlr{
+		padding-bottom: 37px;
+	}
+	.trv-Service-fancy-video-sec{
+		padding-bottom: 20px;
+	}
 }
 @media (max-width: 991px){
 	.trv-Service-grids-cntlr > ul{
@@ -282,6 +293,15 @@
 	.trv-Service-grid-sec{
 		padding-bottom: 50px;
 	}
+	.trv-Service-intro-sec{
+		padding-top: 60px;
+	}
+	.trv-Service-intro-cntlr{
+		padding-bottom: 30px;
+	}
+	.trv-Service-fancy-video-sec{
+		padding-bottom: 5px;
+	}
 }
 @media (max-width: 767px){
 	.trv-Service-grids-cntlr > ul{
@@ -296,7 +316,7 @@
 		max-width: 500px;
 		width: 100%;
 		margin: 0 auto;
-		padding-top: 0;
+		padding-top: 28px;
 	}
 	.trv-Service-grids-cntlr > ul > li:nth-child(3) .trv-Service-grid-item-cntlr .top-rgt-bdr{
 		display: initial;
@@ -322,13 +342,13 @@
 	}
 	.top-rgt-bdr{
 		width: 10px;
-		height: 150px;
+		height: 160px;
 		left: -10px;
 		top: 73%;
 	}
 	.top-lft-bdr{
 		width: 10px;
-		height: 142px;
+		height: 160px;
 		left: -10px;
 		bottom: 73%;
 		border-bottom: 4px solid #f5a302;
@@ -365,18 +385,47 @@
 	    background-size: 100% auto;
 	    z-index: 5;
 	}
+	.trv-Service-grids-cntlr > ul > li:first-child .trv-Service-grid-item-cntlr:before{
+		content: none;
+		display: none;
+	}
 	.trv-Service-grid-des{
 		padding-top: 45px;
 	}
 	.trv-Service-grid-title{
 		margin-bottom: 20px;
-		font-size: 25px;
+		font-size: 25px!important;
 	}
 	.trv-Service-grid-des p{
 		font-size: 14px;
 	}
 	.Svic-grid-cunt-nmbr{
 		font-size: 46px!important;
+	}
+	.trv-Service-grid-sec{
+		padding-bottom: 30px;
+	}
+}
+
+@media (max-width: 575px){
+	.trv-Service-grids-cntlr > ul > li{
+		padding-bottom: 30px;
+	}
+	.trv-Service-grid-sec{
+		padding-bottom: 20px;
+	}
+	.trv-Service-fancy-cntlr{
+		padding-top: 50px;
+		border-top: 1px solid #E8E8E8;
+	}
+}
+@media (max-width: 369px){
+	.trv-Service-grid-sec{
+		padding-bottom: 10px;
+	}
+	.trv-Service-fancy-cntlr{
+		padding-top: 40px;
+		border-top: 1px solid #E8E8E8;
 	}
 }
 

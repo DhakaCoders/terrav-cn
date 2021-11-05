@@ -273,3 +273,46 @@ ol li::before {
 .ftr-top-btn{
 	margin-left: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1699px){
+
+}
+@media (max-width: 1199px){
+	.sec-entry-hdr-title{
+		margin-bottom: 17px;
+	}
+}
+@media (max-width: 991px){
+	
+}
+@media (max-width: 767px){
+	.sec-entry-hdr-sub-title{
+		font-size: 24px!important;
+		margin-bottom: 20px;
+	}
+	.sec-entry-hdr-title{
+		margin-bottom: 22px;
+	}
+}
+@media (max-width: 575px){
+	
+}
+@media (max-width: 479px){
+	
+}
