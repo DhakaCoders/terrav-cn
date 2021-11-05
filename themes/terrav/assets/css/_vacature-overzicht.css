@@ -110,7 +110,7 @@
 		margin-top: -1px;
 	}
 	.vo-cont-rgt {
-	    padding-right: 30px;
+	    padding-right: 0;
 	}
 
 
@@ -118,7 +118,19 @@
 
 
 
-@media(max-width: 991px){}
+@media(max-width: 991px){
+	.vo-des p {
+    font-size: 15px;
+    line-height: 1.3;
+}
+.vo-des {
+    padding-right: 20px;
+}
+.vo-cont-rgt {
+    padding-right: 10px;
+}
+
+}
 @media(max-width: 767px){}
 @media(max-width: 639px){}
 @media(max-width: 575px){}
