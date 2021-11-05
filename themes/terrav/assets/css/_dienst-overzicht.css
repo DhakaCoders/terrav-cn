@@ -214,7 +214,7 @@
 		font-size: 21px;
 	}
 	.Svic-grid-cunt-nmbr{
-		font-size: 40px;
+		font-size: 34px;
 	}
 	.trv-Svic-grid-des-btm-cunt-nmbr{
 		right: 5px;
@@ -302,6 +302,9 @@
 	.trv-Service-fancy-video-sec{
 		padding-bottom: 5px;
 	}
+	.Svic-grid-cunt-nmbr{
+		font-size: 34px!important;
+	}
 }
 @media (max-width: 767px){
 	.trv-Service-grids-cntlr > ul{
@@ -313,7 +316,7 @@
 		padding-bottom: 40px;
 	}
 	.trv-Service-grid-item-cntlr{
-		max-width: 500px;
+		max-width: 400px;
 		width: 100%;
 		margin: 0 auto;
 		padding-top: 28px;
@@ -426,6 +429,12 @@
 	.trv-Service-fancy-cntlr{
 		padding-top: 40px;
 		border-top: 1px solid #E8E8E8;
+	}
+	.Svic-grid-cunt-nmbr{
+		font-size: 37px!important;
+	}
+	.sec-entry-hdr-sub-title{
+		margin-bottom: 15px;
 	}
 }
 

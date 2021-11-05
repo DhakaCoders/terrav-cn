@@ -359,6 +359,7 @@ function leftWidth(){
         speed: 700,
         slidesToShow: 3,
         slidesToScroll: 1,
+        dots: true,
         responsive: [
           {
             breakpoint: 767,

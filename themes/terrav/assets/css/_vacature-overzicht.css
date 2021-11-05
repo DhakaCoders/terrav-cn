@@ -6,7 +6,7 @@
 }
 .vo-cont-rgt{
 	padding-left: 0;
-	padding-right: 70px;
+	padding-right: 25px;
 }
 .tv-vo-intro-modl-sec-cntlr{
 	background-color: initial;
@@ -24,7 +24,7 @@
 	font-size: 16px;
 	line-height: 1.1;
 	letter-spacing: -0.02em;
-	color: #f5a301;
+	color: #904b10;
 	text-transform: capitalize;
 }
 .tv-vo-grids-modl-sec-cntlr{
@@ -41,6 +41,12 @@
 }
 .vo-gmicnt-cntlr{
 	padding-left: 45px;
+}
+.vo-des {
+    padding-right: 50px;
+}
+.vo-des p{
+	font-size: 16px;
 }
 
 /*_______________________________responsive_______________________________*/
@@ -70,13 +76,13 @@
 
 @media(max-width: 1199px){
 	.vo-gmi-cntnt-tt{
-		font-size: 18px!important;
+		font-size: 17px!important;
 	}
 	.vo-gmicnt-cntlr {
-	    padding-left: 35px;
+	    padding-left: 25px;
 	}
 	.tv-vo-grids-modl-sec-cntlr ul li {
-	    padding: 0 20px 70px;
+	    padding: 0 20px 60px;
 	}
 	.tv-vo-grids-modl-sec-cntlr ul{
 		margin: 0 -20px;
@@ -87,7 +93,25 @@
 	.vo-gmi-inline-bg{
 		height: 130px;
 	}
-
+	.tv-vo-grids-modl-sec {
+	    padding-top: 50px;
+	}
+	.full-time{
+		font-size: 13px;
+	}	
+	.vo-fl-info-btn{
+		font-size: 12px;
+		padding-right: 15px;
+	}
+	.vo-gmicnt-cntlr .tv-date {
+	    font-size: 13px;
+	}
+	.vo-fl-info-btn i{
+		margin-top: -1px;
+	}
+	.vo-cont-rgt {
+	    padding-right: 30px;
+	}
 
 
 }

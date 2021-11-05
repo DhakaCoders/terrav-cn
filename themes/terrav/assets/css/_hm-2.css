@@ -60,11 +60,6 @@ span.hm-bnr-down-scroll-icon {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
-@keyframes floating {
-    from { transform: translate(0,  0px); }
-    65%  { transform: translate(0, 10px); }
-    to   { transform: translate(0, -0px); }    
-}
 @keyframes clfloating {
     from { transform: translate(0,  0px); }
     65%  { transform: translate(0, 10px); }
