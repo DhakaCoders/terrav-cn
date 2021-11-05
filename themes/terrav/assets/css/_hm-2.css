@@ -336,6 +336,9 @@ span.hm-bnr-down-scroll-icon {
 	.hm-process-grid-item:before{
 		display: none;
 	}
+	.hm-process-grid-item .trv-service-grid-title{
+		font-size: 18px!important;
+	}
 }
 @media(max-width: 575px){
 	.hm-banner-desc-cntlr{
