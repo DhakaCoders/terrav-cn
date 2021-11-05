@@ -358,11 +358,6 @@ function leftWidth(){
   });
 // }
 /*start of johir*/
-// $(document).ready(function() {
-//     $('.tv-select').select2();
-// });
-
-
 $('.tv-select select').select2();
 $('.select-2-cntlr').select2();
 
