@@ -282,8 +282,8 @@ if (windowWidth <= 767){
   }
 
 if (windowWidth <= 767){
-    if( $('.PdctPgniSlider3').length ){
-      $('.PdctPgniSlider3').slick({
+    if( $('.DienstDetailsSlider').length ){
+      $('.DienstDetailsSlider').slick({
         dots: true,
         arrows: false,
         infinite: false,

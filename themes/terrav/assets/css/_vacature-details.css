@@ -1,0 +1,13 @@
+.vacature-details-con-cntlr{
+	display: flex;
+	flex-wrap: wrap;
+}
+.vacature-details-con-lft{
+	width: 65%;
+}
+.vacature-details-con-rgt{
+	width: 35%;
+}
+#vacature-details .dfp-top-gallery{
+	background: transparent;
+}

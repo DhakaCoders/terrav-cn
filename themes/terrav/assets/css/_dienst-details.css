@@ -91,10 +91,25 @@
 }
 
 @media (max-width: 767px){
-	#dienst-details .pdct-pgni-trv-service-grids .pdct-pgni-trv-service-grids-item {
-	    width: initial!important;
-	}
 	.dienst-details-pro-module-cntlr .prfnl-tm-logo i img{
 		width: initial!important;
+	}
+	#dienst-details .dfp-grid-module-cntlr .pdct-pgni-trv-service-grids{
+		padding-top: 0!important;
+	}
+	#dienst-details .dfp-grid-module{
+		padding-top: 55px;
+		padding-bottom: 40px;
+	}
+	#dienst-details .gallery-columns-3 .gallery-item{
+		margin-bottom: 25px;
+	}
+	#dienst-details .glslider2 .slick-dotted.slick-slider{
+		margin-bottom: 10px!important;
+	}
+}
+@media (max-width: 369px){
+	.dienst-details-pro-module-cntlr .prfnl-tm-logo i img{
+		max-width: 240px;
 	}
 }
