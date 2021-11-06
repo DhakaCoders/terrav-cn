@@ -467,6 +467,10 @@ textarea {
 .vatur-details-form-cntlr .wpforms-field-description span.checkmark{
   top: 35px;
 }
+.vatur-details-form-cntlr .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea textarea:focus, 
+.vatur-details-form-cntlr .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input:focus {
+    border: 1px solid #fff!important;
+}
 
 
 @media (max-width: 1699px){
@@ -505,6 +509,9 @@ textarea {
     }
     .contact-google-map iframe{
         height: 680px;
+    }
+    .vatur-details-con-cntlr{
+        padding: 65px 60px;
     }
 }
 @media (max-width: 1199px){
