@@ -90,7 +90,7 @@
 <body>
   <div class="page-body-cntlr">
     <div class="bdoverlay"></div>
-    <header class="header d-none">
+    <header class="header">
       <div class="container-lg">
           <div class="row">
             <div class="col-md-12">
@@ -100,7 +100,7 @@
                     <a href="#"><img src="assets/images/logo.png"></a>
                   </div>
                 </div>
-                <div class="hdr-menu">
+                <div class="hdr-menu hide-lg">
                   <nav class="main-nav">
                     <ul class="clearfix reset-list">
                       <li class="current-menu-item"><a href="#">Producten</a></li>
@@ -118,13 +118,13 @@
                     </ul>
                   </nav>
                 </div>
-                <div class="hdr-right-cntlr">
+                <div class="hdr-right-cntlr hide-lg">
                   <div class="hdr-right">
                     <div class="hdr-lang-cntlr">
                       <div class="hdr-language">
                         <div class="fl-lang reset-slect">
                           <div class="fl-lang-cntlr">
-                            <ul class="reset-list hide-sm">
+                            <ul class="reset-list">
                               <li class="lang-active"><a href="#">Nl</a></li>
                               <li><a href="#">EN</a></li>
                               <li><a href="#">CN</a></li>
@@ -145,7 +145,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="hamburgar-cntlr hide-sm">
+                <div class="hamburgar-cntlr show-lg">
                   <div class="hamburger-icon">
                     <span></span>
                     <span></span>
@@ -158,7 +158,75 @@
       </div>
     </header>
 
-    <div class="xs-mobile-menu d-none">
+    <header class="header header-sticky">
+      <div class="container-lg">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="header-inr clearfix">
+                <div class="hdr-lft">
+                  <div class="logo">
+                    <a href="#"><img src="assets/images/logo.png"></a>
+                  </div>
+                </div>
+                <div class="hdr-menu hide-lg">
+                  <nav class="main-nav">
+                    <ul class="clearfix reset-list">
+                      <li class="current-menu-item"><a href="#">Producten</a></li>
+                      <li class="menu-item-has-children">
+                        <a href="#">Verpakkingen</a>
+                        <ul class="sub-menu">
+                          <li><a href="#">submenu 1</a></li>
+                          <li><a href="#">submenu 2</a></li>
+                          <li><a href="#">submenu 3</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Over ons</a></li>
+                      <li><a href="#">Nieuws</a></li>
+                      <li><a href="#">Vacatures</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="hdr-right-cntlr hide-lg">
+                  <div class="hdr-right">
+                    <div class="hdr-lang-cntlr">
+                      <div class="hdr-language">
+                        <div class="fl-lang reset-slect">
+                          <div class="fl-lang-cntlr">
+                            <ul class="reset-list">
+                              <li class="lang-active"><a href="#">Nl</a></li>
+                              <li><a href="#">EN</a></li>
+                              <li><a href="#">CN</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hdr-contact-btn">
+                      <a href="#">
+                        <span>Contact</span>
+                        <i>
+                          <svg class="msg-tel-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                            <use xlink:href="#msg-tel-icon"></use> 
+                          </svg>
+                        </i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="hamburgar-cntlr show-lg">
+                  <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </header>
+
+    <div class="xs-mobile-menu">
       <div class="xs-pop-up-menu-inr">
         <div class="xs-pop-up-menu-top">
           <div class="logo-close-btn-cntlr">
@@ -167,7 +235,7 @@
                 <img src="assets/images/logo.png" alt="">
               </a>
             </div>
-            <div class="hamburgar-cntlr show-sm">
+            <div class="hamburgar-cntlr show-lg">
               <div class="hamburger-icon">
                 <span></span>
                 <span></span>
@@ -201,7 +269,7 @@
             <div class="hdr-language">
               <div class="fl-lang reset-slect">
                 <div class="fl-lang-cntlr">
-                  <ul class="reset-list hide-sm">
+                  <ul class="reset-list">
                     <li class="lang-active"><a href="#">Nl</a></li>
                     <li><a href="#">EN</a></li>
                     <li><a href="#">CN</a></li>
@@ -224,7 +292,7 @@
       </div>
     </div>
 
-    <section class="page-banner d-none">
+    <section class="page-banner">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -1105,24 +1173,24 @@
 
 
 
-    <section class="footer-top-sec d-none">
+    <section class="footer-top-cta-sec">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="ftr-top-cntlr">
-              <div class="ftr-top-desc-cntlr">
+            <div class="footer-top-cta-cntlr">
+              <div class="footer-top-cta-desc-cntlr">
                 <div class="desc-entry-sun-hdr">
-                  <h6 class="fl-h6 ftr-top-desc-sub-title entry-sub-title">
+                  <h3 class="fl-h6 footer-top-cta-desc-sub-title entry-sub-title">
                     <span>Contact</span>
                     <i><img src="assets/images/white-2lines.svg" alt=""></i>
-                  </h6>
+                  </h3>
                 </div>
-                <h2 class="fl-h1 ftr-top-title">Facilisi duis aliquet.</h2>
-                <div class="ftr-top-desc">
+                <h2 class="fl-h1 footer-top-cta-title">Facilisi duis aliquet.</h2>
+                <div class="footer-top-cta-desc">
                   <p>Blandit volutpat enim rutrum maecenas nunc, consectetur nec a commodo. Pulvinar erat sed a tempus. Sed et purus, eget viverra a.</p>
                 </div>
               </div>
-              <div class="ftr-top-btn">
+              <div class="footer-top-cta-btn">
                 <a class="fl-btn" href="#">contacteer ons</a>
               </div>
             </div>
@@ -1131,7 +1199,7 @@
       </div>
     </section>
 
-    <footer class="footer-wrp d-none">
+    <footer class="footer-wrp">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -1140,7 +1208,7 @@
                 <div class="ftr-logo">
                   <a href="#"><img src="assets/images/logo.png" alt=""></a>
                 </div>
-                <div class="ftr-details">
+                <div class="ftr-details hide-md">
                   <div class="ftr-addr ftr-details-col">
                     <span>Magazijn 50-52 <br><a target="_blank" href="#">Werkhuizenkaai 112-154 <br>1000 Brussel</a></span>
                   </div>
@@ -1156,13 +1224,13 @@
                 </div>
               </div>
               <div class="ftr-rgt">
-                <div class="ftr-Slogan">
+                <div class="ftr-Slogan hide-md">
                   <h5 class="ftr-Slogan-title fl-h5">Jouw partner in groenten en fruit<br> van de hoogste kwaliteit </h5>
                 </div>
                 <div class="ftr-rgt-mdl">
                   <div class="ftr-menu">
                     <ul class="reset-list">
-                      <li class="active"><a href="#">Producten</a></li>
+                      <li class="current-menu-item"><a href="#">Producten</a></li>
                       <li><a href="#">Over ons</a></li>
                       <li><a href="#">Vacatures</a></li>
                       <li><a href="#">Verpakkingen</a></li>
@@ -1177,6 +1245,20 @@
                         </svg>
                       </i>
                     </a>
+                  </div>
+                </div>
+                <div class="ftr-details show-md">
+                  <div class="ftr-addr ftr-details-col">
+                    <span>Magazijn 50-52 <br><a target="_blank" href="#">Werkhuizenkaai 112-154 <br>1000 Brussel</a></span>
+                  </div>
+                  <div class="ftr-tel ftr-details-col">
+                    <span>Tel. : <a href="tel:+3222449266">+32 2 244 92 66</a></span>
+                  </div>
+                  <div class="ftr-fax ftr-details-col">
+                    <span>Fax : <a href="fax:+322449269">+32 244 92 69</a></span>
+                  </div>
+                  <div class="ftr-mail ftr-details-col">
+                    <span>E-mail : <a href="mailto:info@terraverde.be">info@terraverde.be</a></span>
                   </div>
                 </div>
                 <div class="ftr-btmbar">
@@ -1212,7 +1294,6 @@
 <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 <script src="assets/fancybox3/dist/jquery.fancybox.min.js"></script>
 <script src="assets/slick.slider/slick.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaRQsAJCZyyD6MbCg0jB_0sdLGEOxt97Y"></script>
 <script src="assets/js/jquery.matchHeight-min.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/wow.min.js"></script>
