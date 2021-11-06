@@ -1311,4 +1311,10 @@ hr{
 
 }
 
+@media(max-width: 359px){
+	.default-page-con h3{
+		font-size: 25px;
+	}
+}
+
 
