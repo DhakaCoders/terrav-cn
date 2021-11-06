@@ -77,7 +77,9 @@
       </symbol>
 
       <!-- start of Momin -->
-
+      <svg id="bnr-arrow-icon" width="13" height="14" viewBox="0 0 13 14" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.56003 13.03H5.64463L5.83263 13.2274C5.92001 13.3155 6.02398 13.3854 6.13852 13.4332C6.25307 13.4809 6.37593 13.5055 6.50003 13.5055C6.62412 13.5055 6.74698 13.4809 6.86153 13.4332C6.97608 13.3854 7.08004 13.3155 7.16742 13.2274L7.35543 13.03H7.44003V12.9454L12.8074 7.58742L11.4726 6.25262L7.44003 10.2946V0.340027H5.56003V10.2946L1.52743 6.25262L0.192627 7.58742L5.56003 12.9454V13.03Z">
+      </svg>
 
       <!-- start of Jahir -->
 
@@ -227,7 +229,7 @@
           </div>
       </div>
     </header>
-    <div class="xs-mobile-menu d-none">
+    <div class="xs-mobile-menu">
       <div class="xs-pop-up-menu-inr">
         <div class="xs-pop-up-menu-top">
           <div class="logo-close-btn-cntlr">
@@ -298,7 +300,8 @@
         <div class="hm-bnr-down-scroll-icon-brder">
           <span class="hm-bnr-down-scroll-text">SCROOL</span>
           <span class="hm-bnr-down-scroll-icon">
-            <img class="UpdownAnimate" src="assets/images/down-arrow.png" alt="">
+            <svg class="bnr-arrow-icon UpdownAnimate" width="13" height="14" viewBox="0 0 13 14" fill="#F4A302">
+            <use xlink:href="#bnr-arrow-icon"></use> </svg>
           </span>
         </div>
       </div>
@@ -339,7 +342,8 @@
                 <div class="sec-entry-hdr-des-cntlr">
                   <div class="sec-entry-hdr">
                     <h4 class="fl-h6 sec-entry-hdr-sub-title">
-                      <span>DE flow</span>
+                      <span class="hm-desk-none">DE FLOW</span>
+                      <span class="hm-xs-block">OVER ONS</span>
                       <i>
                         <svg class="green-2lines" width="28" height="31" viewBox="0 0 28 31" fill="#4F7F35">
                           <use xlink:href="#green-2lines"></use> 
@@ -557,7 +561,7 @@
       </div>
     </section>
 
-    <section class="hm-over-ons-sec d-none">
+    <section class="hm-over-ons-sec">
       <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -588,11 +592,11 @@
       </div>    
     </section>
 
-    <section class="hm-fullwidth-bg-banner-sec d-none">
+    <section class="hm-fullwidth-bg-banner-sec">
         <div class="hm-fullwidth-bg-banner inline-bg" style="background-image: url('assets/images/hm-fluid-banner-img.jpg');"></div>
     </section>
 
-    <section class="hm-vacatures-nieuws-sec d-none">
+    <section class="hm-vacatures-nieuws-sec">
         <div class="lft-grey-bg"></div>
         
              <div class="container">
@@ -728,24 +732,24 @@
             </div>
     </section>
 
-    <section class="footer-top-sec d-none">
+    <section class="footer-top-cta-sec">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="ftr-top-cntlr">
-              <div class="ftr-top-desc-cntlr">
+            <div class="footer-top-cta-cntlr">
+              <div class="footer-top-cta-desc-cntlr">
                 <div class="desc-entry-sun-hdr">
-                  <h6 class="fl-h6 ftr-top-desc-sub-title entry-sub-title">
+                  <h3 class="fl-h6 footer-top-cta-desc-sub-title entry-sub-title">
                     <span>Contact</span>
                     <i><img src="assets/images/white-2lines.svg" alt=""></i>
-                  </h6>
+                  </h3>
                 </div>
-                <h2 class="fl-h1 ftr-top-title">Facilisi duis aliquet.</h2>
-                <div class="ftr-top-desc">
+                <h2 class="fl-h1 footer-top-cta-title">Facilisi duis aliquet.</h2>
+                <div class="footer-top-cta-desc">
                   <p>Blandit volutpat enim rutrum maecenas nunc, consectetur nec a commodo. Pulvinar erat sed a tempus. Sed et purus, eget viverra a.</p>
                 </div>
               </div>
-              <div class="ftr-top-btn">
+              <div class="footer-top-cta-btn">
                 <a class="fl-btn" href="#">contacteer ons</a>
               </div>
             </div>
@@ -754,7 +758,7 @@
       </div>
     </section>
 
-    <footer class="footer-wrp d-none">
+    <footer class="footer-wrp">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -763,7 +767,7 @@
                 <div class="ftr-logo">
                   <a href="#"><img src="assets/images/logo.png" alt=""></a>
                 </div>
-                <div class="ftr-details">
+                <div class="ftr-details hide-md">
                   <div class="ftr-addr ftr-details-col">
                     <span>Magazijn 50-52 <br><a target="_blank" href="#">Werkhuizenkaai 112-154 <br>1000 Brussel</a></span>
                   </div>
@@ -779,13 +783,13 @@
                 </div>
               </div>
               <div class="ftr-rgt">
-                <div class="ftr-Slogan">
+                <div class="ftr-Slogan hide-md">
                   <h5 class="ftr-Slogan-title fl-h5">Jouw partner in groenten en fruit<br> van de hoogste kwaliteit </h5>
                 </div>
                 <div class="ftr-rgt-mdl">
                   <div class="ftr-menu">
                     <ul class="reset-list">
-                      <li class="active"><a href="#">Producten</a></li>
+                      <li class="current-menu-item"><a href="#">Producten</a></li>
                       <li><a href="#">Over ons</a></li>
                       <li><a href="#">Vacatures</a></li>
                       <li><a href="#">Verpakkingen</a></li>
@@ -800,6 +804,20 @@
                         </svg>
                       </i>
                     </a>
+                  </div>
+                </div>
+                <div class="ftr-details show-md">
+                  <div class="ftr-addr ftr-details-col">
+                    <span>Magazijn 50-52 <br><a target="_blank" href="#">Werkhuizenkaai 112-154 <br>1000 Brussel</a></span>
+                  </div>
+                  <div class="ftr-tel ftr-details-col">
+                    <span>Tel. : <a href="tel:+3222449266">+32 2 244 92 66</a></span>
+                  </div>
+                  <div class="ftr-fax ftr-details-col">
+                    <span>Fax : <a href="fax:+322449269">+32 244 92 69</a></span>
+                  </div>
+                  <div class="ftr-mail ftr-details-col">
+                    <span>E-mail : <a href="mailto:info@terraverde.be">info@terraverde.be</a></span>
                   </div>
                 </div>
                 <div class="ftr-btmbar">

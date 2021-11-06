@@ -21,6 +21,9 @@
 .hm-bnr-down-scroll:hover .hm-bnr-down-scroll-icon{
     border: 2px solid #47995a;
 }
+.hm-bnr-down-scroll:hover .bnr-arrow-icon{
+	fill: #47995a;
+}
 .hm-bnr-down-scroll-icon-brder{
 	display: flex;
 	flex-direction: column;
@@ -55,7 +58,7 @@ span.hm-bnr-down-scroll-icon {
 }
 .UpdownAnimate{
 	animation-name: clfloating;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
@@ -296,6 +299,9 @@ span.hm-bnr-down-scroll-icon {
 	.hm-process-entry-hdr-sec{
 		padding-bottom: 34px;
 	}
+	.hm-over-ons-sec{
+		padding-top: 65px;
+	}
 
 }
 @media(max-width: 991px){
@@ -320,8 +326,12 @@ span.hm-bnr-down-scroll-icon {
 	.hm-banner-desc-cntlr{
 		height: 600px;
 	}
+	.hm-process-sec{
+		padding-top: 55px;
+		padding-bottom: 20px;
+	}
 	.hm-process-entry-hdr-sec{
-		padding-bottom: 30px;
+		padding-bottom: 20px;
 	}
 	.hm-bnr-btn{
 		padding-top: 19px;
@@ -329,8 +339,23 @@ span.hm-bnr-down-scroll-icon {
 	.hm-bnr-title-3{
 		margin-bottom: 20px;
 	}
-	.top-lft-bdr,
-	.top-rgt-bdr{
+	.sec-entry-hdr-title{
+		margin-bottom: 0;
+	}
+	.sec-entry-hdr-sub-title .hm-desk-none{
+		display: none;
+	}
+	.sec-entry-hdr-sub-title .hm-desk-none{
+		display: none;
+	}
+	.hm-xs-block{
+		display: block;
+	}
+	.sec-entry-desc p{
+		display: none;
+	}
+	.hm-process-sec .top-lft-bdr,
+	.hm-process-sec .top-rgt-bdr{
 		display: none;
 	}
 	.hm-process-grid-item:before{
@@ -338,6 +363,9 @@ span.hm-bnr-down-scroll-icon {
 	}
 	.hm-process-grid-item .trv-service-grid-title{
 		font-size: 18px!important;
+	}
+	.hm-fullwidth-bg-banner-sec{
+		display: none;
 	}
 }
 @media(max-width: 575px){
@@ -348,5 +376,8 @@ span.hm-bnr-down-scroll-icon {
 @media(max-width: 479px){
 	.hm-bnr-desc p br{
 		display: none;
+	}
+	.hm-process-grid-item .trv-service-grid-title{
+		font-size: 25px!important;
 	}
 }

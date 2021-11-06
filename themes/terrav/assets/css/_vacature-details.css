@@ -10,11 +10,17 @@
 }
 #vacature-details .dfp-top-gallery{
 	background: transparent;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-bottom: 35px;
 }
 #vacature-details .dfp-date-module span{
 	position: static;
 	padding-left: 0;
 	padding-bottom: 12px;
+}
+#vacature-details .dfp-form-module{
+	margin-top: 60px;
 }
 #vacature-details .dfp-social-media-select-module {
     display: flex;
@@ -28,6 +34,9 @@
 	padding-bottom: 46px;
 	border-top: none;
 	margin-left: auto;
+}
+#vacature-details .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes{
+	padding-top: 30px;
 }
 #vtur-btm-select .select2-container--default .select2-selection--single .select2-selection__rendered,
 #vacature-details .select2-container--default .select2-selection--single .select2-selection__rendered{
@@ -55,7 +64,7 @@
     margin-top: 0.3px;
 }
 #vtur-btm-select .tv-select-down-icon:after{
-	right: 100px;
+	right: 85px;
 }
 .vacature-details-con-rgt {
 	padding-bottom: 110px;
@@ -91,6 +100,10 @@
 	#vacature-details .dfp-plate-one-img-bx{
 		margin-bottom: 60px;
 	}
+	#vacature-details .dfp-social-media-module{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 }
 @media(max-width: 1199px){
 	.vacature-details-con-rgt{
@@ -100,16 +113,115 @@
 	#vacature-details .dfp-plate-one-img-bx{
 		margin-bottom: 50px;
 	}
+	#vacature-details .dfp-social-media-module{
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
+	.vacature-details-rgt-col{
+		padding-bottom: 10px;
+	}
+	#vacature-details .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes {
+	    padding-top: 20px;
+	}
+	#vacature-details .dfp-top-gallery{
+		margin-bottom: 25px;
+	}
+	#vacature-details .dfp-form-module{
+		margin-top: 45px;
+	}
+	.vatur-details-con-cntlr{
+        padding: 50px 45px;
+    }
 }
 @media(max-width: 991px){
 	.vacature-details-con-rgt{
 		padding-top: 50px;
 		padding-bottom: 50px;
 	}
+	#vacature-details .dfp-social-media-select-module{
+		display: block;
+	}
+	#vacature-details .dfp-social-media-module{
+		margin-left: initial;
+		padding-bottom: 30px;
+	}
+	#vacature-details .tv-select-cntlr{
+		justify-content: flex-start;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		border-bottom: 1px solid #E8E8E8;
+	}
+	#vacature-details .tv-select-down-icon{
+		width: 100%;
+	}
+	#vacature-details span.select2.select2-container.select2-container--default{
+		width: 100%!important;
+	}
+	#vtur-btm-select .tv-select-down-icon:after, 
+	#vtur-btm-select .wpforms-field-select:after, 
+	#vacature-details .tv-select-down-icon:after, 
+	#vacature-details .wpforms-field-select:after{
+		right: 4%;
+	}
+	.vacature-details-con-rgt,
+	.vacature-details-con-lft{
+		width: 100%;
+	}
+	.vacature-details-con-lft{
+		order: 2;
+	}
+	.vacature-details-con-rgt{
+		padding-left: 0;
+		order: 1;
+		padding-bottom: 0;
+	}
+	#vacature-details .dfp-plate-one-img-bx{
+		margin-bottom: 40px;
+	}
+	#vacature-details .dfp-form-module{
+		margin-bottom: 30px;
+	}
+	.vatur-details-con-cntlr{
+        padding: 40px 35px;
+    }
+    .vacature-details-rgt-con-cntlr{
+    	margin-bottom: 10px;
+    }
 }
 @media(max-width: 767px){
 	.vacature-details-con-rgt{
 		padding-top: 30px;
 		padding-bottom: 35px;
 	}
+	#vacature-details .dfp-social-media-module{
+		padding-bottom: 20px;
+	}
+	#vacature-details .dfp-plate-one-img-bx{
+		margin-bottom: 30px;
+	}
+	#vacature-details .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes {
+	    padding-top: 10px;
+	    padding-bottom: 0;
+	}
+	#vacature-details .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-lft{
+		margin-bottom: 35px;
+	}
+	#vacature-details .fl-dft-lftimg-rgtdes-lft, #vacature-details .fl-dft-lftimg-rgtdes-rgt{
+		margin-bottom: 35px;
+	}
+	#vacature-details .fl-dft-lftimg-rgtdes-lft, #vacature-details .fl-dft-lftimg-rgtdes-rgt{
+		margin-bottom: 35px;
+	}
+	#vacature-details .fl-dft-lftimg-rgtdes{
+		padding-bottom: 0;
+	}
+	#vacature-details .dfp-form-module{
+		margin-bottom: 22px;
+	}
+	.vatur-details-con-cntlr{
+        padding: 30px 24px 37px;
+    }
+    #vacature-details .sec-entry-hdr-title{
+    	font-size: 30px;
+    }
 }

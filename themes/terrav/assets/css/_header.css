@@ -268,12 +268,12 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu > li:hover:after {
 	background-image: url('../images/white-btm-arrow.svg');
 	background-repeat: no-repeat;
 	content: "";
-	width: 12px;
-	height: 8px;
+	width: 11px;
+	height: 7px;
 	background-size: contain;
     padding-right: 0;
     position: absolute;
-    top: 21px;
+    top: 22px;
     right: 11px;
     z-index: 21;
     transition: all 0.5s;
@@ -654,6 +654,11 @@ body.allWork .hamburger-icon span:nth-child(3) {
 	}
 	.fl-lang-cntlr ul{
 		padding-top: 10px;
+	}
+	.fl-lang-cntlr:after{
+		width: 12px;
+		height: 8px;
+		top: 21px;
 	}
 }
 @media(max-width: 991px){
