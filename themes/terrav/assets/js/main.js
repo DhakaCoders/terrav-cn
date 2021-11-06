@@ -281,6 +281,21 @@ if (windowWidth <= 767){
     }
   }
 
+if (windowWidth <= 767){
+    if( $('.DienstDetailsSlider').length ){
+      $('.DienstDetailsSlider').slick({
+        dots: true,
+        arrows: false,
+        infinite: false,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+  }
+
 /*start of noyon*/
  $(window).scroll(function() { 
     var scroll = $(window).scrollTop();   
@@ -405,11 +420,6 @@ function leftWidth(){
 }
 
 /*start of johir*/
-// $(document).ready(function() {
-//     $('.tv-select').select2();
-// });
-
-
 $('.tv-select select').select2();
 $('.select-2-cntlr').select2();
 

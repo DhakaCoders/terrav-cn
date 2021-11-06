@@ -1,0 +1,115 @@
+.vacature-details-con-cntlr{
+	display: flex;
+	flex-wrap: wrap;
+}
+.vacature-details-con-lft{
+	width: 65%;
+}
+.vacature-details-con-rgt{
+	width: 35%;
+}
+#vacature-details .dfp-top-gallery{
+	background: transparent;
+}
+#vacature-details .dfp-date-module span{
+	position: static;
+	padding-left: 0;
+	padding-bottom: 12px;
+}
+#vacature-details .dfp-social-media-select-module {
+    display: flex;
+    align-items: center;
+}
+#vacature-details .tv-select-cntlr {
+	padding-bottom: 0;
+}
+#vacature-details .dfp-social-media-module{
+	padding-top: 46px;
+	padding-bottom: 46px;
+	border-top: none;
+	margin-left: auto;
+}
+#vtur-btm-select .select2-container--default .select2-selection--single .select2-selection__rendered,
+#vacature-details .select2-container--default .select2-selection--single .select2-selection__rendered{
+	text-align: center;
+	background: #F4A301;
+	border-radius: 8px!important;
+	color: #fff!important;
+}
+#vtur-btm-select .tv-select-down-icon:after, 
+#vtur-btm-select .wpforms-field-select:after,
+#vacature-details .tv-select-down-icon:after, 
+#vacature-details .wpforms-field-select:after{
+	content: "";
+	position: absolute;
+	right: 80px;
+	top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+	background: url('../images/select-arow.svg');
+	background-repeat: no-repeat!important;
+	width: 11px;
+	height: 11px;
+    background-size: 100% auto;
+    margin-top: 0.3px;
+}
+#vtur-btm-select .tv-select-down-icon:after{
+	right: 100px;
+}
+.vacature-details-con-rgt {
+	padding-bottom: 110px;
+	padding-top: 110px;
+	padding-left: 30px;
+}
+.vacature-details-rgt-con-cntlr {
+    padding: 45px 30px 10px;
+    background: #FAFAFA;
+    margin-bottom: 28px;
+}
+.vacature-details-rgt-col ul{
+	padding-left: 0;
+}
+.vacature-details-rgt-col{
+	padding-bottom: 15px;
+}
+#vacature-details .dfp-plate-one-img-bx{
+	padding-top: 0;
+	margin-bottom: 70px;
+}
+#vtur-btm-select span.select2.select2-container.select2-container--default{
+	width: 100%!important;
+}
+#vtur-btm-select .tv-select-cntlr{
+	display: block;
+}
+@media(max-width: 1699px){
+	.vacature-details-con-rgt{
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	#vacature-details .dfp-plate-one-img-bx{
+		margin-bottom: 60px;
+	}
+}
+@media(max-width: 1199px){
+	.vacature-details-con-rgt{
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	#vacature-details .dfp-plate-one-img-bx{
+		margin-bottom: 50px;
+	}
+}
+@media(max-width: 991px){
+	.vacature-details-con-rgt{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+@media(max-width: 767px){
+	.vacature-details-con-rgt{
+		padding-top: 30px;
+		padding-bottom: 35px;
+	}
+}
