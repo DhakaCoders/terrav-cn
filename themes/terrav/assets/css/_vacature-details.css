@@ -167,8 +167,13 @@
 	.vacature-details-con-lft{
 		width: 100%;
 	}
+	.vacature-details-con-lft{
+		order: 2;
+	}
 	.vacature-details-con-rgt{
 		padding-left: 0;
+		order: 1;
+		padding-bottom: 0;
 	}
 	#vacature-details .dfp-plate-one-img-bx{
 		margin-bottom: 40px;
@@ -178,6 +183,9 @@
 	}
 	.vatur-details-con-cntlr{
         padding: 40px 35px;
+    }
+    .vacature-details-rgt-con-cntlr{
+    	margin-bottom: 10px;
     }
 }
 @media(max-width: 767px){
