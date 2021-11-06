@@ -21,11 +21,8 @@
 .hm-bnr-down-scroll:hover .hm-bnr-down-scroll-icon{
     border: 2px solid #47995a;
 }
-.hm-bnr-down-scroll:hover svg{
-	fill:#000;
-}
-svg:hover{
-	fill: red;
+.hm-bnr-down-scroll:hover .bnr-arrow-icon{
+	fill: #47995a;
 }
 .hm-bnr-down-scroll-icon-brder{
 	display: flex;
