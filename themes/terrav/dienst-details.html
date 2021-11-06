@@ -46,7 +46,19 @@
 
 
       <!-- start of Kashob -->
-        
+      <symbol id="green-2lines" width="28" height="31" viewBox="0 0 28 31" xmlns="http://www.w3.org/2000/svg">
+        <rect y="9.21118" width="7.08561" height="24.0911" transform="rotate(-30 0 9.21118)"/>
+        <rect x="9.81836" y="3.54272" width="7.08561" height="24.0911" transform="rotate(-30 9.81836 3.54272)"/>
+      </symbol>
+
+      <symbol id="info-arow" width="8" height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.34982 0.563634L7.088 4.96495C7.34102 5.26274 7.46734 5.63129 7.46734 5.99983C7.46734 6.36797 7.34102 6.73611 7.088 7.0347L3.34982 11.436C2.77822 12.1092 1.76932 12.1915 1.0962 11.6199C0.423067 11.0479 0.340725 10.039 0.912724 9.36587L3.77112 5.99983L0.912724 2.63418C0.341124 1.96026 0.423466 0.951762 1.0962 0.380162C1.76932 -0.191438 2.77822 -0.109095 3.34982 0.563634Z"/>
+      </symbol>
+
+      <symbol id="svic-grid-2line" width="41" height="44" viewBox="0 0 41 44" xmlns="http://www.w3.org/2000/svg">
+        <rect width="10.1484" height="34.5045" transform="matrix(0.866024 -0.500002 0.499998 0.866026 0 13.1929)"/>
+        <rect width="10.1484" height="34.5045" transform="matrix(0.866024 -0.500002 0.499998 0.866026 14.0625 5.07422)"/>
+      </symbol>
 
       <!-- start of Shariful -->
 
@@ -77,7 +89,7 @@
 <body>
   <div class="page-body-cntlr">
     <div class="bdoverlay"></div>
-    <header class="header">
+    <header class="header d-none">
       <div class="container-lg">
           <div class="row">
             <div class="col-md-12">
@@ -145,7 +157,7 @@
       </div>
     </header>
 
-    <div class="xs-mobile-menu">
+    <div class="xs-mobile-menu d-none">
       <div class="xs-pop-up-menu-inr">
         <div class="xs-pop-up-menu-top">
           <div class="logo-close-btn-cntlr">
@@ -211,7 +223,7 @@
       </div>
     </div>
 
-    <section class="page-banner">
+    <section class="page-banner d-none">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -239,7 +251,7 @@
     </section>
 
     <section class="innerpage-con-wrap">
-      <article class="default-page-con"> 
+      <article class="default-page-con" id="dienst-details"> 
         <div class="block">
           <div class="dfp-promo-module">
             <div class="container">
@@ -291,7 +303,7 @@
                       <div class="gallery-wrap has-inline-bg clearfix">
                         <h3>Aliquet tempor congue elit.</h3>
                         <p>Consectetur feugiat arcu quisque amet vulputate cursus arcu sed. In risus quis elementum nunc vestibulum. Viverra tellus varius porta leo non nulla ultrices.</p>
-                        <div class="gallery gallery-columns-2">
+                        <div class="gallery gallery-columns-2 gallerySlider">
                           <figure class="gallery-item">
                             <div class="gallery-icon portrait">
                               <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-02.jpg');"></div>
@@ -306,9 +318,7 @@
                             </div>
                           </figure>
                         </div>
-                      </div>
-
-                      
+                      </div>                      
                     </div>
                   </div>
                 </div>
@@ -347,10 +357,10 @@
                     <div class="cta-module">
                       <div class="cta-module-inr">
                         <div class="cta-module-lft">
-                          <span>
+                          <h4 class="cta-module-sub-title fl-h6">
                             Contact
                             <i><img src="assets/images/cta-icon.png"></i>
-                          </span>
+                          </h4>
                           <h2 class="cta-module-title fl-h1">Facilisi duis aliquet.</h2>
                           <p>Blandit volutpat enim rutrum maecenas nunc, consectetur nec a commodo. Pulvinar erat sed a tempus. Sed et purus, eget viverra a. </p>
                         </div>
@@ -375,6 +385,7 @@
                 <div class="col-md-12">
                   <div class="block-850">
                     <div class="gap-80 hide-sm"></div>
+                    <div class="gap-40 show-sm"></div>
                     <h3>Neque cursus odio nec arcu sit.</h3>
                     <p>Pulvinar ullamcorper nunc facilisis proin cursus donec. Nunc pellentesque nec, leo orci, semper nullam pharetra. Purus volutpat lectus diam nunc, potenti convallis et rhoncus. Ullamcorper urna commodo duis aliquet turpis. Tincidunt elementum aliquam vitae, tortor, mattis in.</p> 
                   </div>
@@ -415,13 +426,20 @@
         </div>
 
         <div class="block">
-          <div class="dfp-text-module">
+          <div class="dfp-blockqoute-module">
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
-                  <div class="block-850">
-                    <p>Commodo augue eleifend feugiat facilisis. Mi quam nunc, nulla sit. Viverra platea fermentum eu eget vestibulum ultrices ipsum mauris quam. Adipiscing placerat interdum id arcu eu. Cursus facilisis amet eget morbi quam nibh habitasse tincidunt duis. Proin et condimentum a, faucibus. Ipsum ultrices morbi viverra magna dignissim maecenas euismod. Arcu accumsan malesuada ipsum gravida id donec.</p>
-                    <p>Nunc purus nunc fusce faucibus. In adipiscing pharetra placerat enim urna nunc, tincidunt malesuada. Vestibulum integer tellus tortor, donec risus et malesuada malesuada. Risus.</p> 
+                  <div class="dfp-blockqoute-ctlr">
+                    <div class="dfp-blockqoute">
+                      <blockquote>
+                        <i><img src="assets/images/blockquote-icon.png"></i>
+                        <div class="dfp-blockqoute-des">
+                          <p>Blandit volutpat enim rutrum maecenas nunc, consectetur nec a commodo. Pulvinar erat sed a tempus. Sed et purus, eget viverra a.</p>
+                          <strong>Mark S.</strong>
+                        </div>
+                      </blockquote>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -434,48 +452,84 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
+                  <div class="gallery-wrap has-inline-bg glslider2 clearfix">
+                    <div class="gallery gallery-columns-3 gallerySlider2">
+                      <figure class="gallery-item">
+                        <div class="gallery-icon portrait">
+                          <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-05.jpg');"></div>
+                          <img src="assets/images/dfp-img-05.jpg">
+                        </div>
+                      </figure>
+
+                      <figure class="gallery-item">
+                        <div class="gallery-icon portrait">
+                          <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-06.jpg');"></div>
+                          <img src="assets/images/dfp-img-06.jpg">
+                        </div>
+                      </figure>
+                      <figure class="gallery-item">
+                        <div class="gallery-icon portrait">
+                          <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-07.jpg');"></div>
+                          <img src="assets/images/dfp-img-07.jpg">
+                        </div>
+                      </figure>
+
+                      <figure class="gallery-item">
+                        <div class="gallery-icon portrait">
+                          <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-08.jpg');"></div>
+                          <img src="assets/images/dfp-img-08.jpg">
+                        </div>
+                      </figure>
+                      <figure class="gallery-item">
+                        <div class="gallery-icon portrait">
+                          <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-09.jpg');"></div>
+                          <img src="assets/images/dfp-img-09.jpg">
+                        </div>
+                      </figure>
+
+                      <figure class="gallery-item">
+                        <div class="gallery-icon portrait">
+                          <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-10.jpg');"></div>
+                          <img src="assets/images/dfp-img-10.jpg">
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="dienst-details-hr-cntlr">
+                    <hr>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="dfp-professional-module">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
                   <div class="block-850">
-                    <div class="gallery-wrap has-inline-bg clearfix">
-                      <div class="gallery gallery-columns-3">
-                        <figure class="gallery-item">
-                          <div class="gallery-icon portrait">
-                            <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-05.jpg');"></div>
-                            <img src="assets/images/dfp-img-05.jpg">
+                    <div class="dienst-details-pro-module-cntlr">
+                      <div class="dfp-professional-module-cntlr">
+                        <div class="strong-professional-sec-cntlr">
+                          <div class="professional-title">
+                            <h3 class="fl-h4 professional-heading">Verantwoordelijke partner:</h3>
                           </div>
-                        </figure>
-
-                        <figure class="gallery-item">
-                          <div class="gallery-icon portrait">
-                            <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-06.jpg');"></div>
-                            <img src="assets/images/dfp-img-06.jpg">
+                          <div class="professional-team-logo">
+                            <ul class="reset-list">
+                              <li>
+                                <div class="prfnl-tm-logo">
+                                  <i>
+                                    <a href="#">
+                                      <img src="assets/images/partner-logo.jpg" alt="">
+                                   </a>
+                                  </i>
+                                </div>
+                              </li>
+                            </ul>
                           </div>
-                        </figure>
-                        <figure class="gallery-item">
-                          <div class="gallery-icon portrait">
-                            <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-07.jpg');"></div>
-                            <img src="assets/images/dfp-img-07.jpg">
-                          </div>
-                        </figure>
-
-                        <figure class="gallery-item">
-                          <div class="gallery-icon portrait">
-                            <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-08.jpg');"></div>
-                            <img src="assets/images/dfp-img-08.jpg">
-                          </div>
-                        </figure>
-                        <figure class="gallery-item">
-                          <div class="gallery-icon portrait">
-                            <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-09.jpg');"></div>
-                            <img src="assets/images/dfp-img-09.jpg">
-                          </div>
-                        </figure>
-
-                        <figure class="gallery-item">
-                          <div class="gallery-icon portrait">
-                            <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-10.jpg');"></div>
-                            <img src="assets/images/dfp-img-10.jpg">
-                          </div>
-                        </figure>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -485,15 +539,198 @@
           </div>
         </div>
 
+        <div class="block">
+          <div class="dfp-grid-module">
+            <div class="container">
+              <div class="row">
 
+                <div class="col-md-12">
+                  <div class="trv-service-con-cntlr">
+                    <div class="trv-service-intro-cntlr">
+                      <div class="sec-entry-hdr-des-cntlr">
+                        <div class="sec-entry-hdr">
+                          <h2 class="fl-h2 sec-entry-hdr-title">Wij verzorgen elke stap van het proces</h2>
+                        </div>
+                        <div class="sec-entry-desc">
+                          <p>Blandit volutpat enim rutrum maecenas nunc, consectetur nec a commodo. Pulvinar erat sed a tempus. Sed et purus, eget viverra a. Posuere amet vel enim nascetur mus ultricies lacinia. Egestas morbi ut faucibus aenean.</p>
+                        </div>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
 
+                <div class="col-md-12">
+
+                  <div class="dfp-grid-module-cntlr">
+                    <div class="pdct-pgni-trv-service-grids PdctPgniSlider3">
+
+                      <div class="pdct-pgni-trv-service-grids-item">
+                        <div class="trv-service-grid-item-cntlr">
+                          <div class="trv-service-grid-item">
+                            <div class="trv-service-grid-item-inner">
+                              <div class="trv-service-grid-img-cntlr has-inline-bg">
+                                <a class="overlay-link" href="#"></a>
+                                <div class="inline-bg service-grid-img" style="background-image: url(assets/images/dfp-img-02.jpg);"></div>
+                                <img src="assets/images/trv-Service-grid-1.jpg" alt="">
+                              </div>
+                              <div class="trv-service-grid-des">
+                                <div class="trv-svic-grid-des-top-2line">
+                                  <i>
+                                    <svg class="svic-grid-2line" width="41" height="44" viewBox="0 0 41 44" fill="#E83747">
+                                      <use xlink:href="#svic-grid-2line"></use> 
+                                    </svg>
+                                  </i>
+                                </div>
+                                <h2 class="fl-h6 trv-service-grid-title"><a href="#">Verpakken</a></h2>
+                                <p>Integer leo pellentesque erat a varius viverra nulla. Lorem morbi diam massa risus pellentesque.</p>
+                                <div class="trv-service-grid-btn">
+                                  <a class="fl-info-btn" href="#">
+                                    <span>meer info</span>
+                                    <i>
+                                      <svg class="info-arow" width="8" height="12" viewBox="0 0 8 12" fill="#4F7F35">
+                                        <use xlink:href="#info-arow"></use> 
+                                      </svg>
+                                    </i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="trv-svic-grid-des-btm-cunt-nmbr">
+                              <h3 class="fl-h1 svic-grid-cunt-nmbr">01.</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="pdct-pgni-trv-service-grids-item">
+                        <div class="trv-service-grid-item-cntlr">
+                          <div class="trv-service-grid-item">
+                            <div class="trv-service-grid-item-inner">
+                              <div class="trv-service-grid-img-cntlr has-inline-bg">
+                                <a class="overlay-link" href="#"></a>
+                                <div class="inline-bg service-grid-img" style="background-image: url(assets/images/dfp-img-02.jpg);"></div>
+                                <img src="assets/images/trv-Service-grid-1.jpg" alt="">
+                              </div>
+                              <div class="trv-service-grid-des">
+                                <div class="trv-svic-grid-des-top-2line">
+                                  <i>
+                                    <svg class="svic-grid-2line" width="41" height="44" viewBox="0 0 41 44" fill="#E83747">
+                                      <use xlink:href="#svic-grid-2line"></use> 
+                                    </svg>
+                                  </i>
+                                </div>
+                                <h2 class="fl-h6 trv-service-grid-title"><a href="#">Verpakken</a></h2>
+                                <p>Integer leo pellentesque erat a varius viverra nulla. Lorem morbi diam massa risus pellentesque.</p>
+                                <div class="trv-service-grid-btn">
+                                  <a class="fl-info-btn" href="#">
+                                    <span>meer info</span>
+                                    <i>
+                                      <svg class="info-arow" width="8" height="12" viewBox="0 0 8 12" fill="#4F7F35">
+                                        <use xlink:href="#info-arow"></use> 
+                                      </svg>
+                                    </i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="trv-svic-grid-des-btm-cunt-nmbr">
+                              <h3 class="fl-h1 svic-grid-cunt-nmbr">01.</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="pdct-pgni-trv-service-grids-item">
+                        <div class="trv-service-grid-item-cntlr">
+                          <div class="trv-service-grid-item">
+                            <div class="trv-service-grid-item-inner">
+                              <div class="trv-service-grid-img-cntlr has-inline-bg">
+                                <a class="overlay-link" href="#"></a>
+                                <div class="inline-bg service-grid-img" style="background-image: url(assets/images/dfp-img-02.jpg);"></div>
+                                <img src="assets/images/trv-Service-grid-1.jpg" alt="">
+                              </div>
+                              <div class="trv-service-grid-des">
+                                <div class="trv-svic-grid-des-top-2line">
+                                  <i>
+                                    <svg class="svic-grid-2line" width="41" height="44" viewBox="0 0 41 44" fill="#E83747">
+                                      <use xlink:href="#svic-grid-2line"></use> 
+                                    </svg>
+                                  </i>
+                                </div>
+                                <h2 class="fl-h6 trv-service-grid-title"><a href="#">Verpakken</a></h2>
+                                <p>Integer leo pellentesque erat a varius viverra nulla. Lorem morbi diam massa risus pellentesque.</p>
+                                <div class="trv-service-grid-btn">
+                                  <a class="fl-info-btn" href="#">
+                                    <span>meer info</span>
+                                    <i>
+                                      <svg class="info-arow" width="8" height="12" viewBox="0 0 8 12" fill="#4F7F35">
+                                        <use xlink:href="#info-arow"></use> 
+                                      </svg>
+                                    </i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="trv-svic-grid-des-btm-cunt-nmbr">
+                              <h3 class="fl-h1 svic-grid-cunt-nmbr">01.</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="pdct-pgni-trv-service-grids-item">
+                        <div class="trv-service-grid-item-cntlr">
+                          <div class="trv-service-grid-item">
+                            <div class="trv-service-grid-item-inner">
+                              <div class="trv-service-grid-img-cntlr has-inline-bg">
+                                <a class="overlay-link" href="#"></a>
+                                <div class="inline-bg service-grid-img" style="background-image: url(assets/images/dfp-img-02.jpg);"></div>
+                                <img src="assets/images/trv-Service-grid-1.jpg" alt="">
+                              </div>
+                              <div class="trv-service-grid-des">
+                                <div class="trv-svic-grid-des-top-2line">
+                                  <i>
+                                    <svg class="svic-grid-2line" width="41" height="44" viewBox="0 0 41 44" fill="#E83747">
+                                      <use xlink:href="#svic-grid-2line"></use> 
+                                    </svg>
+                                  </i>
+                                </div>
+                                <h2 class="fl-h6 trv-service-grid-title"><a href="#">Verpakken</a></h2>
+                                <p>Integer leo pellentesque erat a varius viverra nulla. Lorem morbi diam massa risus pellentesque.</p>
+                                <div class="trv-service-grid-btn">
+                                  <a class="fl-info-btn" href="#">
+                                    <span>meer info</span>
+                                    <i>
+                                      <svg class="info-arow" width="8" height="12" viewBox="0 0 8 12" fill="#4F7F35">
+                                        <use xlink:href="#info-arow"></use> 
+                                      </svg>
+                                    </i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="trv-svic-grid-des-btm-cunt-nmbr">
+                              <h3 class="fl-h1 svic-grid-cunt-nmbr">01.</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </article>
     </section>
 
 
 
-    <section class="footer-top-sec">
+    <section class="footer-top-sec d-none">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -519,7 +756,7 @@
       </div>
     </section>
 
-    <footer class="footer-wrp">
+    <footer class="footer-wrp d-none">
       <div class="container">
         <div class="row">
           <div class="col-md-12">

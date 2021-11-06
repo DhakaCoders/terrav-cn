@@ -1078,7 +1078,7 @@ hr{
 		margin-right: auto;
 	}
 	.dfp-top-gallery{
-		padding: 60px 0 50px;
+		padding: 60px 0 20px;
 		margin-bottom: 50px;
 	}
 	.cta-module-ctlr {
@@ -1286,6 +1286,7 @@ hr{
 	.cta-module-btn a{
 		min-width: inherit;
 		max-width: 270px;
+		padding: 15px;
 	}
 	.dfp-grid-module-cntlr .trv-service-grid-des{
 		padding-left: 10px!important;

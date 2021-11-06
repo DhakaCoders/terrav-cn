@@ -1,0 +1,20 @@
+#nieuws-details .glslider2{
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+#nieuws-details .tv-grids-modl-sec-cntlr:before{
+	content: none;
+	display: none;
+}
+#nieuws-details .tv-grids-modl-sec-cntlr ul{
+	padding: 0;
+}
+#nieuws-details .dfp-btm-grid-module{
+	background: #fafafa;
+	padding-top: 100px;
+	padding-bottom: 55px;
+}
+#nieuws-details .tv-grids-modl-sec-cntlr{
+	padding-bottom: 0;
+	padding-top: 30px;
+}

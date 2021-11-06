@@ -1,0 +1,100 @@
+.dienst-details-pro-module-cntlr .prfnl-tm-logo i img{
+	max-width: initial;
+}
+.dienst-details-hr-cntlr hr{
+	padding-top: 80px;
+}
+#dienst-details .dfp-grid-module{
+	background: #fafafa;
+	padding-top: 90px;
+	padding-bottom: 60px;
+}
+#dienst-details .pdct-pgni-trv-service-grids .pdct-pgni-trv-service-grids-item{
+	width: 25%!important;
+}
+#dienst-details .dfp-grid-module-cntlr .trv-service-grid-des{
+	padding-left: 0!important;
+	padding-right: 0!important;
+}
+#dienst-details .trv-service-intro-cntlr{
+	padding-bottom: 20px;
+}
+#dienst-details .dfp-blockqoute-ctlr{
+	margin-bottom: 100px;
+}
+
+
+@media (max-width: 1699px){
+	#dienst-details .dfp-blockqoute-ctlr{
+		margin-bottom: 80px;
+	}
+	.dienst-details-hr-cntlr hr{
+		padding-top: 65px;
+	}
+	#dienst-details .dfp-professional-module-cntlr{
+		padding-bottom: 50px;
+		padding-top: 20px;
+	}
+	#dienst-details .pdct-pgni-trv-service-grids{
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	#dienst-details .pdct-pgni-trv-service-grids .pdct-pgni-trv-service-grids-item{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#dienst-details .dfp-grid-module{
+		padding-top: 75px;
+		padding-bottom: 45px;
+	}
+	#dienst-details .trv-service-intro-cntlr{
+		padding-bottom: 10px;
+	}
+}
+@media (max-width: 1199px){
+	#dienst-details .dfp-blockqoute-ctlr{
+		margin-bottom: 65px;
+	}
+	.dienst-details-hr-cntlr hr{
+		padding-top: 50px;
+	}
+	#dienst-details .dfp-professional-module-cntlr{
+		padding-bottom: 30px;
+		padding-top: 0;
+	}
+	#dienst-details .pdct-pgni-trv-service-grids .pdct-pgni-trv-service-grids-item{
+		width: 33.333%!important;
+	}
+	#dienst-details .dfp-grid-module{
+		padding-top: 65px;
+		padding-bottom: 35px;
+	}
+	#dienst-details .trv-service-intro-cntlr{
+		padding-bottom: 0;
+	}
+}
+@media (max-width: 991px){
+	.dienst-details-hr-cntlr hr {
+	    padding-top: 30px;
+	}
+	#dienst-details .strong-professional-sec-cntlr{
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+	#dienst-details .dfp-grid-module{
+		padding-top: 55px;
+		padding-bottom: 25px;
+	}
+	#dienst-details .pdct-pgni-trv-service-grids .pdct-pgni-trv-service-grids-item {
+	    width: 50%!important;
+	}
+}
+
+@media (max-width: 767px){
+	#dienst-details .pdct-pgni-trv-service-grids .pdct-pgni-trv-service-grids-item {
+	    width: initial!important;
+	}
+	.dienst-details-pro-module-cntlr .prfnl-tm-logo i img{
+		width: initial!important;
+	}
+}
