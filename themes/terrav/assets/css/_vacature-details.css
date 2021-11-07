@@ -83,7 +83,7 @@
 #vacature-details .select2-container--default .select2-selection--single .select2-selection__rendered{
 	display: inline-block;
 	padding: 0;
-	padding-right: 25px;
+	padding-right: 24px;
 	height: initial;
 	position: relative;
 }
