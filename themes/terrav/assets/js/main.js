@@ -247,6 +247,48 @@ if (windowWidth <=768){
       });
     }
   }
+
+
+/* custom sidebar */
+if( $('#customSidebar').length ){
+    var windowWidth_1920 = $('.page-body-cntlr').outerWidth();
+    var containerRightWidth = $('#customSidebarWrap').offset().left;
+    var col2inw = $('#customSidebarWrap').innerWidth();
+    //$('#customSidebar').css("left", containerRightWidth);
+    $('#customSidebar').css("max-width", col2inw);
+    
+    function containerRightWidthCal(){
+      var windowWidth_1920 = $(window).width();
+      var containerWidth = $('.page-body-cntlr').outerWidth();
+        var containerRightWidth = $('#customSidebarWrap').offset().left;
+        var col2inw = $('#customSidebarWrap').innerWidth();
+        // $('#customSidebar').css("left", containerRightWidth);
+        $('#customSidebar').css("max-width", col2inw);
+    }
+    containerRightWidthCal();
+      $(window).on('resize', function(){
+      containerRightWidthCal();
+    });
+    
+    if( windowWidth_1920 > 767 ){
+        $(window).scroll(function (event) {
+            var scroll = $(window).scrollTop();
+            if( $('#customSidebar .vacature-details-con-rgt-inner').length ){
+                var boxh = $('#customSidebar .vacature-details-con-rgt-inner').height();
+                var ftrtop = $(".footer-wrp").offset().top;
+                //var RelevantTop = $(".user-rel-camp-sec").offset().top;
+                var ftrx = (ftrtop - boxh) - 450;
+                //var RelevantTrx = (RelevantTop - boxh) - 160;
+                if( scroll < ftrx ){
+                    $('#customSidebar').css('top', scroll);
+                }
+               /* if( scroll < RelevantTrx ){
+                    $('#customSidebar').css('top', scroll);
+                }*/
+            }
+        });
+    }
+}
   
 
 
