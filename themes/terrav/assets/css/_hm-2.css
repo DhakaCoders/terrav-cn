@@ -10,6 +10,15 @@
 	z-index: 3;
 	background-attachment: fixed;
 }
+.hm-banner-bg-overlay{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 4;
+	background: rgba(255,255,255,0.4);
+}
 .hm-bnr-down-scroll{
 	position: absolute;
 	left: 32px;
@@ -366,6 +375,10 @@ span.hm-bnr-down-scroll-icon {
 	}
 	.hm-fullwidth-bg-banner-sec{
 		display: none;
+	}
+	.hm-banner-bg.inline-bg{
+		background-attachment: initial;
+		background-position: right bottom!important;
 	}
 }
 @media(max-width: 575px){
