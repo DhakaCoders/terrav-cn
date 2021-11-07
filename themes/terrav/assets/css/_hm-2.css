@@ -10,6 +10,15 @@
 	z-index: 3;
 	background-attachment: fixed;
 }
+.hm-banner-bg-overlay{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 4;
+	background: rgba(255,255,255,0.4);
+}
 .hm-bnr-down-scroll{
 	position: absolute;
 	left: 32px;
@@ -302,6 +311,9 @@ span.hm-bnr-down-scroll-icon {
 	.hm-over-ons-sec{
 		padding-top: 65px;
 	}
+	.hm-over-ons-sec .over-ons-intro-des{
+		padding-right: 55px;
+	}
 
 }
 @media(max-width: 991px){
@@ -317,6 +329,16 @@ span.hm-bnr-down-scroll-icon {
 	.hm-process-grid-item{
 		padding: 0 8px;
 		padding-bottom: 30px;
+	}
+	.hm-over-ons-sec{
+		padding-top: 55px;
+	}
+	.hm-over-ons-sec .over-ons-intro-des{
+		padding-right: 22px;
+		padding-top: 40px;
+	}
+	.hm-over-ons-sec .over-ons-intro-sec-left{
+		padding-bottom: 160px;
 	}
 }
 @media(max-width: 767px){
@@ -354,6 +376,12 @@ span.hm-bnr-down-scroll-icon {
 	.sec-entry-desc p{
 		display: none;
 	}
+	.hm-over-ons-sec .over-ons-intro-sec-img{
+		height: 600px;
+	}
+	.over-ons-intro-sec-img{
+		margin-bottom: 0;
+	}
 	.hm-process-sec .top-lft-bdr,
 	.hm-process-sec .top-rgt-bdr{
 		display: none;
@@ -366,6 +394,10 @@ span.hm-bnr-down-scroll-icon {
 	}
 	.hm-fullwidth-bg-banner-sec{
 		display: none;
+	}
+	.hm-banner-bg.inline-bg{
+		background-attachment: initial;
+		background-position: right bottom!important;
 	}
 }
 @media(max-width: 575px){
