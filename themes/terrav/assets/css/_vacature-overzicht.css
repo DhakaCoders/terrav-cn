@@ -41,21 +41,26 @@
 .vo-gmicnt-cntlr{
 	padding-left: 45px;
 }
+.vtur-ovzt-serch-cntlr,
 .vo-des {
     padding-right: 50px;
 }
 .vo-des p{
 	font-size: 16px;
 }
+.des.vo-des{
+	margin-bottom: 35px;
+}
 
 
 .vtur-ovzt-serch-cntlr label{
     display: block;
     position: relative;
+    margin-bottom: 0;
 }
 .vtur-ovzt-serch-cntlr label input[type="search"]{
-    border: 1px solid #E6E6E6;
-    padding: 8px 48px 8px 8px;
+    border: 1px solid #FFFFFF;
+    padding:25px 48px 25px 30px;
     width: 100%;
     height: 70px;
     background: #FFFFFF;
@@ -64,33 +69,30 @@
 	-webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
 	border-radius: 8px;
     margin-top: 0;
-    font-size: 15px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    color: rgba(79, 75, 52, 0.4);
+    text-transform: capitalize;
 }
 .vtur-ovzt-serch-cntlr label input[type="search"]:focus{
-    border: 1px solid #000;
-    border-radius: 2px;
+    border: 1px solid #f5a302;
 }
-.vtur-ovzt-serch-cntlr label input[type="submit"]{
+.vtur-ovzt-serch-cntlr label button{
     position: absolute;
-    background: url(../images/search-icon.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 24px;
-    height: 70px;
     border: 0;
-    right: 23px;
+    right: 0;
     top: 0;
     bottom: 0;
-    padding: 15px 5px;
+    padding: 20px 10px;
+    padding-right: 30px;
     margin-top: 0;
     cursor: pointer;
-    text-indent: -99999px;
     font-size: 0;
     line-height: 1;
     z-index: 5;
-}
-.right-sidebar .sidebar-widget label{
-    width: 100%;
+    background: transparent;
 }
 
 /*_______________________________responsive_______________________________*/
@@ -109,6 +111,9 @@
 	}
 	.tv-date{
 		margin-bottom: 5px;
+	}
+	.des.vo-des{
+		margin-bottom: 30px;
 	}
 }
 @media(max-width: 1199px){
@@ -149,12 +154,16 @@
 	.gmi-inline-bg{
 		height: 120px;
 	}
+	.des.vo-des{
+		margin-bottom: 20px;
+	}
 }
 @media(max-width: 991px){
 	.vo-des p {
 	    font-size: 15px;
 	    line-height: 1.3;
 	}
+	.vtur-ovzt-serch-cntlr,
 	.vo-des {
 	    padding-right: 20px;
 	}
