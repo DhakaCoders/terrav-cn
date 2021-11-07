@@ -49,22 +49,9 @@
 #vtur-btm-select .wpforms-field-select:after,
 #vacature-details .tv-select-down-icon:after, 
 #vacature-details .wpforms-field-select:after{
-	content: "";
-	position: absolute;
-	right: 80px;
-	top: 50%;
-    transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-	background: url('../images/select-arow.svg');
-	background-repeat: no-repeat!important;
-	width: 11px;
-	height: 11px;
-    background-size: 100% auto;
-    margin-top: 0.3px;
-}
-#vtur-btm-select .tv-select-down-icon:after{
-	right: 85px;
+	content: none;
+	display: none;
+	
 }
 .vacature-details-con-rgt {
 	padding-bottom: 110px;
@@ -91,6 +78,39 @@
 }
 #vtur-btm-select .tv-select-cntlr{
 	display: block;
+}
+#vtur-btm-select .select2-container--default .select2-selection--single .select2-selection__rendered, 
+#vacature-details .select2-container--default .select2-selection--single .select2-selection__rendered{
+	display: inline-block;
+	padding: 0;
+	padding-right: 25px;
+	height: initial;
+	position: relative;
+}
+#vtur-btm-select .select2-container--default .select2-selection--single .select2-selection__rendered:after, 
+#vacature-details .select2-container--default .select2-selection--single .select2-selection__rendered:after{
+	content: "";
+	position: absolute;
+	right: 3px;
+	top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+	background: url('../images/select-arow.svg');
+	background-repeat: no-repeat!important;
+	width: 11px;
+	height: 11px;
+    background-size: 100% auto;
+    margin-top: 1.5px;
+}
+#vtur-btm-select  .select2-container--default .select2-selection--single,
+#vacature-details .select2-container--default .select2-selection--single{
+	text-align: center;
+    background: #F4A301;
+    border-radius: 8px!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media(max-width: 1699px){
 	.vacature-details-con-rgt{
