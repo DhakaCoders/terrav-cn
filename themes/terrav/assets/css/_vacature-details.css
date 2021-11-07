@@ -59,6 +59,9 @@
 	padding-top: 110px;
 	padding-left: 30px;
 }
+#customSidebar{
+	margin-top: 110px;
+}
 .vacature-details-rgt-con-cntlr {
     padding: 45px 30px 10px;
     background: #FAFAFA;
@@ -168,10 +171,33 @@
 	max-width: 100%;
 	width: 100%;
 }
+
+
+/* custom sidebar  */
+#customSidebarWrap {
+    width: 100%;
+    min-height: 1px;
+}
+@media (min-width: 768px){
+    #customSidebar {
+        width: 100%;
+        max-width: 380px;
+        position: absolute;
+        top: 0;
+        padding-top: 0;
+        z-index: 5;
+        right: 15px;
+    }
+}
+
+
 @media(max-width: 1699px){
 	.vacature-details-con-rgt{
 		padding-top: 80px;
 		padding-bottom: 80px;
+	}
+	#customSidebar{
+		margin-top: 80px;
 	}
 	#vacature-details .dfp-plate-one-img-bx{
 		margin-bottom: 60px;
@@ -185,6 +211,9 @@
 	.vacature-details-con-rgt{
 		padding-top: 60px;
 		padding-bottom: 60px;
+	}
+	#customSidebar{
+		margin-top: 60px;
 	}
 	#vacature-details .dfp-plate-one-img-bx{
 		margin-bottom: 50px;
@@ -213,6 +242,9 @@
 	.vacature-details-con-rgt{
 		padding-top: 50px;
 		padding-bottom: 50px;
+	}
+	#customSidebar{
+		margin-top: 50px;
 	}
 	#vacature-details .dfp-social-media-select-module{
 		display: block;
