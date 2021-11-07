@@ -442,7 +442,19 @@ textarea {
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 700;
     line-height: 1.1;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
+}
+.vatur-details-form-cntlr .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-textarea textarea{
+    height: 140px!important;
+}
+.vatur-details-form-cntlr .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button:hover{
+    border-color: #fff!important;
+    color: #fff!important;
+}
+.vatur-details-form-cntlr .wpforms-field-description span.checkmark::after{
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
 }
 .vatur-details-form-cntlr .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.bdr-dash input{
     border: 2px dashed #FFFFFF!important;
