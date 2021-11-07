@@ -107,6 +107,21 @@
 	#dienst-details .glslider2 .slick-dotted.slick-slider{
 		margin-bottom: 10px!important;
 	}
+/*	#dienst-details .pdct-pgni-trv-service-grids .pdct-pgni-trv-service-grids-item{
+		width: 100%!important;
+	}
+	.trv-service-grid-item-cntlr{
+		width: 100%!important;
+		max-width: 336px;
+		margin-left: auto;
+		margin-right: auto;
+	}*/
+	/*.dfp-grid-module-cntlr{
+		max-width: 336px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}*/
 }
 @media (max-width: 369px){
 	.dienst-details-pro-module-cntlr .prfnl-tm-logo i img{

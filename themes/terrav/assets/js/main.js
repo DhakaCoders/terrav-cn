@@ -263,7 +263,7 @@ if (windowWidth <= 767){
 //     }
 //   }
 
-if (windowWidth <=767){
+if (windowWidth <=768){
   if( $('.DienstDetailsSlider').length ){
       $('.DienstDetailsSlider').slick({
         dots: true,
