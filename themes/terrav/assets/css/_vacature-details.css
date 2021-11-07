@@ -44,6 +44,7 @@
 	background: #F4A301;
 	border-radius: 8px!important;
 	color: #fff!important;
+	font-size: 14px;
 }
 #vtur-btm-select .tv-select-down-icon:after, 
 #vtur-btm-select .wpforms-field-select:after,
@@ -68,6 +69,13 @@
 }
 .vacature-details-rgt-col{
 	padding-bottom: 15px;
+}
+.vacature-details-rgt-col ul li a{
+	text-decoration: none;
+	color: #4F4B34;
+}
+.vacature-details-rgt-col ul li a:hover{
+	color: #4F7F35;
 }
 #vacature-details .dfp-plate-one-img-bx{
 	padding-top: 0;
@@ -244,4 +252,8 @@
     #vacature-details .sec-entry-hdr-title{
     	font-size: 30px;
     }
+    #vtur-btm-select .select2-container--default .select2-selection--single .select2-selection__rendered,
+	#vacature-details .select2-container--default .select2-selection--single .select2-selection__rendered{
+		font-size: 16px;
+	}
 }

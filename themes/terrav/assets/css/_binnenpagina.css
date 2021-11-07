@@ -571,6 +571,7 @@ Gallery design
 .dfp-social-media ul{
 	display: flex;
 	align-items: center;
+	padding: 0;
 }
 .dfp-social-media ul li{
 	padding-left: 12px;
@@ -969,8 +970,6 @@ hr{
 		padding-bottom: 0;
 		border-top: none;
 	}
-	
-	
 	.table-dsc table {
 	    width: 700px;
 	}
@@ -1183,6 +1182,9 @@ hr{
 	}
 	.dfp-btn-module-inr ul li{
 		padding-bottom: 16px;
+	}
+	.dfp-social-media-module span{
+		font-size: 20px;
 	}
 
 
