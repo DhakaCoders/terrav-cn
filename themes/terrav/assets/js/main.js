@@ -183,11 +183,7 @@ if( $('.responsive-slider').length ){
 })();
 
 
-/*start of Rannojit*/
 
-
-
-/*start of kashob*/
 
 if( $('.contact-form-wrp').length ){
   $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click', function(){
@@ -265,7 +261,7 @@ if (windowWidth <=768){
   }
   
 
-/*start of noyon*/
+
  $(window).scroll(function() { 
     var scroll = $(window).scrollTop();   
     if (scroll >= 100) {
@@ -289,11 +285,8 @@ if(windowWidth <=1199){
     }
 }
 
-/*start of shariful*/
 
 
-
-/*start of momin*/
 if( $('.scrollto').length ){
   $('.scrollto').on('click', function(e){
     e.preventDefault();
@@ -388,11 +381,12 @@ function leftWidth(){
   }
 }
 
-/*start of johir*/
+
 $('.tv-select select').select2();
 $('.select-2-cntlr').select2();
 
-// start of niaz
+
+
 
  if (windowWidth <= 767) {
   if( $('.FlProductSlider').length ){
@@ -432,9 +426,6 @@ $('.select-2-cntlr').select2();
               dots: true
             }
           }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
         ]
       });
   }
@@ -478,9 +469,6 @@ $('.select-2-cntlr').select2();
               dots: true
             }
           }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
         ]
       });
   }
