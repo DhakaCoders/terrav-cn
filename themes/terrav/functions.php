@@ -2,7 +2,7 @@
 /**
 Constants->>
 */
-defined('THEME_NAME') or define('THEME_NAME', 'waste2func');
+defined('THEME_NAME') or define('THEME_NAME', 'terrav');
 defined( 'THEME_DIR' ) or define( 'THEME_DIR', get_template_directory() );
 defined( 'THEME_URI' ) or define( 'THEME_URI', get_template_directory_uri() );
 
@@ -15,7 +15,7 @@ if( !function_exists('cbv_theme_setup') ){
     
     function cbv_theme_setup(){
         
-      load_theme_textdomain( 'waste2func', get_template_directory() . '/languages' );
+      load_theme_textdomain( 'terrav', get_template_directory() . '/languages' );
         add_theme_support( 'title-tag' );
         add_theme_support('woocommerce');
         add_theme_support('post-thumbnails');
@@ -35,10 +35,10 @@ if( !function_exists('cbv_theme_setup') ){
         ) );
 
         register_nav_menus( array(
-            'cbv_main_menu' => __( 'Hoofdmenu', 'waste2func' ),
-            'cbv_mobile_menu' => __( 'Mobielmenu', 'waste2func' ),
-            'cbv_fta_menu' => __( 'Footer Menu 1', 'waste2func' ),
-            'cbv_ftb_menu' => __( 'Footer Menu 2', 'waste2func' ),
+            'cbv_main_menu' => __( 'Hoofdmenu', 'terrav' ),
+            'cbv_mobile_menu' => __( 'Mobielmenu', 'terrav' ),
+            'cbv_fta_menu' => __( 'Footer Menu 1', 'terrav' ),
+            'cbv_ftb_menu' => __( 'Footer Menu 2', 'terrav' ),
         ) );
 
     }
@@ -80,8 +80,8 @@ if( function_exists('acf_add_options_page') ) {
     //parent tab
     //acf_add_options_page( 'Opties' );
     acf_add_options_page(array(
-        'page_title'    => __('Options', 'waste2func'),
-        'menu_title'    => __('Options', 'waste2func'),
+        'page_title'    => __('Options', 'terrav'),
+        'menu_title'    => __('Options', 'terrav'),
         'menu_slug'     => 'cbv_options',
         'capability'    => 'edit_posts',
         //'redirect'        => false
