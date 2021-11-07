@@ -448,7 +448,10 @@ span.hm-bnr-down-scroll-icon {
 	}
 	.hm-nieuws-innr .tv-grid-modl-item{
 		justify-content: initial;
+		align-items: center;
+		max-width: 100%;
 	}
+
 	.hm-nieuws-innr .gmi-inline-bg{
 		height: 115px;
 	}
