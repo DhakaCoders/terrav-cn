@@ -370,7 +370,7 @@ span.hm-bnr-down-scroll-icon {
 		display: none;
 	}
 	.hm-banner-desc-cntlr{
-		height: 600px;
+		padding-top: 145px;
 	}
 	.hm-process-sec{
 		padding-top: 55px;
@@ -482,5 +482,12 @@ span.hm-bnr-down-scroll-icon {
 	}
 	.hm-process-grid-item .trv-service-grid-title{
 		font-size: 25px!important;
+	}
+	.hm-process-grids-cntlr{
+		margin: 0 -20px;
+	}
+	.hm-process-grid-item{
+		padding: 0 20px;
+		padding-bottom: 28px;
 	}
 }
