@@ -296,6 +296,12 @@ ol li::before {
 }
 
 
+.hdr-btm-bdr{
+	height: 8px;
+	width: 100%;
+	background: linear-gradient(0deg, #FAFAFA, #FAFAFA);
+}
+
 
 
 
