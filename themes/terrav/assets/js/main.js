@@ -248,24 +248,10 @@ if (windowWidth <= 767){
     }
   }
 
-// if (windowWidth <= 767){
-//     if( $('.DienstDetailsSlider').length ){
-//       $('.DienstDetailsSlider').slick({
-//         dots: true,
-//         arrows: false,
-//         infinite: false,
-//         autoplay: false,
-//         autoplaySpeed: 4000,
-//         speed: 700,
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//       });
-//     }
-//   }
 
 if (windowWidth <=768){
-  if( $('.DienstDetailsSlider').length ){
-      $('.DienstDetailsSlider').slick({
+  if( $('.dienstDetailsSlider').length ){
+      $('.dienstDetailsSlider').slick({
         dots: true,
         arrows: false,
         infinite: false,
