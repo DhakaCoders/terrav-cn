@@ -387,6 +387,8 @@ Gallery design
 .cta-module-ctlr{
 	background: #E83747;
 	padding: 90px 95px 70px 100px;
+	margin-top: 60px;
+	margin-bottom: 90px;
 }
 
 .cta-module-inr{
@@ -514,7 +516,8 @@ Gallery design
 
 
 .dfp-full-img-module{
-	padding-bottom: 100px;
+	padding-top: 15px;
+	padding-bottom: 45px;
 }
 
 
@@ -608,7 +611,7 @@ Gallery design
 }
 .dfp-grid-module-cntlr .pdct-pgni-trv-service-grids{
 	padding-top: 10px!important;
-	padding-bottom: 10px!important;
+	padding-bottom: 20px!important;
 }
 .dfp-professional-module-cntlr .strong-professional-sec-cntlr{
 	height: initial;
@@ -696,9 +699,8 @@ hr{
 	}
 	.cta-module-ctlr {
 	    padding: 70px 70px 60px 80px;
-	}
-	.dfp-full-img-module{
-		padding-bottom: 80px;
+	    margin-top: 40px;
+		margin-bottom: 70px;
 	}
 	.dfp-btm-lftimg-rgtdes{
 		padding: 90px 0;
@@ -728,9 +730,6 @@ hr{
 	}
 	.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes{
 		padding-top: 35px;
-	}
-	.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes{
-		padding-top: 20px;
 	}
 	.dfp-tv-grids-module-cntlr {
 	    padding-top: 45px;
@@ -766,9 +765,8 @@ hr{
 	}
 	.cta-module-ctlr {
 	    padding: 60px 60px 50px 70px;
-	}
-	.dfp-full-img-module{
-		padding-bottom: 60px;
+	    margin-top: 30px;
+		margin-bottom: 60px;
 	}
 	.fl-dft-lftimg-rgtdes{
 		padding-bottom: 50px;
@@ -817,6 +815,9 @@ hr{
 	.dfp-btn-module{
 		padding-top: 80px;
 	}
+	.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes{
+		padding-top: 25px;
+	}
 
 }
 
@@ -862,7 +863,8 @@ hr{
 		font-size: 18px;
 	}
 	.dfp-full-img-module {
-	    padding-bottom: 70px;
+	    padding-top: 5px;
+	    padding-bottom: 35px;
 	}
 	.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-rgt {
 	    padding-right: 30px;
@@ -890,6 +892,8 @@ hr{
 	}
 	.cta-module-ctlr {
 	    padding: 50px 40px 40px 40px;
+	    margin-top: 20px;
+		margin-bottom: 50px;
 	}
 	.cta-module-inr{
 		display: block;
@@ -908,9 +912,6 @@ hr{
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
-	}
-	.dfp-full-img-module{
-		padding-bottom: 50px;
 	}
 	.fl-dft-lftimg-rgtdes{
 		padding-bottom: 30px;
@@ -939,6 +940,9 @@ hr{
 	}
 	.dfp-tv-grids-module-cntlr .tv-grids-modl-sec-cntlr ul li{
 		padding-bottom: 40px;
+	}
+	.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes{
+		padding-top: 15px;
 	}
 
 }
@@ -1083,9 +1087,11 @@ hr{
 	}
 	.cta-module-ctlr {
 	    padding: 40px 30px;
+		margin-bottom: 40px;
 	}
 	.dfp-full-img-module{
-		padding-bottom: 40px;
+		padding-top: 0;
+		padding-bottom: 30px;
 	}
 	.fl-dft-lftimg-rgtdes{
 		padding-bottom: 30px;
@@ -1223,9 +1229,6 @@ hr{
 		width: 56px;
 		height: 56px;
 	}
-	.dfp-full-img-module{
-		padding-bottom: 50px;
-	}
 	.dfp-blockqoute blockquote {
 	    padding: 125px 40px 55px 25px;
 	}
@@ -1239,9 +1242,6 @@ hr{
 	.cta-module-ctlr {
 	    padding: 40px 20px;
 	    margin-top: 22px;
-	}
-	.dfp-full-img-module{
-		padding-bottom: 30px;
 	}
 	.fl-fancy-module{
 		height: 200px;

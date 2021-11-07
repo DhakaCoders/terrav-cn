@@ -1,5 +1,5 @@
 .footer-wrp{
-
+	border-top: 10px solid #E83747;
 }
 .footer-inr{
 	display: flex;
@@ -217,6 +217,9 @@
 }
 
 @media(max-width: 1199px){
+	.footer-wrp{
+		border-top: 8px solid #E83747;
+	}
 	.footer-inr{
 		padding-top: 80px;
 	}
@@ -260,6 +263,9 @@
 	}
 }
 @media(max-width: 991px){
+	.footer-wrp{
+		border-top: 6px solid #E83747;
+	}
 	.footer-inr{
 		display: block;
 	}
@@ -364,6 +370,9 @@
 @media(max-width: 767px){
 	.ftr-logo a{
 		max-width: 230px;
+	}
+	.footer-wrp{
+		border-top: 4px solid #E83747;
 	}
 }
 @media(max-width: 575px){
