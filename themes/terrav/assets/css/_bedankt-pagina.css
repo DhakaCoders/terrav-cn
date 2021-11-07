@@ -62,7 +62,7 @@
 
 @media(max-width: 991px){
 	.page-bedankt-cntent-img i{
-		width: 105px;
+		width: 105px!important;
 		height: auto;
 	}
 	.page-bedankt-cntent-menu-cntlr ul{
@@ -104,7 +104,7 @@
 		padding-bottom: 20px;
 	}
 	.page-bedankt-cntent-img i{
-		width: 90px;
+		width: 90px!important;
 	}
 	.page-bedankt-cntent-title{
 		margin-bottom: 5px;
