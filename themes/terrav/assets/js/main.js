@@ -248,8 +248,23 @@ if (windowWidth <= 767){
     }
   }
 
-if (windowWidth <= 767){
-    if( $('.DienstDetailsSlider').length ){
+// if (windowWidth <= 767){
+//     if( $('.DienstDetailsSlider').length ){
+//       $('.DienstDetailsSlider').slick({
+//         dots: true,
+//         arrows: false,
+//         infinite: false,
+//         autoplay: false,
+//         autoplaySpeed: 4000,
+//         speed: 700,
+//         slidesToShow: 1,
+//         slidesToScroll: 1
+//       });
+//     }
+//   }
+
+if (windowWidth <=767){
+  if( $('.DienstDetailsSlider').length ){
       $('.DienstDetailsSlider').slick({
         dots: true,
         arrows: false,
@@ -262,6 +277,7 @@ if (windowWidth <= 767){
       });
     }
   }
+  
 
 /*start of noyon*/
  $(window).scroll(function() { 
