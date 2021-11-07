@@ -292,7 +292,7 @@ textarea {
 }
 .contact-form-info-title{
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 18px;
+    font-size: 18px!important;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -558,11 +558,14 @@ textarea {
 }
 @media (max-width: 991px){
     .contact-form-lft{
-        width: 38%;
-        padding-right: 40px;
+        width: 100%;
+        order: 2;
+        padding-right: 0;
     }
     .contact-form-rgt {
-        width: 62%;
+        width: 100%;
+        order: 1;
+        padding-bottom: 60px;
     }
     .cnt-sec-entry-hdr-title {
         margin-bottom: 14px;
@@ -599,7 +602,7 @@ textarea {
         top: 30px;
     }
     .contact-info-details-cntlr {
-        padding: 40px 20px;
+        padding: 40px;
     }
     .cnt-details-col span, .cnt-details-col a{
         font-size: 17px;
@@ -624,19 +627,16 @@ textarea {
     .contact-google-map iframe{
         height: 600px;
     }
+    .contact-form-info-cntlr,
+    .contact-forn-con-cntlr {
+        max-width: 575px;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 @media (max-width: 767px){
-    .contact-form-lft,
-    .contact-form-rgt {
-        width: 100%;
-    }
-    .contact-form-rgt{
-        order: 1;
+    .contact-form-rgt{  
         padding-bottom: 52px;
-    }
-    .contact-form-lft {
-        order: 2;
-        padding-right: 0;
     }
     .contact-forn-con-cntlr,
     .contact-form-info-cntlr {
