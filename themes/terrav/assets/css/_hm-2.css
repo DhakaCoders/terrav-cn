@@ -399,11 +399,25 @@ span.hm-bnr-down-scroll-icon {
 		background-attachment: initial;
 		background-position: right bottom!important;
 	}
+	.hm-over-ons-sec .over-ons-intro-sec-left{
+		padding-bottom: 0;
+	}
+	.hm-over-ons-sec .over-ons-intro-sec-cntlr{
+		padding-bottom: 45px;
+		margin-bottom: 40px;
+		border-bottom: 1px solid #E8E8E8;
+	}
+	.hm-over-ons-sec .over-ons-intro-sec-img{
+		height: 500px;
+	}
 }
 @media(max-width: 575px){
 	.hm-banner-desc-cntlr{
 		align-items: initial;
 		padding-top: 125px;
+	}
+	.hm-over-ons-sec .over-ons-intro-sec-img{
+		height: 411px;
 	}
 @media(max-width: 479px){
 	.hm-bnr-desc p br{
