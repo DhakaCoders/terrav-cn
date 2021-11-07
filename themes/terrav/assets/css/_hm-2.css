@@ -1,5 +1,6 @@
 .hm-banner{
 	position: relative;
+	overflow: hidden;
 }
 .hm-banner-bg{
 	position: absolute;
@@ -104,6 +105,12 @@ span.hm-bnr-down-scroll-icon {
     left: 0;
     display: none;
 }
+.has-video .hm-video-cntlr{
+	 display: block;
+} 
+.has-video .hm-banner-bg{
+	display: none;
+}
 #bnr-vdo{
 	min-height: 100%;
     min-width: 100%;
@@ -114,14 +121,14 @@ span.hm-bnr-down-scroll-icon {
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    z-index: 3;
+    z-index: 4;
 }
 .hm-banner-desc-cntlr{
 	height: 658px;
 	display: flex;
 	align-items: center;
 	position: relative;
-	z-index: 5;
+	z-index: 7;
 	padding: 100px 0;
 }
 .hm-bnr-title-1{
