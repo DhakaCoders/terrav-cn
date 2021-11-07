@@ -120,6 +120,54 @@
     justify-content: center;
     align-items: center;
 }
+.vacature-detail-btn{
+	display: inline-block;
+	vertical-align: baseline;
+	min-width: 300px;
+	color: #FFFFFF;
+	background: #F4A301;
+	font-size: 14px;
+	font-family: 'Libre Franklin', sans-serif;
+	line-height: 1.1;
+	text-align: center;
+	padding: 15px 16px 16px;
+	letter-spacing: 0.04em;
+	font-weight: 700;
+	border: 2px solid #F4A301;
+	text-transform: uppercase;
+	border-radius: 8px;
+	text-decoration: none;
+}
+.vacature-detail-btn:hover{
+	color: #fff;
+}
+.vacature-detail-btn span{
+	display: inline-block;
+	padding: 0;
+	padding-right: 24px;
+	height: initial;
+	position: relative;
+}
+.vacature-detail-btn span:after{
+	content: "";
+	position: absolute;
+	right: 3px;
+	top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+	background: url('../images/select-arow.svg');
+	background-repeat: no-repeat!important;
+	width: 11px;
+	height: 11px;
+    background-size: 100% auto;
+    margin-top: 1.5px;
+}
+.vacature-detail-btn.rgt-btn{
+	min-width: initial;
+	max-width: 100%;
+	width: 100%;
+}
 @media(max-width: 1699px){
 	.vacature-details-con-rgt{
 		padding-top: 80px;
