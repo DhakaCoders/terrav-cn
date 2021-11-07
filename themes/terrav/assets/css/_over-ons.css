@@ -11,10 +11,10 @@
     top: 0;
 } 
 .over-ons-intro-sec-right {
-    width: 34%;
+    width: 42%;
 }
 .over-ons-intro-sec-left {
-    width: 66%;
+    width: 58%;
 }
 .over-ons-intro-sec-img {
     height: 600px;
@@ -54,6 +54,7 @@
 }
 
 
+
 /*professional sec*/
 
 .professional-title .professional-heading{
@@ -64,7 +65,7 @@
 }
 .strong-professional-sec-cntlr{
 	display: flex;
-    height: 269px;
+    padding: 70px 0;
     align-items: center;
     border-bottom: 1px solid #f7f1f1;
 }
@@ -105,7 +106,7 @@
 
 /*certificates-guarantee*/
 .certificates-guarantee-sec{
-	padding-top:84px;
+	padding-top: 50px;
 	padding-bottom: 62px;
 }
 .certificates-guarantee-grd ul {
@@ -151,17 +152,23 @@
     color: #ea7a04;
 }
 
+.over-ons-cta-module-sec{
+
+}
+.over-ons-cta-module-sec .cta-module-ctlr{
+    margin-bottom: 0;
+}
 /*over-ons-history-sec*/
 .over-ons-history-sec{
-    padding-top:136px;
-    padding-bottom:147px;
+    padding-top: 110px;
+    padding-bottom:120px;
     background-color: #FAFAFA;
 }
 .over-ons-history-sec-left{
-    width:62%;
+    width:58%;
 }
 .over-ons-history-sec-righ{
-    width:38%;
+    width:42%;
 }
 .over-ons-history-sec-cntlr{
     align-items:flex-start;
@@ -217,7 +224,7 @@
 
 /*over-ons-lftimg-rgtdes-sec*/
 .over-ons-lftimg-rgtdes-sec{
-    padding-top:120px;
+    padding-top:100px;
     padding-bottom:60px;
 }
 .over-ons-lftimg-rgtdes-sec-lft{
@@ -225,6 +232,7 @@
 }
 .over-ons-lftimg-rgtdes-sec-rgt{
     width:58%;
+    padding: 60px;
 }
 .over-ons-lftimg-rgtdes-sec .fl-dft-lftimg-rgtdes{
     padding-bottom:0
