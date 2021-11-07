@@ -314,6 +314,20 @@ span.hm-bnr-down-scroll-icon {
 	.hm-over-ons-sec .over-ons-intro-des{
 		padding-right: 55px;
 	}
+	.hm-bnr-desc{
+		max-width: 429px;
+		width: 100%;
+	}
+	.hm-bnr-desc p br{
+		display: none!important;
+	}
+	.hm-nieuws-innr{
+		padding-left: 50px;
+	}
+	.hm-vacatures-innr, .hm-nieuws-innr{
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
 
 }
 @media(max-width: 991px){
@@ -339,6 +353,16 @@ span.hm-bnr-down-scroll-icon {
 	}
 	.hm-over-ons-sec .over-ons-intro-sec-left{
 		padding-bottom: 160px;
+	}
+	.hm-vacatures-innr, .hm-nieuws-innr{
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	.hm-nieuws-innr{
+		padding-left: 20px;
+	}
+	.hm-over-ons-sec .over-ons-intro-des{
+		padding-right: 0;
 	}
 }
 @media(max-width: 767px){
@@ -410,6 +434,29 @@ span.hm-bnr-down-scroll-icon {
 	.hm-over-ons-sec .over-ons-intro-sec-img{
 		height: 500px;
 	}
+	.hm-nieuws-innr{
+		padding: 0;
+		width: 100%;
+		padding-bottom: 60px;
+	}
+	.hm-nieuws-innr .tv-grid-modl-item{
+		justify-content: initial;
+	}
+	.hm-nieuws-innr .gmi-inline-bg{
+		height: 115px;
+	}
+	.hm-nieuws-innr .gmi-img-cntlr{
+		max-width: 115px;
+	}
+	.hm-vac-nie-grids-cntlr .gmicnt-cntlr{
+		padding-left: 35px;
+	}
+	.hm-vacatures-title{
+		font-size: 34px!important;
+	}
+	.hm-vac-nie-btn{
+		padding-top: 14px;
+	}
 }
 @media(max-width: 575px){
 	.hm-banner-desc-cntlr{
@@ -419,6 +466,16 @@ span.hm-bnr-down-scroll-icon {
 	.hm-over-ons-sec .over-ons-intro-sec-img{
 		height: 411px;
 	}
+	.hm-vacatures-title{
+		margin-bottom: 32px;
+	}
+	.hm-vac-nie-grids-cntlr .gmicnt-cntlr{
+		padding-left: 20px;
+	}
+	.hm-vac-nie-grids-cntlr ul li{
+		padding-bottom: 26px;
+	}
+}
 @media(max-width: 479px){
 	.hm-bnr-desc p br{
 		display: none;
