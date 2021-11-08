@@ -4,6 +4,10 @@
 .order-2{
 	order: 2!important;
 }
+.tv-vo-intro-sec.tv-modl-intro-sec{
+	padding-top: 100px;
+	background-size: 80px;
+}
 .vo-cont-rgt{
 	padding-left: 0;
 	padding-right: 25px;
