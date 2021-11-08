@@ -277,7 +277,7 @@ if( $('#customSidebar').length ){
                 var boxh = $('#customSidebar .vacature-details-con-rgt-inner').height();
                 var ftrtop = $(".footer-wrp").offset().top;
                 //var RelevantTop = $(".user-rel-camp-sec").offset().top;
-                var ftrx = (ftrtop - boxh) - 450;
+                var ftrx = (ftrtop - boxh) - 420;
                 //var RelevantTrx = (RelevantTop - boxh) - 160;
                 if( scroll < ftrx ){
                     $('#customSidebar').css('top', scroll);
