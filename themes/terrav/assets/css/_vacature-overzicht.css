@@ -15,6 +15,9 @@
 	width: 51%;
 	padding-right: 75px;
 }
+.tv-vo-intro-modl-sec-cntlr .vo-module-img{
+	height: 380px;
+}
 .tv-modl-intro-desc.des.vo-des{
 	margin-bottom: 35px;
 }
@@ -143,7 +146,7 @@
     background: transparent;
 }
 .vtur-ovzt-serch-cntlr label button:hover i svg{
-	fill: #E83747!important;
+	fill: #eb7a04!important;
 }
 .vo-gmi-cntnt-tt{
 	margin-bottom: 4px;
