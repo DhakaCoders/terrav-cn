@@ -289,39 +289,22 @@ if( $('#customSidebar').length ){
     if( windowWidth_1920 > 767 ){
         $(window).scroll(function (event) {
             var scroll = $(window).scrollTop();
-            if( $('#customSidebar .vacature-details-con-rgt-inner').length ){
-                var boxh = $('#customSidebar .vacature-details-con-rgt-inner').height();
+            if( $('#customSidebar').length ){
+
+                var boxh = $('#customSidebar').height();
                 var ftrtop = $(".footer-wrp").offset().top;
                 //var RelevantTop = $(".user-rel-camp-sec").offset().top;
-                var ftrx = (ftrtop - boxh) ;
-                //var RelevantTrx = (RelevantTop - boxh) - 160;
-                /*$('.customSidebar-position').css('margin-top', 80);*/
-                //$('#customSidebar').removeClass('customSidebar-position');
- /*               if (scroll >= 0) {
-                    //clearHeader, not clearheader - caps H
-                    $('#customSidebar').removeClass('customSidebar-position');
-                }*/
-                if(scroll = 0 ){
-                  $('#customSidebar').removeClass('customSidebar-position');
-                }
+                var ftrx = (ftrtop - boxh) -420 ;
                 if( scroll < ftrx ){
                     $('#customSidebar').css('top', scroll);
                     $('#customSidebar').addClass('customSidebar-position');
                     
+                }else if( scroll <= 0){
+                  $('#customSidebar').removeClass('customSidebar-position');
                 }
 
-                /*if( scroll > ftrx ){
-                    $('#customSidebar').removeClass('customSidebar-position');
-                }*/
 
-               /* var hdrtop = $(".page-banner").offset().bottom;
-                console.log(hdrtop);
-                if( hdrtop < scroll ){
-                    $('#customSidebar').removeClass('customSidebar-position');
-                }*/
-               /* if( scroll < RelevantTrx ){
-                    $('#customSidebar').css('top', scroll);
-                }*/
+               
             }
         });
     }
