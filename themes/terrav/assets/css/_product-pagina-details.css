@@ -224,7 +224,11 @@
 	.prdct-pgni-dtls-sec .over-ons-lftimg-rgtdes-sec-rgt{
 		margin-bottom: 45px;
 	}
-
+	.pdct-pgni-trv-service-grids,
+	.tv-products-grid{
+	    max-width: 400px;
+	    margin:0 auto;
+	}
 
 }
 @media(max-width:479px){
