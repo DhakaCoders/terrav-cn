@@ -293,6 +293,9 @@
 .tv-select-down-icon .iit-custom-select option[selected]{
     background: #dc7223!important;
 }
+.nov-field-label{
+	font-size: 16px;
+}
 
 /*select-2-end*/
 /*----------------------------------------responsive----------------------------------------*/
@@ -435,7 +438,7 @@
 	}
 	.tv-modl-intro-sec {
 	    background: linear-gradient(176deg, #fefefe 0.94%, #fafafa 98.23%);
-	    padding-top: 0;
+	    padding-top: 15px;
 	    padding-bottom: 70px;
 	}
 	.no-page-banner-tt, .vo-page-banner-tt{
@@ -508,6 +511,18 @@
 		width: 16px;
 		height: 11px;
 	}
+	.tv-intro-modl-sec-cntlr{
+		padding-top: 19px;
+		padding-left: 23px;
+		padding-right: 23px;
+	}
+	.tv-grids-modl-sec{
+		padding-top: 40px;
+		padding-bottom: 45px;
+	}
+	.tv-select-cntlr{
+		padding-bottom: 26px;
+	}
 }
 
 @media(max-width: 639px){
@@ -544,11 +559,23 @@
 	.gmi-img-cntlr {
 	    width: 35%;
 	}
+	.tv-grids-modl-sec{
+		padding-top: 30px;
+	}
+	.tv-select-cntlr{
+		padding-bottom: 16px;
+	}
+
+	
 }
 @media(max-width: 479px){
-		.gmi-img-cntlr{
+	.gmi-img-cntlr{
 		width: 40%;
 	}
+	.tv-select-down-icon span.select2.select2-container.select2-container--default{
+		width: 190px!important;
+	}
+	
 }
 @media(max-width: 379px){
 	.tv-date {
