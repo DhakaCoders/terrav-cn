@@ -230,6 +230,8 @@ img{
 	border-radius: 8px;
 	text-decoration: none;
 }
+
+
 .fl-btn:hover,
 .fl-transparent-btn{
 	background: transparent;
@@ -326,6 +328,25 @@ img{
 	right: -3px;
 }
 
+
+.dft-fl-btn{
+    display: inline-block;
+    vertical-align: baseline;
+    min-width: 210px;
+    color: #F4A301;
+    background: transparent;
+    font-size: 14px;
+    font-family: 'Libre Franklin', sans-serif;
+    line-height: 1.1;
+    text-align: center;
+    padding: 15px 16px 16px;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    border: 2px solid #F4A301;
+    text-transform: uppercase;
+    border-radius: 8px;
+    text-decoration: none;
+}
 
 
 ul.reset-list,
