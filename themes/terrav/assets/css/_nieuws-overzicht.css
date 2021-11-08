@@ -156,8 +156,6 @@
 .gmicnt-btn{
 	line-height: 1;
 }
-
-
 /*___________________________pagination_____________________________*/
 .fl-pagination-cntlr{
     display: flex;
@@ -268,7 +266,7 @@
     padding-bottom: 30px;
     line-height: 1;
 }
-/*------------------------------select2--------------------------------------------*/
+/*------------------------------select2 start--------------------------------------------*/
 .tv-select-down-icon{
     position: relative;
 }
@@ -299,7 +297,6 @@
 .tv-select-down-icon .iit-custom-select option[selected]{
     background: #dc7223!important;
 }
-
 .select2-container{
     height: 48px!important;
 }
@@ -318,12 +315,6 @@
 body .select2-container.select2-container--default.select2-container--open .select2-dropdown {
     margin-top: -2px;
 }
-/*body .select2-container.select2-container--default.select2-container--open .select2-dropdown {
-    margin-top: 0;
-    box-shadow: none;
-    top: 100%;
-    margin-top: -16px;
-}*/
 .select2-container--default .select2-selection--single .select2-selection__arrow b,
 .select2-container--default .select2-selection--single .select2-selection__arrow{
     display: none!important;
@@ -358,7 +349,6 @@ body .select2-dropdown {
     text-transform: uppercase;
 }
 .contact-form-wrp .select2-container--default .select2-selection--single .select2-selection__rendered{
-    /*color: #777F84;*/
     color:#525051!important;
     opacity:1;
 }
@@ -393,8 +383,6 @@ body.login-register.hide-account-title .select2-container--open .select2-dropdow
     color: #fff!important;
     text-transform: capitalize;
 }
-
-
 select.select-2-cntlr.select2-hidden-accessible.xontact-custom-select {
     width: 100%!important;
 }
@@ -431,10 +419,7 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
     content: none!important;
     display: none!important;
 }
-/*select-2*/
-
-
-
+/*select-2-end*/
 /*----------------------------------------responsive----------------------------------------*/
 @media(max-width: 1699px){
 	.tv-modl-intro-sec {
@@ -479,8 +464,6 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
 	    width: 37px;
 	    height: 26px;
 	}
-
-
 }
 @media(max-width: 1199px){
 	.sec-modl-cont-tt {
@@ -500,7 +483,6 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
 	.cont-rgt {
 	    padding-left: 30px;
 	}
-
 	.gmi-cntnt-tt {
 	    font-size: 18px!important;
 	}
@@ -519,9 +501,6 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
 	.no-gmi-inline-bg{
 		height: 117px!important;
 	}
-
-
-
 }
 @media(max-width: 991px){
 	.vo-module-img {
@@ -573,8 +552,6 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
 	.nov-gmi-img-cntlr{
 		width: 63%!important;
 	}
-
-
 }
 @media(max-width: 767px){
 	.tv-no-breadcrumb-cntlr{
@@ -594,8 +571,6 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
 	.img-lft{
 		max-width: 100%;
 		width: 100%;
-		/*margin-bottom: 35px;*/
-		/*position: relative;*/
 	}
 	.cont-rgt {
 	    padding-left: 0;
@@ -622,12 +597,7 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
 	    font-size: 14px;
 	}
 	.two-line {
-	    /* position: absolute; */
-	    /*left: 9%;*/
-	    /*top: 88%;*/
-	    /* z-index: 999; */
 	    margin-top: -23px;
-	    /*display: block;*/
 	    margin-left: 15px;
 	}
 	.two-line i{
@@ -665,15 +635,12 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
 		width: 16px;
 		height: 11px;
 	}
-
-
 }
 
 @media(max-width: 639px){
 	.gmi-img-cntlr {
 	    width: 45%;
 	}
-
 }
 @media(max-width: 575px){
 	.vo-module-img {
@@ -704,8 +671,6 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
 	.gmi-img-cntlr {
 	    width: 35%;
 	}
-
-
 }
 @media(max-width: 479px){
 		.gmi-img-cntlr{
@@ -720,8 +685,6 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
 	.gmi-cntnt-tt {
 	    font-size: 17px!important;
 	}
-
-
 }
 @media(max-width: 359px){
 	.gmi-cntnt-tt {
@@ -733,11 +696,9 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
 	.tv-date {
 	    font-size: 12px;
 	}
-
 }
 @media(max-width: 320px){
 	.gmi-img-cntlr {
 	    width: 50%;
 	}
-
 }

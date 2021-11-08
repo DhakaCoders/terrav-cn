@@ -38,3 +38,9 @@ li a:after:hover{
     line-height: 15px;
 	
 }
+.customSidebar-position{
+    margin-top: -250px!important;
+}
+#customSidebarWrap{
+    height: 100%;
+}

@@ -13,7 +13,7 @@
     font-size:32px;
 }
 .product-page-entry-hdr {
-    padding-top: 110px;
+    padding-top: 100px;
     padding-bottom: 145px;
     background: #fdfdfd;
 }
@@ -98,9 +98,14 @@
     .product-category .tv-pro-grd-title{
         font-family: 'Work Sans', sans-serif;
     }
+    .tv-pro-grd-img-cntlr{
+        height: 350px;
+    }
 }
 @media(max-width:575px){
-
+    .tv-pro-grd-img-cntlr{
+        height: 424px;
+    }
     .product-category .tv-products-cntlr > ul > li{
         width: 100%;
     }
@@ -131,4 +136,8 @@
 
 
 }
-@media(max-width:479px){}
+@media(max-width:479px){
+    .tv-pro-grd-img-cntlr{
+        height: 350px;
+    }
+}
