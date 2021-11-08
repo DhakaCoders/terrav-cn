@@ -298,7 +298,7 @@ if( $('#customSidebar').length ){
                     $('#customSidebar').css('top', scroll);
                     $('#customSidebar').addClass('customSidebar-position');
                 }
-                if( scroll <= 0){
+                if( scroll <= 100){
                   $('#customSidebar').removeClass('customSidebar-position');
                 }
             }
