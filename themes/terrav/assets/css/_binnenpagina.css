@@ -1326,6 +1326,10 @@ hr{
 	.cta-module-title{
 		font-size: 31px!important;
 	}
+	.cta-module-sub-title i img{
+		height: 20px;
+		width: auto;
+	}
 
 }
 
