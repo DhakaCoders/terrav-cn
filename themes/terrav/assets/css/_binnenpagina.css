@@ -1251,6 +1251,7 @@ hr{
 	}
 	.dfp-blockqoute blockquote p {
 	    font-size: 24px;
+	    line-height: 1.3;
 	}
 	.dfp-blockqoute blockquote i {
 	    top: 30px;
@@ -1325,6 +1326,13 @@ hr{
 	}
 	.cta-module-title{
 		font-size: 31px!important;
+	}
+	.cta-module-sub-title i img{
+		height: 20px;
+		width: auto;
+	}
+	.cta-module-sub-title{
+		padding-left: 28px;
 	}
 
 }
