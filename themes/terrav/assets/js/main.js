@@ -290,7 +290,7 @@ if( $('#customSidebar').length ){
     }
 }
   
-
+  
 
  $(window).scroll(function() { 
     var scroll = $(window).scrollTop();   
