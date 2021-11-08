@@ -1,10 +1,10 @@
 .tv-modl-intro-sec{
 	background: linear-gradient(360deg, #FAFAFA 0.94%, #FFFFFF 98.23%);
 	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-bottom: 140px;
 }
 .tv-intro-modl-sec-cntlr{
-	padding: 45px 35px;
+	padding: 40px 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -19,12 +19,12 @@
 	overflow: hidden;
 }
 .img-lft{
-	max-width: 50%;
+	max-width: 47%;
 	width: 100%;
 }
 
 .vo-module-img{
-	height: 310px;
+	height: 300px;
 	transition: all .5s;
 	-webkit-transition: all .5;
 	-moz-transition: all .5;
@@ -40,8 +40,8 @@
 	display: none;
 }
 .cont-rgt{
-	padding-left: 40px;
-	max-width: 50%;
+	padding-left: 45px;
+	max-width: 53%;
 	width: 100%;
 }
 .tv-date{
@@ -75,7 +75,7 @@
 }
 .tv-grids-modl-sec{
 	background-color: #fff;
-	padding-top: 60px;
+	padding-top: 50px;
 	padding-bottom: 80px;
 }
 .tv-bots-selct-cntlr{}
@@ -259,7 +259,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
     line-height: 1;
 }
 /*------------------------------select2 start--------------------------------------------*/
