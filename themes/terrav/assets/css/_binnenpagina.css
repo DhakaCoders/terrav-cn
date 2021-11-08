@@ -1328,8 +1328,9 @@ hr{
 		font-size: 31px!important;
 	}
 	.cta-module-sub-title i img{
-		height: 20px;
-		width: auto;
+		max-width: 20px;
+		width: 100%;
+		height: auto;
 	}
 	.cta-module-sub-title{
 		padding-left: 28px;
