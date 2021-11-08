@@ -55,7 +55,6 @@
 	
 }
 .vacature-details-con-rgt {
-	padding-bottom: 110px;
 	padding-top: 110px;
 	padding-left: 30px;
 }
@@ -194,7 +193,6 @@
 @media(max-width: 1699px){
 	.vacature-details-con-rgt{
 		padding-top: 80px;
-		padding-bottom: 80px;
 	}
 	#customSidebar{
 		margin-top: 80px;
@@ -210,7 +208,6 @@
 @media(max-width: 1199px){
 	.vacature-details-con-rgt{
 		padding-top: 60px;
-		padding-bottom: 60px;
 	}
 	#customSidebar{
 		margin-top: 60px;
@@ -241,7 +238,6 @@
 @media(max-width: 991px){
 	.vacature-details-con-rgt{
 		padding-top: 50px;
-		padding-bottom: 50px;
 	}
 	#customSidebar{
 		margin-top: 50px;
