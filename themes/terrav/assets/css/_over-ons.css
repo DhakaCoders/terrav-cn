@@ -2,8 +2,8 @@
 
 .over-ons-intro-sec{
 	background: linear-gradient(360deg, #FAFAFA 0.94%, #FFFFFF 98.23%);
-	padding-top:120px;
-	padding-bottom:120px;
+	padding-top:100px;
+	padding-bottom:100px;
 }
 .over-ons-title-icon {
     position: absolute;
@@ -106,7 +106,7 @@
 
 /*certificates-guarantee*/
 .certificates-guarantee-sec{
-	padding-top: 50px;
+	padding-top: 70px;
 	padding-bottom: 62px;
 }
 .certificates-guarantee-grd ul {
@@ -232,16 +232,19 @@
 }
 .over-ons-lftimg-rgtdes-sec-rgt{
     width:58%;
-    padding: 60px;
+    padding-left: 60px;
 }
 .over-ons-lftimg-rgtdes-sec .fl-dft-lftimg-rgtdes{
     padding-bottom:0
 }
 
 @media(max-width:1199px){
-
+    .over-ons-intro-sec{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
     .strong-professional-sec-cntlr{
-        height:240px;
+        padding: 60px 0;
     }
     .over-ons-history-sec{
         padding-top: 100px;
@@ -250,10 +253,23 @@
     .professional-team-logo ul{
         margin: 0 -10px;
     }
+    .over-ons-intro-sec-img{
+        height: 500px;
+    }
+    .over-ons-lftimg-rgtdes-sec-rgt{
+        padding-left: 45px;
+    }
 
 }
 
 @media(max-width:991px){
+    .over-ons-lftimg-rgtdes-sec-rgt{
+        padding-left: 30px;
+    }
+    .over-ons-intro-sec{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
     .over-ons-intro-sec-right {
         width: 43%;
     }
@@ -262,10 +278,6 @@
     }
     .over-ons-intro-button a:not(:last-child){
         margin-bottom:10px;
-    }
-    .over-ons-intro-sec{
-        padding-top: 80px;
-        padding-bottom: 80px;
     }
     .over-ons-title-icon{
         width:23px;
@@ -277,8 +289,8 @@
     .strong-professional-sec-cntlr {
         flex-direction: column;
         height: initial;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 50px;
+        padding-bottom: 50px;
         text-align: center;
     }
 
@@ -300,7 +312,7 @@
         width:50%;
     }
     .certificates-guarantee-sec{
-        padding-top: 60px;
+        padding-top: 50px;
         padding-bottom: 30px;
     }
     .certificates-guarantee-title .certificates-guarantee-heading{
@@ -333,8 +345,12 @@
         padding-right:0;
     }
 
+
 }
 @media(max-width:767px){
+    .over-ons-intro-sec{
+        padding-top: 40px;
+    }
     .over-ons-intro-sec-right {
         width: 100%;
         order:1;
@@ -354,9 +370,11 @@
         flex-wrap:wrap;
 
     }
-   
-    .over-ons-intro-sec-img{
-        margin-bottom:55px;
+   .over-ons-intro-sec-img{
+        height: 411px;
+    }
+    .over-ons-intro-sec-right{
+        margin-bottom: 55px;
     }
     .over-ons-intro-button a{
         margin-bottom:0px!important;
@@ -364,7 +382,7 @@
     .over-ons-intro-button{
         display: flex;
         align-items: center;
-        justify-content: center;
+        /*justify-content: center;*/
     }
     .over-ons-des-title {
         padding-left: 29px;
@@ -383,7 +401,10 @@
 
     .over-ons-lftimg-rgtdes-sec{
         padding-top: 60px;
-        padding-bottom:30px;
+        padding-bottom: 0px;
+    }
+    .over-ons-cta-module-sec .cta-module-ctlr{
+        margin-top: 0;
     }
     .certificates-guarantee-grd ul li{
 
@@ -392,10 +413,10 @@
     .certificates-guarantee-title .certificates-guarantee-heading{
         margin-bottom:40px;
     }
-    .over-ons-history-sec-cntlr {
+   /* .over-ons-history-sec-cntlr {
         max-width: 500px;
         margin: 0 auto;
-    }
+    }*/
     .over-ons-history-sec{
         padding-top: 80px;
         padding-bottom: 70px;
@@ -409,6 +430,12 @@
     }
     .over-ons-des-cntlr .over-ons-des-heading{
         margin-bottom:21px;
+    }
+    .over-ons-lftimg-rgtdes-sec-rgt{
+        padding-left: 0;
+    }
+    .professional-heading{
+        font-size: 30px!important;
     }
    
 }
@@ -488,6 +515,9 @@
         padding-top: 56px;
         padding-bottom: 50px;
     }
+    .certificates-guarantee-des{
+        padding-right: 0;
+    }
 }
 
 
@@ -528,5 +558,12 @@
     }
     .over-ons-history-des-cntlr ul li{
         font-size:18px;
+    }
+    .professional-team-logo ul li{
+        width: 100%;
+
+    }
+    .prfnl-tm-logo{
+        height: 65px;
     }
 }
