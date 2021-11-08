@@ -293,18 +293,14 @@ if( $('#customSidebar').length ){
 
                 var boxh = $('#customSidebar').height();
                 var ftrtop = $(".footer-wrp").offset().top;
-                //var RelevantTop = $(".user-rel-camp-sec").offset().top;
                 var ftrx = (ftrtop - boxh) -420 ;
                 if( scroll < ftrx ){
                     $('#customSidebar').css('top', scroll);
                     $('#customSidebar').addClass('customSidebar-position');
-                    
-                }else if( scroll <= 0){
+                }
+                if( scroll <= 0){
                   $('#customSidebar').removeClass('customSidebar-position');
                 }
-
-
-               
             }
         });
     }
