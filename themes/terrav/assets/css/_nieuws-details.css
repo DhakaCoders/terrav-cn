@@ -28,6 +28,9 @@
 	content: none;
 	display: none;
 }
+#nieuws-details .trv-service-grid-title{
+	text-transform: capitalize;
+}
 @media (max-width: 1699px){
 	#nieuws-details .glslider2{
 		padding-bottom: 50px;

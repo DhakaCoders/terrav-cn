@@ -386,7 +386,7 @@ Gallery design
 
 .cta-module-ctlr{
 	background: #E83747;
-	padding: 90px 95px 70px 100px;
+	padding: 90px 100px 70px 100px;
 	margin-top: 60px;
 	margin-bottom: 90px;
 }
@@ -572,11 +572,13 @@ Gallery design
 	display: flex;
 	align-items: center;
 	padding: 0;
+	margin: 0 -12px;
 }
 .dfp-social-media ul li{
 	padding-left: 12px;
 	padding-right: 12px;
 	padding-bottom: 0;
+	padding-top: 0;
 }
 .dfp-social-media ul li a{
 	display: flex;
@@ -687,6 +689,9 @@ hr{
 	padding-top: 15px!important;
 	padding-bottom: 50px!important;
 }
+.default-page-con .trv-service-grid-title{
+	text-transform: capitalize;
+}
 /*responsive*/
 
 @media(max-width: 1699px){
@@ -699,7 +704,7 @@ hr{
 		margin-bottom: 80px;
 	}
 	.cta-module-ctlr {
-	    padding: 70px 70px 60px 80px;
+	    padding: 70px 60px 60px 60px;
 	    margin-top: 40px;
 		margin-bottom: 70px;
 	}
@@ -765,7 +770,7 @@ hr{
 		margin-bottom: 70px;
 	}
 	.cta-module-ctlr {
-	    padding: 60px 60px 50px 70px;
+	    padding: 60px 50px 50px 50px;
 	    margin-top: 30px;
 		margin-bottom: 60px;
 	}
