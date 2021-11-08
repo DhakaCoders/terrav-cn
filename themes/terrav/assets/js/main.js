@@ -277,17 +277,27 @@ if( $('#customSidebar').length ){
                 var boxh = $('#customSidebar .vacature-details-con-rgt-inner').height();
                 var ftrtop = $(".footer-wrp").offset().top;
                 //var RelevantTop = $(".user-rel-camp-sec").offset().top;
-                var ftrx = (ftrtop - boxh) - 420;
+                var ftrx = (ftrtop - boxh) ;
                 //var RelevantTrx = (RelevantTop - boxh) - 160;
                 /*$('.customSidebar-position').css('margin-top', 80);*/
                 //$('#customSidebar').removeClass('customSidebar-position');
+ /*               if (scroll >= 0) {
+                    //clearHeader, not clearheader - caps H
+                    $('#customSidebar').removeClass('customSidebar-position');
+                }*/
+                if(scroll = 0 ){
+                  $('#customSidebar').removeClass('customSidebar-position');
+                }
                 if( scroll < ftrx ){
                     $('#customSidebar').css('top', scroll);
                     $('#customSidebar').addClass('customSidebar-position');
+                    
                 }
-                if( scroll > ftrx ){
+
+                /*if( scroll > ftrx ){
                     $('#customSidebar').removeClass('customSidebar-position');
-                }
+                }*/
+
                /* var hdrtop = $(".page-banner").offset().bottom;
                 console.log(hdrtop);
                 if( hdrtop < scroll ){
