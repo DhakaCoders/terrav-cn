@@ -9,9 +9,6 @@
 .vacature-details-con-rgt{
 	width: 35%;
 }
-.vacature-details-con-cntlr{
-	margin-top: 80px;
-}
 .vacature-details-con-cntlr .default-page-con{
 	padding-top: 0!important;
 }
@@ -27,7 +24,7 @@
 	padding-bottom: 12px;
 }
 #vacature-details .dfp-form-module{
-	margin-top: 60px;
+	padding-top: 30px;
 }
 #vacature-details .dfp-social-media-select-module {
     display: flex;
@@ -65,9 +62,9 @@
 	padding-top: 110px;
 	padding-left: 30px;
 }
-/*.vacature-details-con-rgt-inner{
+.vacature-details-con-cntlr{
 	margin-top: 110px;
-}*/
+}
 .vacature-details-rgt-con-cntlr {
     padding: 45px 30px 10px;
     background: #FAFAFA;
@@ -180,9 +177,22 @@
 
 
 /* custom sidebar  */
+.customSidebar-position{
+    margin-top: -250px!important;
+}
 #customSidebarWrap {
     width: 100%;
     min-height: 1px;
+    height: 100%;
+}
+.customSidebar-position .vacature-details-rgt-con-cntlr{
+	padding-top: 35px;
+}
+.customSidebar-position .vacature-details-rgt-col{
+	padding-bottom: 0;
+}
+.customSidebar-position .vacature-details-rgt-col ul li{
+	padding: 5px 0 12px 35px;
 }
 @media (min-width: 768px){
     #customSidebar {
@@ -203,9 +213,9 @@
 	.vacature-details-con-rgt{
 		padding-top: 80px;
 	}
-/*	.vacature-details-con-rgt-inner{
+	.vacature-details-con-cntlr{
 		margin-top: 80px;
-	}*/
+	}
 	#vacature-details .dfp-plate-one-img-bx{
 		margin-bottom: 60px;
 	}
@@ -218,9 +228,9 @@
 	.vacature-details-con-rgt{
 		padding-top: 60px;
 	}
-/*	.vacature-details-con-rgt-inner{
+	.vacature-details-con-cntlr{
 		margin-top: 60px;
-	}*/
+	}
 	#vacature-details .dfp-plate-one-img-bx{
 		margin-bottom: 50px;
 	}
@@ -238,7 +248,7 @@
 		margin-bottom: 25px;
 	}
 	#vacature-details .dfp-form-module{
-		margin-top: 45px;
+		padding-top: 15px;
 	}
 	.vatur-details-con-cntlr{
         padding: 50px 45px;
@@ -248,9 +258,9 @@
 	.vacature-details-con-rgt{
 		padding-top: 50px;
 	}
-/*	.vacature-details-con-rgt-inner{
+	.vacature-details-con-cntlr{
 		margin-top: 50px;
-	}*/
+	}
 	#vacature-details .dfp-social-media-select-module{
 		display: block;
 	}
@@ -292,7 +302,7 @@
 		margin-bottom: 40px;
 	}
 	#vacature-details .dfp-form-module{
-		margin-bottom: 30px;
+		padding-bottom: 0;
 	}
 	.vatur-details-con-cntlr{
         padding: 40px 35px;

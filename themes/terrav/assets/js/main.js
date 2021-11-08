@@ -247,7 +247,23 @@ if (windowWidth <=768){
       });
     }
   }
-
+if( $('.scrollto2').length ){
+  $('.scrollto2').on('click', function(e){
+    e.preventDefault();
+    var togo = $(this).data('to');
+    goToByScroll(togo, 100);
+  });
+}
+function goToByScroll(id, offset){
+  if(id){
+    // Remove "link" from the ID
+    id = id.replace("link", "");
+    // Scroll
+    $('html,body').animate(
+      {scrollTop: $(id).offset().top - offset},
+      500);
+  }
+}
 
 /* custom sidebar */
 if( $('#customSidebar').length ){
