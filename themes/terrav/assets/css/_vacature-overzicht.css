@@ -67,7 +67,11 @@
 .des.vo-des{
 	margin-bottom: 35px;
 }
-
+.vtur-ovzt-serch-cntlr{
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+	-ms-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+	-webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+}
 
 .vtur-ovzt-serch-cntlr label{
     display: block;
@@ -80,9 +84,7 @@
     width: 100%;
     height: 70px;
     background: #FFFFFF;
-	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
-	-ms-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
-	-webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+	
 	border-radius: 8px;
     margin-top: 0;
     font-family: 'Libre Franklin', sans-serif;
