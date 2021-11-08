@@ -3,9 +3,12 @@
 .pdct-pgni-trv-service-grid-sec{
 	margin-top:0;
 	background: #FAFAFA;
-	padding-top:175px;
+	padding-top:165px;
 	margin-top: -100px;
-	padding-bottom:80px
+	padding-bottom: 65px
+}
+.prdct-pgni-dtls-sec .fl-dft-lftimg-rgtdes-lft{
+	height: 580px;
 }
 .prdct-pgni-dtls-sec-cntlr .fl-dft-lftimg-rgtdes{
 	align-items: flex-start;
@@ -60,7 +63,7 @@
 }
 .related-products-sec{
 	padding-top:91px;
-	padding-bottom: 60px;
+	padding-bottom: 40px;
 }
 .related-products-sec-entry-hdr {
     max-width: 810px;
@@ -176,6 +179,23 @@
 	.FlProductSlider.slick-initialized .tv-products-grid-item{
 		display: block;
 	}
+	.prdct-pgni-dtls-sec .over-ons-lftimg-rgtdes-sec-rgt{
+		margin-bottom: 54px;
+	}
+	.prdct-pgni-dtls-sec .over-ons-lftimg-rgtdes-sec-lft{
+		height: 411px;
+	}
+	.pdct-pgni-trv-service-grid-sec .sec-entry-hdr-sub-title{
+		margin-bottom: 8px!important;
+	}
+	.pdct-pgni-trv-service-grids{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.pdct-pgni-trv-service-grids .pdct-pgni-trv-service-grids-item{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
 @media(max-width:575px){
 	.prdct-pgni-dtls-sec{
@@ -201,6 +221,10 @@
 	.product-category .fl-pro-grd-title{
 		font-size:28px;
 	}
+	.prdct-pgni-dtls-sec .over-ons-lftimg-rgtdes-sec-rgt{
+		margin-bottom: 45px;
+	}
+
 
 }
 @media(max-width:479px){
