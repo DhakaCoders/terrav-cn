@@ -22,11 +22,7 @@
 	max-width: 50%;
 	width: 100%;
 }
-.img-lft:hover .vo-module-img{
-	transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-}
+
 .vo-module-img{
 	height: 310px;
 	transition: all .5s;
