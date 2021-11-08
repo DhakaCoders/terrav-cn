@@ -1199,7 +1199,9 @@ hr{
 	.dfp-social-media-module span{
 		font-size: 20px;
 	}
-
+	.glslider2.has-inline-bg .gallery-icon-img{
+		height: 200px;
+	}
 
 }
 
@@ -1270,6 +1272,9 @@ hr{
 		padding-left: 20px!important;
 		padding-right: 20px!important;
 	}
+	.glslider2.has-inline-bg .gallery-icon-img{
+		height: 140px;
+	}
 
 
 }
@@ -1318,12 +1323,21 @@ hr{
 	.dfp-btn-module-inr ul li:nth-child(4){
 		padding-bottom: 48px;
 	}
+	.cta-module-title{
+		font-size: 31px!important;
+	}
 
 }
 
 @media(max-width: 359px){
 	.default-page-con h3{
 		font-size: 25px;
+	}
+	.cta-module-title{
+		font-size: 27px!important;
+	}
+	.fl-dft-lftimg-rgtdes-lft {
+	    height: 380px;
 	}
 }
 
