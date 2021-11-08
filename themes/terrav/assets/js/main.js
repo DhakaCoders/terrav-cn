@@ -279,9 +279,20 @@ if( $('#customSidebar').length ){
                 //var RelevantTop = $(".user-rel-camp-sec").offset().top;
                 var ftrx = (ftrtop - boxh) - 420;
                 //var RelevantTrx = (RelevantTop - boxh) - 160;
+                /*$('.customSidebar-position').css('margin-top', 80);*/
+                //$('#customSidebar').removeClass('customSidebar-position');
                 if( scroll < ftrx ){
                     $('#customSidebar').css('top', scroll);
+                    $('#customSidebar').addClass('customSidebar-position');
                 }
+                if( scroll > ftrx ){
+                    $('#customSidebar').removeClass('customSidebar-position');
+                }
+               /* var hdrtop = $(".page-banner").offset().bottom;
+                console.log(hdrtop);
+                if( hdrtop < scroll ){
+                    $('#customSidebar').removeClass('customSidebar-position');
+                }*/
                /* if( scroll < RelevantTrx ){
                     $('#customSidebar').css('top', scroll);
                 }*/
