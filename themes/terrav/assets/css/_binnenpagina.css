@@ -903,6 +903,9 @@ hr{
 	}
 	.cta-module-inr{
 		display: block;
+		max-width: 700px;
+	    width: 100%;
+	    margin: 0 auto;
 	}
 	.cta-module-lft{
 		width: 100%;
@@ -949,6 +952,11 @@ hr{
 	}
 	.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes{
 		padding-top: 15px;
+	}
+	.cta-module-btn a{
+		min-width: inherit;
+		max-width: 270px;
+		padding: 15px;
 	}
 
 }
@@ -1012,7 +1020,7 @@ hr{
 	}
 
 	.has-inline-bg .gallery-icon-img {
-	    height: 184px;
+	    height: 280px;
 	}
 
 	
@@ -1080,7 +1088,7 @@ hr{
 	}
 
 	.gallery-icon{
-		max-width: 400px;
+		max-width: 100%;
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
@@ -1226,7 +1234,7 @@ hr{
 	}
 	
 	.has-inline-bg .gallery-icon-img {
-	    height: 231px;
+	    height: 250px;
 	    display: block;
 	}
 	.fl-fancy-module{
@@ -1289,11 +1297,6 @@ hr{
 	}
 	.glslider2.has-inline-bg .gallery-icon-img {
 	    height: 87px;
-	}
-	.cta-module-btn a{
-		min-width: inherit;
-		max-width: 270px;
-		padding: 15px;
 	}
 	.dfp-grid-module-cntlr .trv-service-grid-des{
 		padding-left: 10px!important;
