@@ -293,7 +293,7 @@ if( $('#customSidebar').length ){
 
                 var boxh = $('#customSidebar').height();
                 var ftrtop = $(".footer-wrp").offset().top;
-                var ftrx = (ftrtop - boxh) -420 ;
+                var ftrx = (ftrtop - boxh) -200 ;
                 if( scroll < ftrx ){
                     $('#customSidebar').css('top', scroll);
                     $('#customSidebar').addClass('customSidebar-position');
