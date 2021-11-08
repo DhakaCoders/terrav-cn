@@ -119,6 +119,9 @@
 	#dienst-details .glslider2 .slick-dotted.slick-slider{
 		margin-bottom: 10px!important;
 	}
+	.dienst-details-hr-cntlr hr{
+		border-color: #E8E8E8;
+	}
 }
 @media (max-width: 369px){
 	.dienst-details-pro-module-cntlr .prfnl-tm-logo i img{

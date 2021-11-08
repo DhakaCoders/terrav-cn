@@ -1,10 +1,10 @@
 .tv-modl-intro-sec{
 	background: linear-gradient(360deg, #FAFAFA 0.94%, #FFFFFF 98.23%);
 	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-bottom: 140px;
 }
 .tv-intro-modl-sec-cntlr{
-	padding: 45px 35px;
+	padding: 40px 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -19,12 +19,12 @@
 	overflow: hidden;
 }
 .img-lft{
-	max-width: 50%;
+	max-width: 47%;
 	width: 100%;
 }
 
 .vo-module-img{
-	height: 310px;
+	height: 300px;
 	transition: all .5s;
 	-webkit-transition: all .5;
 	-moz-transition: all .5;
@@ -40,8 +40,8 @@
 	display: none;
 }
 .cont-rgt{
-	padding-left: 40px;
-	max-width: 50%;
+	padding-left: 45px;
+	max-width: 53%;
 	width: 100%;
 }
 .tv-date{
@@ -75,7 +75,7 @@
 }
 .tv-grids-modl-sec{
 	background-color: #fff;
-	padding-top: 60px;
+	padding-top: 50px;
 	padding-bottom: 80px;
 }
 .tv-bots-selct-cntlr{}
@@ -259,7 +259,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
     line-height: 1;
 }
 /*------------------------------select2 start--------------------------------------------*/
@@ -292,6 +292,9 @@
 }.tv-select-down-icon .iit-custom-select option:hover,
 .tv-select-down-icon .iit-custom-select option[selected]{
     background: #dc7223!important;
+}
+.nov-field-label{
+	font-size: 16px;
 }
 
 /*select-2-end*/
@@ -435,7 +438,7 @@
 	}
 	.tv-modl-intro-sec {
 	    background: linear-gradient(176deg, #fefefe 0.94%, #fafafa 98.23%);
-	    padding-top: 0;
+	    padding-top: 15px;
 	    padding-bottom: 70px;
 	}
 	.no-page-banner-tt, .vo-page-banner-tt{
@@ -508,6 +511,18 @@
 		width: 16px;
 		height: 11px;
 	}
+	.tv-intro-modl-sec-cntlr{
+		padding-top: 19px;
+		padding-left: 23px;
+		padding-right: 23px;
+	}
+	.tv-grids-modl-sec{
+		padding-top: 40px;
+		padding-bottom: 45px;
+	}
+	.tv-select-cntlr{
+		padding-bottom: 26px;
+	}
 }
 
 @media(max-width: 639px){
@@ -544,11 +559,23 @@
 	.gmi-img-cntlr {
 	    width: 35%;
 	}
+	.tv-grids-modl-sec{
+		padding-top: 30px;
+	}
+	.tv-select-cntlr{
+		padding-bottom: 16px;
+	}
+
+	
 }
 @media(max-width: 479px){
-		.gmi-img-cntlr{
+	.gmi-img-cntlr{
 		width: 40%;
 	}
+	.tv-select-down-icon span.select2.select2-container.select2-container--default{
+		width: 190px!important;
+	}
+	
 }
 @media(max-width: 379px){
 	.tv-date {

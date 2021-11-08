@@ -520,6 +520,38 @@ $('.select-2-cntlr').select2();
   }
 }
 
+
+$(".dft-fl-btn" ).each(function( index ) {
+  var color = $(this).data('color');
+  var bg = $(this).data('bg');
+  var border = $(this).data('border');
+  $(this).css('color', color);
+  $(this).css('background', bg);
+  $(this).css('border-color', border);
+  $(this).on('mouseenter', function(){
+    if( bg != ''){
+      $(this).css('background', 'transparent');
+      $(this).css('color', bg);
+    }
+    if( bg == ''){
+      $(this).css('background', border);
+      $(this).css('color', '#fff');
+    }
+  });
+  $(this).on('mouseleave', function(){
+    if( bg != ''){
+      $(this).css('background', bg);
+      $(this).css('color', color);
+    }
+    if( bg == ''){
+      $(this).css('background', 'transparent');
+      $(this).css('color', border);
+    }
+  });
+});
+
+
+
 new WOW().init();
 
 })(jQuery);
