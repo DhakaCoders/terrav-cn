@@ -174,7 +174,9 @@
 	max-width: 100%;
 	width: 100%;
 }
-
+.vacature-details-con-rgt{
+    padding-top: 0!important;
+}
 
 /* custom sidebar  */
 .customSidebar-position{
@@ -193,6 +195,10 @@
 }
 .customSidebar-position .vacature-details-rgt-col ul li{
 	padding: 5px 0 12px 35px;
+}
+#customSidebarWrap{
+    position: relative;
+    margin-top: 0;
 }
 @media (min-width: 768px){
     #customSidebar {

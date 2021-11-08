@@ -211,12 +211,12 @@
 		max-width:initial;
 	}
 	.tv-products-grid .tv-products-grid-item{
-		padding-left:6px;
-		padding-right:6px;
+		padding-left:15px;
+		padding-right:15px;
 	}
 	.tv-products-grid{
-		margin-left: -6px;
-		margin-right: -6px;
+		margin-left: -15px;
+		margin-right: -15px;
 	}
 	.product-category .fl-pro-grd-title{
 		font-size:28px;
@@ -224,15 +224,14 @@
 	.prdct-pgni-dtls-sec .over-ons-lftimg-rgtdes-sec-rgt{
 		margin-bottom: 45px;
 	}
-	.pdct-pgni-trv-service-grids,
-	.tv-products-grid{
-	    max-width: 400px;
+	.tv-product-grd{
+	    max-width: 405px;
 	    margin:0 auto;
 	}
 
 }
 @media(max-width:479px){
-	.pdct-pgni-trv-service-grids .pdct-pgni-trv-service-grids-item{
+/*	.pdct-pgni-trv-service-grids .pdct-pgni-trv-service-grids-item{
 		padding-left:0;
 		padding-right:0;
 	}
@@ -240,7 +239,7 @@
 		margin-left:0;
 		margin-right:0;
 	}
-	.product-category .fl-pro-grd-title{
+*/	.product-category .fl-pro-grd-title{
 		font-size:30px;
 	}
 	.tv-products-grid .tv-products-grid-item{
