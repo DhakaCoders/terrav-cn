@@ -8,6 +8,16 @@
 	padding-top: 100px;
 	background-size: 80px;
 }
+.tv-vo-intro-modl-sec-cntlr .img-lft{
+	width: 49%;
+}
+.tv-vo-intro-modl-sec-cntlr .cont-rgt{
+	width: 51%;
+	padding-right: 75px;
+}
+.tv-modl-intro-desc.des.vo-des{
+	margin-bottom: 35px;
+}
 .vo-cont-rgt{
 	padding-left: 0;
 	padding-right: 25px;
@@ -47,10 +57,10 @@
 .vo-gmicnt-cntlr{
 	padding-left: 45px;
 }
-.vtur-ovzt-serch-cntlr,
+/*.vtur-ovzt-serch-cntlr,
 .vo-des {
     padding-right: 50px;
-}
+}*/
 .vo-des p{
 	font-size: 16px;
 }
@@ -66,7 +76,7 @@
 }
 .vtur-ovzt-serch-cntlr label input[type="search"]{
     border: 1px solid #FFFFFF;
-    padding:25px 48px 25px 30px;
+    padding:25px 65px 25px 30px;
     width: 100%;
     height: 70px;
     background: #FFFFFF;
@@ -82,8 +92,40 @@
     color: rgba(79, 75, 52, 0.4);
     text-transform: capitalize;
 }
+.vtur-ovzt-serch-cntlr label input[type="search"]::-webkit-input-placeholder {
+	color: red;
+	opacity: 1;
+	color: rgba(79, 75, 52, 0.4);
+	font-size: 14px;
+	font-weight: 500;
+	font-family: 'Libre Franklin', sans-serif;
+}
+.vtur-ovzt-serch-cntlr label input[type="search"]::-moz-placeholder {
+	color: red;
+	opacity: 1;
+	color: rgba(79, 75, 52, 0.4);
+	font-size: 14px;
+	font-weight: 500;
+	font-family: 'Libre Franklin', sans-serif;
+}
+.vtur-ovzt-serch-cntlr label input[type="search"]:-ms-input-placeholder {
+	color: red;
+	opacity: 1;
+	color: rgba(79, 75, 52, 0.4);
+	font-size: 14px;
+	font-weight: 500;
+	font-family: 'Libre Franklin', sans-serif;
+}
+.vtur-ovzt-serch-cntlr label input[type="search"]:-moz-placeholder {
+	color: red;
+	opacity: 1;
+	color: rgba(79, 75, 52, 0.4);
+	font-size: 14px;
+	font-weight: 500;
+	font-family: 'Libre Franklin', sans-serif;
+}
 .vtur-ovzt-serch-cntlr label input[type="search"]:focus{
-    border: 1px solid #f5a302;
+    border: 1px solid rgba(79, 75, 52, 0.4);
 }
 .vtur-ovzt-serch-cntlr label button{
     position: absolute;
@@ -100,8 +142,14 @@
     z-index: 5;
     background: transparent;
 }
+.vtur-ovzt-serch-cntlr label button:hover i svg{
+	fill: #E83747!important;
+}
 .vo-gmi-cntnt-tt{
 	margin-bottom: 4px;
+}
+.tv-vo-grids-modl-sec .tv-grids-modl-sec-cntlr{
+	padding-bottom: 30px;
 }
 
 /*_______________________________responsive_______________________________*/
