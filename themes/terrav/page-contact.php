@@ -19,19 +19,16 @@ $gmaplink = !empty($map_url)?$map_url:'javascript:void()';
     <div class="row">
       <div class="col-md-12">
         <div class="page-banner-cntlr">
-          <h1 class="fl-h1 page-banner-title">Contact</h1>
+          <h1 class="fl-h1 page-banner-title"><?php the_title(); ?></h1>
           <div class="breadcrumb-cntlr hide-sm">
             <ul class="reset-list clearfix">
               <li class="home">
-                <a href="#">
-                  <span class="item">Home</span>
+                <a href="<?php echo esc_url(home_url('/')); ?>">
+                  <span class="item"><?php _e('Home', 'terrav'); ?></span>
                 </a>
               </li>
-              <li>
-                <a href="#"><span>Binnenpagina</span></a>
-              </li>
               <li class="active">
-                <span>Binnenpagina</span>
+                <span><?php the_title(); ?></span>
               </li>
             </ul>
           </div>
