@@ -1,6 +1,7 @@
 <?php 
 /*Template Name: Thankyou*/
 get_header();
+$thisID = get_the_ID();
 $intro = get_field('introsec', $thisID);
 ?>
 <div class="hdr-btm-bdr"></div>
@@ -15,10 +16,9 @@ $intro = get_field('introsec', $thisID);
                     </i>
                 </div>
                 <div class="page-bedankt-cntent-heading">
-                    <h1 class="fl-h1-72 page-bedankt-cntent-title">Bedankt!</h1>
-                    <h4 class="fl-h4">We nemen snel contact met je op!</h4>
                 <?php 
-                    if( !empty($intro['titel']) ) printf( '<h4 class="fl-h4">%s</h4>', $intro['titel'] ); 
+                if( !empty($intro['top_titel']) ) printf( '<h1 class="fl-h1-72 page-bedankt-cntent-title">%s</h1>', $intro['top_titel'] ); 
+                if( !empty($intro['titel']) ) printf( '<h4 class="fl-h4">%s</h4>', $intro['titel'] ); 
                 ?>
                 </div>
                <div class="page-bedankt-cntent-desc">
@@ -26,13 +26,20 @@ $intro = get_field('introsec', $thisID);
                     if( !empty($intro['beschrijving']) ) echo wpautop( $intro['beschrijving'] );
                 ?>
                </div>
+               <?php if( !empty($intro['knops']) ): ?>
                <div class="page-bedankt-cntent-menu-cntlr">
                    <ul class="reset-list">
-                       <li><a href="#">Home pagina</a></li>
-                       <li><a href="#">Onze producten</a></li>
-                       <li><a href="#">Onze diensten</a></li>
+                    <?php 
+                        foreach( $intro['knops'] as $knop ):  
+                        $knopp = $knop['knop'];
+                        if( is_array( $knopp ) &&  !empty( $knopp['url'] ) ){
+                            printf('<li><a href="%s" target="%s">%s</a></li>', $knopp['url'], $knopp['target'], $knopp['title']); 
+                        }
+                        endforeach; 
+                     ?>
                    </ul>
                </div>
+               <?php endif; ?>
             </div>
         </div>
       </div>
