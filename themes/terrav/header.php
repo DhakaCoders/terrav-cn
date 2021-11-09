@@ -61,6 +61,15 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php 
+  $topbartekst = get_field('topbartekst', 'options');
+  $logoObj = get_field('hdlogo', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+?> 
 <div class="page-body-cntlr">
 <div class="bdoverlay"></div>
 <header class="header">
@@ -69,26 +78,25 @@
       <div class="col-md-12">
         <div class="header-inr clearfix">
           <div class="hdr-lft">
-            <div class="logo">
-              <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.png"></a>
-            </div>
+          <?php if( !empty($logo_tag) ): ?>
+          <div class="logo">
+           <a href="<?php echo esc_url(home_url('/')); ?>">
+              <?php echo $logo_tag; ?>
+             </a>
+          </div>
+          <?php endif; ?>
           </div>
           <div class="hdr-menu hide-lg">
             <nav class="main-nav">
-              <ul class="clearfix reset-list">
-                <li class="current-menu-item"><a href="#">Producten</a></li>
-                <li class="menu-item-has-children">
-                  <a href="#">Verpakkingen</a>
-                  <ul class="sub-menu">
-                    <li><a href="#">submenu 1</a></li>
-                    <li><a href="#">submenu 2</a></li>
-                    <li><a href="#">submenu 3</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Over ons</a></li>
-                <li><a href="#">Nieuws</a></li>
-                <li><a href="#">Vacatures</a></li>
-              </ul>
+            <?php 
+              $mmenuOptions = array( 
+                  'theme_location' => 'cbv_main_menu', 
+                  'menu_class' => 'clearfix reset-list',
+                  'container' => '',
+                  'container_class' => ''
+                );
+              wp_nav_menu( $mmenuOptions ); 
+            ?>
             </nav>
           </div>
           <div class="hdr-right-cntlr hide-lg">
@@ -107,8 +115,8 @@
                 </div>
               </div>
               <div class="hdr-contact-btn">
-                <a href="#">
-                  <span>Contact</span>
+                <a href="<?php echo get_link_by_page_template('page-contact.php'); ?>">
+                  <span><?php _e('Contact','terrav' ); ?></span>
                   <i>
                     <svg class="msg-tel-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
                       <use xlink:href="#msg-tel-icon"></use> 
@@ -137,26 +145,25 @@
       <div class="col-md-12">
         <div class="header-inr clearfix">
           <div class="hdr-lft">
+            <?php if( !empty($logo_tag) ): ?>
             <div class="logo">
-              <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.png"></a>
+             <a href="<?php echo esc_url(home_url('/')); ?>">
+                <?php echo $logo_tag; ?>
+               </a>
             </div>
+            <?php endif; ?>
           </div>
           <div class="hdr-menu hide-lg">
             <nav class="main-nav">
-              <ul class="clearfix reset-list">
-                <li class="current-menu-item"><a href="#">Producten</a></li>
-                <li class="menu-item-has-children">
-                  <a href="#">Verpakkingen</a>
-                  <ul class="sub-menu">
-                    <li><a href="#">submenu 1</a></li>
-                    <li><a href="#">submenu 2</a></li>
-                    <li><a href="#">submenu 3</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Over ons</a></li>
-                <li><a href="#">Nieuws</a></li>
-                <li><a href="#">Vacatures</a></li>
-              </ul>
+            <?php 
+              $mmenuOptions = array( 
+                  'theme_location' => 'cbv_main_menu', 
+                  'menu_class' => 'clearfix reset-list',
+                  'container' => '',
+                  'container_class' => ''
+                );
+              wp_nav_menu( $mmenuOptions ); 
+            ?>
             </nav>
           </div>
           <div class="hdr-right-cntlr hide-lg">
@@ -175,8 +182,8 @@
                 </div>
               </div>
               <div class="hdr-contact-btn">
-                <a href="#">
-                  <span>Contact</span>
+                <a href="<?php echo get_link_by_page_template('page-contact.php'); ?>">
+                  <span><?php _e('Contact','terrav' ); ?></span>
                   <i>
                     <svg class="msg-tel-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
                       <use xlink:href="#msg-tel-icon"></use> 
@@ -220,20 +227,15 @@
     <div class="xs-pop-menu-con">
       <div class="xs-menu">
         <nav class="main-nav">
-          <ul class="clearfix reset-list">
-            <li class="current-menu-item"><a href="#">Producten</a></li>
-            <li class="menu-item-has-children">
-              <a href="#">Verpakkingen</a>
-              <ul class="sub-menu">
-                <li><a href="#">submenu 1</a></li>
-                <li><a href="#">submenu 2</a></li>
-                <li><a href="#">submenu 3</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Over ons</a></li>
-            <li><a href="#">Nieuws</a></li>
-            <li><a href="#">Vacatures</a></li>
-          </ul>
+        <?php 
+          $menuOptions = array( 
+              'theme_location' => 'cbv_mobile_main_menu', 
+              'menu_class' => 'reset-list clearfix',
+              'container' => '',
+              'container_class' => ''
+            );
+          wp_nav_menu( $menuOptions ); 
+        ?>
         </nav>
       </div>
     </div>
@@ -252,8 +254,8 @@
         </div>
       </div>
       <div class="hdr-contact-btn">
-        <a href="#">
-          <span>Contact</span>
+        <a href="<?php echo get_link_by_page_template('page-contact.php'); ?>">
+          <span><?php _e('Contact','terrav' ); ?></span>
           <i>
             <svg class="msg-tel-icon" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
               <use xlink:href="#msg-tel-icon"></use> 
