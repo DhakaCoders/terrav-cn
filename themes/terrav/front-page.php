@@ -1,7 +1,12 @@
 <?php 
 get_header(); 
+$hbanner = get_field('home_banner', HOMEID);
+if($hbanner):
+  $banner = !empty($hbanner['afbeelding'])? cbv_get_image_src( $hbanner['afbeelding'] ): '';
+  $banner_xs = !empty($hbanner['mobiel_afbeelding'])? cbv_get_image_src( $hbanner['mobiel_afbeelding'] ): '';
+  $hasvideo = !empty($hbanner['ogg_video']) || !empty($hbanner['mp4_video'])? true:false;
 ?>
-<section class="hm-banner"><!--  has-video -->
+<section class="hm-banner <?php echo $hasvideo?' has-video':''; ?>"><!--  has-video -->
     <div class="hm-bnr-down-scroll scrollto" data-to="#hm-process-sec">
       <div class="hm-bnr-down-scroll-icon-brder">
         <span class="hm-bnr-down-scroll-text">SCROOL</span>
@@ -12,13 +17,24 @@ get_header();
       </div>
     </div>
     <div class="hm-banner-bg-black"></div>
+    <?php 
+    if( $hasvideo ): 
+      $video_urlmp4 = $hbanner['mp4_video'];
+      $video_urlogg = $hbanner['ogg_video'];
+    ?>
     <div class="hm-video-cntlr">
       <video id="bnr-vdo" autoplay muted loop>
-        <source src="<?php echo THEME_URI; ?>/assets/images/videos/placeholder-video.mp4" type="video/mp4">
-        <source src="<?php echo THEME_URI; ?>/assets/images/videos/placeholder-video.mp4" type="video/mp4">
+        <?php if( !empty($video_urlogg)){ ?>
+        <source src="<?php echo $video_urlogg; ?>" type="video/ogg">
+        <?php } 
+        if( !empty($video_urlmp4)){
+        ?>
+        <source src="<?php echo $video_urlmp4; ?>" type="video/mp4">
+        <?php } ?>
       </video>
     </div>
-    <div class="hm-banner-bg inline-bg hide-xs" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/hm-banner.jpg');">
+    <?php endif; ?>
+    <div class="hm-banner-bg inline-bg hide-xs" style="background:url(<?php echo $banner; ?>);">
     </div>
     <div class="hm-banner-bg inline-bg show-xs" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/hm-banner-xs-bg.jpg');">
     </div>
@@ -28,20 +44,32 @@ get_header();
         <div class="col-md-12">
           <div class="hm-banner-desc-cntlr">
             <div class="hm-bnr-desc">
-                <h2 class="fl-h4 hm-bnr-title-1">Jouw <span>partner</span> in</h2>
-                <h1 class="fl-h1-72 hm-bnr-title-2">Groenten <span>en</span> <strong>Fruit</strong></h1>
-                <h3 class="fl-h4 hm-bnr-title-3">van de hoogste kwaliteit</h3>
-                <p>Integer leo pellentesque erat a varius viverra nulla. Lorem morbi<br>
-                diam massa risus pellentesque</p>
-              <div class="hm-bnr-btn">
-                <a class="fl-btn btn-bg-pink" href="#">producten</a>
-              </div>
+              <?php 
+                if( !empty($hbanner['top_titel']) ) printf( '<h2 class="fl-h4 hm-bnr-title-1">%s</h2>', $hbanner['top_titel'] ); 
+                if( !empty($hbanner['titel']) ) printf( '<h1 class="fl-h1-72 hm-bnr-title-2">%s</h1>', $hbanner['titel'] ); 
+                if( !empty($hbanner['subtitel']) ) printf( '<h3 class="fl-h4 hm-bnr-title-3">%s</h3>', $hbanner['subtitel'] ); 
+                if( !empty($hbanner['beschrijving']) ) echo wpautop( $hbanner['beschrijving'] );
+
+                $hbannerlink = $hbanner['knop'];
+                if( is_array( $hbannerlink ) &&  !empty( $hbannerlink['url'] ) ){
+                    printf('<div class="hm-bnr-btn"><a class="fl-btn btn-bg-pink" href="%s" target="%s">%s</a></div>', $hbannerlink['url'], $hbannerlink['target'], $hbannerlink['title']); 
+                }
+              ?>
             </div>
           </div>
         </div>
       </div>
     </div>    
 </section>
+<?php endif; ?>
+
+
+<?php
+$showhidedienst = get_field('showhidedienst', HOMEID);
+if($showhidedienst): 
+  $dienstsec = get_field('dienstsec', HOMEID);
+  if($dienstsec):
+?>
 
 <section class="hm-process-sec" id="hm-process-sec">
   <div class="container-lg">
@@ -269,6 +297,9 @@ get_header();
     </div>
   </div>
 </section>
+<?php endif; ?>
+<?php endif; ?>
+
 
 <section class="hm-over-ons-sec">
   <div class="container">
