@@ -470,7 +470,7 @@ if($showhide_nieuws_vacatures):
                       <h3 class="fl-h6 entry-sub-title">
                           <svg class="over-ons-title-icon" width="28" height="31" viewBox="0 0 28 31" fill="#4F7F35">
                           <use xlink:href="#equal-icon"></use> </svg>
-                          <?php printf( '%s', $hmvacatures['titel'] );  ?>
+                          <?php printf( '%s', $hmnieuws['titel'] );  ?>
                       </h3>
                       <?php endif; 
                         if( !empty($hmnieuws['sub_titel']) ) printf( '<h2 class="fl-h4 hm-vacatures-title">%s</h2>', $hmnieuws['sub_titel'] );
