@@ -37,8 +37,8 @@ if( !function_exists('cbv_theme_setup') ){
         register_nav_menus( array(
             'cbv_main_menu' => __( 'Hoofdmenu', 'terrav' ),
             'cbv_mobile_menu' => __( 'Mobielmenu', 'terrav' ),
-            'cbv_fta_menu' => __( 'Footer Menu 1', 'terrav' ),
-            'cbv_ftb_menu' => __( 'Footer Menu 2', 'terrav' ),
+            'cbv_fta_menu' => __( 'Footer Menu', 'terrav' ),
+            'cbv_copyright_menu' => __( 'Copyright Menu', 'terrav' ),
         ) );
 
     }
