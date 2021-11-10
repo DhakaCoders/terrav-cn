@@ -2,6 +2,12 @@
 /*Template Name: Dienst*/
 get_header();
 $thisID = get_the_ID();
+$top_titel = get_field('top_titel', $thisID);
+$titel = get_field('titel', $thisID);
+$beschrijving = get_field('beschrijving', $thisID);
+$afbeelding = get_field('afbeelding', $thisID);
+$vdoafbeelding = !empty($afbeelding)? cbv_get_image_src( $afbeelding ): '';
+$video_url = get_field('video_url', $thisID);
 ?>
 
 <section class="page-banner">
@@ -32,11 +38,7 @@ $thisID = get_the_ID();
 </section>
 
 
-<?php
-  $top_titel = get_field('top_titel', $thisID);
-  $titel = get_field('titel', $thisID);
-  $beschrijving = get_field('beschrijving', $thisID);
-?>
+
 <section class="service-sec-cntlr">
   <div class="trv-service-intro-sec">
     <div class="container">
@@ -282,14 +284,16 @@ $thisID = get_the_ID();
   </div>
 </section>
 
+
+
 <section class="trv-service-fancy-video-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="trv-service-fancy-cntlr">
           <div class="fl-fancy-module">
-            <div class="fl-fancy-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/dfp-img-14.jpg);"></div>
-            <a class="overlay-link" data-fancybox="" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&amp;t=3s"></a>
+            <div class="fl-fancy-img inline-bg" style="background-image: url(<?php echo $vdoafbeelding; ?>);"></div>
+            <a class="overlay-link" data-fancybox="" href="<?php  echo $video_url; ?>"></a>
             <span class="fl-video-play-cntlr">
               <i>
                 <svg class="play-icon-svg" width="85" height="85" viewBox="0 0 85 85" fill="#fff">
