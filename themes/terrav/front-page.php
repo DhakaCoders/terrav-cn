@@ -78,19 +78,23 @@ if($showhidedienst):
          <div class="hm-process-entry-hdr-sec">
             <div class="sec-entry-hdr-des-cntlr">
               <div class="sec-entry-hdr">
+                <?php 
+                if( !empty($dienstsec['top_titel']) ):  
+                ?>
                 <h3 class="fl-h6 sec-entry-hdr-sub-title">
-                  <span class="hm-desk-none">DE FLOW</span>
-                  <span class="hm-xs-block">OVER ONS</span>
+                  <?php printf( '%s', $dienstsec['top_titel'] );  ?>
                   <i>
                     <svg class="green-2lines" width="28" height="31" viewBox="0 0 28 31" fill="#4F7F35">
                       <use xlink:href="#green-2lines"></use> 
                     </svg>
                   </i>
                 </h3>
-                <h2 class="fl-h2 sec-entry-hdr-title">Wij verzorgen elke stap van het proces</h2>
+                <?php endif; 
+                  if( !empty($dienstsec['titel']) ) printf( '<h2 class="fl-h2 sec-entry-hdr-title">%s</h2>', $dienstsec['titel'] ); 
+                ?>
               </div>
               <div class="sec-entry-desc">
-                <p>Blandit volutpat enim rutrum maecenas nunc, consectetur nec a commodo. Pulvinar erat sed a tempus. Sed et purus, eget viverra a. Posuere amet vel enim nascetur mus ultricies lacinia. Egestas morbi ut faucibus aenean.</p>
+                <?php if( !empty($dienstsec['beschrijving']) ) echo wpautop( $dienstsec['beschrijving'] ); ?>
               </div>
             </div>
          </div>
