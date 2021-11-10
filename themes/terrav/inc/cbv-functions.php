@@ -210,13 +210,26 @@ function banner_placeholder($format = 'src'){
   return '';
 
 }
-function blog_placeholder($format = 'src'){
+function news_placeholder($format = 'src'){
   $placehoder = get_field('placeholder', 'options');
   if( !empty($placehoder) ){
       if( $format == 'src' ){
         $placeholder = !empty($placehoder['nieuws'])? cbv_get_image_src($placehoder['nieuws']):'';
       }else{
         $placeholder = !empty($placehoder['nieuws'])? cbv_get_image_tag($placehoder['nieuws']):'';
+      }
+      return $placeholder;
+  }
+  return '';
+
+}
+function product_placeholder($format = 'src'){
+  $placehoder = get_field('placeholder', 'options');
+  if( !empty($placehoder) ){
+      if( $format == 'src' ){
+        $placeholder = !empty($placehoder['product'])? cbv_get_image_src($placehoder['product']):'';
+      }else{
+        $placeholder = !empty($placehoder['product'])? cbv_get_image_tag($placehoder['product']):'';
       }
       return $placeholder;
   }
