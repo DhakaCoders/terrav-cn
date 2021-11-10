@@ -550,7 +550,10 @@ $(".dft-fl-btn" ).each(function( index ) {
   });
 });
 
-
+if( $('#vacature_url').length > 0 ){
+  let vacURL = $('#vacature_url').data('url');
+  $('body .wpforms-field.wpforms-field-hidden.vacatur_url input').val(vacURL);
+}
 
 new WOW().init();
 
