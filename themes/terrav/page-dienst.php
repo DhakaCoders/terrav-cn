@@ -48,20 +48,15 @@ $video_url = get_field('video_url', $thisID);
             <div class="trv-service-intro-cntlr">
               <div class="sec-entry-hdr-des-cntlr">
                 <div class="sec-entry-hdr">
-            	<?php 
-                  if( !empty($top_titel) ):  
-                ?>
                   <h2 class="fl-h6 sec-entry-hdr-sub-title">
-                    <?php printf( '<span>%s</span>', $top_titel );  ?>
+                    <?php if( !empty($top_titel) ) printf( '<span>%s</span>', $top_titel );  ?>
                     <i>
                       <svg class="green-2lines" width="28" height="31" viewBox="0 0 28 31" fill="#4F7F35">
                         <use xlink:href="#green-2lines"></use> 
                       </svg>
                     </i>
                   </h2>
-                <?php endif; 
-                	if( !empty($titel) ) printf( '<h3 class="fl-h2 sec-entry-hdr-title">%s</h3>', $titel );
-                ?>
+                <?php if( !empty($titel) ) printf( '<h3 class="fl-h2 sec-entry-hdr-title">%s</h3>', $titel ); ?>
                 </div>
                 <div class="sec-entry-desc">
                 	<?php if( !empty($beschrijving) ) echo wpautop( $beschrijving ); ?>
@@ -74,13 +69,32 @@ $video_url = get_field('video_url', $thisID);
     </div>
   </div>
 
-
+<?php 
+  $dienstobj = get_field('select_dienst', $thisID);
+  if( empty($dienstobj) ){
+    $dienstobj = get_posts( array(
+      'post_type' => 'dienst',
+      'posts_per_page'=> 5,
+      'orderby' => 'date',
+      'order'=> 'desc'
+    ) );
+  }
+  if($dienstobj){ 
+?>
   <div class="trv-service-grid-sec">
     <div class="container-lg">
       <div class="row">
         <div class="col-md-12">
           <div class="trv-service-grids-cntlr">
             <ul class="">
+              <?php 
+              //delete_metadata( 'dienst', 0, '_inhoud', '', true );
+                $i = 1;
+                foreach( $dienstobj as $dienst ){ 
+                $dienID = get_post_thumbnail_id($dienst->ID);
+                $dien_tag = !empty($dienID)? cbv_get_image_tag($dienID): dienst_placeholder('tag');
+                $dien_src = !empty($dienID)? cbv_get_image_src($dienID): dienst_placeholder();
+              ?>
               <li>
                 <div class="trv-service-grid-item-cntlr">
                   <div class="top-lft-bdr"></div>
@@ -88,9 +102,9 @@ $video_url = get_field('video_url', $thisID);
                   <div class="trv-service-grid-item">
                     <div class="trv-service-grid-item-inner">
                       <div class="trv-service-grid-img-cntlr has-inline-bg">
-                        <a class="overlay-link" href="#"></a>
-                        <div class="inline-bg service-grid-img" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/trv-service-grid-1.jpg);"></div>
-                        <img src="<?php echo THEME_URI; ?>/assets/images/trv-service-grid-1.jpg" alt="">
+                        <a class="overlay-link" href="<?php echo get_the_permalink($dienst->ID); ?>"></a>
+                        <div class="inline-bg service-grid-img" style="background-image: url(<?php echo $dien_src; ?>);"></div>
+                        <?php echo $dien_tag; ?>
                       </div>
                       <div class="trv-service-grid-des">
                         <div class="trv-svic-grid-des-top-2line">
@@ -100,11 +114,11 @@ $video_url = get_field('video_url', $thisID);
                             </svg>
                           </i>
                         </div>
-                        <h2 class="fl-h6 trv-service-grid-title"><a href="#">IMPORT/ AANKOOP</a></h2>
-                        <p>Integer leo pellentesque erat a varius viverra nulla. Lorem morbi diam massa risus pellentesque.</p>
+                        <h2 class="fl-h6 trv-service-grid-title"><a href="<?php echo get_the_permalink($dienst->ID); ?>"><?php echo get_the_title($dienst->ID); ?></a></h2>
+                        <?php echo wpautop($dienst->post_excerpt); ?>
                         <div class="trv-service-grid-btn">
-                          <a class="fl-info-btn" href="#">
-                            <span>meer info</span>
+                          <a class="fl-info-btn" href="<?php echo get_the_permalink($dienst->ID); ?>">
+                            <span><?php _e('meer info', 'terrav'); ?></span>
                             <i>
                               <svg class="info-arow" width="8" height="12" viewBox="0 0 8 12" fill="#4F7F35">
                                 <use xlink:href="#info-arow"></use> 
@@ -115,177 +129,24 @@ $video_url = get_field('video_url', $thisID);
                       </div>
                     </div>
                     <div class="trv-svic-grid-des-btm-cunt-nmbr">
-                      <h3 class="fl-h1 svic-grid-cunt-nmbr">01.</h3>
+                      <h3 class="fl-h1 svic-grid-cunt-nmbr"><?php echo num_format($i); ?>.</h3>
                     </div>
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="trv-service-grid-item-cntlr">
-                  <div class="top-lft-bdr"></div>
-                  <div class="top-rgt-bdr"></div>
-                  <div class="trv-service-grid-item">
-                    <div class="trv-service-grid-item-inner">
-                      <div class="trv-service-grid-img-cntlr has-inline-bg">
-                        <a class="overlay-link" href="#"></a>
-                        <div class="inline-bg service-grid-img" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/trv-service-grid-2.jpg);"></div>
-                        <img src="<?php echo THEME_URI; ?>/assets/images/trv-service-grid-1.jpg" alt="">
-                      </div>
-                      <div class="trv-service-grid-des">
-                        <div class="trv-svic-grid-des-top-2line">
-                          <i>
-                            <svg class="Svic-grid-2line" width="41" height="44" viewBox="0 0 41 44" fill="#E83747">
-                              <use xlink:href="#Svic-grid-2line"></use> 
-                            </svg>
-                          </i>
-                        </div>
-                        <h2 class="fl-h6 trv-service-grid-title"><a href="#">(BIO)PRODUCT</a></h2>
-                        <p>Integer leo pellentesque erat a varius viverra nulla. Lorem morbi diam massa risus pellentesque.</p>
-                        <div class="trv-service-grid-btn">
-                          <a class="fl-info-btn" href="#">
-                            <span>meer info</span>
-                            <i>
-                              <svg class="info-arow" width="8" height="12" viewBox="0 0 8 12" fill="#4F7F35">
-                                <use xlink:href="#info-arow"></use> 
-                              </svg>
-                            </i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="trv-svic-grid-des-btm-cunt-nmbr">
-                      <h3 class="fl-h1 svic-grid-cunt-nmbr">02.</h3>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="trv-service-grid-item-cntlr">
-                  <div class="top-lft-bdr"></div>
-                  <div class="top-rgt-bdr"></div>
-                  <div class="trv-service-grid-item">
-                    <div class="trv-service-grid-item-inner">
-                      <div class="trv-service-grid-img-cntlr has-inline-bg">
-                        <a class="overlay-link" href="#"></a>
-                        <div class="inline-bg service-grid-img" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/trv-service-grid-3.jpg);"></div>
-                        <img src="<?php echo THEME_URI; ?>/assets/images/trv-service-grid-1.jpg" alt="">
-                      </div>
-                      <div class="trv-service-grid-des">
-                        <div class="trv-svic-grid-des-top-2line">
-                          <i>
-                            <svg class="Svic-grid-2line" width="41" height="44" viewBox="0 0 41 44" fill="#E83747">
-                              <use xlink:href="#Svic-grid-2line"></use> 
-                            </svg>
-                          </i>
-                        </div>
-                        <h2 class="fl-h6 trv-service-grid-title"><a href="#">VERPAKKING</a></h2>
-                        <p>Integer leo pellentesque erat a varius viverra nulla. Lorem morbi diam massa risus pellentesque.</p>
-                        <div class="trv-service-grid-btn">
-                          <a class="fl-info-btn" href="#">
-                            <span>meer info</span>
-                            <i>
-                              <svg class="info-arow" width="8" height="12" viewBox="0 0 8 12" fill="#4F7F35">
-                                <use xlink:href="#info-arow"></use> 
-                              </svg>
-                            </i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="trv-svic-grid-des-btm-cunt-nmbr">
-                      <h3 class="fl-h1 svic-grid-cunt-nmbr">03.</h3>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="trv-service-grid-item-cntlr">
-                  <div class="top-lft-bdr"></div>
-                  <div class="top-rgt-bdr"></div>
-                  <div class="trv-service-grid-item">
-                    <div class="trv-service-grid-item-inner">
-                      <div class="trv-service-grid-img-cntlr has-inline-bg">
-                        <a class="overlay-link" href="#"></a>
-                        <div class="inline-bg service-grid-img" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/trv-service-grid-4.jpg);"></div>
-                        <img src="<?php echo THEME_URI; ?>/assets/images/trv-service-grid-1.jpg" alt="">
-                      </div>
-                      <div class="trv-service-grid-des">
-                        <div class="trv-svic-grid-des-top-2line">
-                          <i>
-                            <svg class="Svic-grid-2line" width="41" height="44" viewBox="0 0 41 44" fill="#E83747">
-                              <use xlink:href="#Svic-grid-2line"></use> 
-                            </svg>
-                          </i>
-                        </div>
-                        <h2 class="fl-h6 trv-service-grid-title"><a href="#">TRANSPORT</a></h2>
-                        <p>Integer leo pellentesque erat a varius viverra nulla. Lorem morbi diam massa risus pellentesque.</p>
-                        <div class="trv-service-grid-btn">
-                          <a class="fl-info-btn" href="#">
-                            <span>meer info</span>
-                            <i>
-                              <svg class="info-arow" width="8" height="12" viewBox="0 0 8 12" fill="#4F7F35">
-                                <use xlink:href="#info-arow"></use> 
-                              </svg>
-                            </i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="trv-svic-grid-des-btm-cunt-nmbr">
-                      <h3 class="fl-h1 svic-grid-cunt-nmbr">04.</h3>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="trv-service-grid-item-cntlr">
-                  <div class="top-lft-bdr"></div>
-                  <div class="top-rgt-bdr"></div>
-                  <div class="trv-service-grid-item">
-                    <div class="trv-service-grid-item-inner">
-                      <div class="trv-service-grid-img-cntlr has-inline-bg">
-                        <a class="overlay-link" href="#"></a>
-                        <div class="inline-bg service-grid-img" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/trv-service-grid-5.jpg);"></div>
-                        <img src="<?php echo THEME_URI; ?>/assets/images/trv-service-grid-1.jpg" alt="">
-                      </div>
-                      <div class="trv-service-grid-des">
-                        <div class="trv-svic-grid-des-top-2line">
-                          <i>
-                            <svg class="Svic-grid-2line" width="41" height="44" viewBox="0 0 41 44" fill="#E83747">
-                              <use xlink:href="#Svic-grid-2line"></use> 
-                            </svg>
-                          </i>
-                        </div>
-                        <h2 class="fl-h6 trv-service-grid-title"><a href="#">EXPORT/VERKOOP</a></h2>
-                        <p>Integer leo pellentesque erat a varius viverra nulla. Lorem morbi diam massa risus pellentesque.</p>
-                        <div class="trv-service-grid-btn">
-                          <a class="fl-info-btn" href="#">
-                            <span>meer info</span>
-                            <i>
-                              <svg class="info-arow" width="8" height="12" viewBox="0 0 8 12" fill="#4F7F35">
-                                <use xlink:href="#info-arow"></use> 
-                              </svg>
-                            </i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="trv-svic-grid-des-btm-cunt-nmbr">
-                      <h3 class="fl-h1 svic-grid-cunt-nmbr">05.</h3>
-                    </div>
-                  </div>
-                </div>
-              </li>
+              <?php $i++; } ?>
+
             </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <?php } ?>
 </section>
 
 
-
+<?php if( !empty($vdoafbeelding) ): ?>
 <section class="trv-service-fancy-video-sec">
   <div class="container">
     <div class="row">
@@ -293,6 +154,7 @@ $video_url = get_field('video_url', $thisID);
         <div class="trv-service-fancy-cntlr">
           <div class="fl-fancy-module">
             <div class="fl-fancy-img inline-bg" style="background-image: url(<?php echo $vdoafbeelding; ?>);"></div>
+            <?php if( !empty($video_url) ): ?>
             <a class="overlay-link" data-fancybox="" href="<?php  echo $video_url; ?>"></a>
             <span class="fl-video-play-cntlr">
               <i>
@@ -301,10 +163,13 @@ $video_url = get_field('video_url', $thisID);
                 </svg>
               </i>
             </span>
+            <?php endif; ?>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<?php endif; ?>
+<?php get_template_part('templates/cta', 'sec'); ?>
 <?php get_footer(); ?>
