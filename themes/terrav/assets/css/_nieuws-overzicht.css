@@ -163,14 +163,6 @@
 	width: 100%;
 	display: flex;
 }
-/*.fl-pagination-cntlr ul li a.prev:first-child {
-    position: absolute;
-    left: 0;
-}
-.fl-pagination-cntlr ul li a.next:last-child{
-	position: absolute;
-	right:  0;
-}*/
 .fl-pagination-cntlr ul li::before{
 	content: none;
 }
