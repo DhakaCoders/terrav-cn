@@ -127,7 +127,7 @@ if( !empty($prodterms) ){
     foreach( $prodterms as $prodterm ){
       $slugs[] = $prodterm->slug;
     }
-    $pQuery = new WP_Query(array(
+    $Query = new WP_Query(array(
     'post_type' => 'product',
     'posts_per_page'=> 3,
     'post__not_in' => array(get_the_ID()),
@@ -142,7 +142,7 @@ if( !empty($prodterms) ){
     )
 
   ));
-if( $pQuery->have_posts() ): 
+if( $Query->have_posts() ): 
 $relatedText = get_field('tekst', 'options'); ?>
 <section class="related-products-sec product-category">
   <div class="container">
@@ -166,7 +166,7 @@ $relatedText = get_field('tekst', 'options'); ?>
           <div class="tv-products-cntlr">
             <div class="tv-products-grid FlProductSlider">
               <?php 
-                while(have_posts()): the_post(); 
+                while($Query->have_posts()): $Query->the_post(); 
                 global $post;
                 $imgID = get_post_thumbnail_id(get_the_ID());
                 $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): product_placeholder('tag');

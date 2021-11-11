@@ -236,6 +236,19 @@ function product_placeholder($format = 'src'){
   return '';
 
 }
+function dienst_placeholder($format = 'src'){
+  $placehoder = get_field('placeholder', 'options');
+  if( !empty($placehoder) ){
+      if( $format == 'src' ){
+        $placeholder = !empty($placehoder['dienst'])? cbv_get_image_src($placehoder['dienst']):'';
+      }else{
+        $placeholder = !empty($placehoder['dienst'])? cbv_get_image_tag($placehoder['dienst']):'';
+      }
+      return $placeholder;
+  }
+  return '';
+
+}
 function bv_get_current_year(){
     return date('Y');
 }
