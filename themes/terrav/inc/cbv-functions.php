@@ -197,19 +197,6 @@ function get_title_by_page_template( $pagetemplate ){
   return $post_title;
 }
 
-function banner_placeholder($format = 'src'){
-  $placehoder = get_field('placeholder', 'options');
-  if( !empty($placehoder) ){
-      if( $format == 'src' ){
-        $placeholder = !empty($placehoder['default_banner'])? cbv_get_image_src($placehoder['default_banner']):'';
-      }else{
-        $placeholder = !empty($placehoder['default_banner'])? cbv_get_image_tag($placehoder['default_banner']):'';
-      }
-      return $placeholder;
-  }
-  return '';
-
-}
 function news_placeholder($format = 'src'){
   $placehoder = get_field('placeholder', 'options');
   if( !empty($placehoder) ){
@@ -247,6 +234,17 @@ function dienst_placeholder($format = 'src'){
       return $placeholder;
   }
   return '';
+
+}
+
+function no_result_text(){
+  $no_results = get_field('no_results', 'options');
+  if( !empty($no_results) ){
+    $text = $no_results;
+  }else{
+    $text = __( 'Geen resultaat', 'terrav' );
+  }
+  return $text;
 
 }
 function bv_get_current_year(){

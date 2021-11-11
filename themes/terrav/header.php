@@ -80,6 +80,19 @@
     $logo_tag = '';
   }
 ?> 
+<?php if( is_front_page() && $topbartekst ): ?>
+<section class="home-messege">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="home-messege-inr">
+        <?php if( !empty($topbartekst) ) echo wpautop( $topbartekst  ); ?>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<?php endif; ?>
 <div class="page-body-cntlr">
 <div class="bdoverlay"></div>
 <header class="header">

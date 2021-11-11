@@ -139,7 +139,7 @@ if( isset($_GET['keyword']) && !empty($_GET['keyword']) ){
           </ul>
     	<?php else: ?>
           <div class="col-md-12">
-            <div class="notfound"><?php _e( 'Geen resultaat', 'terrav' ); ?>.</div>
+            <div class="notfound"><?php echo no_result_text(); ?></div>
           </div>
     	<?php endif; ?>
         </div>

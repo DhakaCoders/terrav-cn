@@ -103,7 +103,7 @@ get_header();
         <?php endwhile; wp_reset_postdata();?>
         <?php else: ?>
           <div class="col-md-12">
-            <div class="notfound"><?php _e( 'Geen resultaat', 'terrav' ); ?>.</div>
+            <div class="notfound"><?php echo no_result_text(); ?></div>
           </div>
         <?php endif; wp_reset_postdata(); ?>
       </div>
