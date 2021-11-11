@@ -9,7 +9,7 @@ if($hbanner):
 <section class="hm-banner <?php echo $hasvideo?' has-video':''; ?>"><!--  has-video -->
     <div class="hm-bnr-down-scroll scrollto" data-to="#hm-process-sec">
       <div class="hm-bnr-down-scroll-icon-brder">
-        <span class="hm-bnr-down-scroll-text">SCROOL</span>
+        <span class="hm-bnr-down-scroll-text"><?php _e('SCROOL', 'terrav'); ?></span>
         <span class="hm-bnr-down-scroll-icon">
           <svg class="bnr-arrow-icon UpdownAnimate" width="13" height="14" viewBox="0 0 13 14" fill="#F4A302">
           <use xlink:href="#bnr-arrow-icon"></use> </svg>
@@ -264,23 +264,40 @@ if($showhide_nieuws_vacatures):
                        </h3>
                       <?php endif; 
                         if( !empty($hmvacatures['sub_titel']) ) printf( '<h2 class="fl-h4 hm-vacatures-title">%s</h2>', $hmvacatures['sub_titel'] );
+
+                        $vacobj = get_posts( array(
+                          'post_type' => 'vacature',
+                          'posts_per_page'=> 2,
+                          'orderby' => 'date',
+                          'order'=> 'desc',
+                        ) );
+                        if( $vacobj ):
                       ?>
                       <div class="hm-vacatures-grids-cntlr hm-vac-nie-grids-cntlr">
                           <ul class="reset-list">
+                            <?php
+                              foreach( $vacobj as $vac ): 
+                                $vacID = get_post_thumbnail_id($vac->ID);
+                                $vac_src = !empty($vacID)? cbv_get_image_src($vacID): THEME_URI.'/assets/images/vo-grid-img-inr.png';
+                                $jobtype = get_field('job_type', get_the_ID());
+                                $adres = get_field('adres', get_the_ID());
+                            ?>
                               <li>
                                     <div class="tv-grid-modl-item mHc" style="height: 145px;">
                                       <div class="gmi-img-cntlr has-img">
-                                        <a href="#" class="overlay-link"></a>
-                                        <div class="gmi-inline-bg  inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/vo-grid-img-inr.png');"></div>
+                                        <a href="<?php echo get_the_permalink($vac->ID); ?>" class="overlay-link"></a>
+                                        <div class="gmi-inline-bg  inline-bg" style="background-image: url('<?php echo $vac_src; ?>');"></div>
                                       </div>
 
                                       <div class="gmicnt-cntlr mHc1" style="height: 145px;">
-                                        <span class="tv-date">03/09/2021</span>
-                                        <h3 class="fl-h6 gmi-cntnt-tt  vo-gmi-cntnt-tt  mHc2" style="height: 52px;"><a href="#">Vacature Titel</a></h3>
-                                        <span class="full-time">Full Time / Aalst, België</span>
+                                        <span class="tv-date"><?php echo get_the_date('d/m/Y', $vac->ID); ?></span>
+                                        <h3 class="fl-h6 gmi-cntnt-tt  vo-gmi-cntnt-tt  mHc2" style="height: 52px;"><a href="<?php echo get_the_permalink($vac->ID); ?>"><?php echo get_the_title($vac->ID); ?></a></h3>
+                                        <?php if( !empty($jobtype) || !empty($adres) ){ ?>
+                                        <span class="full-time" ><?php printf('%s', $jobtype); printf(' / %s', $adres); ?></span>
+                                        <?php } ?>
                                         <div class="gmicnt-btn  hide-sm">
-                                            <a class="fl-info-btn  no-fl-info-btn" href="#">
-                                              <span>meer info</span>
+                                            <a class="fl-info-btn  no-fl-info-btn" href="<?php echo get_the_permalink($vac->ID); ?>">
+                                              <span><?php _e('meer info', 'terrav'); ?></span>
                                               <i>
                                                 <svg class="info-arow" width="8" height="12" viewBox="0 0 8 12" fill="#4F7F35">
                                                   <use xlink:href="#info-arow"></use> 
@@ -291,35 +308,13 @@ if($showhide_nieuws_vacatures):
                                       </div>
                                     </div>
                               </li>
-                              <li>
-                                    <div class="tv-grid-modl-item mHc" style="height: 145px;">
-                                      <div class="gmi-img-cntlr has-img">
-                                        <a href="#" class="overlay-link"></a>
-                                        <div class="gmi-inline-bg  inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/vo-grid-img-inr.png');"></div>
-                                      </div>
-
-                                      <div class="gmicnt-cntlr mHc1" style="height: 145px;">
-                                        <span class="tv-date">03/09/2021</span>
-                                        <h3 class="fl-h6 gmi-cntnt-tt  vo-gmi-cntnt-tt  mHc2" style="height: 52px;"><a href="#">Vacature Titel</a></h3>
-                                        <span class="full-time">Full Time / Aalst, België</span>
-                                        <div class="gmicnt-btn  hide-sm">
-                                            <a class="fl-info-btn  no-fl-info-btn" href="#">
-                                              <span>meer info</span>
-                                              <i>
-                                                <svg class="info-arow" width="8" height="12" viewBox="0 0 8 12" fill="#4F7F35">
-                                                  <use xlink:href="#info-arow"></use> 
-                                                </svg>
-                                              </i>
-                                            </a>
-                                        </div>
-                                      </div>
-                                    </div>
-                              </li>
+                              <?php endforeach; ?>
                           </ul>
                           <div class="hm-vacatures-btn  hm-vac-nie-btn">
-                              <a class="fl-btn" href="#">meer vacatures</a>
+                              <a class="fl-btn" href="<?php echo get_link_by_page_template('page-vacature.php'); ?>"><?php _e('meer vacatures', 'terrav'); ?></a>
                           </div>
                       </div>
+                      <?php endif; ?>
                   </div>
                 <?php endif; ?>
 
@@ -337,59 +332,52 @@ if($showhide_nieuws_vacatures):
                       </h3>
                       <?php endif; 
                         if( !empty($hmnieuws['sub_titel']) ) printf( '<h2 class="fl-h4 hm-vacatures-title">%s</h2>', $hmnieuws['sub_titel'] );
+
+                        $newsobj = get_posts( array(
+                          'post_type' => 'post',
+                          'posts_per_page'=> 2,
+                          'orderby' => 'date',
+                          'order'=> 'desc',
+
+                        ) );
+                        if($newsobj):
                       ?>
                       <div class="hm-vacatures-grids-cntlr hm-vac-nie-grids-cntlr">
                           <ul class="reset-list">
+                              <?php
+                                foreach( $newsobj as $news ): 
+                                  $newsID = get_post_thumbnail_id($news->ID);
+                                  $news_src = !empty($newsID)? cbv_get_image_src($newsID): news_placeholder();
+                              ?>
                               <li>
-                                    <div class="tv-grid-modl-item mHc" style="height: 140px;">
-                                      <div class="gmi-img-cntlr has-img">
-                                        <a href="#" class="overlay-link"></a>
-                                        <div class="gmi-inline-bg  inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/no-grid-img-01.png');"></div>
-                                      </div>
+                                <div class="tv-grid-modl-item mHc" style="height: 140px;">
+                                  <div class="gmi-img-cntlr has-img">
+                                    <a href="<?php echo get_the_permalink($news->ID); ?>" class="overlay-link"></a>
+                                    <div class="gmi-inline-bg  inline-bg" style="background-image: url('<?php echo $news_src; ?>);"></div>
+                                  </div>
 
-                                      <div class="gmicnt-cntlr mHc1" style="height: 117px;">
-                                        <span class="tv-date">02/09/2021</span>
-                                        <h3 class="fl-h6 gmi-cntnt-tt  mHc2" style="height: 52px;"><a href="#">Quam eleifend iaculis aliquet bibendum dolor varius diam tellus.</a></h3>
-                                        <div class="gmicnt-btn hide-sm">
-                                            <a class="fl-info-btn  no-fl-info-btn" href="#">
-                                              <span>Lees meer</span>
-                                              <i>
-                                                <svg class="info-arow" width="8" height="12" viewBox="0 0 8 12" fill="#4F7F35">
-                                                  <use xlink:href="#info-arow"></use> 
-                                                </svg>
-                                              </i>
-                                            </a>
-                                        </div>
-                                      </div>
+                                  <div class="gmicnt-cntlr mHc1" style="height: 117px;">
+                                    <span class="tv-date"><?php echo get_the_date('d/m/Y', $news->ID); ?></span>
+                                    <h3 class="fl-h6 gmi-cntnt-tt  mHc2" style="height: 52px;"><a href="<?php echo get_the_permalink($news->ID); ?>"><?php echo get_the_title($news->ID); ?></a></h3>
+                                    <div class="gmicnt-btn hide-sm">
+                                        <a class="fl-info-btn  no-fl-info-btn" href="<?php echo get_the_permalink($news->ID); ?>">
+                                          <span><?php _e('Lees meer', 'terrav'); ?></span>
+                                          <i>
+                                            <svg class="info-arow" width="8" height="12" viewBox="0 0 8 12" fill="#4F7F35">
+                                              <use xlink:href="#info-arow"></use> 
+                                            </svg>
+                                          </i>
+                                        </a>
                                     </div>
-                                  </li>
-                              <li>
-                                    <div class="tv-grid-modl-item mHc" style="height: 140px;">
-                                      <div class="gmi-img-cntlr has-img">
-                                        <a href="#" class="overlay-link"></a>
-                                        <div class="gmi-inline-bg  inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/no-grid-img-03.png');"></div>
-                                      </div>
-
-                                      <div class="gmicnt-cntlr mHc1" style="height: 117px;">
-                                        <span class="tv-date">02/09/2021</span>
-                                        <h3 class="fl-h6 gmi-cntnt-tt  mHc2" style="height: 52px;"><a href="#">Nec ante tellus elementum feugiat amet, in massa habitant. </a></h3>
-                                        <div class="gmicnt-btn hide-sm">
-                                            <a class="fl-info-btn  no-fl-info-btn" href="#">
-                                              <span>Lees meer</span>
-                                              <i>
-                                                <svg class="info-arow" width="8" height="12" viewBox="0 0 8 12" fill="#4F7F35">
-                                                  <use xlink:href="#info-arow"></use> 
-                                                </svg>
-                                              </i>
-                                            </a>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </li>
+                                  </div>
+                                </div>
+                              </li>
+                              <?php endforeach; ?>
                           </ul>
                           <div class="hm-vacatures-btn hm-vac-nie-btn">
-                              <a class="fl-btn btn-bg-brown" href="#">meer vacatures</a>
+                              <a class="fl-btn btn-bg-brown" href="<?php echo get_link_by_page_template('page-news.php'); ?>"><?php _e('Meer nieuws', 'terrav'); ?></a>
                           </div>
+                        <?php endif; ?>
                       </div>
                   </div>
                 <?php endif;?>
@@ -399,7 +387,5 @@ if($showhide_nieuws_vacatures):
     </div>
 </section>
 <?php endif; ?>
-
-
 <?php get_template_part('templates/cta', 'sec'); ?>
 <?php get_footer(); ?>

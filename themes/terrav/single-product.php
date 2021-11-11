@@ -1,5 +1,6 @@
 <?php
 get_header();
+$pageID = get_id_by_page_template('page-product.php');
 $prodterms = get_the_terms(get_the_ID(), 'product_cat');
 $prodtermName = '';
 if( !empty($prodterms) ){
@@ -16,13 +17,16 @@ if( !empty($prodterms) ){
     <div class="row">
       <div class="col-md-12">
         <div class="page-banner-cntlr">
-          <h1 class="fl-h1 page-banner-title"><?php the_title(); ?></h1>
+          <h1 class="fl-h1 page-banner-title"><?php echo get_the_title($pageID); ?></h1>
           <div class="breadcrumb-cntlr hide-sm">
             <ul class="reset-list clearfix">
               <li class="home">
                 <a href="<?php echo esc_url(home_url('/')); ?>">
                   <span class="item"><?php _e('Home', 'terrav'); ?></span>
                 </a>
+              </li>
+              <li>
+                <a href="<?php echo get_the_permalink($pageID); ?>"><span><?php echo get_the_title($pageID); ?></span></a>
               </li>
               <li class="active">
                 <span><?php the_title(); ?></span>

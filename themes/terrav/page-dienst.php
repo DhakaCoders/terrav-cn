@@ -88,7 +88,6 @@ $video_url = get_field('video_url', $thisID);
           <div class="trv-service-grids-cntlr">
             <ul class="">
               <?php 
-              //delete_metadata( 'dienst', 0, '_inhoud', '', true );
                 $i = 1;
                 foreach( $dienstobj as $dienst ){ 
                 $dienID = get_post_thumbnail_id($dienst->ID);

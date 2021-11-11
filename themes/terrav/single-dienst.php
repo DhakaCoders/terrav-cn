@@ -174,7 +174,7 @@ $pageID = get_id_by_page_template('page-dienst.php');
       </div>
     </div>
   </div>
-  <?php }elseif( get_row_layout() == 'afbeelding' ){ 
+  <?php }elseif( get_row_layout() == 'blok_afbeelding' ){ 
     $afbeeldingen = get_sub_field('fc_afbeelding');
     $affbeelding_tag = !empty($afbeeldingen)?cbv_get_image_tag($afbeeldingen):'';
   ?>

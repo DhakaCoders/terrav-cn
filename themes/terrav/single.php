@@ -58,17 +58,17 @@ $pageID = get_id_by_page_template('page-news.php');
                     <div class="dfp-social-media">
                       <ul class="reset-list">
                         <li>
-                          <a href="#">
+                          <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>">
                             <i class="fab fa-facebook-f"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>">
                             <i class="fab fa-twitter"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>">
                             <i class="fab fa-linkedin-in"></i>
                           </a>
                         </li>
@@ -220,7 +220,7 @@ $pageID = get_id_by_page_template('page-news.php');
         </div>
       </div>
     </div>
-    <?php }elseif( get_row_layout() == 'afbeelding' ){ 
+    <?php }elseif( get_row_layout() == 'blok_afbeelding' ){ 
       $afbeeldingen = get_sub_field('fc_afbeelding');
       $affbeelding_tag = !empty($afbeeldingen)?cbv_get_image_tag($afbeeldingen):'';
     ?>
@@ -749,16 +749,16 @@ $pageID = get_id_by_page_template('page-news.php');
             <div class="col-md-12">
               <div class="block-850">
                 <div class="dfp-social-media-module">
-                  <span>Delen op:</span>
+                  <span><?php _e('Delen op', 'terrav'); ?>:</span>
                   <div class="dfp-social-media">
                     <ul class="reset-list">
                       <li>
-                        <a href="#">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>">
                           <i class="fab fa-facebook-f"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>">
                           <i class="fab fa-twitter"></i>
                         </a>
                       </li>

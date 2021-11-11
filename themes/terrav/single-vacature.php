@@ -20,7 +20,10 @@ $pageID = get_id_by_page_template('page-vacature.php');
                 </a>
               </li>
               <li class="active">
-                <span><?php echo get_the_title($pageID); ?></span>
+                <a href="<?php echo get_the_permalink($pageID); ?>"><span><?php echo get_the_title($pageID); ?></span></a>
+              </li>
+              <li class="active">
+                <span><?php echo the_title(); ?></span>
               </li>
             </ul>
           </div>
@@ -68,17 +71,17 @@ $pageID = get_id_by_page_template('page-vacature.php');
                         <div class="dfp-social-media">
                           <ul class="reset-list">
                             <li>
-                              <a href="#">
+                              <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>">
                                 <i class="fab fa-facebook-f"></i>
                               </a>
                             </li>
                             <li>
-                              <a href="#">
+                              <a href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>">
                                 <i class="fab fa-twitter"></i>
                               </a>
                             </li>
                             <li>
-                              <a href="#">
+                              <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>">
                                 <i class="fab fa-linkedin-in"></i>
                               </a>
                             </li>
