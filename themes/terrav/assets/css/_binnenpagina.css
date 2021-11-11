@@ -567,6 +567,7 @@ Gallery design
 }
 .dfp-social-media{
 	margin-left: auto;
+	padding-left: 30px;
 }
 .dfp-social-media ul{
 	display: flex;
@@ -823,6 +824,9 @@ hr{
 	}
 	.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes{
 		padding-top: 25px;
+	}
+	.dfp-social-media{
+		padding-left: 24px;
 	}
 
 }
