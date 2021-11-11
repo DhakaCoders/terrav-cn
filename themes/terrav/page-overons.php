@@ -6,7 +6,7 @@ $thisID = get_the_ID();
 ?>
 <section class="page-banner">
   <span class="pg-bnr-rgt-img hide-sm">
-    <img src="<?php echo THEME_URI; ?>/<?php echo THEME_URI; ?>/assets/images/page-bnr-right-img.svg" alt="">
+    <img src="<?php echo THEME_URI; ?>/assets/images/page-bnr-right-img.svg" alt="">
   </span>
   <div class="container">
     <div class="row">
@@ -30,8 +30,6 @@ $thisID = get_the_ID();
     </div>
   </div>
 </section>
-
-
 <?php
 $showhide_intro = get_field('showhide_intro', $thisID );
 if($showhide_intro): 
@@ -89,51 +87,57 @@ if($showhide_intro):
 </section>
 <?php endif; ?>
 <?php endif; ?>
+<?php
+$showhide_brand = get_field('showhide_brand', $thisID );
+if($showhide_brand): 
+  $brand = get_field('brandsec', $thisID );
+  if($brand):
+    $brandobj = $brand['select_brand'];
+    if( empty($brandobj) ){
+        $brandobj = get_posts( array(
+          'post_type' => 'brand',
+          'posts_per_page'=> 3,
+          'orderby' => 'date',
+          'order'=> 'desc',
 
+        ) );
+        
+    }
+?>
 <section class="strong-professional-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="strong-professional-sec-cntlr">
           <div class="professional-title">
-            <h2 class="fl-h4 professional-heading">Een groep sterke professionals</h2>
+            <?php if( !empty($brand['titel']) ) printf('<h2 class="fl-h4 professional-heading">%s</h2>', $brand['titel']);?>
           </div>
+          <?php if( $brandobj ): ?>
           <div class="professional-team-logo">
             <ul class="ulc reset-list">
+              <?php 
+                foreach( $brandobj as $brandrow ): 
+                $brandID = get_post_thumbnail_id($brandrow->ID);
+                $brand_tag = !empty($brandID)? cbv_get_image_tag($brandID): '';
+              ?>
               <li>
                 <div class="prfnl-tm-logo">
                   <i>
-                    <a href="#">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/prfnl-logo-1.png" alt="">
-                  </a>
+                    <?php echo $brand_tag; ?>
                   </i>
                 </div>
               </li>
-                <li>
-                  <div class="prfnl-tm-logo">
-                    <i>
-                        <img src="<?php echo THEME_URI; ?>/assets/images/prfnl-logo-2.png" alt="">
-                    </i>
-                  </div>
-                </li>
-                <li>
-                  <div class="prfnl-tm-logo">
-                    <i>
-                      <a href="#">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/prfnl-logo-3.png" alt="">
-                      </a>
-                    </i>
-                  </div>
-                </li>
-
+              <?php endforeach; ?>
             </ul>
           </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+<?php endif; ?>
+<?php endif; ?>
 <?php
 $showhide_afbeelding_beschrijving = get_field('showhide_afbeelding_beschrijving', $thisID );
 if($showhide_afbeelding_beschrijving): 
@@ -230,7 +234,7 @@ if($showhide_certificaten):
             ?>
           </div>
           <?php 
-              $certificaten = $certificaten_sec['certificaten'];
+              $certificaten = $certificaten_sec['certificatens'];
               if( $certificaten ):
           ?>
           <div class="certificates-guarantee-grd">
@@ -239,7 +243,7 @@ if($showhide_certificaten):
               <li>
                 <div class="certificates-guarantee-grd-item">
                   <div class="certificates-guarantee-log">
-                    <?php echo !empty($certificate['afbeelding'])? cbv_get_image_tag($certificate['afbeelding']):''; ?>
+                    <?php echo !empty($certificate['icon'])? cbv_get_image_tag($certificate['icon']):'<img src="'.THEME_URI.'/assets/images/certificates-guarantee-logo.png" alt="'.$certificate['titel'].'">'; ?>
                   </div>
                   <div class="certificates-guarantee-des">
                     <?php 
@@ -322,4 +326,5 @@ if($showhide_historiek):
 </section>
 <?php endif; ?>
 <?php endif; ?>
+<?php get_template_part('templates/cta', 'sec'); ?>
 <?php get_footer(); ?>

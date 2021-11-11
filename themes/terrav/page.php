@@ -37,8 +37,6 @@ $thisID = get_the_ID();
     <?php 
       if( get_row_layout() == 'introductietekst' ){ 
       $fc_tekst = get_sub_field('fc_tekst');
-      $fcafbeelding = get_sub_field('fc_afbeelding');
-      $affbeelding_tag = !empty($fcafbeelding)?cbv_get_image_tag($fcafbeelding):'';
     ?>
     <div class="block">
       <div class="dfp-promo-module">
@@ -50,6 +48,21 @@ $thisID = get_the_ID();
                   <?php echo wpautop($fc_tekst); ?>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <?php 
+      }elseif( get_row_layout() == 'full_afbeelding' ){ 
+      $fcafbeelding = get_sub_field('fc_afbeelding');
+      $affbeelding_tag = !empty($fcafbeelding)?cbv_get_image_tag($fcafbeelding):'';
+    ?>
+    <div class="block">
+      <div class="dfp-promo-module">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
               <?php if( !empty($affbeelding_tag) ): ?>
               <div class="dfp-plate-one-img-bx">
                 <?php echo $affbeelding_tag; ?>
@@ -307,13 +320,14 @@ $thisID = get_the_ID();
                   <figure class="gallery-item">
                     <div class="gallery-icon portrait">
                         <?php 
+                          $imgsrc = cbv_get_image_src( $image);
                           if( $lightbox ){
-                            echo "<a data-fancybox='gallery' href='{$image['url']}'>";
-                            echo '<div class="gallery-icon-img inline-bg" style="background: url('.cbv_get_image_src( $image).');"></div>';
+                            echo "<a data-fancybox='gallery' href='{$imgsrc}'>";
+                            echo '<div class="gallery-icon-img inline-bg" style="background: url('.$imgsrc.');"></div>';
                             echo cbv_get_image_tag( $image);
                             echo "</a>";
                           }else{
-                            echo '<div class="gallery-icon-img inline-bg" style="background: url('.cbv_get_image_src( $image).');"></div>';
+                            echo '<div class="gallery-icon-img inline-bg" style="background: url('.$imgsrc.');"></div>';
                             echo cbv_get_image_tag( $image);
                           }
                         ?>
@@ -630,9 +644,10 @@ $thisID = get_the_ID();
       </div>
     </div>
       <?php }elseif( get_row_layout() == 'fcknop' ){
-      $oranje_kleur = get_sub_field('oranje_kleur');
-      $groente_kleur = get_sub_field('groente_kleur');
-      $alignment = get_sub_field('alignment');
+      $fc_knop = get_sub_field('knop');
+      $bg_kleur = get_sub_field('background_kleur');
+      $tekst_kleur = get_sub_field('tekst_kleur');
+      $border_kleur = get_sub_field('border_kleur');
       ?> 
     <div class="block">
       <div class="dfp-btn-module">
@@ -642,7 +657,11 @@ $thisID = get_the_ID();
               <div class="dfp-btn-module-inr">
                 <ul class="reset-list">
                   <li>
-                    <a data-color="#fff" data-bg="#4F7F35" data-border="#4F7F35" href="#" class="dft-fl-btn">BUTTON</a>
+                  <?php
+                    if( is_array( $fc_knop ) &&  !empty( $fc_knop['url'] ) ){
+                      printf('<a class="dft-fl-btn" href="%s" target="%s" data-color="%s" data-bg="%s" data-border="%s">%s</a>', $fc_knop['url'], $fc_knop['target'], $tekst_kleur, $bg_kleur, $border_kleur, $fc_knop['title']); 
+                    }
+                  ?>
                   </li>
                 </ul>
               </div>

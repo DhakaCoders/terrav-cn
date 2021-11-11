@@ -118,7 +118,7 @@ if( isset($_GET['keyword']) && !empty($_GET['keyword']) ){
 
                 <div class="gmicnt-cntlr mHc1  vo-gmicnt-cntlr">
                   <span class="tv-date"><?php echo get_the_date('d/m/Y'); ?></span>
-                  <h3 class="fl-h6 gmi-cntnt-tt  vo-gmi-cntnt-tt  mHc2"><a href="#"><?php the_title(); ?></a></h3>
+                  <h3 class="fl-h6 gmi-cntnt-tt  vo-gmi-cntnt-tt  mHc2"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                   <?php if( !empty($jobtype) || !empty($adres) ){ ?>
                   <span class="full-time" ><?php printf('%s', $jobtype); printf(' / %s', $adres); ?></span>
               	<?php } ?>

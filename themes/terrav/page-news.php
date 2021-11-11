@@ -114,7 +114,7 @@ get_header();
   $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $query = new WP_Query(array(
     'post_type' => 'post',
-    'posts_per_page'=> 2,
+    'posts_per_page'=> 14,
     'post__not_in' => array($topnewsID),
     'orderby' => $obrderby,
     'order'=> $order,
