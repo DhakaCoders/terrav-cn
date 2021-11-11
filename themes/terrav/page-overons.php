@@ -168,26 +168,39 @@ if($showhide_afbeelding_beschrijving):
 <?php endif; ?>
 <?php endif; ?>
 
+<?php
+$showhide_cta = get_field('showhide_cta', $thisID );
+if($showhide_cta): 
+  $ctasec = get_field('ctasec', $thisID );
+  if($ctasec):
+?>
 <section class="over-ons-cta-module-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-
         <div class="cta-module-ctlr">
           <div class="cta-module">
             <div class="cta-module-inr">
               <div class="cta-module-lft">
+                <?php 
+                if( !empty($ctasec['top_titel']) ):  
+                ?>
                 <h4 class="cta-module-sub-title fl-h6">
-                  Contact
-                  <i><img src="<?php echo THEME_URI; ?>/assets/images/cta-icon.png"></i>
+                  <?php printf( '%s', $ctasec['top_titel'] );  ?>
+                  <i><img src="<?php echo THEME_URI; ?>/assets/images/white-2lines.svg"></i>
                 </h4>
-                <h2 class="cta-module-title fl-h1">Facilisi duis aliquet.</h2>
-                <p>Blandit volutpat enim rutrum maecenas nunc, consectetur nec a commodo. Pulvinar erat sed a tempus. Sed et purus, eget viverra a. </p>
+                <?php endif; 
+                  if( !empty($ctasec['titel']) ) printf( '<h2 class="cta-module-title fl-h1">%s</h2>', $ctasec['titel'] ); 
+                  if( !empty($ctasec['beschrijving']) ) echo wpautop( $ctasec['beschrijving'] );
+                ?>
               </div>
               <div class="cta-module-rgt">
-                <div class="cta-module-btn">
-                  <a href="#">contacteer ons</a>
-                </div>
+                 <?php 
+                    $ctaseclink = $ctasec['knop'];
+                    if( is_array( $ctaseclink ) &&  !empty( $ctaseclink['url'] ) ){
+                        printf('<div class="cta-module-btn"><a href="%s" target="%s">%s</a></div>', $ctaseclink['url'], $ctaseclink['target'], $ctaseclink['title']); 
+                    }
+                ?>
               </div>
             </div>
           </div>
@@ -197,6 +210,8 @@ if($showhide_afbeelding_beschrijving):
     </div>
   </div>
 </section>
+<?php endif; ?>
+<?php endif; ?>
 
 <?php
 $showhide_certificaten = get_field('showhide_certificaten', $thisID );
