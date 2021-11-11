@@ -37,8 +37,8 @@ if( !function_exists('cbv_theme_setup') ){
         register_nav_menus( array(
             'cbv_main_menu' => __( 'Hoofdmenu', 'terrav' ),
             'cbv_mobile_menu' => __( 'Mobielmenu', 'terrav' ),
-            'cbv_fta_menu' => __( 'Footer Menu 1', 'terrav' ),
-            'cbv_ftb_menu' => __( 'Footer Menu 2', 'terrav' ),
+            'cbv_fta_menu' => __( 'Footer Menu', 'terrav' ),
+            'cbv_copyright_menu' => __( 'Copyright Menu', 'terrav' ),
         ) );
 
     }
@@ -55,7 +55,7 @@ function cbv_theme_scripts(){
     include_once( THEME_DIR . '/enq-scripts/fonts.php' );
     if( !is_front_page() ) include_once( THEME_DIR . '/enq-scripts/fancybox.php' );
     include_once( THEME_DIR . '/enq-scripts/slick.php' );
-    include_once( THEME_DIR . '/enq-scripts/swiper.php' );
+    //include_once( THEME_DIR . '/enq-scripts/swiper.php' );
     include_once( THEME_DIR . '/enq-scripts/google.maps.php' );
     include_once( THEME_DIR . '/enq-scripts/matchheight.php' );
     include_once( THEME_DIR . '/enq-scripts/animate.php' );
