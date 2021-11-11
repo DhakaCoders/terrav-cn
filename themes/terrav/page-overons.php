@@ -32,6 +32,13 @@ $thisID = get_the_ID();
 </section>
 
 
+<?php
+$showhide_intro = get_field('showhide_intro', $thisID );
+if($showhide_intro): 
+  $introsec = get_field('introsec', $thisID );
+  if($introsec):
+    $aintrosec_img_src = !empty($introsec['afbeelding'])? cbv_get_image_src( $introsec['afbeelding'] ): '';
+?>
 <section class="over-ons-intro-sec">
   <div class="container">
       <div class="row">
@@ -40,20 +47,38 @@ $thisID = get_the_ID();
             <div class="over-ons-intro-sec-left">
               <div class="over-ons-intro-des">
                 <div class="over-ons-des-cntlr">
-                  <h3 class="fl-h6 color-green over-ons-des-title"><svg class="over-ons-title-icon" width="28" height="31" viewBox="0 0 28 31" fill="#4F7F35">
-                  <use xlink:href="#equal-icon"></use> </svg>LOREM IPSUM</h3>
-                  <h2 class="fl-h1 over-ons-des-heading">Terra Verde</h2>
-                  <p>Blandit volutpat enim rutrum maecenas nunc, consectetur nec a commodo. Pulvinar erat sed a tempus. Sed et purus, eget viverra a. Posuere amet vel enim nascetur mus ultricies lacinia. Egestas morbi ut faucibus aenean. Faucibus erat sed volutpat in accumsan.</p>
-                  <p>Ac faucibus semper etiam dui dignissim accumsan. Amet, augue risus facilisis suscipit est. Dignissim aliquam elementum et vitae vel augue. Habitasse id urna, massa rutrum egestas ac. </p>
+                  <?php 
+                  if( !empty($introsec['top_titel']) ):  
+                  ?>
+                  <h3 class="fl-h6 color-green over-ons-des-title">
+                    <svg class="over-ons-title-icon" width="28" height="31" viewBox="0 0 28 31" fill="#4F7F35">
+                    <use xlink:href="#equal-icon"></use> 
+                    </svg>
+                    <?php printf( '%s', $introsec['top_titel'] );  ?>
+                  </h3>
+                  <?php endif; 
+                    if( !empty($introsec['titel']) ) printf( '<h2 class="fl-h1 over-ons-des-heading">%s</h2>', $introsec['titel'] ); 
+                    if( !empty($introsec['beschrijving']) ) echo wpautop( $introsec['beschrijving'] );
+                  ?>
                   <div class="over-ons-intro-button">
-                    <a href="#" class="fl-btn btn-bg-green">OVER ONS</a><a href="#" class="fl-btn">Producten</a>
+                    <?php 
+                    $introseclink1 = $introsec['knop_1'];
+                    $introseclink2 = $introsec['knop_2'];
+                    if( is_array( $introseclink1 ) &&  !empty( $introseclink1['url'] ) ){
+                        printf('<a class="fl-btn btn-bg-green" href="%s" target="%s">%s</a>', $introseclink1['url'], $introseclink1['target'], $introseclink1['title']); 
+                    }
+                    if( is_array( $introseclink2 ) &&  !empty( $introseclink2['url'] ) ){
+                        printf('<a class="fl-btn" href="%s" target="%s">%s</a>', $introseclink2['url'], $introseclink2['target'], $introseclink2['title']); 
+                    }
+
+                    ?>
                   </div>
                 </div>
               </div>
             </div>
             <div class="over-ons-intro-sec-right">
               <div class="over-ons-intro-sec-img">
-                <div class="over-ons-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/over-ons-intro-img.jpg);">
+                <div class="over-ons-img inline-bg" style="background-image: url(<?php echo $aintrosec_img_src; ?>);">
                 </div>
               </div>
             </div>
@@ -62,6 +87,8 @@ $thisID = get_the_ID();
       </div>
   </div>    
 </section>
+<?php endif; ?>
+<?php endif; ?>
 
 <section class="strong-professional-sec">
   <div class="container">
@@ -107,6 +134,13 @@ $thisID = get_the_ID();
   </div>
 </section>
 
+<?php
+$showhide_afbeelding_beschrijving = get_field('showhide_afbeelding_beschrijving', $thisID );
+if($showhide_afbeelding_beschrijving): 
+  $afbeelding_beschrijving_sec = get_field('afbeelding_beschrijving_sec', $thisID );
+  if($afbeelding_beschrijving_sec):
+    $ab_src = !empty($afbeelding_beschrijving_sec['afbeelding'])? cbv_get_image_src( $afbeelding_beschrijving_sec['afbeelding'] ): '';
+?>
 <section class="over-ons-lftimg-rgtdes-sec">
   <div class="container">
     <div class="row">
@@ -115,13 +149,14 @@ $thisID = get_the_ID();
 
         <div class="fl-dft-lftimg-rgtdes clearfix">
           <div class="fl-dft-lftimg-rgtdes-lft over-ons-lftimg-rgtdes-sec-lft">
-            <div class="inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/product-img.jpg);"></div>
-            <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-12.jpg">
+            <div class="inline-bg" style="background-image: url(<?php echo $ab_src; ?>);"></div>
+            <?php echo !empty($afbeelding_beschrijving_sec['afbeelding'])? cbv_get_image_tag($afbeelding_beschrijving_sec['afbeelding']):''; ?>
           </div>
           <div class="fl-dft-lftimg-rgtdes-rgt over-ons-lftimg-rgtdes-sec-rgt">
-            <h2 class="fl-h1">Ut lacus amet tellus morbi varius in blandit. </h2>
-            <p>Blandit volutpat enim rutrum maecenas nunc, consectetur nec a commodo. Pulvinar erat sed a tempus. Sed et purus, eget viverra a. Posuere amet vel enim nascetur mus ultricies lacinia. Egestas morbi ut faucibus aenean. Faucibus erat sed volutpat in accumsan.</p>
-            <p>Ac faucibus semper etiam dui dignissim accumsan. Amet, augue risus facilisis suscipit est. Dignissim aliquam elementum et vitae vel augue. Habitasse id urna, massa rutrum egestas ac. </p>
+            <?php  
+              if( !empty($afbeelding_beschrijving_sec['titel']) ) printf( '<h2 class="fl-h1">%s</h2>', $afbeelding_beschrijving_sec['titel'] ); 
+              if( !empty($afbeelding_beschrijving_sec['beschrijving']) ) echo wpautop( $afbeelding_beschrijving_sec['beschrijving'] );
+            ?>
           </div>
         </div>
 
@@ -130,6 +165,8 @@ $thisID = get_the_ID();
     </div>
   </div>
 </section>
+<?php endif; ?>
+<?php endif; ?>
 
 <section class="over-ons-cta-module-sec">
   <div class="container">
@@ -161,110 +198,113 @@ $thisID = get_the_ID();
   </div>
 </section>
 
+<?php
+$showhide_certificaten = get_field('showhide_certificaten', $thisID );
+if($showhide_certificaten): 
+  $certificaten_sec = get_field('certificaten_sec', $thisID );
+  if($certificaten_sec):
+?>
 <section class="certificates-guarantee-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="certificates-guarantee-cntlr">
           <div class="certificates-guarantee-title">
-            <h2 class="fl-h2 certificates-guarantee-heading">Deze certificaten garanderen onze kwaliteit:</h2>
+            <?php  
+              if( !empty($certificaten_sec['titel']) ) printf( '<h2 class="fl-h2 certificates-guarantee-heading">%s</h2>', $certificaten_sec['titel'] ); 
+            ?>
           </div>
+          <?php 
+              $certificaten = $certificaten_sec['certificaten'];
+              if( $certificaten ):
+          ?>
           <div class="certificates-guarantee-grd">
             <ul class="reset-list">
+              <?php foreach( $certificaten as $certificate ): ?>
               <li>
                 <div class="certificates-guarantee-grd-item">
                   <div class="certificates-guarantee-log">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/certificates-guarantee-logo.png" alt="">
+                    <?php echo !empty($certificate['afbeelding'])? cbv_get_image_tag($certificate['afbeelding']):''; ?>
                   </div>
                   <div class="certificates-guarantee-des">
-                    <h3 class="fl-h6 certificates-guarantee-des-title">Certificaten</h3>
-                    <p>Consectetur feugiat arcu quisque amet vulputate cursus arcu sed. </p>
+                    <?php 
+                        if( !empty($certificate['titel']) ) printf( '<h3 class="fl-h6 certificates-guarantee-des-title">%s</h3>', $certificate['titel'] );
+                        if( !empty($certificate['beschrijving']) ) echo wpautop( $certificate['beschrijving'] );
+                    ?>
                   </div>
                 </div>
               </li>
-
-              <li>
-                <div class="certificates-guarantee-grd-item">
-                  <div class="certificates-guarantee-log">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/certificates-guarantee-logo.png" alt="">
-                  </div>
-                  <div class="certificates-guarantee-des">
-                    <h3 class="fl-h6 certificates-guarantee-des-title">Certificaten</h3>
-                    <p>Consectetur feugiat arcu quisque amet vulputate cursus arcu sed. </p>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="certificates-guarantee-grd-item">
-                  <div class="certificates-guarantee-log">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/certificates-guarantee-logo.png" alt="">
-                  </div>
-                  <div class="certificates-guarantee-des">
-                    <h3 class="fl-h6 certificates-guarantee-des-title">Certificaten</h3>
-                    <p>Consectetur feugiat arcu quisque amet vulputate cursus arcu sed. </p>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="certificates-guarantee-grd-item">
-                  <div class="certificates-guarantee-log">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/certificates-guarantee-logo.png" alt="">
-                  </div>
-                  <div class="certificates-guarantee-des">
-                    <h3 class="fl-h6 certificates-guarantee-des-title">Certificaten</h3>
-                    <p>Consectetur feugiat arcu quisque amet vulputate cursus arcu sed. </p>
-                  </div>
-                </div>
-              </li>
+              <?php endforeach; ?>
             </ul>
           </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>
   </div>
 </section>
+<?php endif; ?>
+<?php endif; ?>
 
+
+<?php
+$showhide_historiek = get_field('showhide_historiek', $thisID );
+if($showhide_historiek): 
+  $historiek_sec = get_field('historiek_sec', $thisID );
+  if($historiek_sec):
+    $afbeelding_src = !empty($historiek_sec['afbeelding'])? cbv_get_image_src( $historiek_sec['afbeelding'] ): '';
+?>
 <section class="over-ons-history-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="over-ons-history-sec-cntlr">
-
-
-
           <div class="over-ons-intro-sec-left over-ons-history-sec-left">
               <div class="over-ons-intro-des over-ons-history-sec-des">
                 <div class="over-ons-des-cntlr over-ons-history-des-cntlr">
-                  <h3 class="fl-h6 color-green over-ons-history-des-title over-ons-des-title"><svg class="over-ons-title-icon" width="28" height="31" viewBox="0 0 28 31" fill="#4F7F35">
-                  <use xlink:href="#equal-icon"></use> </svg>Historiek</h3>
-                  <h2 class="fl-h2 over-ons-history-des-heading">Nunc ac duis ut nulla.</h2>
-                  <p>Amet, augue risus facilisis suscipit est. Dignissim aliquam elementum et vitae vel augue. Habitasse id urna, massa rutrum egestas ac. </p>
+                  <?php 
+                  if( !empty($historiek_sec['titel']) ):  
+                  ?>
+                  <h3 class="fl-h6 color-green over-ons-history-des-title over-ons-des-title">
+                    <svg class="over-ons-title-icon" width="28" height="31" viewBox="0 0 28 31" fill="#4F7F35">
+                    <use xlink:href="#equal-icon"></use> 
+                    </svg>
+                    <?php printf( '%s', $historiek_sec['titel'] );  ?>
+                  </h3>
+                  <?php endif; 
+                    if( !empty($historiek_sec['ondertitel']) ) printf( '<h2 class="fl-h2 over-ons-history-des-heading">%s</h2>', $historiek_sec['ondertitel'] );
+                    if( !empty($historiek_sec['beschrijving']) ) echo wpautop( $historiek_sec['beschrijving'] );
+                  ?>
+
+                  <?php 
+                      $historiek = $historiek_sec['historiek'];
+                      if( $historiek ):
+                  ?>
                   <ul>
-                    <li class="wow fadeInUp delay-1" ><span>1950:</span>De Roeck</li>
-                    <li class="wow fadeInUp delay-2"><span>1974:</span>Jacques Remy</li>
-                    <li class="wow fadeInUp delay-3"><span>1975:</span>De Boelpaep</li>
-                    <li class="wow fadeInUp delay-4"><span>2005:</span>De Boelpaep wordt DBS</li>
-                    <li class="wow fadeInUp delay-5"><span>2012:</span>Compra</li>
-                    <li class="wow fadeInUp delay-6"><span>2013:</span> Fruitpackers</li>
-                    <li class="wow fadeInUp delay-7"><span>2016:</span>Terra Verde </li>
+                    <?php foreach( $historiek as $historiek ): ?>
+                    <li class="wow fadeInUp delay-1" >
+                      <?php
+                        if( !empty($historiek['jaar']) ) printf( '<span>%s:</span>', $historiek['jaar'] );
+                        if( !empty($historiek['titel']) ) printf( '%s', $historiek['titel'] );
+                      ?>
+                    </li>
+                    <?php endforeach; ?>
                   </ul>
+                  <?php endif; ?>
                 </div>
               </div>
             </div>
             <div class="over-ons-intro-sec-right over-ons-history-sec-righ">
               <div class="over-ons-intro-sec-img">
-                <div class="over-ons-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/history-sec-img.jpg);">
+                <div class="over-ons-img inline-bg" style="background-image: url(<?php echo $afbeelding_src; ?>);">
                 </div>
               </div>
             </div>
-
-
-
         </div>
       </div>
     </div>
   </div>
 </section>
+<?php endif; ?>
+<?php endif; ?>
 <?php get_footer(); ?>
