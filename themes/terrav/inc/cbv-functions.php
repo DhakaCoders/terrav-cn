@@ -197,20 +197,7 @@ function get_title_by_page_template( $pagetemplate ){
   return $post_title;
 }
 
-function banner_placeholder($format = 'src'){
-  $placehoder = get_field('placeholder', 'options');
-  if( !empty($placehoder) ){
-      if( $format == 'src' ){
-        $placeholder = !empty($placehoder['default_banner'])? cbv_get_image_src($placehoder['default_banner']):'';
-      }else{
-        $placeholder = !empty($placehoder['default_banner'])? cbv_get_image_tag($placehoder['default_banner']):'';
-      }
-      return $placeholder;
-  }
-  return '';
-
-}
-function blog_placeholder($format = 'src'){
+function news_placeholder($format = 'src'){
   $placehoder = get_field('placeholder', 'options');
   if( !empty($placehoder) ){
       if( $format == 'src' ){
@@ -223,14 +210,57 @@ function blog_placeholder($format = 'src'){
   return '';
 
 }
+function product_placeholder($format = 'src'){
+  $placehoder = get_field('placeholder', 'options');
+  if( !empty($placehoder) ){
+      if( $format == 'src' ){
+        $placeholder = !empty($placehoder['product'])? cbv_get_image_src($placehoder['product']):'';
+      }else{
+        $placeholder = !empty($placehoder['product'])? cbv_get_image_tag($placehoder['product']):'';
+      }
+      return $placeholder;
+  }
+  return '';
+
+}
+function dienst_placeholder($format = 'src'){
+  $placehoder = get_field('placeholder', 'options');
+  if( !empty($placehoder) ){
+      if( $format == 'src' ){
+        $placeholder = !empty($placehoder['dienst'])? cbv_get_image_src($placehoder['dienst']):'';
+      }else{
+        $placeholder = !empty($placehoder['dienst'])? cbv_get_image_tag($placehoder['dienst']):'';
+      }
+      return $placeholder;
+  }
+  return '';
+
+}
+
+function no_result_text(){
+  $no_results = get_field('no_results', 'options');
+  if( !empty($no_results) ){
+    $text = $no_results;
+  }else{
+    $text = __( 'Geen resultaat', 'terrav' );
+  }
+  return $text;
+
+}
 function bv_get_current_year(){
     return date('Y');
 }
 add_shortcode( 'cyear', 'bv_get_current_year' );
 
+function num_format($num){
+  if( $num <= 9 ){
+    $num = '0'.$num;
+  }
+  return $num;
+}
 function cbv_get_excerpt(){
   global $post;
-  $link = '<a href="'. get_permalink($post->ID) . '">'.__(' ....more', 'landshuys').'</a>';
+  $link = '<a href="'. get_permalink($post->ID) . '">'.__(' ....more', 'terrav').'</a>';
   $excerpt = explode(' ', get_the_excerpt());
   //array_pop($excerpt);
   $excerpt = implode(" ",$excerpt);

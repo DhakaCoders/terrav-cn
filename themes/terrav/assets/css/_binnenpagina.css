@@ -24,7 +24,6 @@
 	padding-bottom: 110px;
 	padding-top: 110px;
 }
-
 .fl-dft-overflow-controller {
 	overflow: hidden;
 }
@@ -37,8 +36,6 @@
 	margin-bottom: 20px;
 	line-height: 1.1;
 }
-
-
 .dfp-text-module{
 	
 }
@@ -567,6 +564,7 @@ Gallery design
 }
 .dfp-social-media{
 	margin-left: auto;
+	padding-left: 30px;
 }
 .dfp-social-media ul{
 	display: flex;
@@ -823,6 +821,9 @@ hr{
 	}
 	.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes{
 		padding-top: 25px;
+	}
+	.dfp-social-media{
+		padding-left: 24px;
 	}
 
 }
