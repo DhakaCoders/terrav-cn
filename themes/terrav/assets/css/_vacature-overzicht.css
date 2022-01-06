@@ -91,37 +91,40 @@
     font-size: 14px;
     letter-spacing: -0.02em;
     font-weight: 500;
-    color: rgba(79, 75, 52, 0.4);
+	color: #4f4b3466;
+    
     text-transform: capitalize;
 }
 .vtur-ovzt-serch-cntlr label input[type="search"]::-webkit-input-placeholder {
-	color: red;
+	
 	opacity: 1;
-	color: rgba(79, 75, 52, 0.4);
+	color: #4f4b3466;
+	
 	font-size: 14px;
 	font-weight: 500;
 	font-family: 'Libre Franklin', sans-serif;
 }
 .vtur-ovzt-serch-cntlr label input[type="search"]::-moz-placeholder {
-	color: red;
+	
 	opacity: 1;
-	color: rgba(79, 75, 52, 0.4);
+	color: #4f4b3466;
+	
 	font-size: 14px;
 	font-weight: 500;
 	font-family: 'Libre Franklin', sans-serif;
 }
 .vtur-ovzt-serch-cntlr label input[type="search"]:-ms-input-placeholder {
-	color: red;
+	
 	opacity: 1;
-	color: rgba(79, 75, 52, 0.4);
+	color: #4f4b3466;
 	font-size: 14px;
 	font-weight: 500;
 	font-family: 'Libre Franklin', sans-serif;
 }
 .vtur-ovzt-serch-cntlr label input[type="search"]:-moz-placeholder {
-	color: red;
+	
 	opacity: 1;
-	color: rgba(79, 75, 52, 0.4);
+	color: #4f4b3466;
 	font-size: 14px;
 	font-weight: 500;
 	font-family: 'Libre Franklin', sans-serif;
